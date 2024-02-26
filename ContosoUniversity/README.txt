@@ -1,5 +1,1 @@
-Contoso University
-
-The latest readme is available at: http://www.codeplex.com/WLQuickApps/Wiki/View.aspx?title=Contoso%20University
-
-END
+The latest readme is available at: https://web.archive.org/web/20101103003950mp_/http://wlquickapps.codeplex.com/wikipage?title=Contoso%20University&referringTitle=Home
