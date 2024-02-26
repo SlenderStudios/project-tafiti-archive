@@ -1,0 +1,102 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/client/2007"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="RetailSiteKit.dropDownMenu"
+	d:DesignWidth="100" d:DesignHeight="50">
+	<UserControl.Resources>
+		<Storyboard x:Name="open">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="arrow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" BeginTime="00:00:00">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-1">
+					<SplineDoubleKeyFrame.KeySpline>
+						<KeySpline ControlPoint1="0,1" ControlPoint2="1,1"/>
+					</SplineDoubleKeyFrame.KeySpline>
+				</SplineDoubleKeyFrame>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="close">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="arrow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" BeginTime="00:00:00">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1">
+					<SplineDoubleKeyFrame.KeySpline>
+						<KeySpline ControlPoint1="0,1" ControlPoint2="1,1"/>
+					</SplineDoubleKeyFrame.KeySpline>
+				</SplineDoubleKeyFrame>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" >
+		<Canvas Width="81.393" Height="28.007" x:Name="option" Opacity="1" HorizontalAlignment="Left" Margin="8,8,0,0" VerticalAlignment="Top" d:LayoutOverrides="Width, Height">
+			<TextBlock Canvas.Left="-3.335" Canvas.Top="-0.667" x:Name="size1">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<MatrixTransform Matrix="1.00025,0,0,1.00036,5.22266,8.73125"/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+				<Run FontFamily="Arial" FontWeight="Bold" FontSize="10" Text="Size" Foreground="#FFFFFFFF"/>
+			</TextBlock>
+			<Canvas Width="58.2626" Height="28.0071" Canvas.Left="23.1301" Canvas.Top="0" x:Name="optionBtn">
+				<Path Width="52.322" Height="113.002" Canvas.Left="3" Canvas.Top="3" Stretch="None" StrokeThickness="2" StrokeMiterLimit="2.75" x:Name="path" Data="F1 M6.060617,1 L46.320667,1 C49.082767,1 51.321968,3.2393799 51.321968,6.00177 L51.321968,16.0054 C51.321968,18.767799 49.082767,21.007099 46.320667,21.007099 L6.060617,21.007099 C3.298507,21.007099 1.0593668,18.767799 1.0593668,16.0054 L1.0593668,6.00177 C1.0593668,3.2393799 3.298507,1 6.060617,1 z">
+					<Path.Stroke>
+						<LinearGradientBrush StartPoint="0.255978,0.0113489" EndPoint="0.255978,0.875013">
+							<GradientStop Color="#91FFFFFF" Offset="0"/>
+							<GradientStop Color="#2CFFFFFF" Offset="1"/>
+						</LinearGradientBrush>
+					</Path.Stroke>
+					<Path.Fill>
+						<LinearGradientBrush StartPoint="0.255978,0.0113489" EndPoint="0.255978,0.875013">
+							<GradientStop Color="#67FF0000" Offset="0"/>
+							<GradientStop Color="#47FF0000" Offset="0.557078"/>
+							<GradientStop Color="#28FF0000" Offset="1"/>
+						</LinearGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Width="1.10031" Height="20.4077" Canvas.Left="30.3945" Canvas.Top="3.97968" Stretch="Fill" Data="F1 M 30.3945,3.97968L 31.4948,3.97968L 31.4948,24.3873C 31.3115,24.3873 30.578,24.3873 30.3945,24.3873L 30.3945,3.97968 Z ">
+					<Path.Fill>
+						<LinearGradientBrush StartPoint="1.50001,0.0243989" EndPoint="1.50001,0.978792">
+							<GradientStop Color="#FFFFFFFF" Offset="0"/>
+							<GradientStop Color="#00FFFFFF" Offset="1"/>
+						</LinearGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Width="8.43948" Height="6.47101" Canvas.Left="38.1516" Canvas.Top="10.8209" Stretch="Fill" Data="F1 M 38.1516,10.8209L 46.5911,10.8209L 42.3714,17.2919L 38.1516,10.8209 Z " RenderTransformOrigin="0.5,0.5" x:Name="arrow">
+					<Path.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Path.RenderTransform>
+					<Path.Fill>
+						<LinearGradientBrush StartPoint="0.491493,-0.728063" EndPoint="0.491493,1.45553">
+							<GradientStop Color="#FFFFFFFF" Offset="0"/>
+							<GradientStop Color="#80FFFFFF" Offset="0.278539"/>
+							<GradientStop Color="#00FFFFFF" Offset="1"/>
+						</LinearGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Canvas Height="28.007" Width="31.495" x:Name="optionText">
+					<TextBlock x:Name="itemSizeShadow">
+						<TextBlock.RenderTransform>
+							<TransformGroup>
+								<MatrixTransform Matrix="1.00025,0,0,1.00036,14.6335,9.45653"/>
+							</TransformGroup>
+						</TextBlock.RenderTransform>
+						<Run FontFamily="Arial" FontWeight="Bold" FontSize="10" Text="M" Foreground="#FF000000"/>
+					</TextBlock>
+					<TextBlock x:Name="itemSize">
+						<TextBlock.RenderTransform>
+							<TransformGroup>
+								<MatrixTransform Matrix="1.00025,0,0,1.00036,13.6333,8.37277"/>
+							</TransformGroup>
+						</TextBlock.RenderTransform>
+						<Run FontFamily="Arial" FontWeight="Bold" FontSize="10" Text="M" Foreground="#FFFFFFFF"/>
+					</TextBlock>
+				</Canvas>
+			</Canvas>
+		</Canvas>
+	</Grid>
+</UserControl>

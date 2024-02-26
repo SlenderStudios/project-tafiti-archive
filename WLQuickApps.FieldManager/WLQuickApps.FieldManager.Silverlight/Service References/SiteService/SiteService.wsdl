@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="WLQuickApps.FieldManager.WebSite" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="WLQuickApps.FieldManager.WebSite" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="WLQuickApps.FieldManager.WebSite/Imports">
+      <xsd:import schemaLocation="http://fieldmanager.local.com/SiteService.svc?xsd=xsd0" namespace="WLQuickApps.FieldManager.WebSite" />
+      <xsd:import schemaLocation="http://fieldmanager.local.com/SiteService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://fieldmanager.local.com/SiteService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WLQuickApps.FieldManager.WebSite" />
+      <xsd:import schemaLocation="http://fieldmanager.local.com/SiteService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WLQuickApps.FieldManager.Business" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SiteService_CreateLeague_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateLeague" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_CreateLeague_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateLeagueResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_CreateField_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateField" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_CreateField_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateFieldResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetLeague_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLeague" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetLeague_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLeagueResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetAllLeagues_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllLeagues" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetAllLeagues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllLeaguesResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetLeagues_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLeagues" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetLeagues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLeaguesResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetField_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetField" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetField_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFieldResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetWeather_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWeather" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetWeather_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWeatherResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_ChangeFieldStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeFieldStatus" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_ChangeFieldStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeFieldStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetMyFields_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyFields" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetMyFields_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyFieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetFieldsForUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFieldsForUser" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetFieldsForUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFieldsForUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetFieldsForUserCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFieldsForUserCount" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetFieldsForUserCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFieldsForUserCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetFieldsInRange_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFieldsInRange" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetFieldsInRange_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFieldsInRangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetFieldsForLeague_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFieldsForLeague" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetFieldsForLeague_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFieldsForLeagueResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetUsersForLeague_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersForLeague" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetUsersForLeague_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersForLeagueResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetUserNameByEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserNameByEmail" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetUserNameByEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserNameByEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetDisplayName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDisplayName" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_GetDisplayName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDisplayNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_AddToMyFields_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddToMyFields" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_AddToMyFields_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddToMyFieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_AddToMyLeagues_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddToMyLeagues" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_AddToMyLeagues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddToMyLeaguesResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_AddFieldAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddFieldAdmin" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_AddFieldAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddFieldAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_AddFieldToLeague_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddFieldToLeague" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_AddFieldToLeague_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddFieldToLeagueResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_UpdateLeague_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLeague" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_UpdateLeague_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLeagueResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_UpdateField_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateField" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_UpdateField_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFieldResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_UpdateMessengerID_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMessengerID" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_UpdateMessengerID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMessengerIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_DeleteLeague_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLeague" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_DeleteLeague_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLeagueResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_DeleteField_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteField" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_DeleteField_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFieldResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_RemoveLeague_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveLeague" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_RemoveLeague_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveLeagueResponse" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_RemoveField_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveField" />
+  </wsdl:message>
+  <wsdl:message name="SiteService_RemoveField_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveFieldResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SiteService">
+    <wsdl:operation name="CreateLeague">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/CreateLeague" message="tns:SiteService_CreateLeague_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/CreateLeagueResponse" message="tns:SiteService_CreateLeague_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateField">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/CreateField" message="tns:SiteService_CreateField_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/CreateFieldResponse" message="tns:SiteService_CreateField_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLeague">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetLeague" message="tns:SiteService_GetLeague_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetLeagueResponse" message="tns:SiteService_GetLeague_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLeagues">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetAllLeagues" message="tns:SiteService_GetAllLeagues_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetAllLeaguesResponse" message="tns:SiteService_GetAllLeagues_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLeagues">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetLeagues" message="tns:SiteService_GetLeagues_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetLeaguesResponse" message="tns:SiteService_GetLeagues_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetField">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetField" message="tns:SiteService_GetField_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetFieldResponse" message="tns:SiteService_GetField_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWeather">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetWeather" message="tns:SiteService_GetWeather_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetWeatherResponse" message="tns:SiteService_GetWeather_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeFieldStatus">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/ChangeFieldStatus" message="tns:SiteService_ChangeFieldStatus_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/ChangeFieldStatusResponse" message="tns:SiteService_ChangeFieldStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyFields">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetMyFields" message="tns:SiteService_GetMyFields_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetMyFieldsResponse" message="tns:SiteService_GetMyFields_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldsForUser">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetFieldsForUser" message="tns:SiteService_GetFieldsForUser_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetFieldsForUserResponse" message="tns:SiteService_GetFieldsForUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldsForUserCount">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetFieldsForUserCount" message="tns:SiteService_GetFieldsForUserCount_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetFieldsForUserCountResponse" message="tns:SiteService_GetFieldsForUserCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldsInRange">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetFieldsInRange" message="tns:SiteService_GetFieldsInRange_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetFieldsInRangeResponse" message="tns:SiteService_GetFieldsInRange_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldsForLeague">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetFieldsForLeague" message="tns:SiteService_GetFieldsForLeague_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetFieldsForLeagueResponse" message="tns:SiteService_GetFieldsForLeague_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersForLeague">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetUsersForLeague" message="tns:SiteService_GetUsersForLeague_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetUsersForLeagueResponse" message="tns:SiteService_GetUsersForLeague_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserNameByEmail">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetUserNameByEmail" message="tns:SiteService_GetUserNameByEmail_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetUserNameByEmailResponse" message="tns:SiteService_GetUserNameByEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplayName">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetDisplayName" message="tns:SiteService_GetDisplayName_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/GetDisplayNameResponse" message="tns:SiteService_GetDisplayName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddToMyFields">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/AddToMyFields" message="tns:SiteService_AddToMyFields_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/AddToMyFieldsResponse" message="tns:SiteService_AddToMyFields_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddToMyLeagues">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/AddToMyLeagues" message="tns:SiteService_AddToMyLeagues_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/AddToMyLeaguesResponse" message="tns:SiteService_AddToMyLeagues_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddFieldAdmin">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/AddFieldAdmin" message="tns:SiteService_AddFieldAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/AddFieldAdminResponse" message="tns:SiteService_AddFieldAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddFieldToLeague">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/AddFieldToLeague" message="tns:SiteService_AddFieldToLeague_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/AddFieldToLeagueResponse" message="tns:SiteService_AddFieldToLeague_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLeague">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/UpdateLeague" message="tns:SiteService_UpdateLeague_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/UpdateLeagueResponse" message="tns:SiteService_UpdateLeague_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateField">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/UpdateField" message="tns:SiteService_UpdateField_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/UpdateFieldResponse" message="tns:SiteService_UpdateField_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMessengerID">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/UpdateMessengerID" message="tns:SiteService_UpdateMessengerID_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/UpdateMessengerIDResponse" message="tns:SiteService_UpdateMessengerID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLeague">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/DeleteLeague" message="tns:SiteService_DeleteLeague_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/DeleteLeagueResponse" message="tns:SiteService_DeleteLeague_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteField">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/DeleteField" message="tns:SiteService_DeleteField_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/DeleteFieldResponse" message="tns:SiteService_DeleteField_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveLeague">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/RemoveLeague" message="tns:SiteService_RemoveLeague_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/RemoveLeagueResponse" message="tns:SiteService_RemoveLeague_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveField">
+      <wsdl:input wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/RemoveField" message="tns:SiteService_RemoveField_InputMessage" />
+      <wsdl:output wsaw:Action="WLQuickApps.FieldManager.WebSite/SiteService/RemoveFieldResponse" message="tns:SiteService_RemoveField_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,259 @@
+<%-- Defaults --%>
+
+    <asp:Button runat="server" CssClass="button" />
+
+    <cc:DropShadowPanel runat="server" CssClass="BorderPanel ShadowPanel" DisplayShadow="true" />
+    <cc:DropShadowPanel runat="server" SkinID="Titled" CssClass="BorderPanel TitledBorderPanel ShadowPanel" DisplayShadow="true" />
+
+    <asp:GridView runat="server" GridLines="None" />
+    <asp:DetailsView runat="server" GridLines="None" />
+    
+    <cc:MetaGallery runat="server" Width="100%" />
+    
+    <asp:Wizard runat="server" CssClass="wizard">
+        <CancelButtonStyle CssClass="button" />
+        <FinishCompleteButtonStyle CssClass="button" />
+        <FinishPreviousButtonStyle CssClass="button" />
+        <StartNextButtonStyle CssClass="button" />
+        <StepNextButtonStyle CssClass="button" />
+        <StepPreviousButtonStyle CssClass="button" />
+    </asp:Wizard>
+    
+    <asp:FileUpload runat="server" CssClass="textBox" />
+    <cc:SecureTextBox runat="server" CssClass="textBox" />
+
+<%-- Site-wide --%>
+
+    <asp:Menu runat="server" SkinId="topMenu" CssClass="topMenu"  StaticMenuItemStyle-CssClass="topMenu-item" Orientation="Horizontal" StaticDisplayLevels="2" />
+        
+    <asp:Menu runat="server" SkinId="mainMenu" CssClass="mainMenu" StaticMenuItemStyle-CssClass="mainMenu-item" Orientation="Horizontal" StaticDisplayLevels="1" MaximumDynamicDisplayLevels="0" />
+   
+   <asp:SiteMapPath runat="server" SkinID="breadcrumb" CssClass="breadcrumb" NodeStyle-CssClass="link2" CurrentNodeStyle-CssClass="breadcrumb-current" /> 
+    
+    <cc:DropShadowPanel runat="server" SkinID="mainPanel" CssClass="mainPanel ShadowPanel" DisplayShadow="true" />   
+    
+    <asp:Button runat="server" SkinID="Hidden" CssClass="button-hidden" />
+    
+    <cc:SecureTextBox runat="server" SkinID="SearchBox" CssClass="searchBox" />
+    
+    <cc:DropShadowPanel runat="server" SkinID="indentedSection" CssClass="indentedSection" />
+    
+    <asp:Panel runat="server" SkinID="SubMenuBar" CssClass="subMenuBar" />
+    
+    <asp:Panel runat="server" SkinID="LiveAuth" CssClass="liveAuth" />
+   
+    <asp:HyperLink runat="server" SkinID="AbuseLink" CssClass="link-gray" />
+    
+    <asp:HyperLink runat="server" SkinID="BlogThisLink" CssClass="link-gray" />    
+
+<%-- Controls --%>
+    <%-- BlogHeadlines.ascx --%>
+        <asp:Panel runat="server" CssClass="imageGallery-title" SkinID="BlogRotatorTitle" />
+        <asp:Label runat="server" CssClass="blogItem-date" SkinID="BlogItemDate" />
+        
+    <%-- CommentsControl.ascx --%>
+        <cc:DropShadowPanel runat="server" SkinID="CommentPanel" CssClass="BorderPanel CommentPanel" />
+            <asp:Label runat="server" SkinID="comment-timestamp" CssClass="comment-timestamp" />
+            <asp:LinkButton runat="server" SkinID="comment-delete" CssClass="comment-timestamp" />
+        <cc:DropShadowPanel runat="server" SkinID="CommentsControl-Description" CssClass="DetailPane-description" />
+        <cc:SecureTextBox runat="server" SkinID="Comment" CssClass="CommentBox" />
+        <cc:SecureTextBox runat="server" SkinID="Comment-Small" CssClass="SmallCommentBox" />
+        <asp:Button runat="server" SkinID="Comment" CssClass="button CommentButton" />
+        <asp:Button runat="server" SkinID="Comment-Small" CssClass="button SmallCommentButton" />
+        <asp:Panel runat="server" SkinID="Comment-Validators" CssClass="CommentsControl-Validators" />
+    
+    <%-- Location.ascx --%>
+        <cc:DropShadowPanel runat="server" CssClass="LocationPanel ShadowPanel" DisplayShadow="false"
+            SkinID="LocationPanel" />
+        <asp:Panel runat="server" SkinID="ModalPopupPanel" CssClass="ModalPopup" />
+            <asp:Panel runat="server" SkinID="ModalPopup-content" CssClass="ModalPopup-content" />
+            <asp:Panel runat="server" SkinID="ModalPopup-buttons" CssClass="ModalPopup-buttons" />
+            <asp:Panel runat="server" SkinID="LocationGroup" CssClass="ModalPopup-group" />
+            
+    <%-- MetaGalleryElement.ascx --%>
+        <cc:DropShadowPanel runat="server" SkinID="ImageGallery" CssClass="imageGallery ShadowPanel" DisplayShadow="true" />
+        <cc:DropShadowPanel runat="server" SkinID="ImageGallery-title" CssClass="imageGallery-title" />
+        <cc:DropShadowPanel runat="server" SkinID="ImageGallery-titleRight" CssClass="imageGallery-title imageGallery-titleRight" />
+        <cc:DropShadowPanel runat="server" SkinID="ImageGallery-imagePanel" CssClass="imageGallery-imagePanel" />
+        <asp:Label runat="server" SkinID="ImageGallery-label" CssClass="imageGallery-caption" />
+        <asp:Hyperlink runat="server" SkinID="ImageGallery-label" CssClass="imageGallery-caption" />
+        <asp:Panel runat="server" SkinID="ImageGallery-toolRight" CssClass="imageGallery-toolLink imageGallery-delete" />
+        <asp:Panel runat="server" SkinID="ImageGallery-subCaption" CssClass="imageGallery-subCaption" />
+        <asp:Panel runat="server" SkinID="ImageGallery-ListPanel" CssClass="imageGallery-listPanel" />
+        <cc:NullablePicture runat="server" SkinID="ImageGallery-ListPicture" CssClass="imageGallery-listPicture" />
+        <asp:HyperLink runat="server" SkinID="ImageGallery-ListLabel" CssClass="imageGallery-listLabel" />
+        <asp:Panel runat="server" SkinID="ImageGallery-IconPanel" CssClass="imageGallery-iconPanel" />
+        <asp:Panel runat="Server" SkinID="ImageGallery-IconWrapperPanel" CssClass="ImageGallery-IconWrapperPanel" />
+        <asp:LinkButton runat="server" SkinID="ImageGallery-IconDelete" CssClass="imageGallery-listDelete imageGallery-listAction" />
+        <asp:LinkButton runat="server" SkinID="ImageGallery-IconReject" CssClass="imageGallery-listReject imageGallery-listAction" />
+        <asp:LinkButton runat="server" SkinID="ImageGallery-IconApprove" CssClass="imageGallery-listApprove imageGallery-listAction" />
+        <asp:LinkButton runat="server" SkinID="ImageGallery-IconCancel" CssClass="imageGallery-listCancel imageGallery-listAction" />
+        <asp:LinkButton runat="server" SkinID="ImageGallery-IconEdit" CssClass="imageGallery-listEdit imageGallery-listAction" />
+        <asp:LinkButton runat="server" SkinID="ImageGallery-IconJoin" CssClass="imageGallery-listJoin imageGallery-listAction" />
+        <asp:LinkButton runat="server" SkinID="ImageGallery-IconLeave" CssClass="imageGallery-listLeave imageGallery-listAction" />
+        <asp:Panel runat="server" SkinID="ImageGallery-ListText" CssClass="imageGallery-listText" />
+        <cc:NullablePicture runat="server" SkinID="ImageGallery-IconPicture" CssClass="imageGallery-iconPicture" />
+        <asp:HyperLink runat="server" SkinID="ImageGallery-IconLabel" CssClass="imageGallery-iconLabel" />
+       
+       <asp:HyperLink runat="server"  SkinID="metagallery-link" CssClass="link" />
+       <%-- Thumbnail Popup --%>
+       <asp:Panel runat="server" SkinID="MetaGallery-ThumbnailPopup-Panel" CssClass="MetaGallery-ThumbnailPopup-Panel" />
+       <asp:Panel runat="server" SkinID="MetaGallery-ThumbnailPopup-PicturePanel" CssClass="MetaGallery-ThumbnailPopup-PicturePanel" />
+       <asp:Panel runat="server" SkinID="MetaGallery-ThumbnailPopup-Details" CssClass="MetaGallery-ThumbnailPopup-Details" />       
+       <asp:HyperLink runat="server" SkinID="MetaGallery-ThumbnailPopup-Hyperlink" CssClass="MetaGallery-ThumbnailPopup-Hyperlink link" />
+                
+    <%-- Sidebar.aspx --%>
+        <asp:Panel runat="server" SkinID="Sidebar-Requests" CssClass="Sidebar-RequestsPanel" />
+        <cc:RequestNotification runat="server" RequestCountStyle-CssClass="RequestCount"
+            RequestsLabelStyle-CssClass="RequestsLabel" />
+        <cc:NullablePicture runat="server" SkinID="Sidebar-ProfilePicture" CssClass="Sidebar-ProfilePicture" />
+        <asp:HyperLink runat="server" SkinID="Sidebar-ProfileLink" CssClass="Sidebar-ProfileLink" />
+        <asp:HyperLink runat="server" SkinID="Sidebar-WhatsNew" CssClass="Sidebar-WhatsNewLink" />
+        <cc:DropShadowPanel runat="server" SkinID="SidePanel" CssClass="SidePanel ShadowPanel" DisplayShadow="false" />
+        <cc:LoginLink runat="server" SkinID="Login" CssClass="Login" />
+        
+    <%-- Tags.ascx --%>
+        <asp:Panel runat="server" SkinId="Tags-TagItem" CssClass="tagItem" />
+        
+    <%-- UserCalendar.ascx --%>
+        <asp:GridView runat="Server" SkinID="UserCalendar-SimpleView" ShowHeader="False" 
+            ShowFooter="False" GridLines="None" CssClass="UserCalendar-SimpleView" />
+        <cc:NullablePicture runat="server" SkinID="UserCalendar-EventImage" CssClass="DetailPane-image" />
+        <asp:HyperLink runat="server" SkinID="UserCalendar-Title" CssClass="UserCalendar-Title" />
+        <cc:DropShadowPanel runat="server" SkinID="UserCalendar-Description" CssClass="DetailPane-description" />
+        <asp:Panel runat="server" SkinID="UserCalendar-DetailsPanel" CssClass="UserCalendar-DetailsPanel" />
+        
+    <%-- UserCalendarSection.ascx --%>
+        <cc:NullablePicture runat="server" SkinID="UserCalendarSection-EventImage" CssClass="DetailPane-image" />
+        <asp:HyperLink runat="server" SkinID="UserCalendarSection-Title" CssClass="DetailPane-title" />
+        <cc:DropShadowPanel runat="server" SkinID="UserCalendarSection-Description" CssClass="DetailPane-description" />
+    
+    <%-- UserDetails.ascx --%>
+        <cc:NullablePicture runat="server" SkinID="UserDetails" CssClass="UserDetails-Picture" />
+        <cc:DropShadowPanel runat="server" SkinID="UserDetails-Description" CssClass="DetailPane-description" />
+        <cc:DropShadowPanel runat="server" SkinID="UserDetails-Title" CssClass="UserDetails-Title" />
+        <asp:Label runat="server" SkinID="UserDetails-Title" CssClass="DetailPane-title" />
+        
+    <%-- ViewGroupForm.ascx --%>
+        <asp:Label runat="server" SkinID="ViewGroupForm-Title" CssClass="DetailPane-title" />
+        <cc:DropShadowPanel runat="server" SkinID="ViewGroupForm-main" Width="260" DisplayShadow="true"
+            CssClass="BorderPanel ShadowPanel BorderPanel-floatLeft" />
+        <cc:DropShadowPanel runat="server" SkinID="ViewGroupForm-actions" Width="260" DisplayShadow="true"
+            CssClass="BorderPanel ShadowPanel BorderPanel-floatLeft" />
+        <cc:DropShadowPanel runat="server" SkinID="ViewGroupForm-description" Width="450" DisplayShadow="true"
+            CssClass="BorderPanel ShadowPanel BorderPanel-floatRight" />
+        <cc:DropShadowPanel runat="server" SkinID="ViewGroupForm-attendees" Width="450" DisplayShadow="true"
+            CssClass="BorderPanel ShadowPanel BorderPanel-floatRight" />
+        <cc:DropShadowPanel runat="server" SkinID="ViewGroupForm-albums" Width="450" DisplayShadow="true"
+            CssClass="BorderPanel ShadowPanel BorderPanel-floatRight" />
+        <cc:DropShadowPanel runat="server" SkinID="ViewGroupForm-comments" Width="450" DisplayShadow="true"
+            CssClass="BorderPanel ShadowPanel BorderPanel-floatRight" />
+           
+<%-- Per page --%>
+    <%-- Default.aspx --%>
+        <cc:DropShadowPanel runat="server" SkinID="Intro" CssClass="imageGallery-title" Width="350" />
+       <cc:DropShadowPanel runat="server" SkinID="home-rightPanel" CssClass="ShadowPanel home-rightPanel" DisplayShadow="false" /> 
+        <cc:DropShadowPanel runat="server" SkinID="home-users" CssClass="ShadowPanel home-rightPanel home-users" DisplayShadow="false" />
+        <cc:DropShadowPanel runat="server" SkinID="home-pictures" CssClass="ShadowPanel home-rightPanel home-pictures" DisplayShadow="false" />
+        <cc:DropShadowPanel runat="server" SkinID="home-videos" CssClass="ShadowPanel home-rightPanel home-videos" DisplayShadow="false" />           
+        <asp:Menu runat="server" SkinID="home-menu" CssClass="home-menu" />
+                
+    <%-- Landing.aspx --%>
+        <cc:DropShadowPanel runat="server" SkinID="Landing-Left" CssClass="BorderPanel BorderPanel-floatLeft ShadowPanel" DisplayShadow="true" Width="180" />
+        <cc:DropShadowPanel runat="server" SkinID="Landing-Right" CssClass="BorderPanel BorderPanel-floatRight ShadowPanel" DisplayShadow="true" Width="530" />
+        
+    <%-- Collection --%>
+        <%-- EditItems.aspx --%>
+            <cc:DropShadowPanel runat="server" SkinID="EditCollectionItems-AddItem"
+                CssClass="BorderPanel EditCollectionItems-AddItemPanel ShadowPanel" DisplayShadow="true" Width="440" />
+            <cc:DropShadowPanel runat="server" SkinID="EditCollectionItems-Items"
+                CssClass="BorderPanel EditCollectionItems-ItemsPanel ShadowPanel" DisplayShadow="true" Width="250" />
+            <cc:DropShadowPanel runat="server" SkinID="EditCollectionItems-ItemsTitle"
+                CssClass="imageGallery-title EditCollectionItems-ItemsTitlePanel" />
+            <cc:DropShadowPanel runat="server" SkinID="EditCollectionItems-UpdateProgress"
+                CssClass="BorderPanel EditCollectionItems-UpdateProgressPanel ShadowPanel" DisplayShadow="true" Width="250" />
+        
+        <%-- ViewCollection.aspx --%>
+            <cc:DropShadowPanel runat="server" SkinID="ViewCollection-Map" 
+                CssClass="BorderPanel BorderPanel-floatLeft ShadowPanel" DisplayShadow="true" />
+            <cc:DropShadowPanel runat="server" SkinID="ViewCollection-Details" Width="250"
+                CssClass="BorderPanel ViewCollection-DetailsPanel ShadowPanel" DisplayShadow="true" />
+            <asp:Label runat="server" SkinID="ViewCollection-Title" CssClass="DetailPane-title" />
+            <cc:DropShadowPanel runat="server" SkinID="ViewCollection-Items" Width="250"
+                CssClass="BorderPanel ViewCollection-ItemsPanel ShadowPanel" DisplayShadow="true" />
+            <asp:HyperLink runat="server" SkinID="ViewCollection-ItemTitle" CssClass="ViewCollection-ItemTitleLink" />
+            <asp:Label runat="server" SkinID="ViewCollection-ItemDescription" CssClass="ViewCollection-ItemDescriptionLabel" />
+            <asp:Panel runat="Server" SkinID="ViewCollection-Sidebar" CssClass="ViewCollection-Sidebar" />
+
+    <%-- Friend --%>
+        <%-- AddFriend.aspx --%>
+            <cc:DropShadowPanel runat="server" SkinID="AddFriend-ActionsBox" CssClass="BorderPanel BorderPanel-floatRight DetailPane-actionLink" />
+
+        <%-- Invite.aspx --%>
+            <cc:DropShadowPanel runat="server" SkinID="Invite-EmailPanel" 
+                CssClass="BorderPanel BorderPanel-floatLeft ShadowPanel" DisplayShadow="true" />
+            <cc:DropShadowPanel runat="server" SkinID="Invite-LivePanel" 
+                CssClass="BorderPanel BorderPanel-floatRight ShadowPanel" DisplayShadow="true" />
+            <asp:Panel runat="server" SkinID="Invite-WrapperPanel" CssClass="ShareInvite-WrapperPanel" />
+            <asp:Panel runat="server" SkinID="Invite-SideBar" CssClass="ShareInvite-SideBar" />
+
+        <%-- RemoveFriend.aspx --%>
+            <cc:DropShadowPanel runat="server" SkinID="RemoveFriend-ActionsBox" CssClass="BorderPanel BorderPanel-floatRight DetailPane-actionLink" />
+
+        <%-- Share.aspx --%>
+            <cc:DropShadowPanel runat="server" SkinID="Share-ExtantPanel" 
+                CssClass="BorderPanel BorderPanel-floatLeft ShadowPanel" DisplayShadow="true" />
+            <cc:DropShadowPanel runat="server" SkinID="Share-LivePanel" 
+                CssClass="BorderPanel BorderPanel-floatRight ShadowPanel" DisplayShadow="true" />
+            <asp:Panel runat="server" SkinID="Share-WrapperPanel" CssClass="ShareInvite-WrapperPanel" />
+            <asp:Panel runat="server" SkinID="Share-SideBar" CssClass="ShareInvite-SideBar" />
+
+        <%-- ViewProfile.aspx --%>
+            <cc:DropShadowPanel runat="server" SkinID="ViewProfile-AboutPanel"
+                CssClass="BorderPanel TitledFloatPanel BorderPanel-floatLeft ShadowPanel ViewProfile-AboutPanel" DisplayShadow="true" />
+            <cc:DropShadowPanel runat="server" SkinID="ViewProfile-GroupsPanel" Width="350" 
+                CssClass="BorderPanel TitledFloatPanel BorderPanel-floatLeft ShadowPanel ViewProfile-GroupsPanel" DisplayShadow="true" />
+            <cc:DropShadowPanel runat="server" SkinID="ViewProfile-TagsPanel" 
+                CssClass="BorderPanel TitledFloatPanel BorderPanel-floatRight ShadowPanel" DisplayShadow="true" />
+            <cc:DropShadowPanel runat="server" SkinID="ViewProfile-GalleriesPanel"
+                CssClass="BorderPanel TitledFloatPanel BorderPanel-floatRight ShadowPanel" DisplayShadow="true" />
+            <cc:DropShadowPanel runat="server" SkinID="ViewProfile-CollectionsPanel"
+                CssClass="BorderPanel TitledFloatPanel BorderPanel-floatLeft ShadowPanel" DisplayShadow="true" />
+            <cc:DropShadowPanel runat="server" SkinID="ViewProfile-EventsPanel" 
+                CssClass="BorderPanel TitledFloatPanel BorderPanel-floatRight ShadowPanel" DisplayShadow="true" />
+            <cc:DropShadowPanel runat="server" SkinID="ViewProfile-Description" CssClass="DetailPane-description" />
+            <cc:DropShadowPanel runat="server" SkinID="ViewProfile-ActionsBox" CssClass="BorderPanel BorderPanel-floatRight DetailPane-actionLink" />
+
+    <%-- Group --%>
+        <%-- ViewGroup.aspx --%>
+            <asp:Label runat="server" SkinID="ViewGroup-Title" CssClass="DetailPane-title" />
+            <cc:DropShadowPanel runat="server" SkinID="ViewGroup-Description" CssClass="DetailPane-description" />
+            <cc:DropShadowPanel runat="server" SkinID="ViewGroup-ActionsBox" CssClass="BorderPanel BorderPanel-floatRight DetailPane-actionLink" />
+
+    <%-- Media --%>
+        <%-- AddPicture.aspx --%>
+            <cc:DropShadowPanel runat="server" SkinID="AddPicture-ComputerPanel" Width="400" 
+                CssClass="BorderPanel BorderPanel-floatLeft ShadowPanel" DisplayShadow="false" />
+            <cc:DropShadowPanel runat="server" SkinID="AddPicture-LivePanel" Width="250"
+                CssClass="BorderPanel BorderPanel-floatRight ShadowPanel" DisplayShadow="false" />
+            
+        <%-- ViewAlbum.aspx, ViewMyAlbums.aspx --%>
+            <asp:HyperLink runat="server" SkinID="ActionLink" CssClass="actionLink link" />
+            <cc:DropShadowPanel runat="server" SkinID="ViewAlbum-mediaPane" 
+                CssClass="BorderPanel ShadowPanel" Width="650" />
+
+        <%-- View[Media].aspx --%>
+            <cc:DropShadowPanel runat="server" SkinID="MediaDescription" CssClass="DetailPane-description MediaDescription" />
+            <cc:DropShadowPanel runat="server" SkinID="Media-ActionsBox" Width="200"
+                CssClass="BorderPanel BorderPanel-floatRight ShadowPanel" DisplayShadow="false" />
+        <%-- EditMedia.aspx --%>
+            <cc:DropShadowPanel runat="server" SkinID="EditMedia-border" CssClass="EditMedia-border" Width="256" />
+                
+    <%-- User --%>
+        <%-- Dashboard.aspx --%>
+            <asp:Label runat="server" SkinID="Dashboard-Requests" CssClass="Dashboard-RequestsLabel" />
+            <cc:MetaGallery runat="server" SkinID="Dashboard-Requests" CssClass="Dashboard-RequestsGallery" />
+   
+<%-- Deprecated --%>
+
+    <cc:DropShadowPanel runat="server" CssClass="BorderPanel" SkinID="noShadow" />

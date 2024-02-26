@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WLQuickApps.SocialNetwork.Business.AlbumManager" Collapsed="true">
+    <Position X="18.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAIgECIBAAAAAAEBCAQACECEggAAAAgAIAIAAAAg=</HashCode>
+      <FileName>AlbumManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.BaseItemManager" Collapsed="true">
+    <Position X="20" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IACAAAACACgQAAEAAAGBAAAAMAIIBNgAAAEAoJAgBAA=</HashCode>
+      <FileName>BaseItemManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.CollectionItemManager" Collapsed="true">
+    <Position X="21.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIABAAIAEAAACAAAAIAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>CollectionItemManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.CollectionManager" Collapsed="true">
+    <Position X="23.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAMAEABgAAQAQAAEAIJEGACABEAAAQAAQAQEIAAAA=</HashCode>
+      <FileName>CollectionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.CommentManager" Collapsed="true">
+    <Position X="27" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAQCAAAAABAAAAAAABAAAAQAAAAAAAAAgAAAAAQAA=</HashCode>
+      <FileName>CommentManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.CommunicationManager" Collapsed="true">
+    <Position X="16.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommunicationManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.EventManager" Collapsed="true">
+    <Position X="20" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CJCEABAgoAAIAQAAAAIAAAxCARIIoAABAIAAQAAAjAA=</HashCode>
+      <FileName>EventManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.ForumManager" Collapsed="true">
+    <Position X="21.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQAAABAAAAAAAAAAAAAAAAAAAAAAAIKAAAgAQEAABI=</HashCode>
+      <FileName>ForumManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.FriendManager" Collapsed="true">
+    <Position X="23.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACECAAAAAAGEAFBAAAAQAAIAAIAAAAAABCCBAAAAQAA=</HashCode>
+      <FileName>FriendManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.GroupManager" Collapsed="true">
+    <Position X="25.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBAAAiBQINAQgsAGCAAgACAAAAIAJAROAQAAQAQgAFU=</HashCode>
+      <FileName>GroupManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.GroupPrivacyException" Collapsed="true">
+    <Position X="27" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAE=</HashCode>
+      <FileName>GroupPrivacyException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.HealthMonitoringManager" Collapsed="true">
+    <Position X="16.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAIAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HealthMonitoringManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.LiveAlertsWrapper" Collapsed="true">
+    <Position X="18.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAABAAAAAAAAgAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>LiveAlertsWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.LocationManager" Collapsed="true">
+    <Position X="21.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAABAAAAEIAAAQAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>LocationManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.MapPointWrapper" Collapsed="true">
+    <Position X="23.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAEAAAAAAAQIIAAgAABAAACAAAAACAYIQAAAAIIA=</HashCode>
+      <FileName>MapPointWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.MediaManager" Collapsed="true">
+    <Position X="25.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBABBAAACAGEAIAEgAQICAgSAABAAAAABgEEAAAAEIA=</HashCode>
+      <FileName>MediaManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.Album" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAUAAAAAAAEgAAAAAAAEgAAAAAg=</HashCode>
+      <FileName>Objects\Album.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.BaseItem" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>Qp2AMIiIcKCgAEsEhA8QABAYgwFoQMADAKaBCIAIIrY=</HashCode>
+      <FileName>Objects\BaseItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.Collection" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAQAAAAAAAEAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Collection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.CollectionItem" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQEAAAAQAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Objects\CollectionItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.Comment" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAgAAAAAAAQAgAAAgABAAAgAAIAoAAAACAABAiQ=</HashCode>
+      <FileName>Objects\Comment.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.Constants" Collapsed="true">
+    <Position X="18.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.Event" Collapsed="true">
+    <Position X="14" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAAAAAAAEAQIAAAAAAAAAAEAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Objects\Event.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.Forum" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAQAAAAAAAAAQAABAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Forum.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.Group" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAACAAQAAAAAwAAAQAAAAAAQEAQIEBAIBAAAAIAAY=</HashCode>
+      <FileName>Objects\Group.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.Location" Collapsed="true">
+    <Position X="20" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACEAIAACiEAAAAAIoMYMAAQAAAIgAIAQAgAAAEICEiA=</HashCode>
+      <FileName>Objects\Location.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.Media" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAwAAAQAAABAAABAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Objects\Media.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.SearchResults" Collapsed="true">
+    <Position X="25.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BEQACGAAAAIAAEAAAAEAAIAAAgAgAIAgAACkgsAAEIo=</HashCode>
+      <FileName>Objects\SearchResults.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.Tag" Collapsed="true">
+    <Position X="20" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAIAAAAAAAAAAEgAAAAAQAAAAAAYAAAAAAAAAAAiA=</HashCode>
+      <FileName>Objects\Tag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.User" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIWAMsAAQCggSwmAAQ1EAAgCCQkQgAABBQIACAAYAA8=</HashCode>
+      <FileName>Objects\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.WebEvent" Collapsed="true">
+    <Position X="16.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACEAAAAAAIwBABAQAAAAEAKEQACAAADQUAAAIAAAAAA=</HashCode>
+      <FileName>Objects\WebEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.Album2" Collapsed="true">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAICAAgCAgAAAA=</HashCode>
+      <FileName>PhotoAPI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.PhotoAlbum" Collapsed="true">
+    <Position X="16.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAABQEAAAAAIAAABAQAADABAAAAEAIAAAQAIwIAAEAg=</HashCode>
+      <FileName>PhotoAPI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.PhotoUtil" Collapsed="true">
+    <Position X="20" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAgCAAAAAAAAAAAACAAAICAQAAAAAAAAA=</HashCode>
+      <FileName>PhotoAuthentication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.MediaUtil" Collapsed="true">
+    <Position X="27" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAICAACAAAAAACAAAACAAAACACAAAA=</HashCode>
+      <FileName>PhotoAuthentication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.PhotoToken" Collapsed="true">
+    <Position X="18.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAIAAAAAAQAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>PhotoToken.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.Resources" Collapsed="true">
+    <Position X="21.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAgAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.SearchManager" Collapsed="true">
+    <Position X="23.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAgAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>SearchManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.SettingsWrapper" Collapsed="true">
+    <Position X="16.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACADEAAAAAFIBEAQgAABAAoAAAQCCACABAAgAAAA=</HashCode>
+      <FileName>SettingsWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.StatisticsManager" Collapsed="true">
+    <Position X="18.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>StatisticsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.TagManager" Collapsed="true">
+    <Position X="21.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AADAAAAIQCAAAAAAAAAAAACAEAAAAAAAAAQEIAAAACA=</HashCode>
+      <FileName>TagManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.UserCacheModule" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAEAAAAACAAAAAAA=</HashCode>
+      <FileName>UserCacheModule.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.UserManager" Collapsed="true">
+    <Position X="25.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAFADAQAEABAEAAEABQAAAQgAIEFAEAEQEgAAAAI=</HashCode>
+      <FileName>UserManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.Utilities" Collapsed="true">
+    <Position X="27" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAABAAAAACAAAAAAAAEAAAABBAAkAAAA=</HashCode>
+      <FileName>Utilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.WebEventManager" Collapsed="true">
+    <Position X="18.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WebEventManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WLQuickApps.SocialNetwork.Business.Properties.Settings" Collapsed="true">
+    <Position X="27" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAQAIAAAAAABAAgAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="WLQuickApps.SocialNetwork.Business.Stats" Collapsed="true">
+    <Position X="16.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAAwECAAAQgAEgAAIAIACgCRAAAEAAABAgEAASAQgJA=</HashCode>
+      <FileName>Objects\Stats.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="WLQuickApps.SocialNetwork.Business.UserGroupStatus" Collapsed="true">
+    <Position X="25.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAEEAAAAAAAAA=</HashCode>
+      <FileName>Objects\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WLQuickApps.SocialNetwork.Business.MediaType" Collapsed="true">
+    <Position X="21.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAEAAAAAAAAEAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Objects\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WLQuickApps.SocialNetwork.Business.PrivacyLevel" Collapsed="true">
+    <Position X="23.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAAQAA=</HashCode>
+      <FileName>Objects\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WLQuickApps.SocialNetwork.Business.Gender" Collapsed="true">
+    <Position X="18.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Objects\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WLQuickApps.SocialNetwork.Business.ImageMissingReason">
+    <Position X="20" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAEAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAEAACA=</HashCode>
+      <FileName>Objects\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WLQuickApps.SocialNetwork.Business.BaseItemType" Collapsed="true">
+    <Position X="16.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAQ=</HashCode>
+      <FileName>Objects\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

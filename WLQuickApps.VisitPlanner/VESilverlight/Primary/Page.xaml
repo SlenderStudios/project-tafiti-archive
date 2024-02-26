@@ -1,0 +1,10 @@
+﻿<UserControl x:Class="VESilverlight.Primary.Page"
+        xmlns="http://schemas.microsoft.com/client/2007"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:VESilverlight="clr-namespace:VESilverlight.Primary;assembly=VESilverlight">
+  <Canvas x:Name="LayoutRoot">
+    <VESilverlight:MapPanel Width="534" Height="264" Canvas.Left="15.5" Canvas.Top="48.5" Canvas.ZIndex="2" x:Name="mapPanel" />
+    <Image Canvas.Left="0" Canvas.Top="0" Source="/images/bg_white.png" Stretch="None" Canvas.ZIndex="-1" x:Name="BgImage"/>
+    <Image x:Name="HeaderImage" Width="1024" Height="38" Canvas.Left="0" Canvas.Top="48" Canvas.ZIndex="1" Source="/images/header.png" Stretch="Fill" Opacity="0.8"/>
+  </Canvas>
+</UserControl>

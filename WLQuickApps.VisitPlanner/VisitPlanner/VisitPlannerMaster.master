@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="VisitPlannerMaster.master.cs" Inherits="VisitPlanner.VisitPlannerMaster" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:devlive="http://dev.live.com">
+<head id="Head1" runat="server">
+    <title>Visit Planner</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+
+    <link rel="StyleSheet" href="style/VisitPlanner.css" type="text/css" /> 
+    
+    <script type="text/javascript" src="script/Silverlight.js"></script>
+    <script type="text/javascript" src="script/VisitPlanner.js"></script>
+    <script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6"></script>
+    <script type="text/javascript" src="http://controls.services.live.com/scripts/base/v0.3/live.js"></script>
+    <script type="text/javascript" src="http://controls.services.live.com/scripts/base/v0.3/controls.js"></script>     
+    <asp:ContentPlaceHolder id="HeadSection" runat="server"></asp:ContentPlaceHolder>   
+    
+    <!-- AdCenter Analytics Beta -->
+    <!-- Commented out every except the mslivelabs environment  
+    <script language="javascript" type="text/javascript" src="http://analytics.live.com/Analytics/msAnalytics.js"></script>
+    <script language="javascript" type="text/javascript">
+	    msAnalytics.ProfileId = 'C75F';
+	    msAnalytics.TrackPage();
+    </script>
+    --> 
+     
+</head>
+<body>
+    <form id="VisitPlannerForm" runat="server">
+    <div class="main">
+        <div class="vplogo" id="vplogo"><asp:Image ID="VisitPlannerLogo" runat="server" /></div>
+        <div id="topbar" class="top-bar"> 
+            <asp:ContentPlaceHolder id="LoginArea" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+        <div class="content"> 
+            <asp:ContentPlaceHolder id="MainContentArea" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+        <div class="footer"> 
+          <asp:ContentPlaceHolder id="FooterArea" runat="server"></asp:ContentPlaceHolder> 
+        </div>    
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+﻿<VESilverlight_Primary:AbstractToolBar x:Class="VESilverlight.Primary.MyPlacesToolBar"
+	xmlns="http://schemas.microsoft.com/client/2007"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:VESilverlight="clr-namespace:VESilverlight;assembly=VESilverlight"
+	xmlns:VESilverlight_Primary="clr-namespace:VESilverlight.Primary;assembly=VESilverlight"
+	Width="220" Height="389.833">
+    <Canvas x:Name="LayoutRoot">
+        <VESilverlight:Repeater Canvas.Top="32.667" x:Name="repeater" Width="204" Height="185"/>
+        <VESilverlight_Primary:TourShareControl Canvas.Top="220" Width="220" Height="37"/>
+        <VESilverlight:Repeater Canvas.Top="301" x:Name="destList" Width="204" Height="60"/>
+        <TextBlock Width="171" Height="22" Text="Saved List" TextWrapping="Wrap" FontFamily="Verdana" FontSize="11" Foreground="#FFE6E5B9"/>
+	<Image Width="189" Height="2" Canvas.Left="0" Canvas.Top="23" Source="/images/separator.png" />
+	<TextBlock Width="112" Height="17" Canvas.Top="272" TextWrapping="Wrap" Foreground="#FFE6E5B9" FontFamily="Verdana" FontSize="11" Text="My Destinations"/>
+	<Image Width="189" Height="2" Canvas.Left="0" Canvas.Top="294" Source="/images/separator.png" />
+</Canvas>
+</VESilverlight_Primary:AbstractToolBar>

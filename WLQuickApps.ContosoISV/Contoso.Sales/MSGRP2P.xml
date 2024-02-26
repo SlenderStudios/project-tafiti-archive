@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Entry>
+  <EntryID>7</EntryID>
+  <Error />
+  <Locale>en-us</Locale>
+  <Kids>1</Kids>
+  <Page>1</Page>
+  <Category>50</Category>
+  <Sequence>10</Sequence>
+  <Name>Sales Scheduler</Name>
+  <Description>Sales Scheduler</Description>
+  <URL>http://contosoisvactivity.mslivelabs.com/</URL><!-- NEED TO SET THIS FIELD -->
+  <IconURL />
+  <PassportSiteID>0</PassportSiteID>
+  <Type>App</Type>
+  <Height>500</Height>
+  <Width>500</Width>
+  <Location>side</Location>
+  <MinUsers>1</MinUsers>
+  <MaxUsers>1</MaxUsers>
+  <PassportSiteID>0</PassportSiteID>
+  <EnableIP>False</EnableIP>
+  <ActiveX>False</ActiveX>
+  <SendFile>False</SendFile>
+  <SendIM>False</SendIM>
+  <ReceiveIM>False</ReceiveIM>
+  <ReplaceIM>False</ReplaceIM>
+  <Windows>False</Windows>
+  <MaxPacketRate>120</MaxPacketRate>
+  <UserProperties>true</UserProperties>  
+  <ClientVersion>6.0</ClientVersion>
+  <AppType>0</AppType>  
+  <Hidden>false</Hidden>
+</Entry>

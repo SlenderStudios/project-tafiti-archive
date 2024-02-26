@@ -1,0 +1,213 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<%@ Register Src="Controls/PresenceControl.ascx" TagName="PresenceControl" TagPrefix="uc1" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Search.WLSearchBox" content="1.1, en-CA" />
+    <link href="App_Themes/Default/Common.css" type="text/css" rel="stylesheet" />
+
+    <script type="text/javascript">
+
+        function showSettings() {
+            var el = document.getElementById("ctl00_SettingsPanel");
+            el.style.display = "block";
+        }
+        
+    </script>
+
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+	<!-- AdCenter Analytics Beta -->
+	<!-- This code should only run when on *.mslivelabs*.com
+    <script language="javascript" type="text/javascript" src="http://analytics.live.com/Analytics/msAnalytics.js"></script>
+    <script language="javascript" type="text/javascript">
+	    msAnalytics.ProfileId = 'CDF1';
+	    msAnalytics.CookieDomain = 'mslivelabs.com';
+	    msAnalytics.TrackPage();
+    </script>
+    -->
+</head>
+<body>
+    <form id="form" runat="server">
+    <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager" EnablePartialRendering="true"
+        runat="server">
+    </ajaxToolkit:ToolkitScriptManager>
+    <div id="wrapper">
+        <div id="inner-wrapper">
+            <div id="header">
+                <ul id="login" class="clearfix">
+                    <li id="sign-in">
+                        <asp:HyperLink ID="SignIn" runat="server">Sign in</asp:HyperLink></li>
+                    <li id="settings">
+                        <asp:LinkButton ID="Settings" Visible="false" OnClientClick="showSettings(); return false;"
+                            runat="server">Settings</asp:LinkButton></li>
+                    <li id="invite">
+                        <asp:HyperLink ID="Invite" NavigateUrl="~/Invite.aspx" Visible="false" runat="server">Invite friends</asp:HyperLink></li>
+                    <li id="dropdown">
+                        <uc1:PresenceControl ID="PresenceControl" Visible="false" runat="server" />
+                    </li>
+                </ul>
+                <asp:Panel ID="RegistrationPanel" Visible="false" CssClass="panel two-column clearfix"
+                    runat="server">
+                    <a href="#" class="close" onclick="this.parentElement.style.display = 'none'; return false;">
+                        Close</a>
+                    <div class="column">
+                        <h2>
+                            Registration</h2>
+                        <p>
+                            To access this web site, please enter your email address. <br />
+                            You can continue to sign in with your Windows Live ID, this is just incase we need to send to get in contact with you, and so your friends can find you.</p>
+                    </div>
+                    <div class="column">
+                        <p>
+                            <asp:Label ID="IDKeyLabel" AssociatedControlID="IDKey" runat="server">Email:</asp:Label>
+                            <asp:RequiredFieldValidator ID="IDKeyRequired" ControlToValidate="IDKey" ErrorMessage="Identification key is required."
+                                ToolTip="Identification key is required." ValidationGroup="Register" runat="server">*</asp:RequiredFieldValidator><br />
+                            <asp:TextBox ID="IDKey" CssClass="text" runat="server"></asp:TextBox>
+                        </p>
+                        <p>
+                            <asp:Literal ID="FailureText" EnableViewState="False" runat="server"></asp:Literal>
+                            <asp:Button ID="RegisterButton" CommandName="Login" Text="Register" ValidationGroup="Register"
+                                OnClick="RegisterButton_Click" runat="server" />
+                        </p>
+                    </div>
+                </asp:Panel>
+                <asp:Panel ID="PresencePanel" Visible="false" CssClass="panel two-column clearfix"
+                    Style="display: none;" runat="server">
+                    <a href="#" class="close" onclick="this.parentElement.style.display = 'none'; return false;">
+                        Close</a>
+                    <h2>
+                        Presence</h2>
+                    <div class="column">
+                        <p>
+                            <asp:Literal ID="PresenceMessage" runat="server"></asp:Literal></p>
+                        <p>
+                            <asp:Label ID="DisplayNameLabel" AssociatedControlID="DisplayName" Visible="false" runat="server">Display Name:</asp:Label>
+                            <asp:RequiredFieldValidator ID="DisplayNameRequired" ControlToValidate="DisplayName"
+                                ErrorMessage="Display Name is required." ToolTip="Display Name is required."
+                                ValidationGroup="Presence" Enabled="false" runat="server">*</asp:RequiredFieldValidator><br />
+                            <asp:TextBox ID="DisplayName" CssClass="text" Visible="false" runat="server"></asp:TextBox></p>
+                        <p class="optional">
+                            <asp:Literal ID="PresenceDecline" runat="server"></asp:Literal></p>
+                        <p>
+                            <asp:Literal ID="PresenceSaveMessage" Visible="false" runat="server">Click Save to update.</asp:Literal></p>
+                        <asp:HiddenField ID="PresenceID" runat="server" />
+                        <asp:Button ID="PresenceButton" CommandName="Presence" Text="Save" ValidationGroup="Presence"
+                            Visible="false" OnClick="PresenceButton_Click" runat="server" />
+                    </div>
+                </asp:Panel>
+                <asp:Panel ID="SettingsPanel" Visible="false" CssClass="panel two-column clearfix"
+                    Style="display: none;" runat="server">
+                    <a href="#" class="close" onclick="this.parentElement.style.display = 'none'; return false;">
+                        Close</a>
+                    <div class="column">
+                        <h2>
+                            Settings</h2>
+                        <p>
+                            <asp:Label ID="CalendarURLLabel" AssociatedControlID="CalendarURL" runat="server">Calendar:</asp:Label>
+                            <asp:RequiredFieldValidator ID="CalendarURLValidator" ControlToValidate="CalendarURL"
+                                ErrorMessage="Calendar is required." ToolTip="Calendar is required." ValidationGroup="Settings"
+                                runat="server">*</asp:RequiredFieldValidator><br />
+                            <asp:TextBox ID="CalendarURL" CssClass="text" runat="server"></asp:TextBox></p>
+                        <p>
+                            <asp:Label ID="NewsFeed1Label" AssociatedControlID="NewsFeed1" runat="server">Feed:</asp:Label>
+                            <asp:RequiredFieldValidator ID="NewsFeed1Validator" ControlToValidate="NewsFeed1"
+                                ErrorMessage="At least one news feed is required." ToolTip="At least one news feed is required."
+                                ValidationGroup="Settings" runat="server">*</asp:RequiredFieldValidator><br />
+                            <asp:TextBox ID="NewsFeed1" CssClass="text" runat="server"></asp:TextBox></p>
+                        <p>
+                            <asp:Label ID="NewsFeed2Label" AssociatedControlID="NewsFeed2" runat="server">Feed: <span class="optional">(optional)</span></asp:Label><br />
+                            <asp:TextBox ID="NewsFeed2" CssClass="text" runat="server"></asp:TextBox></p>
+                        <p>
+                            <asp:Label ID="NewsFeed3Label" AssociatedControlID="NewsFeed3" runat="server">Feed: <span class="optional">(optional)</span></asp:Label><br />
+                            <asp:TextBox ID="NewsFeed3" CssClass="text" runat="server"></asp:TextBox></p>
+                        <asp:Button ID="SettingsButton" CommandName="Settings" Text="Save" ValidationGroup="Settings"
+                            OnClick="SettingsButton_Click" runat="server" />
+                    </div>
+                    <div class="column">
+                        <h2>
+                            Windows Live</h2>
+                        <p>
+                            Click the link below to allow users to view and upload Windows Live Spaces photos.
+                            Only administrators will be allowed to delete photos.</p>
+                        <p>
+                            <asp:HyperLink ID="SharePhotosLink" runat="server">Share Photos</asp:HyperLink></p>
+                    </div>
+                </asp:Panel>
+                <div id="logo">
+                    <a href="Default.aspx">
+                        <img src="Images/Logo.png" alt="Home" width="60" height="60" /></a>
+                </div>
+                <div id="searchbox">
+                    <!-- Live Search -->
+                    <div id="WLSearchBoxDiv">
+                        <table cellpadding="0" cellspacing="0" style="width: 300px">
+                            <tr id="WLSearchBoxPlaceholder">
+                                <td style="width: 100%; border: solid 2px #4B7B9F; border-right-style: none;">
+                                    <input id="WLSearchBoxInput" type="text" value="&#x4c;&#x6f;&#x61;&#x64;&#x69;&#x6e;&#x67;&#x2e;&#x2e;&#x2e;"
+                                        disabled="disabled" style="padding: 0; background-image: url(http://search.live.com//siteowner/s/siteowner/searchbox_background.png);
+                                        background-position: right; background-repeat: no-repeat; height: 16px; width: 100%;
+                                        border: none 0 Transparent" />
+                                </td>
+                                <td style="border: solid 2px #4B7B9F;">
+                                    <input id="WLSearchBoxButton" type="image" src="http://search.live.com//siteowner/s/siteowner/searchbutton_normal.png"
+                                        align="absBottom" style="padding: 0; border-style: none" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align: right;">
+                                    <a href="http://search.live.com/">
+                                        <img src="http://search.live.com/s/affillogoLive.gif" style="padding-top: 5px; border-style: none;"
+                                            alt="Live Search" />
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <script type="text/javascript" charset="utf-8">
+	var WLSearchBoxConfiguration=
+	{
+		"global":{
+			"serverDNS":"search.live.com",
+			"market":"en-CA"
+		},
+		"appearance":{
+			"autoHideTopControl":false,
+			"width":600,
+			"height":400,
+			"theme":"Blue"
+		},
+		"scopes":[
+			{
+				"type":"web",
+				"caption":"&#x57;&#x65;&#x62;",
+				"searchParam":""
+			}
+		]
+	}
+                        </script>
+
+                        <script type="text/javascript" charset="utf-8" src="http://search.live.com/bootstrap.js?market=en-CA&ServId=SearchBox&ServId=SearchBoxWeb&Callback=WLSearchBoxScriptReady"></script>
+
+                    </div>
+                    <!-- Live Search -->
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="Content" runat="server" />
+            <div id="footer">
+                <p>
+                    This site is for demonstration only.</p>
+                <p>
+                    The source code can be downloaded from <a href="http://www.codeplex.com/WLQuickApps">
+                        Windows Live Quick Applications</a> on CodePlex.</p>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

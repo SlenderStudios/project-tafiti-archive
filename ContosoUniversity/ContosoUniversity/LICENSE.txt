@@ -1,0 +1,3 @@
+Microsoft Permissive License (Ms-PL)
+
+See http://www.codeplex.com/WLQuickApps/Project/License.aspx

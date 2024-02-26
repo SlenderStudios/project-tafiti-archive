@@ -1,0 +1,25 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/client/2007"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="RetailSiteKitAction.ThumbControl"
+	d:DesignWidth="100" d:DesignHeight="100">
+
+	<Grid x:Name="LayoutRoot" Background="White" >
+		<Canvas x:Name="Thumb" Margin="0,0,0,0">
+			<Rectangle Height="100" Width="100" Fill="#FFFFFFFF"/>
+			<Image Height="100" Width="100" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleX="0.95" ScaleY="0.95"/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+		</Canvas>
+	</Grid>
+</UserControl>

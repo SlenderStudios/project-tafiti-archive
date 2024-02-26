@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StoreData>
+	<Brand id="WomansSecret">
+	  <ProductGroup id="Bag">
+			<Product gender="Women" id="1" us_price="30">
+				<Media>
+					<VideoThumb id="1" url="thumbs/WS_1.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="1.1" url="thumbs/WS_1_1.jpg"/>
+						<Image id="1.2" url="thumbs/WS_1_2.jpg"/>
+						<Image id="1.3" url="thumbs/WS_1_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="1" url="/WS_1.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[N/A]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Silver]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Silver Beach Bag]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% PVC]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sandals">
+			<Product gender="Women" id="2" us_price="22">
+				<Media>
+					<VideoThumb id="2" url="thumbs/WS_2.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="2.1" url="thumbs/WS_2_1.jpg"/>
+						<Image id="2.2" url="thumbs/WS_2_2.jpg"/>
+						<Image id="2.3" url="thumbs/WS_2_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="2" url="/WS_2.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[36|37|38|39|40|41]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Black|Silver]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Sandals]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% PVC]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Bathing Suit">
+			<Product gender="Women" id="3" us_price="52">
+				<Media>
+					<VideoThumb id="3" url="thumbs/WS_3.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="3.1" url="thumbs/WS_3_1.jpg"/>
+						<Image id="3.2" url="thumbs/WS_3_2.jpg"/>
+						<Image id="3.3" url="thumbs/WS_3_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="3" url="/WS_3.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[M|L]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Black]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Black Bathing Suit ME Collection]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Polyamide]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Slippers">
+			<Product gender="Women" id="4" us_price="22">
+				<Media>
+					<VideoThumb id="4" url="thumbs/WS_4.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="4.1" url="thumbs/WS_4_1.jpg"/>
+						<Image id="4.2" url="thumbs/WS_4_2.jpg"/>
+						<Image id="4.3" url="thumbs/WS_4_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="4" url="/WS_4.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[36|37|38|39|40|41]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Navy]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Nautic Twill Slippers]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[Shell: 100% Cotton - Lining: 100% Cotton - Insole: 100% Cotton - Outsole: 100% Suede]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shorts">
+			<Product gender="Women" id="5" us_price="37">
+				<Media>
+					<VideoThumb id="5" url="thumbs/WS_5.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="5.1" url="thumbs/WS_5_1.jpg"/>
+						<Image id="5.2" url="thumbs/WS_5_2.jpg"/>
+						<Image id="5.3" url="thumbs/WS_5_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="5" url="/WS_5.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Off-white]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Nautic boat short]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Polycloth]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Bag">
+			<Product gender="Women" id="6" us_price="44">
+				<Media>
+					<VideoThumb id="6" url="thumbs/WS_6.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="6.1" url="thumbs/WS_6_1.jpg"/>
+						<Image id="6.2" url="thumbs/WS_6_2.jpg"/>
+						<Image id="6.3" url="thumbs/WS_6_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="6" url="/WS_6.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[N/A]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Red/White]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Nautic boat collection Anchor Beach Bag]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[Shell: 100% Terrycloth - Lining: 100% cotton - Puller: Lacquered nickel - Anchor pin: Methacrylate]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Bra">
+			<Product gender="Women" id="7" us_price="25">
+				<Media>
+					<VideoThumb id="7" url="thumbs/WS_7.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="7.1" url="thumbs/WS_7_1.jpg"/>
+						<Image id="7.2" url="thumbs/WS_7_2.jpg"/>
+						<Image id="7.3" url="thumbs/WS_7_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="7" url="/WS_7.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Stripes]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Nautic boat collection bra]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[94% Modal - 6% Spandex]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Gown">
+			<Product gender="Women" id="8" us_price="22">
+				<Media>
+					<VideoThumb id="8" url="thumbs/WS_8.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="8.1" url="thumbs/WS_8_1.jpg"/>
+						<Image id="8.2" url="thumbs/WS_8_2.jpg"/>
+						<Image id="8.3" url="thumbs/WS_8_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="8" url="/WS_8.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Stripes]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Nautic boat gown]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[76% Cotton - 24% Polyester]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sandals">
+			<Product gender="Women" id="9" us_price="22">
+				<Media>
+					<VideoThumb id="9" url="thumbs/WS_9.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="9.1" url="thumbs/WS_9_1.jpg"/>
+						<Image id="9.2" url="thumbs/WS_9_2.jpg"/>
+						<Image id="9.3" url="thumbs/WS_9_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="9" url="/WS_9.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[36|37|38|39|40|41]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Red]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Red Tulipes Sandals]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Pajamas">
+			<Product gender="Women" id="10" us_price="30">
+				<Media>
+					<VideoThumb id="10" url="thumbs/WS_10.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="10.1" url="thumbs/WS_10_1.jpg"/>
+						<Image id="10.2" url="thumbs/WS_10_2.jpg"/>
+						<Image id="10.3" url="thumbs/WS_10_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="10" url="/WS_10.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Green]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Cute Patch Pj Nena Dots]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[92% Cotton, 8% Elastan]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Bag">
+			<Product gender="Women" id="11" us_price="22">
+				<Media>
+					<VideoThumb id="11" url="thumbs/WS_12.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="11.1" url="thumbs/WS_12_1.jpg"/>
+						<Image id="11.2" url="thumbs/WS_12_2.jpg"/>
+						<Image id="11.3" url="thumbs/WS_12_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="11" url="/WS_12.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[N/A]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Off-White]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Pj Nena Dots Patch Bag]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Canvas Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Dress">
+			<Product gender="Women" id="12" us_price="59">
+				<Media>
+					<VideoThumb id="12" url="thumbs/WS_13.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="12.1" url="thumbs/WS_13_1.jpg"/>
+						<Image id="12.2" url="thumbs/WS_13_2.jpg"/>
+						<Image id="12.3" url="thumbs/WS_13_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="12" url="/WS_13.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Black]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[New dots Silk Voile Dress]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[65% Cotton - 35% Silk]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sandals">
+			<Product gender="Women" id="13" us_price="15">
+				<Media>
+					<VideoThumb id="13" url="thumbs/WS_14.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="13.1" url="thumbs/WS_14_1.jpg"/>
+						<Image id="13.2" url="thumbs/WS_14_2.jpg"/>
+						<Image id="13.3" url="thumbs/WS_14_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="13" url="/WS_14.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[37|38|39|40|41]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Black]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Flip flops]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[Shell: 100% Canvas - Insole: 100% Cotton - Outsole: 100% Eva]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Bag">
+			<Product gender="Women" id="14" us_price="30">
+				<Media>
+					<VideoThumb id="14" url="thumbs/WS_15.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="14.1" url="thumbs/WS_15_1.jpg"/>
+						<Image id="14.2" url="thumbs/WS_15_2.jpg"/>
+						<Image id="14.3" url="thumbs/WS_15_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="14" url="/WS_15.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[N/A]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Dark Blue]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Crochet Bag from Cute Patch Collection]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shirt">
+			<Product gender="Women" id="15" us_price="19">
+				<Media>
+					<VideoThumb id="15" url="thumbs/WS_16.jpg"/>
+          <MoreInfoThumbs>
+            <Image id="15.1" url="thumbs/WS_16_1.jpg"/>
+            <Image id="15.2" url="thumbs/WS_16_2.jpg"/>
+            <Image id="15.3" url="thumbs/WS_16_3.jpg"/>
+          </MoreInfoThumbs>
+					<Video id="15" url="/WS_16.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[White]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Sunny Strap t-shirt from Cute Patch Collection]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[95% Modal - 5% Elastan]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sandals">
+			<Product gender="Women" id="16" us_price="30">
+				<Media>
+					<VideoThumb id="16" url="thumbs/WS_17.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="16.1" url="thumbs/WS_17_1.jpg"/>
+						<Image id="16.2" url="thumbs/WS_17_2.jpg"/>
+						<Image id="16.3" url="thumbs/WS_17_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="16" url="/WS_17.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[36|37|38|39|40|41]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Black]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Cute Patch Bag - Seventies Collection]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Leather]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+	</Brand>
+</StoreData>

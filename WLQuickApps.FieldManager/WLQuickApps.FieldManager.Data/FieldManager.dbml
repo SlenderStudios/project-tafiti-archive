@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="FieldManager" Class="UsersDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=middle-tier\sqlexpress;Initial Catalog=FieldManager;Integrated Security=True" SettingsObjectName="WLQuickApps.FieldManager.Data.Properties.Settings" SettingsPropertyName="FieldManagerConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.aspnet_Users" Member="aspnet_Users">
+    <Type Name="aspnet_User">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredUserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="MobileAlias" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="IsAnonymous" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LastActivityDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="aspnet_User_User" Member="User" OtherKey="UserID" Type="User" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="UserID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LiveIDToken" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="MessengerPresenceID" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="DisplayName" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="User_UserLeague" Member="UserLeagues" OtherKey="UserID" Type="UserLeague" />
+      <Association Name="User_LeagueAdmin" Member="LeagueAdmins" OtherKey="UserID" Type="LeagueAdmin" />
+      <Association Name="User_FieldAdmin" Member="FieldAdmins" OtherKey="UserID" Type="FieldAdmin" />
+      <Association Name="User_UserField" Member="UserFields" OtherKey="UserID" Type="UserField" />
+      <Association Name="aspnet_User_User" Member="aspnet_User" ThisKey="UserID" Type="aspnet_User" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Leagues" Member="Leagues">
+    <Type Name="League">
+      <Column Name="LeagueID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Type" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="League_UserLeague" Member="UserLeagues" OtherKey="LeagueID" Type="UserLeague" />
+      <Association Name="League_LeagueAdmin" Member="LeagueAdmins" OtherKey="LeagueID" Type="LeagueAdmin" />
+      <Association Name="League_LeagueField" Member="LeagueFields" OtherKey="LeagueID" Type="LeagueField" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserLeagues" Member="UserLeagues">
+    <Type Name="UserLeague">
+      <Column Name="UserID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LeagueID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="League_UserLeague" Member="League" ThisKey="LeagueID" Type="League" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="User_UserLeague" Member="User" ThisKey="UserID" Type="User" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LeagueAdmins" Member="LeagueAdmins">
+    <Type Name="LeagueAdmin">
+      <Column Name="LeagueID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="League_LeagueAdmin" Member="League" ThisKey="LeagueID" Type="League" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="User_LeagueAdmin" Member="User" ThisKey="UserID" Type="User" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FieldAdmins" Member="FieldAdmins">
+    <Type Name="FieldAdmin">
+      <Column Name="FieldID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="User_FieldAdmin" Member="User" ThisKey="UserID" Type="User" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Field_FieldAdmin" Member="Field" ThisKey="FieldID" Type="Field" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Fields" Member="Fields">
+    <Type Name="Field">
+      <Column Name="FieldID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Address" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Latitude" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Longitude" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IsOpen" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="NumberOfFields" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ParkingLot" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="Field_FieldAdmin" Member="FieldAdmins" OtherKey="FieldID" Type="FieldAdmin" />
+      <Association Name="Field_UserField" Member="UserFields" OtherKey="FieldID" Type="UserField" />
+      <Association Name="Field_LeagueField" Member="LeagueFields" OtherKey="FieldID" Type="LeagueField" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserFields" Member="UserFields">
+    <Type Name="UserField">
+      <Column Name="UserID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FieldID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Field_UserField" Member="Field" ThisKey="FieldID" Type="Field" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="User_UserField" Member="User" ThisKey="UserID" Type="User" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LeagueFields" Member="LeagueFields">
+    <Type Name="LeagueField">
+      <Column Name="LeagueID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FieldID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Field_LeagueField" Member="Field" ThisKey="FieldID" Type="Field" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="League_LeagueField" Member="League" ThisKey="LeagueID" Type="League" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+</Database>

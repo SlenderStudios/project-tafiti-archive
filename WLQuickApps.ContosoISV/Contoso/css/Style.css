@@ -1,0 +1,61 @@
+body {text-align:center; padding: 0; margin: 0; font-family: Myriad, Arial, Verdana; color:#616161; font-size:12px; background:url(home_bg_tile_001.jpg);}
+h2 {font-size:12px; clear:both; line-height:8px;}
+hr {clear:both; line-height:12px;}
+
+.silverlightHost {position:absolute;left:206px;top:69px;Width:549px;Height:243px;}
+.SDHost {position:absolute;z-index:600;top:400px;left:500px;width:100px;height:100px;}
+
+#Master {text-align:left; position:relative;width:960px; height:800px; margin-bottom: 10px; margin-right:auto; margin-left:auto; background:url(home_banner_001.png) 0px 69px no-repeat;}
+#Logo {position:absolute;left:55px;top:15px;Width:172px;Height:47px;Background:url(home_logo_001.png)}
+
+/*Navigation*/
+#NavBar {position:absolute;left:330px;top:0px;Width:625px;Height:63px;Background:url(nav_table_background.png)}
+#NavWelcome {position:absolute;left:40px;top:0px;Width:85px;Height:63px;Background:url(nav_table_002.png)}
+#NavWelcome.mouseover {Background:url(nav_table_002_roll.png)}
+#NavDevelopment {position:absolute;left:125px;top:0px;Width:107px;Height:63px;Background:url(nav_table_003.png)}
+#NavDevelopment.mouseover {Background:url(nav_table_003_roll.png)}
+#NavSystems {position:absolute;left:230px;top:0px;Width:78px;Height:63px;Background:url(nav_table_004.png)}
+#NavSystems.mouseover {Background:url(nav_table_004_roll.png)}
+#NavCaseStudies {position:absolute;left:305px;top:0px;Width:99px;Height:63px;Background:url(nav_table_005.png)}
+#NavCaseStudies.mouseover {Background:url(nav_table_005_roll.png)}
+#NavPartnerShips {position:absolute;left:405px;top:0px;Width:102px;Height:63px;Background:url(nav_table_006.png)}
+#NavPartnerShips.mouseover {Background:url(nav_table_006_roll.png)}
+#NavContact {position:absolute;left:505px;top:0px;Width:77px;Height:63px;Background:url(nav_table_007.png)}
+#NavContact.mouseover {Background:url(nav_table_007_roll.png)}
+
+#Feature {position:absolute;left:72px;top:68px;Width:549px;Height:243px;Background:url(home_video_001.png)}
+
+/*News Panel*/
+#News {position:absolute;left:45px;top:319px;Width:593px;Height:630px;}
+#NewsTop {position:absolute;left:0px;top:0px;Width:593px;Height:73px;Background:url(home_news_top_001.png)}
+#NewsLabel {position:absolute;left:15px;top:20px;Width:91px;Height:37px;Background:url(home_news_title_001.png)}
+#NewsLeft {position:absolute;left:0px;top:73px;Width:27px;Height:186px;Background:url(home_news_left_001.png)}
+#NewsLeftFill {position:absolute;left:0px;top:259px;Width:27px;Height:343px;Background:url(home_news_left_filler_001.png)}
+#NewsContent {position:absolute;left:27px;top:73px;Width:503px;Height:500px;Background:#e7e7e7; padding:20px;}
+#NewsRight {position:absolute;left:568px;top:73px;Width:25px;Height:186px;Background:url(home_news_right_001.png)}
+#NewsRightFill {position:absolute;left:568px;top:259px;Width:25px;Height:343px;Background:url(home_news_right_filler_001.png)}
+#NewsBottom {position:absolute;left:0px;top:602px;Width:593px;Height:28px;Background:url(home_news_bottom_001.png)}
+.NewsItemAuthor {width:350px; float:left; clear:both; font-style:italic;}
+.NewsItemContent {width:470px; float:left; clear:both;}
+.NewsItemImage {width:120px; float:right;}
+.NewsItemMore {float:left; clear:both; width:100px;}
+.NewsHeader {color:Black;padding-left:25px;background:url(rss.gif) no-repeat 0px 0px; cursor:pointer;line-height:16px;} 
+.HeadContent {width:400px; height:80px; float:left; clear:both;}
+.Online1 {padding-left: 20px;background:url(online.png) no-repeat 0px 0px; cursor:pointer;}
+.Online2 {padding-left: 20px;background:url(offline.png) no-repeat 0px 0px; cursor:pointer;}
+.Online3 {padding-left: 20px;background:url(away.png) no-repeat 0px 0px; cursor:pointer;}
+.Online4 {padding-left: 20px;background:url(busy.png) no-repeat 0px 0px; cursor:pointer;}
+
+
+/*Contact Panel*/
+#Contact {position:absolute;left:642px;top:318px;Width:309px;Height:680px;}
+#ContactTop {position:absolute;left:0px;top:0px;Width:309px;Height:68px;Background:url(new_chat_header.png)}
+#ContactLeft {position:absolute;left:0px;top:68px;Width:12px;Height:296px;Background:url(home_messenger_left_001.png)}
+#ContactLeftFill {position:absolute;left:0px;top:364px;Width:12px;Height:241px;Background:url(home_messenger_left_filler_001.png)}
+#ContactContent {position:absolute;left:12px;top:68px;Width:284px;Height:537px;}
+#ContactRight {position:absolute;left:296px;top:68px;Width:13px;Height:296px;Background:url(home_messenger_right_001.png)}
+#ContactRightFill {position:absolute;left:296px;top:364px;Width:13px;Height:241px;Background:url(home_messenger_right_filler_001.png)}
+#ContactBottom {position:absolute;left:0px;top:605px;Width:309px;Height:27px;Background:url(home_messenger_bottom_001.png)}
+#ContactsPanel, #ChatPanel {Width:284px;Height:537px;}
+
+#FooterCopy {position:absolute;left:80px;top:950px;width:800px;text-align:center;}

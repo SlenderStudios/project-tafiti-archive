@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Backgrounds>
+  <Background>
+    <ID>1</ID>
+    <Name>PinStripes</Name>
+    <Location>../Images/BackRepeat.png</Location>
+    <IsDefault>True</IsDefault>
+  </Background>
+  <Background>
+    <ID>2</ID>
+    <Name>Circles</Name>
+    <Location>../Images/BackRepeat2.png</Location>
+    <IsDefault>False</IsDefault>
+  </Background>
+  <Background>
+    <ID>3</ID>
+    <Name>Circles and Stripes</Name>
+    <Location>../Images/BackRepeat3.png</Location>
+    <IsDefault>False</IsDefault>
+  </Background>
+</Backgrounds>

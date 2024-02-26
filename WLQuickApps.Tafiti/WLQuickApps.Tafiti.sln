@@ -1,0 +1,143 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WLQuickApps.Tafiti.WebSite", "WLQuickApps.Tafiti.WebSite", "{8E45427C-019D-48FC-8318-66B385B9E3E6}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFramework = "3.5"
+		ProjectReferences = "{F71C46B0-674A-4255-991A-0266EE7F6DF6}|WLQuickApps.Tafiti.Business.dll;{EE737A6B-1F1E-469D-B167-E27B371F196E}|WLQuickApps.Tafiti.Data.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/WLQuickApps.Tafiti.WebSite"
+		Debug.AspNetCompiler.PhysicalPath = "WLQuickApps.Tafiti.WebSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WLQuickApps.Tafiti.WebSite\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WLQuickApps.Tafiti.WebSite"
+		Release.AspNetCompiler.PhysicalPath = "WLQuickApps.Tafiti.WebSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WLQuickApps.Tafiti.WebSite\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "80"
+		VWDDynamicPort = "false"
+		VWDVirtualPath = "/"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WLQuickApps.Tafiti.Business", "WLQuickApps.Tafiti.Business\WLQuickApps.Tafiti.Business.csproj", "{F71C46B0-674A-4255-991A-0266EE7F6DF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WLQuickApps.Tafiti.Data", "WLQuickApps.Tafiti.Data\WLQuickApps.Tafiti.Data.csproj", "{EE737A6B-1F1E-469D-B167-E27B371F196E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0F4511ED-D007-4F2F-9311-E543C87888B7}"
+	ProjectSection(SolutionItems) = preProject
+		create.sql = create.sql
+		drop.sql = drop.sql
+		README.txt = README.txt
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WLQuickApps.Tafiti.WebSite - MOSS Search Branch", "WLQuickApps.Tafiti.WebSite - MOSS Search Branch", "{EE98919F-891C-422B-B63D-3CC9625929D0}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/WLQuickApps.Tafiti.WebSite - MOSS Search Branch"
+		Debug.AspNetCompiler.PhysicalPath = "WLQuickApps.Tafiti.WebSite - MOSS Search Branch\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WLQuickApps.Tafiti.WebSite - MOSS Search Branch\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WLQuickApps.Tafiti.WebSite - MOSS Search Branch"
+		Release.AspNetCompiler.PhysicalPath = "WLQuickApps.Tafiti.WebSite - MOSS Search Branch\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WLQuickApps.Tafiti.WebSite - MOSS Search Branch\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50008"
+		VWDDynamicPort = "false"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs04.codeplex.com/
+		SccLocalPath0 = .
+		SccWebProject1 = true
+		SccProjectUniqueName1 = WLQuickApps.Tafiti.WebSite
+		SccProjectName1 = WLQuickApps.Tafiti.WebSite
+		SccLocalPath1 = WLQuickApps.Tafiti.WebSite
+		SccProjectEnlistmentChoice1 = 2
+		SccProjectUniqueName2 = WLQuickApps.Tafiti.Business\\WLQuickApps.Tafiti.Business.csproj
+		SccProjectName2 = WLQuickApps.Tafiti.Business
+		SccLocalPath2 = WLQuickApps.Tafiti.Business
+		SccProjectUniqueName3 = WLQuickApps.Tafiti.Data\\WLQuickApps.Tafiti.Data.csproj
+		SccProjectName3 = WLQuickApps.Tafiti.Data
+		SccLocalPath3 = WLQuickApps.Tafiti.Data
+		SccWebProject4 = true
+		SccProjectUniqueName4 = WLQuickApps.Tafiti.WebSite\u0020-\u0020MOSS\u0020Search\u0020Branch
+		SccProjectName4 = WLQuickApps.Tafiti.WebSite\u0020-\u0020MOSS\u0020Search\u0020Branch
+		SccLocalPath4 = WLQuickApps.Tafiti.WebSite\u0020-\u0020MOSS\u0020Search\u0020Branch
+		SccProjectEnlistmentChoice4 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E45427C-019D-48FC-8318-66B385B9E3E6}.Debug|.NET.ActiveCfg = Debug|.NET
+		{8E45427C-019D-48FC-8318-66B385B9E3E6}.Debug|.NET.Build.0 = Debug|.NET
+		{8E45427C-019D-48FC-8318-66B385B9E3E6}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{8E45427C-019D-48FC-8318-66B385B9E3E6}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{8E45427C-019D-48FC-8318-66B385B9E3E6}.Release|.NET.ActiveCfg = Debug|.NET
+		{8E45427C-019D-48FC-8318-66B385B9E3E6}.Release|.NET.Build.0 = Debug|.NET
+		{8E45427C-019D-48FC-8318-66B385B9E3E6}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{8E45427C-019D-48FC-8318-66B385B9E3E6}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{8E45427C-019D-48FC-8318-66B385B9E3E6}.Release|Mixed Platforms.Build.0 = Debug|.NET
+		{F71C46B0-674A-4255-991A-0266EE7F6DF6}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{F71C46B0-674A-4255-991A-0266EE7F6DF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71C46B0-674A-4255-991A-0266EE7F6DF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71C46B0-674A-4255-991A-0266EE7F6DF6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F71C46B0-674A-4255-991A-0266EE7F6DF6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F71C46B0-674A-4255-991A-0266EE7F6DF6}.Release|.NET.ActiveCfg = Release|Any CPU
+		{F71C46B0-674A-4255-991A-0266EE7F6DF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71C46B0-674A-4255-991A-0266EE7F6DF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F71C46B0-674A-4255-991A-0266EE7F6DF6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F71C46B0-674A-4255-991A-0266EE7F6DF6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{EE737A6B-1F1E-469D-B167-E27B371F196E}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{EE737A6B-1F1E-469D-B167-E27B371F196E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE737A6B-1F1E-469D-B167-E27B371F196E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE737A6B-1F1E-469D-B167-E27B371F196E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{EE737A6B-1F1E-469D-B167-E27B371F196E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{EE737A6B-1F1E-469D-B167-E27B371F196E}.Release|.NET.ActiveCfg = Release|Any CPU
+		{EE737A6B-1F1E-469D-B167-E27B371F196E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE737A6B-1F1E-469D-B167-E27B371F196E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE737A6B-1F1E-469D-B167-E27B371F196E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{EE737A6B-1F1E-469D-B167-E27B371F196E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{EE98919F-891C-422B-B63D-3CC9625929D0}.Debug|.NET.ActiveCfg = Debug|.NET
+		{EE98919F-891C-422B-B63D-3CC9625929D0}.Debug|.NET.Build.0 = Debug|.NET
+		{EE98919F-891C-422B-B63D-3CC9625929D0}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{EE98919F-891C-422B-B63D-3CC9625929D0}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{EE98919F-891C-422B-B63D-3CC9625929D0}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{EE98919F-891C-422B-B63D-3CC9625929D0}.Release|.NET.ActiveCfg = Debug|.NET
+		{EE98919F-891C-422B-B63D-3CC9625929D0}.Release|.NET.Build.0 = Debug|.NET
+		{EE98919F-891C-422B-B63D-3CC9625929D0}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{EE98919F-891C-422B-B63D-3CC9625929D0}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{EE98919F-891C-422B-B63D-3CC9625929D0}.Release|Mixed Platforms.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

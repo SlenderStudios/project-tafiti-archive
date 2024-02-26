@@ -1,0 +1,100 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Default.master.cs" Inherits="AWR" %>
+<%@ Register Src="~/Controls/SidebarControl.ascx" TagName="SidebarControl" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:devlive="http://dev.live.com">
+    <head id="Head1" runat="server">
+        <title />
+        <script type="text/javascript" src="http://controls.services.live.com/scripts/base/v0.3/live.js"></script>
+        <script type="text/javascript" src="http://controls.services.live.com/scripts/base/v0.3/controls.js"></script>
+        <script type="Text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6"></script>
+        <link rel="shortcut icon" href="~/App_Themes/AWR/images/Favicon.ico" />
+    </head>
+    
+    <body>
+        <form id="_mainForm" runat="server">
+            
+            <asp:ScriptManager ID="_scriptManager" runat="server" EnablePageMethods="True" EnablePartialRendering="True" ScriptMode="Release">
+                <Services>
+                    <asp:ServiceReference Path="~/SiteService.asmx" />
+                </Services>
+            </asp:ScriptManager>
+            
+            <div id="wrapper">
+                <div id="upper">
+                    <div id="upperLeft">
+                        <div id="logo">
+                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx" ImageUrl="~/App_Themes/AWR/images/logo.png" CssClass="logo" Width="250" Height="45" />
+                        </div>
+                            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Default.aspx" ImageUrl="~/App_Themes/AWR/images/community.gif" CssClass="community" Width="74" Height="14" />                       
+                            <asp:SiteMapDataSource ID="_topMenuDataSource" runat="server" StartingNodeUrl="~/Default.aspx#" ShowStartingNode="false" SiteMapProvider="AWRSiteMap" />
+                            <asp:Menu runat="server" ID="_topMenu" DataSourceID="_topMenuDataSource" SkinID="topMenu" />                                
+
+                            <asp:SiteMapDataSource ID="_mainMenuDataSource" runat="server" StartingNodeUrl="~/Landing.aspx#" ShowStartingNode="false" SiteMapProvider="AWRSiteMap" />                        
+                            <asp:Menu runat="server" ID="_mainMenu" DataSourceID="_mainMenuDataSource" SkinID="mainMenu" />
+
+                            <asp:SiteMapPath ID="_siteMapPath" runat="server" SkinID="breadcrumb" />
+                    
+                    </div>
+                    <div id="upperRight">
+                        <div id="loginStatus">
+                        <asp:LoginView ID="LoginView1" runat="server">
+                            <AnonymousTemplate>
+                                Please sign in.
+                            </AnonymousTemplate>
+                        </asp:LoginView>
+                            <asp:FormView runat="server" ID="_userDetailsForm" Visible="false" DefaultMode="ReadOnly">
+                                <ItemTemplate>
+                                    <asp:Panel ID="_status" runat="server" CssClass="status">Signed in as:
+                                        <asp:HyperLink runat="Server" ID="_userNameLink" CssClass="link bold" NavigateUrl="~/Friend/ViewProfile.aspx" Text='<%# UserManager.LoggedInUser.Title %>' /></div>
+                                    </asp:Panel>  
+                                </ItemTemplate>
+                            </asp:FormView>
+                            
+                            <asp:Panel runat="server" ID="_liveAuthPanel" CssClass="liveAuth">
+                                -<cc:LoginLink ID="_loginLink" runat="server" CssClass="liveAuth-link" />-
+                            </asp:Panel>
+                        </div>
+                                                    
+                        <div id="search">
+                            <cc:SecureTextBox ID="_searchTextBox" runat="server" SkinID="SearchBox" AutoPostBack="false" ValidationGroup="search" />
+                            <ajaxToolkit:TextBoxWatermarkExtender runat="server" ID="_searchWatermark" TargetControlID="_searchTextBox" WatermarkText="Search" WatermarkCssClass="searchWatermark" />                        
+                        </div>
+                                                
+                        <div id="page-tools">
+                            <asp:HyperLink ID="_feedbackLink" runat="server" NavigateUrl="~/Feedback.aspx" Text="Feedback/Report Abuse" SkinID="AbuseLink" />&nbsp;
+                            <asp:HyperLink ID="_blogThisLink" runat="server" NavigateUrl="javascript:blogThis()" Text="Blog This" SkinID="BlogThisLink" Visible='<%# UserManager.IsUserLoggedIn() && (UserManager.LoggedInUser.RssFeedUrl.IndexOf("spaces.live.com") > 0) %>' />
+                        </div>
+                </div>
+               </div> 
+
+                <div id="content">
+                        <div id="mainPanel">
+                            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                        </div>
+                        <div id="sidePanel">
+                                <uc1:SidebarControl ID="SidebarControl1" runat="server" />
+                        </div> 
+
+                </div>
+               <div style="clear:both" />
+                        <div id="footer">
+                            <a href="http://dev.live.com/QuickApps/" target="_blank">Demonstration site</a> (<a href="http://www.codeplex.com/WLQuickApps/Release/ProjectReleases.aspx" target="_blank">source code</a>) | <asp:HyperLink ID="_privacyLink" runat="server" NavigateUrl="~/Privacy.aspx" Text="Privacy" />
+                            <asp:Label runat="server" ID="_hostingLabel" />  
+                      </div>                     
+
+                
+            </div>
+            
+            <asp:Panel ID="_analyticsPanel" runat="server">
+                <script language="javascript" type="text/javascript" src="http://analytics.live.com/Analytics/msAnalytics.js"></script>
+                <script language="javascript" type="text/javascript">
+                    msAnalytics.ProfileId = '<%= SettingsWrapper.MicrosoftAnalyticsID %>';
+                    msAnalytics.TrackPage();
+                </script>
+            </asp:Panel>
+        </form>
+        
+    </body>
+</html>

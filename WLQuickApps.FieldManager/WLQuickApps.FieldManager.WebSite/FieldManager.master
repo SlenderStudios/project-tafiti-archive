@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FieldManager.master.cs"
+    Inherits="WLQuickApps.FieldManager.WebSite.FieldManager" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Field Manager Quick App</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="Stylesheet" type="text/css" href="StyleSheet.css" />
+
+    <script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6"></script>
+
+    <script type="text/javascript" src="/js/site.js"></script>
+
+    <script type="text/javascript">
+        var userName = "<%= UserManager.UserIsLoggedIn() ? Membership.GetUser().UserName.ToLower() : string.Empty %>";
+        var userIsLoggedIn = (userName.length > 0);
+
+        function onLoad() {
+            if (typeof (onStart) != "undefined") {
+                onStart();
+            }
+        }
+        function tellerror(msg, url, linenumber) {
+            if (msg.toString().indexOf("Image") >= 0 && msg.toString().indexOf("4001") >= 0) {
+                return true;
+            }
+            else {
+                alert('Error message= ' + msg + '\nURL= ' + url + '\nLine Number= ' + linenumber)
+                return true;
+            }
+        }
+
+        window.onerror = tellerror;
+
+        
+    </script>
+
+    <!-- AdCenter Analytics Code
+            This code should only be uncommented when running on the MSLiveLabs environment
+            
+        <script language="javascript" type="text/javascript" src="https://analytics.live.com/Analytics/msAnalytics.js"></script>
+        <script language="javascript" type="text/javascript">
+         msAnalytics.ProfileId = 'CDFB';
+         msAnalytics.TrackPage();
+        </script>
+            
+        -->
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="_scriptManager" runat="server">
+        <Services>
+            <asp:ServiceReference Path="~/SiteService.svc/json" />
+        </Services>
+    </asp:ScriptManager>
+    <div class="wrapper">
+        <div class="topLinks">
+            <asp:HyperLink CssClass="topLink" ID="_silverlightTestLink" runat="server" NavigateUrl="~/"
+                Text="Field Manager" />
+            |
+            <asp:HyperLink CssClass="topLink" ID="_fieldsLink" runat="server" NavigateUrl="~/Field/Default.aspx"
+                Text="Find Fields" />
+            |
+            <asp:HyperLink CssClass="topLink" ID="_leaguesLink" runat="server" NavigateUrl="~/League/Default.aspx"
+                Text="Find Leagues" />
+            |
+            <asp:HyperLink CssClass="topLink" ID="_manageAccountLink" runat="server" NavigateUrl="~/User/Default.aspx"
+                Text="Manage Account" />
+            |
+            <asp:HyperLink CssClass="topLink" ID="_loginLink" runat="server" />
+        </div>
+        <asp:ContentPlaceHolder ID="_mainContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <div id="disclaimer">
+            This is a <a href="http://dev.live.com/QuickApps/" target="_blank">demonstration site</a>.
+            <br />
+            The source code can be downloaded from the <a href="http://www.codeplex.com/WLQuickApps/Release/ProjectReleases.aspx"
+                target="_blank">Windows Live Platform Quick Apps</a> CodePlex Project.
+        </div>
+    </div>
+    </form>
+
+    <script type="text/javascript">
+        Sys.Application.add_init(onLoad);
+    </script>
+
+</body>
+</html>

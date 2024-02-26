@@ -1,0 +1,17 @@
+﻿<Canvas
+	xmlns="http://schemas.microsoft.com/client/2007"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Name="UserControl" 
+	x:Class="VESilverlight.Secondary.PlaceListHover"
+	Loaded="Page_Loaded"
+	Width="284" Height="50.3" Cursor="Hand">
+	
+	<Image Width="88" Height="48" x:Name="image" Canvas.ZIndex="1" Stretch="Uniform" Canvas.Left="1" Canvas.Top="1"/>
+	
+	<Rectangle Width="190" Height="26" Stroke="#FFE6E5B9" Canvas.Left="80.832" Canvas.Top="12.33" RadiusX="10" RadiusY="15" Fill="#00000000"/>
+	
+	<Rectangle Width="90" Height="50" Fill="#FF89A1AD" Stroke="#FFE6E5B9" />
+	
+	<Rectangle Width="65" Height="27" Fill="#00000000" RadiusX="0" RadiusY="0" Canvas.Left="219" Canvas.Top="11.33"/>
+	
+</Canvas>

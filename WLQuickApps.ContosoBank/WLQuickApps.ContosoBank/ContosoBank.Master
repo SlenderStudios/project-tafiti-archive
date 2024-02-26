@@ -1,0 +1,204 @@
+﻿<%@ Master Language="C#" AutoEventWireup="True" CodeBehind="ContosoBank.master.cs"
+    Inherits="WLQuickApps.ContosoBank.ContosoBank" %>
+
+<%@ Register Assembly="Microsoft.Live.ServerControls" Namespace="Microsoft.Live.ServerControls"
+    TagPrefix="live" %>
+<%@ Register Src="controls/AdvisorListControl.ascx" TagName="AdvisorListControl"
+    TagPrefix="uc1" %>
+<%@ Register Src="controls/QuickLinksControl.ascx" TagName="QuickLinksControl" TagPrefix="uc2" %>
+<%@ Register Src="controls/LatestVideoSideControl.ascx" TagName="LatestVideoSideControl"
+    TagPrefix="uc3" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <title>Contoso Bank</title>
+    <link runat="server" href="~/css/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 8]>
+    <link runat="server" rel="stylesheet" href="~/css/StyleSheetIE7.css" type="text/css" />
+<![endif]-->
+    <!--[if lt IE 7]>
+    <link runat="server" rel="stylesheet" href="~/css/StyleSheetIE6.css" type="text/css" />
+<![endif]-->
+    <link rel="alternate" type="application/rss+xml" title="Australian Small Business Portal Latest Forum"
+        href="~/LatestForumRSS.ashx" />
+    <meta name="Search.WLSearchBox" content="1.1, en-AU" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script language="javascript" type="text/javascript" src="http://analytics.live.com/Analytics/msAnalytics.js"></script>
+
+    <script language="javascript" type="text/javascript">
+        msAnalytics.ProfileId = 'CF8E';
+        msAnalytics.TrackPage();
+    </script>
+
+</head>
+<body id="MasterPageBody" runat="server">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="masterScriptManager" runat="server">
+    </asp:ScriptManager>
+    <div class="SiteWrapper">
+        <div class="SiteHeader">
+            <div class="SiteTitle">
+                <h3>
+                    Australian</h3>
+                <h3>
+                    Small Business Portal</h3>
+            </div>
+            <div class="SiteWelcome">
+                <live:IDLoginView ID="MemberNameIDLoginView" runat="server" PromptOnAssociation="False">
+                    <LoggedInAllTemplate>
+                        Welcome back
+                        <asp:HyperLink ID="LnkProfile" runat="server" NavigateUrl="/ProfilePage.aspx"><%=Context.User.Identity.Name %></asp:HyperLink>.
+                        You have <a href="#">3 messages</a> |
+                    </LoggedInAllTemplate>
+                </live:IDLoginView>
+                <live:IDLoginStatus ID="MasterIDLoginStatus" runat="server" OnServerSignIn="MasterIDLoginStatus_ServerSignIn"
+                    OnServerSignOut="MasterIDLoginStatus_ServerSignOut" BackColor="Transparent" ForeColor="Yellow"
+                    Height="15px" Width="50px" />
+            </div>
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal">
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+            <div id="WLSearchBoxDiv" class="SearchBox">
+                <table cellpadding="0" cellspacing="0" style="width: 150px">
+                    <tr id="WLSearchBoxPlaceholder">
+                        <td style="width: 100%; border: none; border-right-style: none;">
+                            <input id="WLSearchBoxInput" type="text" value="&#x4c;&#x6f;&#x61;&#x64;&#x69;&#x6e;&#x67;&#x2e;&#x2e;&#x2e;"
+                                disabled="disabled" style="padding: 0; background-image: url(http://search.live.com//siteowner/s/siteowner/searchbox_background.png);
+                                background-position: right; background-repeat: no-repeat; height: 20px; width: 100%;
+                                border: none 0 Transparent" />
+                        </td>
+                        <td style="border: none;">
+                            <input id="WLSearchBoxButton" type="image" src="http://search.live.com//siteowner/s/siteowner/searchbutton_normal.png"
+                                align="absBottom" style="padding: 0; border-style: none" />
+                        </td>
+                    </tr>
+                </table>
+
+                <script type="text/javascript" charset="utf-8">
+	                var WLSearchBoxConfiguration=
+	                {
+		                "global":{
+			                "serverDNS":"search.live.com",
+			                "market":"en-AU"
+		                },
+		                "appearance":{
+			                "autoHideTopControl":false,
+			                "width":600,
+			                "height":400,
+			                "theme":"Green"
+		                },
+		                "scopes":[
+			                {
+				                "type":"web",
+				                "caption":"&#x57;&#x65;&#x62;",
+				                "searchParam":""
+			                }
+		                ]
+	                }
+                </script>
+
+                <script type="text/javascript" charset="utf-8" src="http://search.live.com/bootstrap.js?market=en-AU&ServId=SearchBox&ServId=SearchBoxWeb&Callback=WLSearchBoxScriptReady"></script>
+
+            </div>
+        </div>
+        <div class="SiteContent">
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td valign="top">
+                        <div class="ContentPane">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="RightPane">
+                            <div id="ContactsSidePanel" class="SidePanelItem">
+                                <div class="ItemHeader">
+                                    <div class="ContactsHeader">
+                                    </div>
+                                </div>
+                                <div class="ItemContent">
+                                    <live:IDLoginView ID="ContactsIDLoginView" runat="server">
+                                        <LoggedInAllTemplate>
+                                            <live:Contacts ID="mainContacts" runat="server" DataDesired="name,email" Height="200px"
+                                                PrivacyStatementURL="~/privacyPolicy.htm" View="Tile" Width="180px" OuterBackgroundColor="#BCCF66" />
+                                        </LoggedInAllTemplate>
+                                    </live:IDLoginView>
+                                    <div class="LiveSpaceButton" onclick="window.open('http://spaces.live.com/signup.aspx', '', 'width=800px, height=600px, resizable');">
+                                    </div>
+                                </div>
+                                <div class="ItemFooter">
+                                </div>
+                            </div>
+                            <div id="AdvisorsSidePanel" class="SidePanelItem">
+                                <div class="ItemHeader">
+                                    <div class="AdvisorsHeader">
+                                    </div>
+                                </div>
+                                <div class="ItemContent">
+                                    <uc1:AdvisorListControl ID="AdvisorListControl1" runat="server" />
+                                </div>
+                                <div class="ItemFooter">
+                                </div>
+                            </div>
+                            <div id="QuickLinksSidePanel" class="SidePanelItem">
+                                <div class="ItemHeader">
+                                    <div class="QuickLinksHeader">
+                                    </div>
+                                </div>
+                                <div class="ItemContent">
+                                    <uc2:QuickLinksControl ID="QuickLinksControl1" runat="server" />
+                                </div>
+                                <div class="ItemFooter">
+                                </div>
+                            </div>
+                            <div id="VideosSidePanel" class="SidePanelItem">
+                                <div class="ItemHeader">
+                                    <div class="VideoHeader">
+                                    </div>
+                                </div>
+                                <div class="ItemContent">
+                                    <uc3:LatestVideoSideControl ID="LatestVideoSideControl1" runat="server" />
+                                </div>
+                                <div class="ItemFooter">
+                                </div>
+                            </div>
+                            <div class="SidePanelAboutUs">
+                                <div class="HostLogo">
+                                </div>
+                                Powered by
+                                <hr />
+                                <a href="#">Click here</a> to be redirected to<br />
+                                your banks login page
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="IEClearFix">
+                &nbsp;</div>
+        </div>
+        <div class="SiteFooter">
+        </div>
+        <div class="DemoText">
+            This is a <a href="http://dev.live.com/QuickApps/">demonstration site</a>.
+            <br />
+            <br />
+            The source code can be downloaded from the <a href="http://www.codeplex.com/WLQuickApps/Release/ProjectReleases.aspx"
+                target="_blank">Windows Live Platform Quick Apps</a> CodePlex Project.
+            <br />
+            <br />
+            The example companies, organizations, products, domain names, e-mail addresses,
+            logos, people, places, and events depicted herein are fictitious. No association
+            with any real company, organization, product, domain name, email address, logo,
+            person, places, or events is intended or should be inferred.
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="FloatingContent" runat="server">
+    </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

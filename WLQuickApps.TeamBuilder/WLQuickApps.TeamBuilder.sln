@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controls", "Projects\WindowsLive\Controls\Controls.csproj", "{E3356389-41BD-45E8-9107-CA27916ACE42}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WindowsLive", "Websites\WindowsLive", "{38FF4984-2B01-4361-89F9-2F2C0A34D1C4}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/WindowsLive"
+		Debug.AspNetCompiler.PhysicalPath = "Websites\WindowsLive\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WindowsLive\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WindowsLive"
+		Release.AspNetCompiler.PhysicalPath = "Websites\WindowsLive\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WindowsLive\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "29341"
+		VWDDynamicPort = "false"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database Scripts", "Database Scripts", "{17194AB2-5B79-455C-ADCD-E20CB1BBB3B6}"
+	ProjectSection(SolutionItems) = preProject
+		Database Scripts\0. SQL - Drop all ASPNet objects.sql = Database Scripts\0. SQL - Drop all ASPNet objects.sql
+		Database Scripts\1. SQL - Drop the Live ID Provider Objects.sql = Database Scripts\1. SQL - Drop the Live ID Provider Objects.sql
+		Database Scripts\2. SQL - Create the ASP.NET objects.sql = Database Scripts\2. SQL - Create the ASP.NET objects.sql
+		Database Scripts\3. SQL - Create the Live ID Provider Objects.sql = Database Scripts\3. SQL - Create the Live ID Provider Objects.sql
+		Database Scripts\4. SQL - Example Script for adding admin.sql = Database Scripts\4. SQL - Example Script for adding admin.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs04.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Projects\\WindowsLive\\Controls\\Controls.csproj
+		SccProjectName1 = Projects/WindowsLive/Controls
+		SccLocalPath1 = Projects\\WindowsLive\\Controls
+		SccWebProject2 = true
+		SccProjectUniqueName2 = Websites\\WindowsLive
+		SccProjectName2 = Websites/WindowsLive
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = Websites\\WindowsLive\\
+		SccProjectEnlistmentChoice2 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3356389-41BD-45E8-9107-CA27916ACE42}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{E3356389-41BD-45E8-9107-CA27916ACE42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3356389-41BD-45E8-9107-CA27916ACE42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3356389-41BD-45E8-9107-CA27916ACE42}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E3356389-41BD-45E8-9107-CA27916ACE42}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E3356389-41BD-45E8-9107-CA27916ACE42}.Release|.NET.ActiveCfg = Release|Any CPU
+		{E3356389-41BD-45E8-9107-CA27916ACE42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3356389-41BD-45E8-9107-CA27916ACE42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3356389-41BD-45E8-9107-CA27916ACE42}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E3356389-41BD-45E8-9107-CA27916ACE42}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{38FF4984-2B01-4361-89F9-2F2C0A34D1C4}.Debug|.NET.ActiveCfg = Debug|.NET
+		{38FF4984-2B01-4361-89F9-2F2C0A34D1C4}.Debug|.NET.Build.0 = Debug|.NET
+		{38FF4984-2B01-4361-89F9-2F2C0A34D1C4}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{38FF4984-2B01-4361-89F9-2F2C0A34D1C4}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{38FF4984-2B01-4361-89F9-2F2C0A34D1C4}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{38FF4984-2B01-4361-89F9-2F2C0A34D1C4}.Release|.NET.ActiveCfg = Debug|.NET
+		{38FF4984-2B01-4361-89F9-2F2C0A34D1C4}.Release|.NET.Build.0 = Debug|.NET
+		{38FF4984-2B01-4361-89F9-2F2C0A34D1C4}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{38FF4984-2B01-4361-89F9-2F2C0A34D1C4}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{38FF4984-2B01-4361-89F9-2F2C0A34D1C4}.Release|Mixed Platforms.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WLQuickApps.FieldManager.WebSite" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WLQuickApps.FieldManager.WebSite" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://fieldmanager.local.com/SiteService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WLQuickApps.FieldManager.Business" />
+  <xs:complexType name="LeagueItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeagueID" type="xs:int" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LeagueItem" nillable="true" type="tns:LeagueItem" />
+  <xs:complexType name="FieldItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FieldID" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WLQuickApps.FieldManager.Business" minOccurs="0" name="Forecast" nillable="true" type="q1:ArrayOfWeather" />
+      <xs:element minOccurs="0" name="IsOpen" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Latitude" type="xs:double" />
+      <xs:element minOccurs="0" name="Longitude" type="xs:double" />
+      <xs:element minOccurs="0" name="NumberOfFields" type="xs:int" />
+      <xs:element minOccurs="0" name="ParkingLot" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FieldItem" nillable="true" type="tns:FieldItem" />
+  <xs:complexType name="ArrayOfLeagueItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LeagueItem" nillable="true" type="tns:LeagueItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLeagueItem" nillable="true" type="tns:ArrayOfLeagueItem" />
+  <xs:complexType name="ArrayOfFieldItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FieldItem" nillable="true" type="tns:FieldItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFieldItem" nillable="true" type="tns:ArrayOfFieldItem" />
+  <xs:complexType name="ArrayOfUserItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserItem" nillable="true" type="tns:UserItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserItem" nillable="true" type="tns:ArrayOfUserItem" />
+  <xs:complexType name="UserItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MessengerPresenceID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserItem" nillable="true" type="tns:UserItem" />
+</xs:schema>

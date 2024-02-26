@@ -1,0 +1,27 @@
+﻿<configuration>
+    <system.serviceModel>
+        <client>
+            <endpoint address="http://fieldmanager.local.com/SiteService.svc/soap"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_SiteService"
+                contract="WLQuickApps.FieldManager.Silverlight.SiteService.SiteService"
+                name="BasicHttpBinding_SiteService" />
+        </client>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_SiteService" maxBufferSize="65536"
+                    maxReceivedMessageSize="65536">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+            <customBinding>
+                <binding name="WebHttpBinding_SiteService">
+                    <textMessageEncoding maxReadPoolSize="64" maxWritePoolSize="16"
+                        messageVersion="Soap12" writeEncoding="utf-8">
+                        <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384"
+                            maxBytesPerRead="4096" maxNameTableCharCount="16384" />
+                    </textMessageEncoding>
+                </binding>
+            </customBinding>
+        </bindings>
+    </system.serviceModel>
+</configuration>

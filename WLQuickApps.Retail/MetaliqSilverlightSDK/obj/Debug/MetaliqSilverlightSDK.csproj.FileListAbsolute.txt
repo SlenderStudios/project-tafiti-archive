@@ -1,0 +1,116 @@
+C:\_METALIQ_\MetaliqSilverlightSDK\trunk\develop\build\MetaliqSilverlightSDK\ClientBin\MetaliqSilverlightSDK.dll
+C:\_METALIQ_\MetaliqSilverlightSDK\trunk\develop\build\MetaliqSilverlightSDK\ClientBin\MetaliqSilverlightSDK.pdb
+C:\_METALIQ_\MetaliqSilverlightSDK\trunk\develop\build\MetaliqSilverlightSDK\ClientBin\System.Windows.Controls.dll
+C:\_METALIQ_\MetaliqSilverlightSDK\trunk\develop\build\MetaliqSilverlightSDK\ClientBin\System.Xml.Linq.dll
+C:\_METALIQ_\MetaliqSilverlightSDK\trunk\develop\build\MetaliqSilverlightSDK\ClientBin\System.Windows.Controls.xml
+C:\_METALIQ_\MetaliqSilverlightSDK\trunk\develop\build\MetaliqSilverlightSDK\ClientBin\ja\System.Xml.Linq.resources.dll
+C:\_METALIQ_\MetaliqSilverlightSDK\trunk\develop\build\MetaliqSilverlightSDK\ClientBin\ja\System.Windows.Controls.resources.dll
+C:\_METALIQ_\MetaliqSilverlightSDK\trunk\develop\build\MetaliqSilverlightSDK\obj\Debug\ResolveAssemblyReference.cache
+C:\_METALIQ_\MetaliqSilverlightSDK\trunk\develop\build\MetaliqSilverlightSDK\obj\Debug\MetaliqSilverlightSDK.g.resources
+C:\_METALIQ_\MetaliqSilverlightSDK\trunk\develop\build\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\Mixer.g.cs
+C:\_METALIQ_\MetaliqSilverlightSDK\trunk\develop\build\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\MixerAsset.g.cs
+C:\_METALIQ_\MetaliqSilverlightSDK\trunk\develop\build\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\MixerLibrary.g.cs
+C:\_METALIQ_\MetaliqSilverlightSDK\trunk\develop\build\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\MixerTimeline.g.cs
+C:\_METALIQ_\MetaliqSilverlightSDK\trunk\develop\build\MetaliqSilverlightSDK\obj\Debug\Controls\ScrollingTextBox.g.cs
+C:\_METALIQ_\MetaliqSilverlightSDK\trunk\develop\build\MetaliqSilverlightSDK\obj\Debug\MetaliqSilverlightSDK.dll
+C:\_METALIQ_\MetaliqSilverlightSDK\trunk\develop\build\MetaliqSilverlightSDK\obj\Debug\MetaliqSilverlightSDK.pdb
+C:\Users\user\Desktop\rsk\MetaliqSilverlightSDK\ClientBin\MetaliqSilverlightSDK.dll
+C:\Users\user\Desktop\rsk\MetaliqSilverlightSDK\ClientBin\MetaliqSilverlightSDK.pdb
+C:\Users\user\Desktop\rsk\MetaliqSilverlightSDK\ClientBin\System.Windows.Controls.dll
+C:\Users\user\Desktop\rsk\MetaliqSilverlightSDK\ClientBin\System.Xml.Linq.dll
+C:\Users\user\Desktop\rsk\MetaliqSilverlightSDK\ClientBin\System.Windows.Controls.xml
+C:\Users\user\Desktop\rsk\MetaliqSilverlightSDK\ClientBin\ja\System.Xml.Linq.resources.dll
+C:\Users\user\Desktop\rsk\MetaliqSilverlightSDK\ClientBin\ja\System.Windows.Controls.resources.dll
+C:\Users\user\Desktop\rsk\MetaliqSilverlightSDK\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\user\Desktop\rsk\MetaliqSilverlightSDK\obj\Debug\MetaliqSilverlightSDK.g.resources
+C:\Users\user\Desktop\rsk\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\Mixer.g.cs
+C:\Users\user\Desktop\rsk\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\MixerAsset.g.cs
+C:\Users\user\Desktop\rsk\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\MixerLibrary.g.cs
+C:\Users\user\Desktop\rsk\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\MixerTimeline.g.cs
+C:\Users\user\Desktop\rsk\MetaliqSilverlightSDK\obj\Debug\Controls\ScrollingTextBox.g.cs
+C:\Users\user\Desktop\rsk\MetaliqSilverlightSDK\obj\Debug\MetaliqSilverlightSDK.dll
+C:\Users\user\Desktop\rsk\MetaliqSilverlightSDK\obj\Debug\MetaliqSilverlightSDK.pdb
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\ResolveAssemblyReference.cache
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\Mixer.g.cs
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\MixerAsset.g.cs
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\MixerLibrary.g.cs
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\MixerTimeline.g.cs
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\Controls\ScrollingTextBox.g.cs
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\MetaliqSilverlightSDK.g.resources
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\MetaliqSilverlightSDK.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\MetaliqSilverlightSDK.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\MetaliqSilverlightSDK.pdb
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\System.Xml.Linq.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\System.Xml.Linq.xml
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\de\System.Xml.Linq.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\es\System.Xml.Linq.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\fr\System.Xml.Linq.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\it\System.Xml.Linq.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\ja\System.Xml.Linq.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\ko\System.Xml.Linq.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\zh-hant\System.Xml.Linq.Resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\zh-hans\System.Xml.Linq.Resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\MetaliqSilverlightSDK.pdb
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\MetaliqSilverlightSDK.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\MetaliqSilverlightSDK.pdb
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\System.Xml.Linq.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\System.Xml.Linq.xml
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\de\System.Xml.Linq.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\es\System.Xml.Linq.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\fr\System.Xml.Linq.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\it\System.Xml.Linq.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\ja\System.Xml.Linq.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\ko\System.Xml.Linq.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\zh-hant\System.Xml.Linq.Resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\zh-hans\System.Xml.Linq.Resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\ResolveAssemblyReference.cache
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\Mixer.g.cs
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\MixerAsset.g.cs
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\MixerLibrary.g.cs
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\MixerTimeline.g.cs
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\Controls\ScrollingTextBox.g.cs
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\MetaliqSilverlightSDK.g.resources
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\MetaliqSilverlightSDK.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\MetaliqSilverlightSDK.pdb
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\Mixer.g.cs
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\MixerAsset.g.cs
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\MixerLibrary.g.cs
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\MixerTimeline.g.cs
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\Controls\ScrollingTextBox.g.cs
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\MetaliqSilverlightSDK.g.resources
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\MetaliqSilverlightSDK.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\MetaliqSilverlightSDK.pdb
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\System.Xml.Linq.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\System.Xml.Linq.xml
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\de\System.Xml.Linq.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\es\System.Xml.Linq.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\fr\System.Xml.Linq.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\it\System.Xml.Linq.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\ja\System.Xml.Linq.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\ko\System.Xml.Linq.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\zh-Hans\System.Xml.Linq.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\zh-Hant\System.Xml.Linq.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\MetaliqSilverlightSDK.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\MetaliqSilverlightSDK.pdb
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\MetaliqSilverlightSDK.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\MetaliqSilverlightSDK.pdb
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\System.Xml.Linq.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\System.Xml.Linq.xml
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\de\System.Xml.Linq.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\es\System.Xml.Linq.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\fr\System.Xml.Linq.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\it\System.Xml.Linq.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\ja\System.Xml.Linq.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\ko\System.Xml.Linq.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\zh-Hans\System.Xml.Linq.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\ClientBin\zh-Hant\System.Xml.Linq.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\ResolveAssemblyReference.cache
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\Mixer.g.cs
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\MixerAsset.g.cs
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\MixerLibrary.g.cs
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\Controls\Mixer\MixerTimeline.g.cs
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\Controls\ScrollingTextBox.g.cs
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\MetaliqSilverlightSDK.g.resources
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\MetaliqSilverlightSDK.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\MetaliqSilverlightSDK\obj\Debug\MetaliqSilverlightSDK.pdb

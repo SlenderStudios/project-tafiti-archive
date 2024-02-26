@@ -1,0 +1,35 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Pearl.master.cs" Inherits="Pearl" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:devlive="http://dev.live.com">
+    <head runat="server">
+        <title />
+        <script type="text/javascript" src="http://controls.services.live.com/scripts/base/v0.3/live.js"></script>
+        <script type="text/javascript" src="http://controls.services.live.com/scripts/base/v0.3/controls.js"></script>
+    </head>
+    <body>
+        <form id="_mainForm" runat="server">
+            <asp:ScriptManager ID="_scriptManager" runat="server" EnablePageMethods="True" EnablePartialRendering="True"
+                ScriptMode="Release">
+                <Services>
+                    <asp:ServiceReference Path="~/SiteService.asmx" />
+                </Services>
+            </asp:ScriptManager>
+            <asp:SiteMapDataSource ID="_siteMapDataSource" runat="server" ShowStartingNode="False" />
+            <div id="main">
+                <div id="content">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                </div>
+                <div id="copyright">
+                    Copyright &copy; 2007 Generic company, inc.
+                </div>
+            </div>
+            <div id="upper">
+                <asp:Menu ID="_siteMapMenu" runat="server" SkinID="mainMenu"
+                    DataSourceID="_siteMapDataSource" />
+            </div>
+            <div id="login">
+            </div>
+        </form>
+    </body>
+</html>

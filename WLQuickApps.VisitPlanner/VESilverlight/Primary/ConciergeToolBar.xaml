@@ -1,0 +1,119 @@
+﻿<VESilverlight_Primary:AbstractToolBar x:Class="VESilverlight.Primary.ConciergeToolBar"
+	xmlns="http://schemas.microsoft.com/client/2007"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:VESilverlight="clr-namespace:VESilverlight;assembly=VESilverlight"
+	xmlns:VESilverlight_Primary="clr-namespace:VESilverlight.Primary;assembly=VESilverlight"	
+	Width="220" Height="358.833">
+    <Canvas x:Name="LayoutRoot">
+	<Canvas.Triggers>
+		<EventTrigger RoutedEvent="Canvas.Loaded">
+			<BeginStoryboard>
+				<Storyboard x:Name="MessengerToolTipShow">
+					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MessengerToolTip" Storyboard.TargetProperty="(UIElement.Opacity)">
+						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+						<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+						<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+					</DoubleAnimationUsingKeyFrames>
+				</Storyboard>
+			</BeginStoryboard>
+		</EventTrigger>
+	</Canvas.Triggers>
+	<Canvas Width="220" Height="20" x:Name="conciergeLinkCanvas" Cursor="Hand">
+		<TextBlock Width="171" Height="22" Text="Contoso Hotel: " TextWrapping="Wrap" x:Name="LocTitleText" FontFamily="Verdana" FontSize="11" Foreground="#FFE6E5B9"/>
+		<Image Width="16" Height="16" Canvas.Left="175" x:Name="statusImage" Canvas.Top="-1" Canvas.ZIndex="0" Source="/images/Status_Offline.png"/>
+		<Rectangle Width="220" Height="22" Fill="#00FFFFFF"/>
+		<TextBlock Width="85" Height="22" Text="Las Vegas" TextWrapping="Wrap" x:Name="destTitleText" FontFamily="Verdana" FontSize="11" Foreground="#FF89A1AD" Canvas.Left="86"/>
+	</Canvas>
+	<Image Width="189" Height="2" Canvas.Left="0" Canvas.Top="23" Source="/images/separator.png" />
+	<VESilverlight:Repeater Canvas.Top="32.667" Width="220" Height="184.667" x:Name="repeater"/>
+	<VESilverlight_Primary:TourShareControl Canvas.Top="220" Width="220" Height="37"/>
+	<Canvas Width="220" Height="102.833" Canvas.Top="262" x:Name="FilterCanvas">
+		<TextBlock Width="112" Height="17" Canvas.Left="8" Text="Filter By:" TextWrapping="Wrap" Foreground="#FFE6E5B9" FontFamily="Verdana" FontSize="11"/>
+    <Canvas Width="37" Height="14" Canvas.Left="12" Canvas.Top="22">
+      <VESilverlight_Primary:Checkbox Width="15" Height="15" x:Name="SelectAll"/>
+      <TextBlock Width="83" Height="14" Text="Select All" TextWrapping="Wrap" FontFamily="Verdana" FontSize="11" Foreground="#FFFFFFFF" Canvas.Left="41"/>
+    </Canvas>
+    <Canvas Width="37" Height="14" Canvas.Left="12" Canvas.Top="39">
+			<VESilverlight_Primary:Checkbox Width="15" Height="15" x:Name="MusicBox"/>
+			<Image Width="14" Height="14" Canvas.Left="21" Source="/images/music.png" />
+			<TextBlock Width="83" Height="14" Text="Concert Halls" TextWrapping="Wrap" FontFamily="Verdana" FontSize="11" Foreground="#FFFFFFFF" Canvas.Left="41"/>
+		</Canvas>
+		<Canvas Width="37" Height="14" Canvas.Top="56" Canvas.Left="12">
+			<VESilverlight_Primary:Checkbox Width="15" Height="15" x:Name="ArtBox"/>
+			<Image Width="14" Height="14" Canvas.Left="21" Source="/images/other.png" />
+			<TextBlock Width="83" Height="14" Text="Galleries" TextWrapping="Wrap" FontFamily="Verdana" FontSize="11" Foreground="#FFFFFFFF" Canvas.Left="41"/>
+		</Canvas>
+		<Canvas Width="37" Height="14" Canvas.Top="73" Canvas.Left="12">
+			<VESilverlight_Primary:Checkbox Width="15" Height="15" x:Name="MovieBox"/>
+			<Image Width="14" Height="14" Canvas.Left="21"  Source="/images/movie.png" />
+			<TextBlock Width="83" Height="14" Text="Theaters" TextWrapping="Wrap" FontFamily="Verdana" FontSize="11" Foreground="#FFFFFFFF" Canvas.Left="41"/>
+		</Canvas>
+		<Canvas Width="37" Height="14" Canvas.Top="90" Canvas.Left="12">
+			<VESilverlight_Primary:Checkbox Width="15" Height="15" x:Name="FoodBox"/>
+			<Image Width="14" Height="14" Canvas.Left="21" Source="/images/food.png" />
+			<TextBlock Width="83" Height="14" Text="Restaurants" TextWrapping="Wrap" FontFamily="Verdana" FontSize="11" Foreground="#FFFFFFFF" Canvas.Left="41"/>
+		</Canvas>
+		<Canvas Width="37" Height="14" Canvas.Top="107" Canvas.Left="12">
+			<VESilverlight_Primary:Checkbox Width="15" Height="15" x:Name="HotelBox"/>
+			<Image Width="14" Height="14" Canvas.Left="21" Source="/images/hotel_sym_yellow.png"  />
+			<TextBlock Width="83" Height="14" Text="Hotels" TextWrapping="Wrap" FontFamily="Verdana" FontSize="11" Foreground="#FFFFFFFF" Canvas.Left="41"/>
+		</Canvas>
+		<Canvas Width="37" Height="14" Canvas.Top="124" Canvas.Left="12">
+			<VESilverlight_Primary:Checkbox Width="15" Height="15" x:Name="MiscBox"/>
+			<Image Width="14" Height="14" Canvas.Left="21" Source="/images/Btn_PushPin_search.png"  />
+			<TextBlock Width="83" Height="14" Text="Miscellaneous" TextWrapping="Wrap" FontFamily="Verdana" FontSize="11" Foreground="#FFFFFFFF" Canvas.Left="41"/>
+		</Canvas>
+		<Canvas Width="37" Height="14" Canvas.Top="141" Canvas.Left="12" x:Name="SharedCanvas" Visibility="Collapsed">
+			<VESilverlight_Primary:Checkbox Width="15" Height="15" x:Name="SharedBox"/>
+			<Image Width="14" Height="14" Canvas.Left="21" Source="/images/Btn_PushPin_searchSaved.png"  />
+			<TextBlock Width="83" Height="14" Text="Shared" TextWrapping="Wrap" FontFamily="Verdana" FontSize="11" Foreground="#FFFFFFFF" Canvas.Left="41"/>
+		</Canvas>
+	</Canvas>
+	<Canvas Visibility="Collapsed" x:Name="MessengerToolTip" Width="19.579" Height="174.359" Canvas.Top="-99.5" Canvas.ZIndex="0" RenderTransformOrigin="0.5,0.5" Canvas.Left="119.75">
+		<Canvas.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform ScaleX="1" ScaleY="1"/>
+				<SkewTransform AngleX="0" AngleY="0"/>
+				<RotateTransform Angle="90"/>
+				<TranslateTransform X="0" Y="0"/>
+			</TransformGroup>
+		</Canvas.RenderTransform>
+		<Rectangle RenderTransformOrigin="0.5,0.5" x:Name="TourToolTipShadow" Width="171" Height="17.25" Fill="#4C000000" Stroke="#4C000000" StrokeThickness="0.5" RadiusX="2" RadiusY="2" Canvas.Left="-74.39" Canvas.Top="77.969">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="90"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle x:Name="ToolTipRect1" Width="17.407" Height="170.14" Stroke="#FF767676" RadiusX="2" RadiusY="2" RenderTransformOrigin="0.5,0.5" StrokeThickness="0.5" Canvas.Top="2.719" Canvas.Left="0.75">
+			<Rectangle.Fill>
+				<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+					<GradientStop Color="#FFFFFFFF" Offset="0"/>
+					<GradientStop Color="#FFE4E5F0" Offset="1"/>
+				</LinearGradientBrush>
+			</Rectangle.Fill>
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<TextBlock x:Name="ToolTipText1" Width="166.251" Height="13.127" Canvas.Left="-74.346" Canvas.Top="80.682" FontFamily="Arial" FontSize="11" Foreground="#FF767676" Text="Chat live with the hotel concierge" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5">
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="-90"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+		</TextBlock>
+	</Canvas>
+</Canvas>
+</VESilverlight_Primary:AbstractToolBar>

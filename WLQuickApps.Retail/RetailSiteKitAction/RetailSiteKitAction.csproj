@@ -1,0 +1,195 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2372CEA6-B948-4FEB-8E49-B68BB3A5D1F0}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RetailSiteKitAction</RootNamespace>
+    <AssemblyName>RetailSiteKitAction</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>RetailSiteKitAction.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>RetailSiteKitAction.App</SilverlightAppEntry>
+    <TestPageFileName>TestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>false</ThrowErrorsInValidation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>ClientBin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>ClientBin\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Controls, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+    <Resource Include="image1.png" />
+    <Resource Include="image2.png" />
+    <Page Include="ThumbControl.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="ThumbControl.xaml.cs">
+      <DependentUpon>ThumbControl.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page.xaml.cs">
+      <DependentUpon>Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </ApplicationDefinition>
+    <Page Include="Page.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="thumbs\Cortefiel_Men_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_1a.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_1a_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_1a_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_1a_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_1_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_1_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_1_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_2_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_2_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_2_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_3_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_3_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_3_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_4.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_4_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_4_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_4_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_5.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_5a.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_5a_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_5a_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_5a_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_5_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_5_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_5_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_6.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_6a.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_6a_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_6a_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_6a_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_6_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_6_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_6_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_7.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_7_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_7_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Men_7_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_1_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_1_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_1_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_2a.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_2a_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_2a_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_2a_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_2_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_2_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_2_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_3a.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_3a_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_3a_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_3a_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_3b.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_3b_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_3b_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_3b_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_3_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_3_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_3_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_4.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_4_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_4_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_4_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_5.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_5a.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_5a_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_5a_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_5a_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_5_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_5_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_5_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_6.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_6_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_6_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_6_3.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_7.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_7_1.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_7_2.jpg" />
+    <Resource Include="thumbs\Cortefiel_Woman_7_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MetaliqSilverlightSDK\MetaliqSilverlightSDK.csproj">
+      <Project>{578EE15C-65C9-4683-9636-755A1C525BC1}</Project>
+      <Name>MetaliqSilverlightSDK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight\v2.0\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

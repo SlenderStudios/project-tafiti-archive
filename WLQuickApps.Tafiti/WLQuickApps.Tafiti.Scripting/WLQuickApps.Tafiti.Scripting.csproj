@@ -1,0 +1,117 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A135598E-E17C-4207-8FFE-CCE8B7B31E1B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WLQuickApps.Tafiti.Scripting</RootNamespace>
+    <AssemblyName>WLQuickApps.Tafiti.Scripting</AssemblyName>
+    <NoStdLib>True</NoStdLib>
+    <CopyReferences>True</CopyReferences>
+    <TemplateFile>Properties\Script.jst</TemplateFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0028, 1591</NoWarn>
+    <DocumentationFile>bin\Debug\WLQuickApps.Tafiti.Scripting.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0028, 1591</NoWarn>
+    <DocumentationFile>bin\Release\WLQuickApps.Tafiti.Scripting.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Live.Messenger, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="sscorlib" />
+    <Reference Include="ssfx.Core" />
+    <Reference Include="ssfx.UI.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\Script.jst" />
+    <Content Include="SupportAssemblies\Microsoft.Live.Messenger.dll" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Managers\CryptographyManager.cs" />
+    <Compile Include="Managers\MessengerManager.cs" />
+    <Compile Include="Managers\InteropManager.cs" />
+    <Compile Include="Messenger\ContactElement.cs" />
+    <Compile Include="Managers\TafitiUserManager.cs" />
+    <Compile Include="Messenger\ContactVisual.cs" />
+    <Compile Include="Messenger\TafitiUpdateMessageFactory.cs" />
+    <Compile Include="Messenger\TafitiUpdateMessage.cs" />
+    <Compile Include="Messenger\MessengerController.cs" />
+    <Compile Include="Objects\Comment.cs" />
+    <Compile Include="Managers\CommentManager.cs" />
+    <Compile Include="Objects\TafitiUser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EntryPoint.cs" />
+    <Compile Include="Objects\ShelfStack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\ShelfStackItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Managers\ShelfStackManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(ProgramFiles)\nStuff\ScriptSharp\v1.0\nStuff.ScriptSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetDir)\$(TargetName).debug.js" "$(SolutionDir)\WLQuickApps.Tafiti.WebSite\App_Scripts\$(TargetName).debug.js"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

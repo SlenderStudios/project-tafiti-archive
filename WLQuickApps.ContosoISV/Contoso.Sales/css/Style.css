@@ -1,0 +1,48 @@
+body {font-family: Myriad, Arial, Verdana; color:#616161; font-size:12px;}
+#HeaderPanel {position:absolute;left:0px;top:0px;Width:480px;Height:72px;Background:url(act_header_bg_001.png)}
+#HeaderNavBar {position:absolute;left:103px;top:0px;Width:377px;Height:36px;Background:url(act_nav_back_001.png)}
+#NavOffice {position:absolute;left:1px;top:0px;Width:80px;Height:36px;Background:url(act_office_button_001.png)}
+#NavOffice.mouseover {Background:url(act_office_button_roll_001.png)}
+#NavDiary {position:absolute;left:80px;top:0px;Width:68px;Height:36px;Background:url(act_diary_button_001.png)}
+#NavDiary.mouseover {Background:url(act_diary_button_roll_001.png)}
+#NavDirection {position:absolute;left:148px;top:0px;Width:91px;Height:36px;Background:url(act_directions_button_001.png)}
+#NavDirection.mouseover {Background:url(act_directions_button_roll_.png)}
+#NavSend {position:absolute;left:237px;top:0px;Width:143px;Height:36px;Background:url(act_send_button_001.png)}
+#NavSend.mouseover {Background:url(act_send_button_roll_001.png)}
+#SearchText {position:absolute;left:196px;top:42px;Width:240px;Height:12px;border:none;font-size:10px; line-height:12px;}
+#SearchGO {position:absolute;left:443px;top:42px;Width:22px;Height:18px;Background:url(act_search_button_001.png)}
+#SearchGO.mouseover {Background:url(act_search_button_roll_001.png)}
+#myMap {top:73px;left:0px;}
+
+#CalendarPanel {position:absolute;left:10px;top:280px;Width:460px;Height:231px;Background:url(cal_bg_001.png); filter:alpha(opacity=90);}
+.Calendar {Border:none; color:#616161; position:absolute; left:30px;}
+.AppointmentDayStyle {Background:url(cal_day_red.png) center center no-repeat; Width:55px;Height:25px;}
+.SelectedDayStyle {font-weight:bold; Background:url(cal_day_red.png) center center no-repeat; Width:55px;Height:25px;}
+.DayStyle {Background:url(cal_day_green.png) center center no-repeat; Width:55px;Height:25px;}
+.OtherMonthDayStyle {color:#999999;  Background:url(cal_day_grey.png) center center no-repeat; Width:55px;Height:25px;}
+.NextPrevStyle {Font-Size:8pt; color:#CCCCFF }
+.DayHeaderStyle {color:#336666; Height:10px; font-size:10px;}
+.TitleStyle {Border:none; font-weight:bold; font-size:14px; color:#616161; Height:25px}
+#AppointmentCount {position:absolute;left:10px;top:215px;}
+#CalendarPanel a { text-decoration:none;}
+
+.pin {Width:23px;Height:23px;Background:url(act_pushpin_003.png)}
+.pinClient {Width:23px;Height:23px;Background:url(act_pushpin_003.png)}
+
+/*Customer Deatils Form*/
+#CustomerDetailsPanel {position:absolute;left:10px;top:280px;Width:460px;Height:231px;Background:url(cal_bg_001.png); filter:alpha(opacity=90);}
+#CustomerDetailsPanelContent {position: relative; top:40px; left:50px}
+#CustomerDetailsPanelContent input {width:350px;Height:12px;font-size:12px; line-height:12px;}
+#CustomerSearchGO {position:absolute;left:356px;top:121px;Width:22px;Height:18px;Background:url(act_search_button_001.png)}
+#CustomerSearchGO.mouseover {Background:url(act_search_button_roll_001.png)}
+
+/*Driving Directions*/
+#DrivingDirectionsPanel {position:absolute;left:10px;top:280px;Width:460px;Height:231px;Background:url(cal_bg_001.png); filter:alpha(opacity=90);}
+#DrivingDirectionsPanelContent {position: relative; top:30px; left:10px; width:450px; height:180px; overflow:auto;}
+#DrivingDirectionsPanelClose, #CustomerDetailsPanelClose, #CalendarPanelClose {position:absolute; top:5px; right:10px; width:16px; height:15px; background:url(x.png); cursor:pointer;}
+
+/* Modal Popup */
+.modalBackground {background-color:Gray;opacity:0.7;filter:alpha(opacity=70);}
+.modalPopup {font-family:Arial; Background:url(cal_bg_001.png); border:3px solid Gray;padding:3px;}
+.modalPopupContent { overflow:auto;}
+.modalPopupOK {cursor:pointer;text-decoration:underline; float:left;}

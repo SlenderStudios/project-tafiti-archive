@@ -1,0 +1,335 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE1A09DF-677B-4046-9053-F356E134D691}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WLQuickApps.SocialNetwork.Data</RootNamespace>
+    <AssemblyName>WLQuickApps.SocialNetwork.Data</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>WLQuickApps.SocialNetwork.snk</AssemblyOriginatorKeyFile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlbumDataSet.cs">
+      <DependentUpon>AlbumDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AlbumDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AlbumDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BaseItemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaseItemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CollectionDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CollectionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CollectionItemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CollectionItemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CommentDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EventDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ForumDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ForumDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FriendDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FriendDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GroupDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GroupDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LocationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MediaDataSet.cs">
+      <DependentUpon>MediaDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MediaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MediaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PendingEmailInvitesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PendingEmailInvitesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatisticsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TagDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TagDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WebEventDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebEventDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AlbumDataSet.xsc">
+      <DependentUpon>AlbumDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AlbumDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AlbumDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AlbumDataSet.xss">
+      <DependentUpon>AlbumDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="app.config" />
+    <None Include="BaseItemDataSet.xsc">
+      <DependentUpon>BaseItemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BaseItemDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BaseItemDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BaseItemDataSet.xss">
+      <DependentUpon>BaseItemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CollectionDataSet.xsc">
+      <DependentUpon>CollectionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CollectionDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CollectionDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CollectionDataSet.xss">
+      <DependentUpon>CollectionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CollectionItemDataSet.xsc">
+      <DependentUpon>CollectionItemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CollectionItemDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CollectionItemDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CollectionItemDataSet.xss">
+      <DependentUpon>CollectionItemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CommentDataSet.xsc">
+      <DependentUpon>CommentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CommentDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CommentDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CommentDataSet.xss">
+      <DependentUpon>CommentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EventDataSet.xsc">
+      <DependentUpon>EventDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EventDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EventDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="EventDataSet.xss">
+      <DependentUpon>EventDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ForumDataSet.xsc">
+      <DependentUpon>ForumDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ForumDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ForumDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ForumDataSet.xss">
+      <DependentUpon>ForumDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FriendDataSet.xsc">
+      <DependentUpon>FriendDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FriendDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FriendDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FriendDataSet.xss">
+      <DependentUpon>FriendDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GroupDataSet.xsc">
+      <DependentUpon>GroupDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GroupDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GroupDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="GroupDataSet.xss">
+      <DependentUpon>GroupDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LocationDataSet.xsc">
+      <DependentUpon>LocationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LocationDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LocationDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="LocationDataSet.xss">
+      <DependentUpon>LocationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MediaDataSet.xsc">
+      <DependentUpon>MediaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MediaDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MediaDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MediaDataSet.xss">
+      <DependentUpon>MediaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PendingEmailInvitesDataSet.xsc">
+      <DependentUpon>PendingEmailInvitesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PendingEmailInvitesDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PendingEmailInvitesDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PendingEmailInvitesDataSet.xss">
+      <DependentUpon>PendingEmailInvitesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="StatisticsDataSet.xsc">
+      <DependentUpon>StatisticsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StatisticsDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StatisticsDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="StatisticsDataSet.xss">
+      <DependentUpon>StatisticsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TagDataSet.xsc">
+      <DependentUpon>TagDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TagDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TagDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TagDataSet.xss">
+      <DependentUpon>TagDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UserDataSet.xsc">
+      <DependentUpon>UserDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UserDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UserDataSet.xss">
+      <DependentUpon>UserDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WebEventDataSet.xsc">
+      <DependentUpon>WebEventDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WebEventDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WebEventDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="WebEventDataSet.xss">
+      <DependentUpon>WebEventDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WLQuickApps.SocialNetwork.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

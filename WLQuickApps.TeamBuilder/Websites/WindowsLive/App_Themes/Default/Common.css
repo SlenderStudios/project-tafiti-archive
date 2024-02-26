@@ -1,0 +1,387 @@
+﻿
+body
+{
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 11px;
+    text-align: center;
+    color: #2A2E5E;
+    background-color: #161616;
+    padding: 0;
+    margin: 0;
+}
+
+a, a:link, a:visited
+{
+    text-decoration: none;
+    color: #00448D;
+    background-color: inherit;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+a:active
+{
+    text-decoration: underline;
+}
+
+ul, ol
+{
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, pre, code
+{
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input, textarea, select
+{
+    margin: 0;
+    padding: 0;
+}
+
+input, select
+{
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+a img, :link img, :visited img
+{
+    border: none;
+}
+
+.clearfix:after
+{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix
+{
+    display: inline-block;
+}
+
+html[xmlns] .clearfix
+{
+    display: block;
+}
+
+* html .clearfix
+{
+    height: 1%;
+}
+
+#wrapper
+{
+    padding: 0;
+    margin: 0 auto;  
+}
+
+#inner-wrapper
+{
+    width: 980px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;    
+    background-color: #F7F7EB;
+}
+
+#header
+{
+    background-color: #F7F7EB;
+}
+
+#login
+{
+    text-align: right;
+    margin: 0;
+    padding: 0;    
+    background-color: #E5E8E1;
+}
+
+#login li
+{
+    float: right;
+    white-space: nowrap;
+    line-height: 25px;
+    height: 25px;
+    margin: 0 5px 0 0;
+    padding: 2px 5px 3px 5px;
+}
+
+#login li a
+{
+    color: #2131DD;
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    line-height: 25px;
+    height: 100%;
+}
+
+#logo
+{
+    background-color: #F7F7EB;
+    margin: 10px;
+    float: left;
+}
+
+#welcome
+{
+    width: 650px;
+    margin: 10px 5px 10px 10px;
+    float: left;
+}
+
+#welcome h1
+{
+    font-size: 2em;
+    font-weight: normal;
+}
+
+#welcome p
+{
+    font-size: 1.2em;
+    padding: .5em 0;
+}
+
+#content h2
+{
+    color: #0A0F44;
+    background-color: #E5E8E1;
+}
+
+#dropdown
+{
+    position: relative;
+    z-index: 100;
+}
+
+#dropdown ul
+{
+    display: none;
+    border: solid 1px;
+    background-color: #fff;
+    position: absolute;
+    _overflow: hidden;
+    top: 30px;
+    right: 0;
+    width: 150px;
+    z-index: 100;
+}
+
+#dropdown.on ul
+{
+    display: block;
+    z-index: 200;
+}
+
+#dropdown ul li
+{
+    border: none;
+    display: block;
+    line-height: 1.5em;
+    text-align: left;
+    width: 95%;
+    margin: 0 4px 0 0;
+    padding: 0.25em 0.60em 0.35em 0.8em;
+    float: left;
+}
+
+#dropdown ul li a
+{
+    display: inline;
+    line-height: 1.5em;
+}
+
+#dropdown ul li#presence-link
+{
+    float: none;
+    clear: both;
+    border-top: solid 1px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#dropdown ul li#presence-link a
+{
+    text-align: right;
+    line-height: 1.5em;
+    padding: 0.25em 0.60em 0.35em 0.8em;
+}
+
+#login ul li img
+{
+    vertical-align: middle;
+}
+
+#sign-in a
+{
+    background-position: right center;
+    background-image: url(http://login.live.com/pp550/images/LiveID16.gif?x=5.5.9388.0);
+    background-repeat: no-repeat;
+    padding-right: 20px;
+}
+
+#nav
+{
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    display: block;
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#nav li
+{
+    width: 100px;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 0.25em 0.60em 0 0.8em;
+    float: left;
+}
+
+#nav li a
+{
+    display: block;
+    padding: 0 1em 0.5em 0.7em;
+    margin: 0;
+}
+
+#nav li.selected
+{
+    font-weight: bold;
+}
+
+#nav li.selected a
+{
+}
+
+.text
+{
+    width: 300px;
+}
+
+.lesstext
+{
+    width: 200px;
+}
+
+.panel
+{
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    padding: 10px;
+    position: relative;
+}
+
+.panel p
+{
+    font-size: 1.2em;
+    padding: .25em 0;
+}
+
+.close, .close:link, .close:visited
+{
+    font-weight: bold;
+    font-size: 11px;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    display: block;
+    position: absolute;
+}
+
+.optional
+{
+    color: #4e4e4e;
+    font-size: 11px;
+}
+
+.two-column .column
+{
+    margin: 5px;
+    float: left;
+    width: 45%;
+}
+
+#content
+{
+    margin-top: 10px;
+}
+
+#content-left
+{
+    width: 650px;
+    float: left;
+    margin: 0 5px 0 10px;
+}
+
+#content-right
+{
+    width: 300px;
+    float: left;
+    margin: 0 10px 0 5px;
+}
+
+#footer
+{
+    border-top: solid 1px;
+    padding: 10px;
+    margin-top: 10px;    
+}
+
+#contacts-header, #contacts-wrapper
+{
+    width: 500px;
+}
+
+#contacts-wrapper
+{
+    height: 300px;
+    overflow: auto;
+}
+
+#contacts-header table, #contacts-wrapper table
+{
+    width: 483px;
+}
+
+#contacts-header th, #contacts-wrapper td
+{
+    margin: 0;
+    padding: 2px;
+}
+
+#contacts-header th.checkbox, #contacts-wrapper td.checkbox
+{
+    text-align: left;
+    width: 20px;
+}
+
+#contacts-header th.name-column, #contacts-header th.mail-column, #contacts-wrapper td.name-column, #contacts-wrapper td.mail-column
+{
+    text-align: left;
+    width: 225px;
+}
+
+#searchbox
+{
+    margin: 10px;
+    float: right;
+    clear: right;
+}

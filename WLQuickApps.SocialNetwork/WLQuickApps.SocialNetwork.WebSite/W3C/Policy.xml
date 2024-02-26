@@ -1,0 +1,55 @@
+<POLICIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+  <POLICY name="policy1"
+    discuri="http://localhost/Privacy.aspx">
+    <ENTITY>
+      <DATA-GROUP>
+        <DATA ref="#business.name">YOUR COMPANY</DATA>
+        <DATA ref="#business.department"></DATA>
+        <DATA ref="#business.contact-info.postal.street"></DATA>
+        <DATA ref="#business.contact-info.postal.city"></DATA>
+        <DATA ref="#business.contact-info.postal.stateprov"></DATA>
+        <DATA ref="#business.contact-info.postal.postalcode"></DATA>
+        <DATA ref="#business.contact-info.telecom.telephone.intcode"></DATA>
+        <DATA ref="#business.contact-info.telecom.telephone.loccode"></DATA>
+        <DATA ref="#business.contact-info.telecom.telephone.number"></DATA>
+        <DATA ref="#business.contact-info.online.email"></DATA>
+      </DATA-GROUP>
+    </ENTITY>
+    <ACCESS>
+      <contact-and-other/>
+    </ACCESS>
+    <DISPUTES-GROUP>
+      <DISPUTES resolution-type="service"
+        service="http://localhost/Privacy.aspx"
+  		>
+        <REMEDIES>
+          <correct/>
+        </REMEDIES>
+      </DISPUTES>
+    </DISPUTES-GROUP>
+    <STATEMENT>
+      <PURPOSE>
+        <current required="always" />
+        <admin required="always" />
+        <develop required="always" />
+      </PURPOSE>
+      <RECIPIENT>
+        <ours></ours>
+      </RECIPIENT>
+      <RETENTION> 
+        <indefinitely/>
+      </RETENTION>
+      <DATA-GROUP>
+        <DATA ref="#user.name"/>
+        <DATA ref="#user.bdate"/>
+        <DATA ref="#user.gender" optional="yes"/>
+        <DATA ref="#user.home-info.postal" optional="yes"/>
+        <DATA ref="#user.home-info.online.email"/>
+        <DATA ref="#thirdparty.name" optional="yes"/>
+        <DATA ref="#thirdparty.home-info.online.email" optional="yes"/>
+        <DATA ref="#dynamic.clickstream"/>
+        <DATA ref="#dynamic.http"/>
+      </DATA-GROUP>
+    </STATEMENT>
+  </POLICY>
+</POLICIES>

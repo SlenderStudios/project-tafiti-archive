@@ -1,0 +1,69 @@
+﻿<Canvas
+	xmlns="http://schemas.microsoft.com/client/2007"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:VESilverlight="clr-namespace:VESilverlight;assembly=ClientBin/VESilverlight.dll"
+	x:Class="VESilverlight.Secondary.TourControl;assembly=ClientBin/VESilverlight.dll" 
+	x:Name="UserControl" 
+	Loaded="Page_Loaded"
+	Width="682" Height="41.011">
+	
+	<Rectangle Width="681" Height="41" Fill="#FF07375D" Opacity="0.8" x:Name="Background"/>
+	
+	<TextBlock Width="103" Height="22" Canvas.Left="8" Canvas.Top="12" TextWrapping="Wrap" Foreground="#FFFFFFFF" FontFamily="Verdana"><Run Text="Guided Tour" FontSize="14"/></TextBlock>
+	
+	<Canvas Width="21.334" Height="19" Canvas.Left="175.501" Canvas.Top="12" x:Name="Pause" Cursor="Hand">
+	
+		<Rectangle Width="8.667" Height="19" Fill="#FFFFFFFF" Opacity="0.6"/>
+	
+		<Rectangle Width="8.667" Height="19" Fill="#FFFFFFFF" Opacity="0.6" Canvas.Left="12.667"/>
+	
+	</Canvas>
+	
+	<Rectangle Width="250" Height="19.917" Fill="#FF07375D" Canvas.Left="296" Canvas.Top="11.083" Opacity="0.9"/>
+	
+	<Path Width="240.334" Height="2.5" Fill="#FF07375D" Stretch="Fill" Stroke="#FFFFFFFF" Canvas.Left="300.833" Canvas.Top="19.833" Data="M228.33333,192.33333 C468.66667,192.33333 468.66699,192.33333 468.66699,192.33333" StrokeThickness="3" x:Name="ProgressBar"/>
+	
+	<Canvas Width="20" Height="19.917" Canvas.Left="112.501" Canvas.Top="11.083" x:Name="Play" Cursor="Hand">
+	
+		<Path Width="20" Height="19.917" Stretch="Fill" Data="M166,183 L185,191.91667 166,201.91597" Fill="#FFFFFFFF" Opacity="0.6"/>
+	
+	</Canvas>
+	
+	<Canvas Width="19" Height="19" Canvas.Left="144.168" Canvas.Top="12" x:Name="Stop" Cursor="Hand">
+	
+		<Rectangle Width="19" Height="19" Fill="#FFFFFFFF" Opacity="0.6"/>
+	
+	</Canvas>
+	
+	<TextBlock Width="44" Height="25.011" Canvas.Left="620" Canvas.Top="8" Text="0:00" TextWrapping="Wrap" Foreground="#FFFFFFFF" FontFamily="Verdana" FontSize="18" x:Name="TotalTime"/>
+	
+	<TextBlock Width="44" Height="25.011" Canvas.Left="566" Canvas.Top="8" Text="0:00" TextWrapping="Wrap" Foreground="#FFFFFFFF" FontFamily="Verdana" FontSize="18" x:Name="ElapsedTime"/>
+	
+	<TextBlock Width="16" Height="25.011" Canvas.Left="610" Canvas.Top="7.989" Text="/" TextWrapping="Wrap" Foreground="#FFFFFFFF" FontFamily="Verdana" FontSize="18"/>
+	
+	<Canvas Width="28" Height="19.917" Canvas.Left="247.459" Canvas.Top="11.083" x:Name="Forward" Cursor="Hand">
+	
+		<Path Width="8" Height="19.917" Stretch="Fill" Data="M166,183 L173.60117,186.56722 173.60022,197.93893 166,201.91597 z" Fill="#FFFFFFFF" Opacity="0.6" Canvas.Left="0.062"/>
+	
+		<Path Width="20" Height="19.917" Stretch="Fill" Data="M166,183 L185,191.91667 166,201.91597" Fill="#FFFFFFFF" Opacity="0.6" Canvas.Left="8"/>
+	
+		<Canvas Width="28" Height="19.917" x:Name="Backward" RenderTransformOrigin="0.5,0.5" Canvas.Left="-38.541" Cursor="Hand">
+	
+			<Canvas.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="-180"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Canvas.RenderTransform>
+	
+			<Path Width="8" Height="19.917" Stretch="Fill" Data="M166,183 L173.60117,186.56722 173.60022,197.93893 166,201.91597 z" Fill="#FFFFFFFF" Opacity="0.6" Canvas.Left="0.062"/>
+	
+			<Path Width="20" Height="19.917" Stretch="Fill" Data="M166,183 L185,191.91667 166,201.91597" Fill="#FFFFFFFF" Opacity="0.6" Canvas.Left="8"/>
+	
+		</Canvas>
+	
+	</Canvas>
+	
+</Canvas>

@@ -1,0 +1,5 @@
+﻿/* Side Panel */
+#AdvisorsSidePanel .ItemHeader {background:url(../Images/SidePanelSprite.png) no-repeat 0px 0px;height:68px; width:212px; padding-left:28px;}
+#AdvisorsSidePanel .ItemContent {background:url(../Images/SidePanelRepeatSelected.png) repeat-y;width:194px;padding-left:34px; padding-right:12px;display:table;}
+#AdvisorsSidePanel .ItemFooter {background:url(../Images/SidePanelSprite.png) no-repeat 0px -68px;height:40px; width:240px;}
+.AdvisorsHeader {background:url(../Images/IE6/Advisors.png) no-repeat 0px 15px;height:37px; width:69px;}

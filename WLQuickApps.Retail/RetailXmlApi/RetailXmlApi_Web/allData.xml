@@ -1,0 +1,2164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StoreData>
+	<Brand id="WomanSecret">
+	  <ProductGroup id="Bag">
+			<Product gender="Women" id="1" us_price="30">
+				<Media>
+					<VideoThumb id="1" url="thumbs/WS_1.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="1.1" url="thumbs/WS_1_1.jpg"/>
+						<Image id="1.2" url="thumbs/WS_1_2.jpg"/>
+						<Image id="1.3" url="thumbs/WS_1_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="1" url="/WS_1.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[One Size]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Silver]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Silver Beach Bag]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% PVC]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sandals">
+			<Product gender="Women" id="2" us_price="22">
+				<Media>
+					<VideoThumb id="2" url="thumbs/WS_2.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="2.1" url="thumbs/WS_2_1.jpg"/>
+						<Image id="2.2" url="thumbs/WS_2_2.jpg"/>
+						<Image id="2.3" url="thumbs/WS_2_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="2" url="/WS_2.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[36|37|38|39|40|41]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Black|Silver]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Sandals]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% PVC]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Bathing Suit">
+			<Product gender="Women" id="3" us_price="52">
+				<Media>
+					<VideoThumb id="3" url="thumbs/WS_3.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="3.1" url="thumbs/WS_3_1.jpg"/>
+						<Image id="3.2" url="thumbs/WS_3_2.jpg"/>
+						<Image id="3.3" url="thumbs/WS_3_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="3" url="/WS_3.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[M|L]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Black]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Black Bathing Suit ME Collection]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Polyamide]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Slippers">
+			<Product gender="Women" id="4" us_price="22">
+				<Media>
+					<VideoThumb id="4" url="thumbs/WS_4.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="4.1" url="thumbs/WS_4_1.jpg"/>
+						<Image id="4.2" url="thumbs/WS_4_2.jpg"/>
+						<Image id="4.3" url="thumbs/WS_4_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="4" url="/WS_4.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[36|37|38|39|40|41]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Navy]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Nautic Twill Slippers]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[Shell: 100% Cotton - Lining: 100% Cotton - Insole: 100% Cotton - Outsole: 100% Suede]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shorts">
+			<Product gender="Women" id="5" us_price="37">
+				<Media>
+					<VideoThumb id="5" url="thumbs/WS_5.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="5.1" url="thumbs/WS_5_1.jpg"/>
+						<Image id="5.2" url="thumbs/WS_5_2.jpg"/>
+						<Image id="5.3" url="thumbs/WS_5_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="5" url="/WS_5.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Off-white]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Nautic boat short]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Polycloth]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Bag">
+			<Product gender="Women" id="6" us_price="44">
+				<Media>
+					<VideoThumb id="6" url="thumbs/WS_6.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="6.1" url="thumbs/WS_6_1.jpg"/>
+						<Image id="6.2" url="thumbs/WS_6_2.jpg"/>
+						<Image id="6.3" url="thumbs/WS_6_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="6" url="/WS_6.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[One Size]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Red/White]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Nautic boat collection Anchor Beach Bag]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[Shell: 100% Terrycloth - Lining: 100% cotton - Puller: Lacquered nickel - Anchor pin: Methacrylate]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Bra">
+			<Product gender="Women" id="7" us_price="25">
+				<Media>
+					<VideoThumb id="7" url="thumbs/WS_7.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="7.1" url="thumbs/WS_7_1.jpg"/>
+						<Image id="7.2" url="thumbs/WS_7_2.jpg"/>
+						<Image id="7.3" url="thumbs/WS_7_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="7" url="/WS_7.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Stripes]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Nautic boat collection bra]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[94% Modal - 6% Spandex]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Gown">
+			<Product gender="Women" id="8" us_price="22">
+				<Media>
+					<VideoThumb id="8" url="thumbs/WS_8.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="8.1" url="thumbs/WS_8_1.jpg"/>
+						<Image id="8.2" url="thumbs/WS_8_2.jpg"/>
+						<Image id="8.3" url="thumbs/WS_8_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="8" url="/WS_8.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Stripes]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Nautic boat gown]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[76% Cotton - 24% Polyester]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sandals">
+			<Product gender="Women" id="9" us_price="22">
+				<Media>
+					<VideoThumb id="9" url="thumbs/WS_9.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="9.1" url="thumbs/WS_9_1.jpg"/>
+						<Image id="9.2" url="thumbs/WS_9_2.jpg"/>
+						<Image id="9.3" url="thumbs/WS_9_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="9" url="/WS_9.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[36|37|38|39|40|41]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Red]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Red Tulipes Sandals]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Pajamas">
+			<Product gender="Women" id="10" us_price="30">
+				<Media>
+					<VideoThumb id="10" url="thumbs/WS_10.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="10.1" url="thumbs/WS_10_1.jpg"/>
+						<Image id="10.2" url="thumbs/WS_10_2.jpg"/>
+						<Image id="10.3" url="thumbs/WS_10_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="10" url="/WS_10.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Green]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Cute Patch Pj Nena Dots]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[92% Cotton, 8% Elastan]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Bag">
+			<Product gender="Women" id="11" us_price="22">
+				<Media>
+					<VideoThumb id="11" url="thumbs/WS_12.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="11.1" url="thumbs/WS_12_1.jpg"/>
+						<Image id="11.2" url="thumbs/WS_12_2.jpg"/>
+						<Image id="11.3" url="thumbs/WS_12_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="11" url="/WS_12.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[One Size]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Off-White]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Pj Nena Dots Patch Bag]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Canvas Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Dress">
+			<Product gender="Women" id="12" us_price="59">
+				<Media>
+					<VideoThumb id="12" url="thumbs/WS_13.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="12.1" url="thumbs/WS_13_1.jpg"/>
+						<Image id="12.2" url="thumbs/WS_13_2.jpg"/>
+						<Image id="12.3" url="thumbs/WS_13_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="12" url="/WS_13.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Black]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[New dots Silk Voile Dress]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[65% Cotton - 35% Silk]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sandals">
+			<Product gender="Women" id="13" us_price="15">
+				<Media>
+					<VideoThumb id="13" url="thumbs/WS_14.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="13.1" url="thumbs/WS_14_1.jpg"/>
+						<Image id="13.2" url="thumbs/WS_14_2.jpg"/>
+						<Image id="13.3" url="thumbs/WS_14_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="13" url="/WS_14.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[37|38|39|40|41]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Black]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Flip flops]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[Shell: 100% Canvas - Insole: 100% Cotton - Outsole: 100% Eva]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Bag">
+			<Product gender="Women" id="14" us_price="30">
+				<Media>
+					<VideoThumb id="14" url="thumbs/WS_15.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="14.1" url="thumbs/WS_15_1.jpg"/>
+						<Image id="14.2" url="thumbs/WS_15_2.jpg"/>
+						<Image id="14.3" url="thumbs/WS_15_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="14" url="/WS_15.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[One Size]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Dark Blue]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Crochet Bag from Cute Patch Collection]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shirt">
+			<Product gender="Women" id="15" us_price="19">
+				<Media>
+					<VideoThumb id="15" url="thumbs/WS_16.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="15.1" url="thumbs/WS_16_1.jpg"/>
+						<Image id="15.2" url="thumbs/WS_16_2.jpg"/>
+						<Image id="15.3" url="thumbs/WS_16_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="15" url="/WS_16.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[White]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Sunny Strap t-shirt from Cute Patch Collection]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[95% Modal - 5% Elastan]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sandals">
+			<Product gender="Women" id="16" us_price="30">
+				<Media>
+					<VideoThumb id="16" url="thumbs/WS_17.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="16.1" url="thumbs/WS_17_1.jpg"/>
+						<Image id="16.2" url="thumbs/WS_17_2.jpg"/>
+						<Image id="16.3" url="thumbs/WS_17_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="16" url="/WS_17.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[36|37|38|39|40|41]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Black]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Cute Patch Bag - Seventies Collection]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Leather]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+	</Brand>
+	<Brand id="Springfield">
+	  <ProductGroup id="Jeans">
+			<Product gender="Men" id="1" us_price="59">
+				<Media>
+					<VideoThumb id="1" url="thumbs/SPF_Men_1.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="1.1" url="thumbs/SPF_Men_1_1.jpg"/>
+						<Image id="1.2" url="thumbs/SPF_Men_1_2.jpg"/>
+						<Image id="1.3" url="thumbs/SPF_Men_1_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="1" url="/SPF_Men_1.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[46|48|50|52|54|56]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Medium washed|Light washed|Dark contrast]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Straight Leg Dark contrast Jeans]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sweatshirt">
+			<Product gender="Men" id="2" us_price="44">
+				<Media>
+					<VideoThumb id="2" url="thumbs/SPF_Men_2.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="2.1" url="thumbs/SPF_Men_2_1.jpg"/>
+						<Image id="2.2" url="thumbs/SPF_Men_2_2.jpg"/>
+						<Image id="2.3" url="thumbs/SPF_Men_2_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="2" url="/SPF_Men_2.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[M|L|XL|XXL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Brown]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Classic Fit Dirty from Outer Space Hoody]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sneakers">
+			<Product gender="Women" id="3" us_price="37">
+				<Media>
+					<VideoThumb id="3" url="thumbs/SPF_Woman_1.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="3.1" url="thumbs/SPF_Woman_1_1.jpg"/>
+						<Image id="3.2" url="thumbs/SPF_Woman_1_2.jpg"/>
+						<Image id="3.3" url="thumbs/SPF_Woman_1_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="3" url="/SPF_Woman_1.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[37|38|39|40|41]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[White|Black]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[White sneakers]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[Upper: 100% Cotton - Inner: 100% Cotton - Outsole: 100% Rubber]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Skirt">
+			<Product gender="Women" id="4" us_price="44">
+				<Media>
+					<VideoThumb id="4" url="thumbs/SPF_Woman_2.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="4.1" url="thumbs/SPF_Woman_2_1.jpg"/>
+						<Image id="4.2" url="thumbs/SPF_Woman_2_2.jpg"/>
+						<Image id="4.3" url="thumbs/SPF_Woman_2_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="4" url="/SPF_Woman_2.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[36|37|38|39|40|41|42]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[White with blue stripes]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Overall Striped Skirt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shirt">
+			<Product gender="Women" id="5" us_price="24">
+				<Media>
+					<VideoThumb id="5" url="thumbs/SPF_Woman_2a.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="5.1" url="thumbs/SPF_Woman_2a_1.jpg"/>
+						<Image id="5.2" url="thumbs/SPF_Woman_2a_2.jpg"/>
+						<Image id="5.3" url="thumbs/SPF_Woman_2a_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="5" url="/SPF_Woman_2a.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Yellow]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Yellow tee shirt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Scarf">
+			<Product gender="Women" id="6" us_price="19">
+				<Media>
+					<VideoThumb id="6" url="thumbs/SPF_Woman_3.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="6.1" url="thumbs/SPF_Woman_3_1.jpg"/>
+						<Image id="6.2" url="thumbs/SPF_Woman_3_2.jpg"/>
+						<Image id="6.3" url="thumbs/SPF_Woman_3_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="6" url="/SPF_Woman_3.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[One Size]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Lime]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Foulard multi stripes]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[25% Silk - 75% Viscose]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Skirt">
+			<Product gender="Women" id="7" us_price="30">
+				<Media>
+					<VideoThumb id="7" url="thumbs/SPF_Woman_4.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="7.1" url="thumbs/SPF_Woman_4_1.jpg"/>
+						<Image id="7.2" url="thumbs/SPF_Woman_4_2.jpg"/>
+						<Image id="7.3" url="thumbs/SPF_Woman_4_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="7" url="/SPF_Woman_4.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[34|36|38|40|42|44]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Black|Washed flamingo]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[5 pocket mini skirt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[97% Cotton - 3% Elastan]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shirt">
+			<Product gender="Women" id="8" us_price="19">
+				<Media>
+					<VideoThumb id="8" url="thumbs/SPF_Woman_5.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="8.1" url="thumbs/SPF_Woman_5_1.jpg"/>
+						<Image id="8.2" url="thumbs/SPF_Woman_5_2.jpg"/>
+						<Image id="8.3" url="thumbs/SPF_Woman_5_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="8" url="/SPF_Woman_5.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Black|White]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[T-shirt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Belt">
+			<Product gender="Women" id="9" us_price="19">
+				<Media>
+					<VideoThumb id="9" url="thumbs/SPF_Woman_5a.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="9.1" url="thumbs/SPF_Woman_5a_1.jpg"/>
+						<Image id="9.2" url="thumbs/SPF_Woman_5a_2.jpg"/>
+						<Image id="9.3" url="thumbs/SPF_Woman_5a_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="9" url="/SPF_Woman_5a.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[85cm|90cm|95cm]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Black]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Black Pyramid buckle]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Poliuterano]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Jacket">
+			<Product gender="Women" id="10" us_price="104">
+				<Media>
+					<VideoThumb id="10" url="thumbs/SPF_Woman_6.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="10.1" url="thumbs/SPF_Woman_6_1.jpg"/>
+						<Image id="10.2" url="thumbs/SPF_Woman_6_2.jpg"/>
+						<Image id="10.3" url="thumbs/SPF_Woman_6_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="10" url="/SPF_Woman_6.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[36|38|40|42]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Spicy red]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Summer pattern trench]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shoes">
+			<Product gender="Women" id="11" us_price="52">
+				<Media>
+					<VideoThumb id="11" url="thumbs/SPF_Woman_7.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="11.1" url="thumbs/SPF_Woman_7_1.jpg"/>
+						<Image id="11.2" url="thumbs/SPF_Woman_7_2.jpg"/>
+						<Image id="11.3" url="thumbs/SPF_Woman_7_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="11" url="/SPF_Woman_7.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[37|39|41]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Grey]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Bracelet Charol Shoe]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[Upper: 100% Poliuretane - Inner: 100% Poliuretano - Outsole: 100% Resine]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Jeans">
+			<Product gender="Men" id="12" us_price="59">
+				<Media>
+					<VideoThumb id="12" url="thumbs/SPF_Men_1.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="12.1" url="thumbs/SPF_Men_1_1.jpg"/>
+						<Image id="12.2" url="thumbs/SPF_Men_1_2.jpg"/>
+						<Image id="12.3" url="thumbs/SPF_Men_1_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="12" url="/SPF_Men_1.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[46|48|50|52|54|56]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Medium washed|Light washed|Dark contrast]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Straight Leg Dark contrast Jeans]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sweatshirt">
+			<Product gender="Men" id="13" us_price="44">
+				<Media>
+					<VideoThumb id="13" url="thumbs/SPF_Men_2.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="13.1" url="thumbs/SPF_Men_2_1.jpg"/>
+						<Image id="13.2" url="thumbs/SPF_Men_2_2.jpg"/>
+						<Image id="13.3" url="thumbs/SPF_Men_2_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="13" url="/SPF_Men_2.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[M|L|XL|XXL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Brown]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Classic Fit Dirty from Outer Space Hoody]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sneakers">
+			<Product gender="Women" id="14" us_price="37">
+				<Media>
+					<VideoThumb id="14" url="thumbs/SPF_Woman_1.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="14.1" url="thumbs/SPF_Woman_1_1.jpg"/>
+						<Image id="14.2" url="thumbs/SPF_Woman_1_2.jpg"/>
+						<Image id="14.3" url="thumbs/SPF_Woman_1_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="14" url="/SPF_Woman_1.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[37|38|39|40|41]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[White|Black]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[White sneakers]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[Upper: 100% Cotton - Inner: 100% Cotton - Outsole: 100% Rubber]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Skirt">
+			<Product gender="Women" id="15" us_price="44">
+				<Media>
+					<VideoThumb id="15" url="thumbs/SPF_Woman_2.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="15.1" url="thumbs/SPF_Woman_2_1.jpg"/>
+						<Image id="15.2" url="thumbs/SPF_Woman_2_2.jpg"/>
+						<Image id="15.3" url="thumbs/SPF_Woman_2_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="15" url="/SPF_Woman_2.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[36|37|38|39|40|41|42]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[White with blue stripes]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Overall Striped Skirt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shirt">
+			<Product gender="Women" id="16" us_price="24">
+				<Media>
+					<VideoThumb id="16" url="thumbs/SPF_Woman_2a.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="16.1" url="thumbs/SPF_Woman_2a_1.jpg"/>
+						<Image id="16.2" url="thumbs/SPF_Woman_2a_2.jpg"/>
+						<Image id="16.3" url="thumbs/SPF_Woman_2a_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="16" url="/SPF_Woman_2a.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Yellow]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Yellow tee shirt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+	</Brand>
+	<Brand id="PdH">
+	  <ProductGroup id="Purse">
+			<Product gender="Women" id="1" us_price="312">
+				<Media>
+					<VideoThumb id="1" url="thumbs/PdH_Women_1.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="1.1" url="thumbs/PdH_Women_1_1.jpg"/>
+						<Image id="1.2" url="thumbs/PdH_Women_1_2.jpg"/>
+						<Image id="1.3" url="thumbs/PdH_Women_1_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="1" url="/PdH_Women_1.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[One Size]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Gold/Brown|Black/White]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Purse]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Leather]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Skirt">
+			<Product gender="Women" id="2" us_price="512">
+				<Media>
+					<VideoThumb id="2" url="thumbs/PdH_Women_2.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="2.1" url="thumbs/PdH_Women_2_1.jpg"/>
+						<Image id="2.2" url="thumbs/PdH_Women_2_2.jpg"/>
+						<Image id="2.3" url="thumbs/PdH_Women_2_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="2" url="/PdH_Women_2.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[36|37|38|39|40|41|42]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Mink|Black|White|Red]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Embroidered full mink skirt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Silk]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shirt">
+			<Product gender="Women" id="3" us_price="249">
+				<Media>
+					<VideoThumb id="3" url="thumbs/PdH_Women_3.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="3.1" url="thumbs/PdH_Women_3_1.jpg"/>
+						<Image id="3.2" url="thumbs/PdH_Women_3_2.jpg"/>
+						<Image id="3.3" url="thumbs/PdH_Women_3_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="3" url="/PdH_Women_3.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38|39|40|41|42|43|44]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Mink|Black|White|Red]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Sleeveless top with mink gathered]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Silk]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sandals">
+			<Product gender="Women" id="4" us_price="241">
+				<Media>
+					<VideoThumb id="4" url="thumbs/PdH_Women_4.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="4.1" url="thumbs/PdH_Women_4_1.jpg"/>
+						<Image id="4.2" url="thumbs/PdH_Women_4_2.jpg"/>
+						<Image id="4.3" url="thumbs/PdH_Women_4_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="4" url="/PdH_Women_4.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38|39|40|41]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Black|White|Yellow]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Suede heel sandal with metalic bands]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Suede]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Purse">
+			<Product gender="Women" id="5" us_price="417">
+				<Media>
+					<VideoThumb id="5" url="thumbs/PdH_Women_5.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="5.1" url="thumbs/PdH_Women_5_1.jpg"/>
+						<Image id="5.2" url="thumbs/PdH_Women_5_2.jpg"/>
+						<Image id="5.3" url="thumbs/PdH_Women_5_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="5" url="/PdH_Women_5.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[One Size]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Strawberry|Mustard|Brown]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Shopping purse with strawberry patent leather]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[70% Cotton - 30% Leather]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Dress">
+			<Product gender="Women" id="6" us_price="373">
+				<Media>
+					<VideoThumb id="6" url="thumbs/PdH_Women_6.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="6.1" url="thumbs/PdH_Women_6_1.jpg"/>
+						<Image id="6.2" url="thumbs/PdH_Women_6_2.jpg"/>
+						<Image id="6.3" url="thumbs/PdH_Women_6_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="6" url="/PdH_Women_6.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38|39|40|41|42|43|44]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Black|White|Opal]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Black mexican dress]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[61% Polyurethane - 26% Polyester - 13% Viscose]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sandals">
+			<Product gender="Women" id="7" us_price="241">
+				<Media>
+					<VideoThumb id="7" url="thumbs/PdH_Women_7.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="7.1" url="thumbs/PdH_Women_7_1.jpg"/>
+						<Image id="7.2" url="thumbs/PdH_Women_7_2.jpg"/>
+						<Image id="7.3" url="thumbs/PdH_Women_7_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="7" url="/PdH_Women_7.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38|39|40|41]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Green|Brown|Black]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Suede heel sandal with metalic bands]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Suede]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Purse">
+			<Product gender="Women" id="8" us_price="100">
+				<Media>
+					<VideoThumb id="8" url="thumbs/PdH_Women_8.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="8.1" url="thumbs/PdH_Women_8_1.jpg"/>
+						<Image id="8.2" url="thumbs/PdH_Women_8_2.jpg"/>
+						<Image id="8.3" url="thumbs/PdH_Women_8_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="8" url="/PdH_Women_8.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[One Size]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Mustard|Brown|Green]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Mini-flown purse with plastic canvas and gathered logo]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[25% Leather - 30% Cotton - 30% Linen - 15% Polyurethane]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Pants">
+			<Product gender="Women" id="9" us_price="176">
+				<Media>
+					<VideoThumb id="9" url="thumbs/PdH_Women_9.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="9.1" url="thumbs/PdH_Women_9_1.jpg"/>
+						<Image id="9.2" url="thumbs/PdH_Women_9_2.jpg"/>
+						<Image id="9.3" url="thumbs/PdH_Women_9_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="9" url="/PdH_Women_9.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38|39|40|41|42|43|44]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Tile|Black|Yellow]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Tile pants]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Blouse">
+			<Product gender="Women" id="10" us_price="200">
+				<Media>
+					<VideoThumb id="10" url="thumbs/PdH_Women_10.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="10.1" url="thumbs/PdH_Women_10_1.jpg"/>
+						<Image id="10.2" url="thumbs/PdH_Women_10_2.jpg"/>
+						<Image id="10.3" url="thumbs/PdH_Women_10_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="10" url="/PdH_Women_10.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38|39|40|41|42|43|44]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Brown|Black|Mustard]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Blouse]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[76% Cotton - 19% Poliamid - 5% Elastanid]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sandals">
+			<Product gender="Women" id="11" us_price="241">
+				<Media>
+					<VideoThumb id="11" url="thumbs/PdH_Women_11.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="11.1" url="thumbs/PdH_Women_11_1.jpg"/>
+						<Image id="11.2" url="thumbs/PdH_Women_11_2.jpg"/>
+						<Image id="11.3" url="thumbs/PdH_Women_11_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="11" url="/PdH_Women_11.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38|39|40|41]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Yellow|Brown|Black]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Suede heel sandal with metalic bands]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Suede]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Dress">
+			<Product gender="Women" id="12" us_price="366">
+				<Media>
+					<VideoThumb id="12" url="thumbs/PdH_Women_12.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="12.1" url="thumbs/PdH_Women_12_1.jpg"/>
+						<Image id="12.2" url="thumbs/PdH_Women_12_2.jpg"/>
+						<Image id="12.3" url="thumbs/PdH_Women_12_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="12" url="/PdH_Women_12.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38|39|40|41|42|43|44]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Tile|Black|Brown]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Tile flying dress]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Silk]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Clogs">
+			<Product gender="Women" id="13" us_price="227">
+				<Media>
+					<VideoThumb id="13" url="thumbs/PdH_Women_13.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="13.1" url="thumbs/PdH_Women_13_1.jpg"/>
+						<Image id="13.2" url="thumbs/PdH_Women_13_2.jpg"/>
+						<Image id="13.3" url="thumbs/PdH_Women_13_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="13" url="/PdH_Women_13.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38|39|40|41]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Mustard|Black|Opal]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Heel wood clog]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[83% PVC - 11% Polyester - 6% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Blouse">
+			<Product gender="Women" id="14" us_price="241">
+				<Media>
+					<VideoThumb id="14" url="thumbs/PdH_Women_14.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="14.1" url="thumbs/PdH_Women_14_1.jpg"/>
+						<Image id="14.2" url="thumbs/PdH_Women_14_2.jpg"/>
+						<Image id="14.3" url="thumbs/PdH_Women_14_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="14" url="/PdH_Women_14.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38|39|40|41|42|43|44]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Black|White|Brown]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Black banalia blouse]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[76% Cotton - 19% Poliamid - 5% Elastanid]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Pants">
+			<Product gender="Women" id="15" us_price="198">
+				<Media>
+					<VideoThumb id="15" url="thumbs/PdH_Women_15.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="15.1" url="thumbs/PdH_Women_15_1.jpg"/>
+						<Image id="15.2" url="thumbs/PdH_Women_15_2.jpg"/>
+						<Image id="15.3" url="thumbs/PdH_Women_15_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="15" url="/PdH_Women_15.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38|39|40|41|42|43|44]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Black|White|Brown]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Black banalia pants]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[76% Cotton - 19% Poliamid - 5% Elastanid]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Purse">
+			<Product gender="Women" id="16" us_price="312">
+				<Media>
+					<VideoThumb id="16" url="thumbs/PdH_Women_1.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="16.1" url="thumbs/PdH_Women_1_1.jpg"/>
+						<Image id="16.2" url="thumbs/PdH_Women_1_2.jpg"/>
+						<Image id="16.3" url="thumbs/PdH_Women_1_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="16" url="/PdH_Women_1.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[One Size]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Gold/Brown|Black/White]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Purse]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Leather]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+	</Brand>
+	<Brand id="Milano">
+	  <ProductGroup id="Pants">
+			<Product gender="Men" id="1" us_price="89">
+				<Media>
+					<VideoThumb id="1" url="thumbs/Milano_1.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="1.1" url="thumbs/Milano_1_1.jpg"/>
+						<Image id="1.2" url="thumbs/Milano_1_2.jpg"/>
+						<Image id="1.3" url="thumbs/Milano_1_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="1" url="/Milano_1.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[46|48|50|52|54|56]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Black|White]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[White Casual chino pants - Sport line]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shirt">
+			<Product gender="Men" id="2" us_price="134">
+				<Media>
+					<VideoThumb id="2" url="thumbs/Milano_2.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="2.1" url="thumbs/Milano_2_1.jpg"/>
+						<Image id="2.2" url="thumbs/Milano_2_2.jpg"/>
+						<Image id="2.3" url="thumbs/Milano_2_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="2" url="/Milano_2.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[2|3|4|5|6]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Red-white|Blue-white]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Red/white Vichy Pattern Shirt  - Sport line]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shoes">
+			<Product gender="Men" id="3" us_price="185">
+				<Media>
+					<VideoThumb id="3" url="thumbs/Milano_3.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="3.1" url="thumbs/Milano_3_1.jpg"/>
+						<Image id="3.2" url="thumbs/Milano_3_2.jpg"/>
+						<Image id="3.3" url="thumbs/Milano_3_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="3" url="/Milano_3.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[39|40|41|42|43|44]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Black|Brown]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Brown suede shoes]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Suede]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Jacket">
+			<Product gender="Men" id="4" us_price="252">
+				<Media>
+					<VideoThumb id="4" url="thumbs/Milano_4.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="4.1" url="thumbs/Milano_4_1.jpg"/>
+						<Image id="4.2" url="thumbs/Milano_4_2.jpg"/>
+						<Image id="4.3" url="thumbs/Milano_4_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="4" url="/Milano_4.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[46|48|50|52|54|56]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Celeste|Navy|Brown]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Light Blue Jacket. Safari Model]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shirt">
+			<Product gender="Men" id="5" us_price="104">
+				<Media>
+					<VideoThumb id="5" url="thumbs/Milano_4a.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="5.1" url="thumbs/Milano_4a_1.jpg"/>
+						<Image id="5.2" url="thumbs/Milano_4a_2.jpg"/>
+						<Image id="5.3" url="thumbs/Milano_4a_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="5" url="/Milano_4a.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[2|3|4|5|6]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Blue|White]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Smart Casual White collar Shirt - Sport line]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Pants">
+			<Product gender="Men" id="6" us_price="104">
+				<Media>
+					<VideoThumb id="6" url="thumbs/Milano_5.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="6.1" url="thumbs/Milano_5_1.jpg"/>
+						<Image id="6.2" url="thumbs/Milano_5_2.jpg"/>
+						<Image id="6.3" url="thumbs/Milano_5_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="6" url="/Milano_5.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[46|48|50|52|54|56]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Beige|Brown|Blue|Black]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Pants: San Francisco Model]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shoes">
+			<Product gender="Men" id="7" us_price="178">
+				<Media>
+					<VideoThumb id="7" url="thumbs/Milano_6.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="7.1" url="thumbs/Milano_6_1.jpg"/>
+						<Image id="7.2" url="thumbs/Milano_6_2.jpg"/>
+						<Image id="7.3" url="thumbs/Milano_6_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="7" url="/Milano_6.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[39|40|41|42|43|44]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Brown]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Brown Suede shoes]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Suede]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Jacket">
+			<Product gender="Men" id="8" us_price="267">
+				<Media>
+					<VideoThumb id="8" url="thumbs/Milano_7.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="8.1" url="thumbs/Milano_7_1.jpg"/>
+						<Image id="8.2" url="thumbs/Milano_7_2.jpg"/>
+						<Image id="8.3" url="thumbs/Milano_7_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="8" url="/Milano_7.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[46|48|50|52|54|56]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Beige|Blue|Black|Brown chocolate]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Jacket. New York Model]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Pants">
+			<Product gender="Men" id="9" us_price="89">
+				<Media>
+					<VideoThumb id="9" url="thumbs/Milano_8.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="9.1" url="thumbs/Milano_8_1.jpg"/>
+						<Image id="9.2" url="thumbs/Milano_8_2.jpg"/>
+						<Image id="9.3" url="thumbs/Milano_8_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="9" url="/Milano_8.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[46|48|50|52|54|56]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Navy]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Casual Navy Blue Pants. Jean color Model]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shirt">
+			<Product gender="Men" id="10" us_price="74">
+				<Media>
+					<VideoThumb id="10" url="thumbs/Milano_9.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="10.1" url="thumbs/Milano_9_1.jpg"/>
+						<Image id="10.2" url="thumbs/Milano_9_2.jpg"/>
+						<Image id="10.3" url="thumbs/Milano_9_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="10" url="/Milano_9.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[XS|S|M|L|XL|XXL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Blue/White|Red/Blue]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Short sleeved Shirt. Miliary Model]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Pants">
+			<Product gender="Men" id="11" us_price="104">
+				<Media>
+					<VideoThumb id="11" url="thumbs/Milano_10.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="11.1" url="thumbs/Milano_10_1.jpg"/>
+						<Image id="11.2" url="thumbs/Milano_10_2.jpg"/>
+						<Image id="11.3" url="thumbs/Milano_10_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="11" url="/Milano_10.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[46|48|50|52|54|56]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Navy|Black|Chocolate Brown]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Blue Navy Pants - Monaco Model]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sweater">
+			<Product gender="Men" id="12" us_price="74">
+				<Media>
+					<VideoThumb id="12" url="thumbs/Milano_11.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="12.1" url="thumbs/Milano_11_1.jpg"/>
+						<Image id="12.2" url="thumbs/Milano_11_2.jpg"/>
+						<Image id="12.3" url="thumbs/Milano_11_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="12" url="/Milano_11.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[XS|S|M|L|XL|XXL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Navy|Black|Green|Red|Purple|Pink]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Sport Line - Navy V neck sweater]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shirt">
+			<Product gender="Men" id="13" us_price="67">
+				<Media>
+					<VideoThumb id="13" url="thumbs/Milano_11a.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="13.1" url="thumbs/Milano_11a_1.jpg"/>
+						<Image id="13.2" url="thumbs/Milano_11a_2.jpg"/>
+						<Image id="13.3" url="thumbs/Milano_11a_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="13" url="/Milano_11a.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[XS|S|M|L|XL|XXL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[White|Navy|Green|Yellow|Orange|Grey|Black|Red]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[White short sleeved polo shirt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sweater">
+			<Product gender="Men" id="14" us_price="74">
+				<Media>
+					<VideoThumb id="14" url="thumbs/Milano_12.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="14.1" url="thumbs/Milano_12_1.jpg"/>
+						<Image id="14.2" url="thumbs/Milano_12_2.jpg"/>
+						<Image id="14.3" url="thumbs/Milano_12_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="14" url="/Milano_12.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[XS|S|M|L|XL|XXL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Blue|Black|Green|Red|Purple|Pink]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[V-neck sweater]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shirt">
+			<Product gender="Men" id="15" us_price="67">
+				<Media>
+					<VideoThumb id="15" url="thumbs/Milano_12a.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="15.1" url="thumbs/Milano_12a_1.jpg"/>
+						<Image id="15.2" url="thumbs/Milano_12a_2.jpg"/>
+						<Image id="15.3" url="thumbs/Milano_12a_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="15" url="/Milano_12a.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[XS|S|M|L|XL|XXL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[White|Blue|Green|Yellow|Orange|Grey|Black|Red]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Grey Short-sleeved Polo Shirt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Pants">
+			<Product gender="Men" id="16" us_price="104">
+				<Media>
+					<VideoThumb id="16" url="thumbs/Milano_13.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="16.1" url="thumbs/Milano_13_1.jpg"/>
+
+						<Image id="16.2" url="thumbs/Milano_13_2.jpg"/>
+						<Image id="16.3" url="thumbs/Milano_13_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="16" url="/Milano_13.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[46|48|50|52|54|56]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Navy|Black|Grey]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Dark grey Pants: San Francisco Model]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shoes">
+			<Product gender="Men" id="17" us_price="178">
+				<Media>
+					<VideoThumb id="17" url="thumbs/Milano_14.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="17.1" url="thumbs/Milano_14_1.jpg"/>
+						<Image id="17.2" url="thumbs/Milano_14_2.jpg"/>
+						<Image id="17.3" url="thumbs/Milano_14_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="17" url="/Milano_14.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[39|40|41|42|43|44]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Black]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Black Shoes]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Leather]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+	</Brand>
+	<Brand id="Cortefiel">
+	  <ProductGroup id="Sweater">
+			<Product gender="Men" id="1" us_price="59">
+				<Media>
+					<VideoThumb id="1" url="thumbs/Cortefiel_Men_1.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="1.1" url="thumbs/Cortefiel_Men_1_1.jpg"/>
+						<Image id="1.2" url="thumbs/Cortefiel_Men_1_2.jpg"/>
+						<Image id="1.3" url="thumbs/Cortefiel_Men_1_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="1" url="/Cortefiel_Men_1.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[M|L|XL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Blue|Grey|Beige]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[CTF Grey Striped sweater]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Combed Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Pants">
+			<Product gender="Men" id="2" us_price="59">
+				<Media>
+					<VideoThumb id="2" url="thumbs/Cortefiel_Men_1a.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="2.1" url="thumbs/Cortefiel_Men_1a_1.jpg"/>
+						<Image id="2.2" url="thumbs/Cortefiel_Men_1a_2.jpg"/>
+						<Image id="2.3" url="thumbs/Cortefiel_Men_1a_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="2" url="/Cortefiel_Men_1a.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[40|42|44|46|48|50|52|54|56]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Yellow|navy|blue|green|kaki|brown|beige|stone|red]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Aberdeen Basic Green chino pants]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shirt">
+			<Product gender="Men" id="3" us_price="68">
+				<Media>
+					<VideoThumb id="3" url="thumbs/Cortefiel_Men_2.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="3.1" url="thumbs/Cortefiel_Men_2_1.jpg"/>
+						<Image id="3.2" url="thumbs/Cortefiel_Men_2_2.jpg"/>
+						<Image id="3.3" url="thumbs/Cortefiel_Men_2_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="3" url="/Cortefiel_Men_2.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[M|L|XL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[White|Kaki|Navy]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Mao Neck White Shirt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Non-washed Linen]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shoes">
+			<Product gender="Men" id="4" us_price="44">
+				<Media>
+					<VideoThumb id="4" url="thumbs/Cortefiel_Men_3.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="4.1" url="thumbs/Cortefiel_Men_3_1.jpg"/>
+						<Image id="4.2" url="thumbs/Cortefiel_Men_3_2.jpg"/>
+						<Image id="4.3" url="thumbs/Cortefiel_Men_3_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="4" url="/Cortefiel_Men_3.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[40|41|42|43|44|45]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[White|Kaki|Navy|Red]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[White sport shoes]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton, with rubber soles]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Belt">
+			<Product gender="Men" id="5" us_price="44">
+				<Media>
+					<VideoThumb id="5" url="thumbs/Cortefiel_Men_4.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="5.1" url="thumbs/Cortefiel_Men_4_1.jpg"/>
+						<Image id="5.2" url="thumbs/Cortefiel_Men_4_2.jpg"/>
+						<Image id="5.3" url="thumbs/Cortefiel_Men_4_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="5" url="/Cortefiel_Men_4.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[One Size]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Brown|Black]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Braided leather Belt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Leather]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Pants">
+			<Product gender="Men" id="6" us_price="59">
+				<Media>
+					<VideoThumb id="6" url="thumbs/Cortefiel_Men_5.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="6.1" url="thumbs/Cortefiel_Men_5_1.jpg"/>
+						<Image id="6.2" url="thumbs/Cortefiel_Men_5_2.jpg"/>
+						<Image id="6.3" url="thumbs/Cortefiel_Men_5_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="6" url="/Cortefiel_Men_5.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[40|42|44|46|48|50|52|54]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Stone|Beige|Navy]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Beige Pants]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Belt">
+			<Product gender="Men" id="7" us_price="44">
+				<Media>
+					<VideoThumb id="7" url="thumbs/Cortefiel_Men_5a.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="7.1" url="thumbs/Cortefiel_Men_5a_1.jpg"/>
+						<Image id="7.2" url="thumbs/Cortefiel_Men_5a_2.jpg"/>
+						<Image id="7.3" url="thumbs/Cortefiel_Men_5a_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="7" url="/Cortefiel_Men_5a.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[One Size]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Brown|Black]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Leather Belt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Leather]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sweater">
+			<Product gender="Men" id="8" us_price="59">
+				<Media>
+					<VideoThumb id="8" url="thumbs/Cortefiel_Men_6.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="8.1" url="thumbs/Cortefiel_Men_6_1.jpg"/>
+						<Image id="8.2" url="thumbs/Cortefiel_Men_6_2.jpg"/>
+						<Image id="8.3" url="thumbs/Cortefiel_Men_6_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="8" url="/Cortefiel_Men_6.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[M|L|XL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Navy|White stripes|Red/white stripes]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Italian armhole striped sweater]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shirt">
+			<Product gender="Men" id="9" us_price="68">
+				<Media>
+					<VideoThumb id="9" url="thumbs/Cortefiel_Men_6a.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="9.1" url="thumbs/Cortefiel_Men_6a_1.jpg"/>
+						<Image id="9.2" url="thumbs/Cortefiel_Men_6a_2.jpg"/>
+						<Image id="9.3" url="thumbs/Cortefiel_Men_6a_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="9" url="/Cortefiel_Men_6a.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[M|L|XL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Blue|Maroon]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[White collar linen check pattern blue shirt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Linen - non washed]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shoes">
+			<Product gender="Men" id="10" us_price="89">
+				<Media>
+					<VideoThumb id="10" url="thumbs/Cortefiel_Men_7.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="10.1" url="thumbs/Cortefiel_Men_7_1.jpg"/>
+						<Image id="10.2" url="thumbs/Cortefiel_Men_7_2.jpg"/>
+						<Image id="10.3" url="thumbs/Cortefiel_Men_7_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="10" url="/Cortefiel_Men_7.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[40|41|42|43|44|45]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Blue|Green|Red]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Red Driver Shoes]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Leather, rubber soles]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sandals">
+			<Product gender="Women" id="11" us_price="89">
+				<Media>
+					<VideoThumb id="11" url="thumbs/Cortefiel_Woman_1.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="11.1" url="thumbs/Cortefiel_Woman_1_1.jpg"/>
+						<Image id="11.2" url="thumbs/Cortefiel_Woman_1_2.jpg"/>
+						<Image id="11.3" url="thumbs/Cortefiel_Woman_1_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="11" url="/Cortefiel_Woman_1.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[37|38|39|40]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Camel|Stone]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Bicolored High heel sandals]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Synthetic sole]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shirt">
+			<Product gender="Women" id="12" us_price="68">
+				<Media>
+					<VideoThumb id="12" url="thumbs/Cortefiel_Woman_2.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="12.1" url="thumbs/Cortefiel_Woman_2_1.jpg"/>
+						<Image id="12.2" url="thumbs/Cortefiel_Woman_2_2.jpg"/>
+						<Image id="12.3" url="thumbs/Cortefiel_Woman_2_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="12" url="/Cortefiel_Woman_2.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L|XL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Blue]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Short sleeve white collar shirt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sweater">
+			<Product gender="Women" id="13" us_price="64">
+				<Media>
+					<VideoThumb id="13" url="thumbs/Cortefiel_Woman_2a.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="13.1" url="thumbs/Cortefiel_Woman_2a_1.jpg"/>
+						<Image id="13.2" url="thumbs/Cortefiel_Woman_2a_2.jpg"/>
+						<Image id="13.3" url="thumbs/Cortefiel_Woman_2a_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="13" url="/Cortefiel_Woman_2a.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L|XL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Red]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Red Sweater]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Belt">
+			<Product gender="Women" id="14" us_price="44">
+				<Media>
+					<VideoThumb id="14" url="thumbs/Cortefiel_Woman_3.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="14.1" url="thumbs/Cortefiel_Woman_3_1.jpg"/>
+						<Image id="14.2" url="thumbs/Cortefiel_Woman_3_2.jpg"/>
+						<Image id="14.3" url="thumbs/Cortefiel_Woman_3_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="14" url="/Cortefiel_Woman_3.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[One Size]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Red]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Blue and Red Braided Belt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Thread]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Skirt">
+			<Product gender="Women" id="15" us_price="59">
+				<Media>
+					<VideoThumb id="15" url="thumbs/Cortefiel_Woman_3a.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="15.1" url="thumbs/Cortefiel_Woman_3a_1.jpg"/>
+						<Image id="15.2" url="thumbs/Cortefiel_Woman_3a_2.jpg"/>
+						<Image id="15.3" url="thumbs/Cortefiel_Woman_3a_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="15" url="/Cortefiel_Woman_3a.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38|40|42|44|46|48|50]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Camel]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Skirt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[70% Cotton - 30% Lycra]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Bag">
+			<Product gender="Women" id="16" us_price="133">
+				<Media>
+					<VideoThumb id="16" url="thumbs/Cortefiel_Woman_3b.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="16.1" url="thumbs/Cortefiel_Woman_3b_1.jpg"/>
+						<Image id="16.2" url="thumbs/Cortefiel_Woman_3b_2.jpg"/>
+						<Image id="16.3" url="thumbs/Cortefiel_Woman_3b_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="16" url="/Cortefiel_Woman_3b.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[One Size]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Red]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Red leather Bag with tied red blue dotted scarf]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Synthetic Leather]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sandals">
+			<Product gender="Women" id="17" us_price="74">
+				<Media>
+					<VideoThumb id="17" url="thumbs/Cortefiel_Woman_4.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="17.1" url="thumbs/Cortefiel_Woman_4_1.jpg"/>
+						<Image id="17.2" url="thumbs/Cortefiel_Woman_4_2.jpg"/>
+						<Image id="17.3" url="thumbs/Cortefiel_Woman_4_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="17" url="/Cortefiel_Woman_4.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[37|38|39|40]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Grey]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Whedge heeled wooden sandals]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Wood]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Blouse">
+			<Product gender="Women" id="18" us_price="74">
+				<Media>
+					<VideoThumb id="18" url="thumbs/Cortefiel_Woman_5.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="18.1" url="thumbs/Cortefiel_Woman_5_1.jpg"/>
+						<Image id="18.2" url="thumbs/Cortefiel_Woman_5_2.jpg"/>
+						<Image id="18.3" url="thumbs/Cortefiel_Woman_5_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="18" url="/Cortefiel_Woman_5.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L|XL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Pink/Blue]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Spring Pattern Blouse]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[70% Cotton and 30% Silk]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Necklace">
+			<Product gender="Women" id="19" us_price="74">
+				<Media>
+					<VideoThumb id="19" url="thumbs/Cortefiel_Woman_5a.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="19.1" url="thumbs/Cortefiel_Woman_5a_1.jpg"/>
+						<Image id="19.2" url="thumbs/Cortefiel_Woman_5a_2.jpg"/>
+						<Image id="19.3" url="thumbs/Cortefiel_Woman_5a_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="19" url="/Cortefiel_Woman_5a.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[One Size]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Green]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Wooden Hand Painted Polka Dots Necklace]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Wood]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Bag">
+			<Product gender="Women" id="20" us_price="147">
+				<Media>
+					<VideoThumb id="20" url="thumbs/Cortefiel_Woman_6.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="20.1" url="thumbs/Cortefiel_Woman_6_1.jpg"/>
+						<Image id="20.2" url="thumbs/Cortefiel_Woman_6_2.jpg"/>
+						<Image id="20.3" url="thumbs/Cortefiel_Woman_6_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="20" url="/Cortefiel_Woman_6.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[One Size]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Camel]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Brown Natural soft leather Tote Bag with braided strap]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Leather]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Jeans">
+			<Product gender="Women" id="21" us_price="59">
+				<Media>
+					<VideoThumb id="21" url="thumbs/Cortefiel_Woman_7.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="21.1" url="thumbs/Cortefiel_Woman_7_1.jpg"/>
+						<Image id="21.2" url="thumbs/Cortefiel_Woman_7_2.jpg"/>
+						<Image id="21.3" url="thumbs/Cortefiel_Woman_7_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="21" url="/Cortefiel_Woman_7.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38|40|42|44|46|48|50]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Dark Contrast]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Blue Denim Jeans, skinny leg]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+	</Brand>
+</StoreData>

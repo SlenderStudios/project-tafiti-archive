@@ -1,0 +1,57 @@
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi_Web\bin\RetailXmlApi_Web.dll
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi_Web\bin\RetailXmlApi_Web.pdb
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi_Web\bin\System.Web.Silverlight.dll
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi_Web\bin\ja\System.Web.Silverlight.resources.dll
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi_Web\obj\Debug\ResolveAssemblyReference.cache
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi_Web\obj\Debug\RetailXmlApi_Web.dll
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi_Web\obj\Debug\RetailXmlApi_Web.pdb
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi_Web\bin\RetailXmlApi_Web.dll
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi_Web\bin\RetailXmlApi_Web.pdb
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi_Web\bin\System.Web.Silverlight.dll
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi_Web\bin\ja\System.Web.Silverlight.resources.dll
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi_Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi_Web\obj\Debug\RetailXmlApi_Web.dll
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi_Web\obj\Debug\RetailXmlApi_Web.pdb
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\RetailXmlApi_Web.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\RetailXmlApi_Web.pdb
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\System.Web.Silverlight.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\de\System.Web.Silverlight.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\es\System.Web.Silverlight.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\fr\System.Web.Silverlight.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\it\System.Web.Silverlight.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\ja\System.Web.Silverlight.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\ko\System.Web.Silverlight.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\obj\Debug\ResolveAssemblyReference.cache
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\obj\Debug\RetailXmlApi_Web.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\obj\Debug\RetailXmlApi_Web.pdb
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\RetailXmlApi_Web.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\RetailXmlApi_Web.pdb
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\System.Web.Silverlight.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\de\System.Web.Silverlight.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\es\System.Web.Silverlight.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\fr\System.Web.Silverlight.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\it\System.Web.Silverlight.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\ja\System.Web.Silverlight.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\ko\System.Web.Silverlight.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\obj\Debug\ResolveAssemblyReference.cache
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\obj\Debug\RetailXmlApi_Web.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\obj\Debug\RetailXmlApi_Web.pdb
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\RetailXmlApi_Web.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\RetailXmlApi_Web.pdb
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\obj\Debug\RetailXmlApi_Web.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\obj\Debug\RetailXmlApi_Web.pdb
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\RetailXmlApi_Web.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\RetailXmlApi_Web.pdb
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\System.Web.Silverlight.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\de\System.Web.Silverlight.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\es\System.Web.Silverlight.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\fr\System.Web.Silverlight.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\it\System.Web.Silverlight.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\ja\System.Web.Silverlight.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\ko\System.Web.Silverlight.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\zh-Hans\System.Web.Silverlight.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\bin\zh-Hant\System.Web.Silverlight.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\obj\Debug\ResolveAssemblyReference.cache
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\obj\Debug\RetailXmlApi_Web.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi_Web\obj\Debug\RetailXmlApi_Web.pdb

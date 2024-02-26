@@ -1,0 +1,42 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:uicontrol="clr-namespace:VESilverlight;assembly=VESilverlight"
+        Width="350" Height="450"  
+        x:Class="VESilverlight.Repeater">
+    <Canvas x:Name="LayoutRoot"
+            MouseLeftButtonDown="OnMouseLeftButtonDown"
+            MouseLeftButtonUp="OnMouseLeftButtonUp">
+        <Rectangle x:Name="background" Width="350" Height="414" />
+
+	<Canvas Width="131" Height="22" Canvas.Left="21" Canvas.Top="428" x:Name="ControlCanvas" Visibility="Visible" Canvas.ZIndex="2" Opacity="0">
+
+		<Canvas Width="17" Height="15" Canvas.Left="25" RenderTransformOrigin="0.5,0.5" Cursor="Hand">
+			<Canvas.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="-180"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Canvas.RenderTransform>
+			<uicontrol:RepeatButton x:Name="PrevPage" Click="prevPage_Click" />
+		</Canvas>
+		
+		
+			
+		<uicontrol:RepeatButton x:Name="NextPageButton" Canvas.Left="85.25" Cursor="Hand" Click="nextPage_Click"/>
+
+		<TextBlock Width="19" Height="22" Text="00" TextWrapping="Wrap" x:Name="CurrentPage" Canvas.Left="37.5" FontFamily="Verdana" FontSize="11" Foreground="#FFE6E5B9"/>
+
+		<TextBlock Width="20" Height="22" Text="00" TextWrapping="Wrap" x:Name="TotalPages" Canvas.Left="72.5" FontFamily="Verdana" FontSize="11" Foreground="#FFE6E5B9"/>
+
+		<TextBlock Width="16" Height="22" Text="of" TextWrapping="Wrap" Canvas.Left="56.5" FontFamily="Verdana" FontSize="11" Foreground="#FFE6E5B9"/>
+
+		<TextBlock Width="36" Height="22" Text="Page" TextWrapping="Wrap" Canvas.Left="-8" FontFamily="Verdana" FontSize="11" Foreground="#FFE6E5B9"/>
+
+		
+
+	</Canvas>
+
+</Canvas>
+</UserControl>

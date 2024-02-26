@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="Main" Width="856" Height="648">
+
+
+
+
+  <Canvas.Resources>
+
+    <!-- PlayPauseButton animations -->
+    
+      <Storyboard x:Name="PlayPauseButton_FocusInAnimation">
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PlayPauseButton" Storyboard.TargetProperty="(UIElement.Opacity)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+    
+      <Storyboard x:Name="PlayPauseButton_FocusOutAnimation">
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PlayPauseButton" Storyboard.TargetProperty="(UIElement.Opacity)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.5"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+    
+      <Storyboard x:Name="PlayPauseButton_PressAnimation">
+        <DoubleAnimationUsingKeyFrames  Storyboard.TargetName="PlayPauseButton" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PlayPauseButton" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+    
+      <Storyboard x:Name="PlayPauseButton_DepressAnimation">
+        <DoubleAnimationUsingKeyFrames  Storyboard.TargetName="PlayPauseButton" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PlayPauseButton" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+
+    <!-- StopButton animations -->
+    
+      <Storyboard x:Name="StopButton_FocusInAnimation">
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="StopButton" Storyboard.TargetProperty="(UIElement.Opacity)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+    
+      <Storyboard x:Name="StopButton_FocusOutAnimation">
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="StopButton" Storyboard.TargetProperty="(UIElement.Opacity)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.5"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+    
+      <Storyboard x:Name="StopButton_PressAnimation">
+        <DoubleAnimationUsingKeyFrames  Storyboard.TargetName="StopButton" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="StopButton" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+    
+      <Storyboard x:Name="StopButton_DepressAnimation">
+        <DoubleAnimationUsingKeyFrames  Storyboard.TargetName="StopButton" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="StopButton" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+
+    <!-- PreviousButton animations -->
+    
+      <Storyboard x:Name="PreviousButton_FocusInAnimation">
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PreviousButton" Storyboard.TargetProperty="(UIElement.Opacity)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+    
+      <Storyboard x:Name="PreviousButton_FocusOutAnimation">
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PreviousButton" Storyboard.TargetProperty="(UIElement.Opacity)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.5"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+    
+      <Storyboard x:Name="PreviousButton_PressAnimation">
+        <DoubleAnimationUsingKeyFrames  Storyboard.TargetName="PreviousButton" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PreviousButton" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+    
+      <Storyboard x:Name="PreviousButton_DepressAnimation">
+        <DoubleAnimationUsingKeyFrames  Storyboard.TargetName="PreviousButton" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PreviousButton" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+
+
+    <!-- MuteButton animations -->
+    
+      <Storyboard x:Name="MuteButton_FocusInAnimation">
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="MuteButton" Storyboard.TargetProperty="(UIElement.Opacity)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+    
+      <Storyboard x:Name="MuteButton_FocusOutAnimation">
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="MuteButton" Storyboard.TargetProperty="(UIElement.Opacity)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.5"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+    
+      <Storyboard x:Name="MuteButton_PressAnimation">
+        <DoubleAnimationUsingKeyFrames  Storyboard.TargetName="MuteButton" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="MuteButton" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+    
+      <Storyboard x:Name="MuteButton_DepressAnimation">
+        <DoubleAnimationUsingKeyFrames  Storyboard.TargetName="MuteButton" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="MuteButton" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+
+
+    <!-- PlaySymbol animations 
+					used in MultiStateButton to toggle between PlaySymbol and PauseSymbol. 
+					if these animations are not provided default ones will be generated for you
+			-->
+    
+      <Storyboard x:Name="PlaySymbol_ShowAnimation">
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PlaySymbol" Storyboard.TargetProperty="(UIElement.Opacity)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1.0"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+    
+      <Storyboard x:Name="PlaySymbol_HideAnimation">
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PlaySymbol" Storyboard.TargetProperty="(UIElement.Opacity)">
+          <SplineDoubleKeyFrame KeyTime="00:00:0.3000000" Value="0"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+
+    <!-- PauseSymbol animations - 
+					used in MultiStateButton to toggle between PlaySymbol and PauseSymbol. 
+					if these animations are not provided default ones will be generated for you
+			 -->
+    
+      <Storyboard x:Name="PauseSymbol_ShowAnimation">
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PauseSymbol" Storyboard.TargetProperty="(UIElement.Opacity)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1.0"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+    
+      <Storyboard x:Name="PauseSymbol_HideAnimation">
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PauseSymbol" Storyboard.TargetProperty="(UIElement.Opacity)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+
+    
+      <Storyboard x:Name="VolumeControl_FocusInAnimation"  >
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="VolumeControl" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.185"/>
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.977"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="VolumeControl" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00" Value="86.839"/>
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="2.212"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="VolumeControl" Storyboard.TargetProperty="(UIElement.Opacity)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.5"/>
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+    
+      <Storyboard x:Name="VolumeControl_FocusOutAnimation" >
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="VolumeControl" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.175"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="VolumeControl" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="89.523"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="VolumeControl" Storyboard.TargetProperty="(UIElement.Opacity)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.5"/>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+    
+
+
+  </Canvas.Resources>
+
+
+
+  <Canvas Width="856" Height="648" Canvas.Top="0">
+
+
+    <MediaElement x:Name="VideoWindow" Width="853.957" Height="648"/>
+
+    <Canvas x:Name="CaptionArea" Width="728" Height="64" Background="#FF000000" Opacity="0.52" Canvas.Left="56" Canvas.Top="544" >
+      <TextBlock x:Name="CaptionText" Width="400" Height="14" FontSize="14" TextWrapping="Wrap" Foreground="#FFFFFFFF">ClosedCaptionArea</TextBlock>
+    </Canvas>
+
+    <Canvas x:Name="PlayerControls" Width="848" Height="89.5" Canvas.Left="3" Canvas.Top="557.5">
+      <Rectangle Opacity="0" Fill="#FFFFFFFF" Stroke="#FF000000" Width="856" Height="91.27" Canvas.Left="-1" Canvas.Top="-1.77"/>
+      <Canvas x:Name="MuteButton" Width="22.163" Height="21.338" Canvas.Left="791.854" Canvas.Top="44.552">
+        <Canvas.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform ScaleX="2" ScaleY="2"/>
+            <SkewTransform AngleX="0" AngleY="0"/>
+            <RotateTransform Angle="0"/>
+            <TranslateTransform X="0" Y="0"/>
+          </TransformGroup>
+        </Canvas.RenderTransform>
+        <Canvas x:Name="MuteOnSymbol" Width="22.1627" Height="16.8307" Canvas.Left="1.126" Canvas.Top="0.838">
+          <Canvas x:Name="__Group_" Width="11.9575" Height="16.0748" Canvas.Left="10.2053" Canvas.Top="0.755981">
+            <Path x:Name="Line" Width="11.9573" Height="16.0747" Canvas.Left="-1.053" Stretch="Fill" StrokeThickness="0.781219" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Stroke="#FF505050" Data="F1 M 11.5667,0.390625L 0.390625,15.6841"/>
+            <Path x:Name="Line_4" Width="11.9574" Height="16.0747" Canvas.Left="-1.053" Stretch="Fill" StrokeThickness="0.781219" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Stroke="#FF505050" Data="F1 M 0.390686,0.390625L 11.5668,15.6841"/>
+          </Canvas>
+          <Path x:Name="PlayButton_5" Width="8.88593" Height="16.5998" Canvas.Left="0" Canvas.Top="0" Stretch="Fill" Fill="#FF505050" Data="F1 M 8.54144,0C 8.73169,0 8.88593,0.164246 8.88593,0.366882L 8.88593,16.2329C 8.88593,16.4355 8.73169,16.5998 8.54144,16.5998L 6.58026,16.5998C 6.39001,16.5998 6.23578,16.4355 6.23578,16.2329L 6.23578,15.7526L 2.92151,11.1219L 0.668823,11.1219C 0.299438,11.1219 0,10.803 0,10.4097L 0,6.35608C 0,5.96277 0.299438,5.64392 0.668823,5.64392L 2.71307,5.64392L 6.23578,0.842346L 6.23578,0.366882C 6.23578,0.164246 6.39001,0 6.58026,0L 8.54144,0 Z "/>
+        </Canvas>
+        <Canvas x:Name="MuteOffSymbol" Width="19.9113" Height="17.6959" Canvas.Left="1.132" Canvas.Top="0.125">
+          <Path x:Name="Path" Width="7.91464" Height="17.6959" Canvas.Left="11.9966" Canvas.Top="1.52588e-005" Stretch="Fill" StrokeThickness="0.781219" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Stroke="#FF505050" Data="F1 M 12.3872,0.390625C 14.3295,0.390625 19.5206,2.17706 19.5206,9.4668C 19.5206,15.5565 14.8621,17.3053 12.5328,17.3053"/>
+          <Path x:Name="Path_6" Width="4.67728" Height="10.3631" Canvas.Left="10.3268" Canvas.Top="3.6833" Stretch="Fill" StrokeThickness="0.781219" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Stroke="#FF505050" Data="F1 M 10.7174,4.07391C 11.6186,4.07391 14.6135,5.08588 14.6135,9.21539C 14.6135,12.6651 11.8657,13.6558 10.7849,13.6558"/>
+          <Path x:Name="PlayButton_7" Width="8.88593" Height="16.5998" Canvas.Left="0" Canvas.Top="0.713684" Stretch="Fill" Fill="#FF505050" Data="F1 M 8.54144,0.713684C 8.73169,0.713684 8.88593,0.87793 8.88593,1.08057L 8.88593,16.9466C 8.88593,17.1492 8.73169,17.3135 8.54144,17.3135L 6.58026,17.3135C 6.39001,17.3135 6.23578,17.1492 6.23578,16.9466L 6.23578,16.4662L 2.92151,11.8356L 0.668823,11.8356C 0.299438,11.8356 0,11.5167 0,11.1234L 0,7.06976C 0,6.67645 0.299438,6.3576 0.668823,6.3576L 2.71307,6.3576L 6.23578,1.55603L 6.23578,1.08057C 6.23578,0.87793 6.39001,0.713684 6.58026,0.713684L 8.54144,0.713684 Z "/>
+        </Canvas>
+        <Rectangle Opacity="0" Fill="#FF000000" Stroke="#FF000000" x:Name="PlayPauseButtonBackground1" Width="24" Height="24"/>
+      </Canvas>
+      <Canvas x:Name="PreviousButton" Width="24" Height="24" Canvas.Left="103.433" Canvas.Top="39.73">
+        <Canvas.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform ScaleX="2" ScaleY="2"/>
+            <SkewTransform AngleX="0" AngleY="0"/>
+            <RotateTransform Angle="0"/>
+            <TranslateTransform X="0" Y="0"/>
+          </TransformGroup>
+        </Canvas.RenderTransform>
+        <Rectangle Opacity="0" Fill="#FF000000" Stroke="#FF000000" Width="24" Height="24"/>
+        <Path x:Name="PlayButton_2" Width="10.8881" Height="14.4597" Stretch="Fill" Fill="#FF505050" Data="F1 M 16.7414,14.4496L 6.35338,7.42334L 16.7245,0.48999L 16.7414,14.4496 Z " StrokeThickness="0.5" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Canvas.Left="8.75" Canvas.Top="5.166">
+          <Path.Stroke>
+            <LinearGradientBrush StartPoint="0.506854,0.776347" EndPoint="0.493144,0.223657">
+              <GradientStop Color="#C7636363" Offset="0"/>
+              <GradientStop Color="#C7383838" Offset="0.844749"/>
+            </LinearGradientBrush>
+          </Path.Stroke>
+        </Path>
+        <Rectangle x:Name="PlayButton_3" Width="5.94363" Height="14.9393" Stretch="Fill" Fill="#FF505050" StrokeThickness="0.5" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Canvas.Left="3.75" Canvas.Top="4.916">
+          <Rectangle.Stroke>
+            <LinearGradientBrush StartPoint="0.499983,0.710695" EndPoint="0.499983,0.289297">
+              <GradientStop Color="#C7636363" Offset="0"/>
+              <GradientStop Color="#C7383838" Offset="0.844749"/>
+            </LinearGradientBrush>
+          </Rectangle.Stroke>
+        </Rectangle>
+      </Canvas>
+      <Canvas x:Name="PlayPauseButton" Width="25.004" Height="24" Canvas.Top="39.73" Canvas.Left="0.999">
+        <Canvas.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform ScaleX="2" ScaleY="2"/>
+            <SkewTransform AngleX="0" AngleY="0"/>
+            <RotateTransform Angle="0"/>
+            <TranslateTransform X="0" Y="0"/>
+          </TransformGroup>
+        </Canvas.RenderTransform>
+        <Rectangle Opacity="0" Fill="#FF000000" Stroke="#FF000000" x:Name="PlayPauseButtonBackground" Width="24" Height="24"/>
+        <Path x:Name="PlaySymbol" Width="10.8881" Height="14.4597" Stretch="Fill" Fill="#FF505050" Data="F1 M 19.5637,625.888L 29.9518,618.862L 19.5807,611.928L 19.5637,625.888 Z " StrokeThickness="0.5" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Canvas.Left="9.332" Canvas.Top="5.206">
+          <Path.Stroke>
+            <LinearGradientBrush StartPoint="0.493145,0.776347" EndPoint="0.506856,0.223657">
+              <GradientStop Color="#C7636363" Offset="0"/>
+              <GradientStop Color="#C7383838" Offset="0.844749"/>
+            </LinearGradientBrush>
+          </Path.Stroke>
+        </Path>
+        <Canvas x:Name="PauseSymbol" Opacity="0.0" Width="14.012" Height="13.608" Canvas.Left="5.209" Canvas.Top="5.539">
+          <Rectangle Width="5.00575" Height="13.6077" Stretch="Fill" Fill="#FF505050" StrokeThickness="0.5" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Canvas.Left="9.006">
+            <Rectangle.RenderTransform>
+              <TransformGroup>
+                <ScaleTransform ScaleX="1" ScaleY="1"/>
+                <SkewTransform AngleX="0" AngleY="0"/>
+                <RotateTransform Angle="0"/>
+                <TranslateTransform X="0" Y="0"/>
+              </TransformGroup>
+            </Rectangle.RenderTransform>
+            <Rectangle.Stroke>
+              <LinearGradientBrush StartPoint="-0.0421154,0.499998" EndPoint="1.04212,0.499998">
+                <GradientStop Color="#C7636363" Offset="0"/>
+                <GradientStop Color="#C7383838" Offset="0.844749"/>
+              </LinearGradientBrush>
+            </Rectangle.Stroke>
+          </Rectangle>
+          <Rectangle Width="5.00575" Height="13.6077" Stretch="Fill" Fill="#FF505050" StrokeThickness="0.5" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round">
+            <Rectangle.Stroke>
+              <LinearGradientBrush StartPoint="-0.0421154,0.499998" EndPoint="1.04212,0.499998">
+                <GradientStop Color="#C7636363" Offset="0"/>
+                <GradientStop Color="#C7383838" Offset="0.844749"/>
+              </LinearGradientBrush>
+            </Rectangle.Stroke>
+          </Rectangle>
+        </Canvas>
+      </Canvas>
+      <Canvas x:Name="StopButton" Width="24" Height="24" Canvas.Left="52.403" Canvas.Top="39.73">
+        <Canvas.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform ScaleX="2" ScaleY="2"/>
+            <SkewTransform AngleX="0" AngleY="0"/>
+            <RotateTransform Angle="0"/>
+            <TranslateTransform X="0" Y="0"/>
+          </TransformGroup>
+        </Canvas.RenderTransform>
+        <Rectangle Opacity="0" Fill="#FF000000" Stroke="#FF000000" Width="24" Height="24"/>
+        <Rectangle Width="13.006" Height="13.6077" Stretch="Fill" Fill="#FF505050" StrokeThickness="0.5" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Canvas.Left="5.325" Canvas.Top="5.389">
+          <Rectangle.RenderTransform>
+            <TransformGroup>
+              <ScaleTransform ScaleX="1" ScaleY="1"/>
+              <SkewTransform AngleX="0" AngleY="0"/>
+              <RotateTransform Angle="0"/>
+              <TranslateTransform X="0" Y="0"/>
+            </TransformGroup>
+          </Rectangle.RenderTransform>
+          <Rectangle.Stroke>
+            <LinearGradientBrush StartPoint="-0.0421154,0.499998" EndPoint="1.04212,0.499998">
+              <GradientStop Color="#C7636363" Offset="0"/>
+              <GradientStop Color="#C7383838" Offset="0.844749"/>
+            </LinearGradientBrush>
+          </Rectangle.Stroke>
+        </Rectangle>
+      </Canvas>
+      <Canvas RenderTransformOrigin="0.5,0.5" x:Name="VolumeControl" Width="228.535" Height="22.895" Canvas.Left="613" Canvas.Top="18.5">
+        <Rectangle.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform ScaleX="1" ScaleY="1"/>
+            <SkewTransform AngleX="0" AngleY="0"/>
+            <RotateTransform Angle="0"/>
+            <TranslateTransform X="0" Y="0"/>
+          </TransformGroup>
+        </Rectangle.RenderTransform>      
+        <Rectangle Opacity="0" Fill="#FF575757" RadiusX="5" RadiusY="5" Width="228.535" Height="22.895"/>
+        <Path Fill="#FF505050" Stretch="Fill" Width="224.378" Height="2.4577" Canvas.Left="2" Canvas.Top="10" Data="M0,0 L224.378,0 L224.378,2.4577 L0,2.4577 z"/>
+        <Rectangle Opacity="0.025" Fill="#FF575757" RadiusX="0" RadiusY="0" x:Name="VolumeSlider" Width="222.913" Height="16.228" Canvas.Left="3.465" Canvas.Top="3.5"/>
+        <Ellipse x:Name="VolumeThumb" Width="11.667" Height="11.667" Stretch="Fill" StrokeLineJoin="Round" Canvas.Left="2" Canvas.Top="5.006">
+          <Ellipse.Stroke>
+            <LinearGradientBrush StartPoint="0.5,1.09849" EndPoint="0.5,-0.390715">
+              <GradientStop Color="#FF000000" Offset="0"/>
+              <GradientStop Color="#FFFFFFFF" Offset="0.771689"/>
+            </LinearGradientBrush>
+          </Ellipse.Stroke>
+          <Ellipse.Fill>
+            <RadialGradientBrush RadiusX="1.4892" RadiusY="1.4892" Center="0.5,1.09849" GradientOrigin="0.5,1.09849">
+              <RadialGradientBrush.RelativeTransform>
+                <TransformGroup>
+                  <RotateTransform CenterX="0.5" CenterY="1.09849" Angle="-90"/>
+                </TransformGroup>
+              </RadialGradientBrush.RelativeTransform>
+              <GradientStop Color="#FF000000" Offset="0"/>
+              <GradientStop Color="#FFFFFFFF" Offset="1"/>
+            </RadialGradientBrush>
+          </Ellipse.Fill>
+        </Ellipse>
+      </Canvas>
+      <Canvas x:Name="Timeline" Width="616" Height="18.7" Canvas.Left="157" Canvas.Top="53.636">
+        <Rectangle Width="614.668" Height="2.4577" Stretch="Fill" Fill="#FF505050" Canvas.Left="1.332" Canvas.Top="8.35"/>
+        <Rectangle Opacity="0" Fill="#FFFFFFFF" x:Name="TimeSlider" Width="608" Height="18.7"/>
+        <Ellipse x:Name="TimeThumb" Width="18.7" Height="18.7" Stretch="Fill" StrokeLineJoin="Round" Canvas.Left="38.83">
+          <Ellipse.Stroke>
+            <LinearGradientBrush StartPoint="0.5,1.09849" EndPoint="0.5,-0.390715">
+              <GradientStop Color="#FF000000" Offset="0"/>
+              <GradientStop Color="#FFFFFFFF" Offset="0.771689"/>
+            </LinearGradientBrush>
+          </Ellipse.Stroke>
+          <Ellipse.Fill>
+            <RadialGradientBrush RadiusX="1.4892" RadiusY="1.4892" Center="0.5,1.09849" GradientOrigin="0.5,1.09849">
+              <RadialGradientBrush.RelativeTransform>
+                <TransformGroup>
+                  <RotateTransform CenterX="0.5" CenterY="1.09849" Angle="-90"/>
+                </TransformGroup>
+              </RadialGradientBrush.RelativeTransform>
+              <GradientStop Color="#FF000000" Offset="0"/>
+              <GradientStop Color="#FFFFFFFF" Offset="1"/>
+            </RadialGradientBrush>
+          </Ellipse.Fill>
+        </Ellipse>
+      </Canvas>
+    </Canvas>
+  </Canvas>
+</Canvas>

@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StoreData>
+	<Brand id="Cortefiel">
+	  <ProductGroup id="Sweater">
+			<Product gender="Men" id="1" us_price="59">
+				<Media>
+					<VideoThumb id="1" url="thumbs/Cortefiel_Men_1.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="1.1" url="thumbs/Cortefiel_Men_1_1.jpg"/>
+						<Image id="1.2" url="thumbs/Cortefiel_Men_1_2.jpg"/>
+						<Image id="1.3" url="thumbs/Cortefiel_Men_1_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="1" url="/Cortefiel_Men_1.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[M|L|XL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Blue|Grey|Beige]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[CTF Grey Striped sweater]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Combed Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Pants">
+			<Product gender="Men" id="2" us_price="59">
+				<Media>
+					<VideoThumb id="2" url="thumbs/Cortefiel_Men_1a.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="2.1" url="thumbs/Cortefiel_Men_1a_1.jpg"/>
+						<Image id="2.2" url="thumbs/Cortefiel_Men_1a_2.jpg"/>
+						<Image id="2.3" url="thumbs/Cortefiel_Men_1a_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="2" url="/Cortefiel_Men_1a.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[40|42|44|46|48|50|52|54|56]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Yellow|navy|blue|green|kaki|brown|beige|stone|red]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Aberdeen Basic Green chino pants]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shirt">
+			<Product gender="Men" id="3" us_price="68">
+				<Media>
+					<VideoThumb id="3" url="thumbs/Cortefiel_Men_2.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="3.1" url="thumbs/Cortefiel_Men_2_1.jpg"/>
+						<Image id="3.2" url="thumbs/Cortefiel_Men_2_2.jpg"/>
+						<Image id="3.3" url="thumbs/Cortefiel_Men_2_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="3" url="/Cortefiel_Men_2.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[M|L|XL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[White|Kaki|Navy]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Mao Neck White Shirt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Non-washed Linen]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shoes">
+			<Product gender="Men" id="4" us_price="44">
+				<Media>
+					<VideoThumb id="4" url="thumbs/Cortefiel_Men_3.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="4.1" url="thumbs/Cortefiel_Men_3_1.jpg"/>
+						<Image id="4.2" url="thumbs/Cortefiel_Men_3_2.jpg"/>
+						<Image id="4.3" url="thumbs/Cortefiel_Men_3_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="4" url="/Cortefiel_Men_3.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[40|41|42|43|44|45]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[White|Kaki|Navy|Red]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[White sport shoes]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton, with rubber soles]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Belt">
+			<Product gender="Men" id="5" us_price="44">
+				<Media>
+					<VideoThumb id="5" url="thumbs/Cortefiel_Men_4.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="5.1" url="thumbs/Cortefiel_Men_4_1.jpg"/>
+						<Image id="5.2" url="thumbs/Cortefiel_Men_4_2.jpg"/>
+						<Image id="5.3" url="thumbs/Cortefiel_Men_4_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="5" url="/Cortefiel_Men_4.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[N/A]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Brown|Black]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Braided leather Belt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Leather]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Pants">
+			<Product gender="Men" id="6" us_price="59">
+				<Media>
+					<VideoThumb id="6" url="thumbs/Cortefiel_Men_5.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="6.1" url="thumbs/Cortefiel_Men_5_1.jpg"/>
+						<Image id="6.2" url="thumbs/Cortefiel_Men_5_2.jpg"/>
+						<Image id="6.3" url="thumbs/Cortefiel_Men_5_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="6" url="/Cortefiel_Men_5.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[40|42|44|46|48|50|52|54]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Stone|Beige|Navy]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Beige Pants]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Belt">
+			<Product gender="Men" id="7" us_price="44">
+				<Media>
+					<VideoThumb id="7" url="thumbs/Cortefiel_Men_5a.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="7.1" url="thumbs/Cortefiel_Men_5a_1.jpg"/>
+						<Image id="7.2" url="thumbs/Cortefiel_Men_5a_2.jpg"/>
+						<Image id="7.3" url="thumbs/Cortefiel_Men_5a_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="7" url="/Cortefiel_Men_5a.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[N/A]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Brown|Black]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Leather Belt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Leather]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sweater">
+			<Product gender="Men" id="8" us_price="59">
+				<Media>
+					<VideoThumb id="8" url="thumbs/Cortefiel_Men_6.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="8.1" url="thumbs/Cortefiel_Men_6_1.jpg"/>
+						<Image id="8.2" url="thumbs/Cortefiel_Men_6_2.jpg"/>
+						<Image id="8.3" url="thumbs/Cortefiel_Men_6_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="8" url="/Cortefiel_Men_6.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[M|L|XL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Navy|White stripes|Red/white stripes]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Italian armhole striped sweater]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shirt">
+			<Product gender="Men" id="9" us_price="68">
+				<Media>
+					<VideoThumb id="9" url="thumbs/Cortefiel_Men_6a.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="9.1" url="thumbs/Cortefiel_Men_6a_1.jpg"/>
+						<Image id="9.2" url="thumbs/Cortefiel_Men_6a_2.jpg"/>
+						<Image id="9.3" url="thumbs/Cortefiel_Men_6a_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="9" url="/Cortefiel_Men_6a.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[M|L|XL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Blue|Maroon]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[White collar linen check pattern blue shirt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Linen - non washed]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shoes">
+			<Product gender="Men" id="10" us_price="89">
+				<Media>
+					<VideoThumb id="10" url="thumbs/Cortefiel_Men_7.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="10.1" url="thumbs/Cortefiel_Men_7_1.jpg"/>
+						<Image id="10.2" url="thumbs/Cortefiel_Men_7_2.jpg"/>
+						<Image id="10.3" url="thumbs/Cortefiel_Men_7_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="10" url="/Cortefiel_Men_7.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[40|41|42|43|44|45]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Blue|Green|Red]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Red Driver Shoes]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Leather, rubber soles]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sandals">
+			<Product gender="Women" id="11" us_price="89">
+				<Media>
+					<VideoThumb id="11" url="thumbs/Cortefiel_Woman_1.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="11.1" url="thumbs/Cortefiel_Woman_1_1.jpg"/>
+						<Image id="11.2" url="thumbs/Cortefiel_Woman_1_2.jpg"/>
+						<Image id="11.3" url="thumbs/Cortefiel_Woman_1_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="11" url="/Cortefiel_Woman_1.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[37|38|39|40]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Camel|Stone]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Bicolored High heel sandals]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Synthetic sole]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shirt">
+			<Product gender="Women" id="12" us_price="68">
+				<Media>
+					<VideoThumb id="12" url="thumbs/Cortefiel_Woman_2.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="12.1" url="thumbs/Cortefiel_Woman_2_1.jpg"/>
+						<Image id="12.2" url="thumbs/Cortefiel_Woman_2_2.jpg"/>
+						<Image id="12.3" url="thumbs/Cortefiel_Woman_2_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="12" url="/Cortefiel_Woman_2.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L|XL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Blue]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Short sleeve white collar shirt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sweater">
+			<Product gender="Women" id="13" us_price="64">
+				<Media>
+					<VideoThumb id="13" url="thumbs/Cortefiel_Woman_2a.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="13.1" url="thumbs/Cortefiel_Woman_2a_1.jpg"/>
+						<Image id="13.2" url="thumbs/Cortefiel_Woman_2a_2.jpg"/>
+						<Image id="13.3" url="thumbs/Cortefiel_Woman_2a_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="13" url="/Cortefiel_Woman_2a.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L|XL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Red]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Red Sweater]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Belt">
+			<Product gender="Women" id="14" us_price="44">
+				<Media>
+					<VideoThumb id="14" url="thumbs/Cortefiel_Woman_3.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="14.1" url="thumbs/Cortefiel_Woman_3_1.jpg"/>
+						<Image id="14.2" url="thumbs/Cortefiel_Woman_3_2.jpg"/>
+						<Image id="14.3" url="thumbs/Cortefiel_Woman_3_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="14" url="/Cortefiel_Woman_3.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[N/A]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Red]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Blue and Red Braided Belt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Thread]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Skirt">
+			<Product gender="Women" id="15" us_price="59">
+				<Media>
+					<VideoThumb id="15" url="thumbs/Cortefiel_Woman_3a.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="15.1" url="thumbs/Cortefiel_Woman_3a_1.jpg"/>
+						<Image id="15.2" url="thumbs/Cortefiel_Woman_3a_2.jpg"/>
+						<Image id="15.3" url="thumbs/Cortefiel_Woman_3a_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="15" url="/Cortefiel_Woman_3a.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38|40|42|44|46|48|50]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Camel]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Skirt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[70% Cotton - 30% Lycra]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Bag">
+			<Product gender="Women" id="16" us_price="133">
+				<Media>
+					<VideoThumb id="16" url="thumbs/Cortefiel_Woman_3b.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="16.1" url="thumbs/Cortefiel_Woman_3b_1.jpg"/>
+						<Image id="16.2" url="thumbs/Cortefiel_Woman_3b_2.jpg"/>
+						<Image id="16.3" url="thumbs/Cortefiel_Woman_3b_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="16" url="/Cortefiel_Woman_3b.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[N/A]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Red]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Red leather Bag with tied red blue dotted scarf]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Synthetic Leather]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sandals">
+			<Product gender="Women" id="17" us_price="74">
+				<Media>
+					<VideoThumb id="17" url="thumbs/Cortefiel_Woman_4.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="17.1" url="thumbs/Cortefiel_Woman_4_1.jpg"/>
+						<Image id="17.2" url="thumbs/Cortefiel_Woman_4_2.jpg"/>
+						<Image id="17.3" url="thumbs/Cortefiel_Woman_4_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="17" url="/Cortefiel_Woman_4.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[37|38|39|40]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Grey]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Whedge heeled wooden sandals]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Wood]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Blouse">
+			<Product gender="Women" id="18" us_price="74">
+				<Media>
+					<VideoThumb id="18" url="thumbs/Cortefiel_Woman_5.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="18.1" url="thumbs/Cortefiel_Woman_5_1.jpg"/>
+						<Image id="18.2" url="thumbs/Cortefiel_Woman_5_2.jpg"/>
+						<Image id="18.3" url="thumbs/Cortefiel_Woman_5_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="18" url="/Cortefiel_Woman_5.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[S|M|L|XL]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Pink/Blue]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Spring Pattern Blouse]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[70% Cotton and 30% Silk]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Necklace">
+			<Product gender="Women" id="19" us_price="74">
+				<Media>
+					<VideoThumb id="19" url="thumbs/Cortefiel_Woman_5a.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="19.1" url="thumbs/Cortefiel_Woman_5a_1.jpg"/>
+						<Image id="19.2" url="thumbs/Cortefiel_Woman_5a_2.jpg"/>
+						<Image id="19.3" url="thumbs/Cortefiel_Woman_5a_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="19" url="/Cortefiel_Woman_5a.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[N/A]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Green]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Wooden Hand Painted Polka Dots Necklace]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Wood]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Bag">
+			<Product gender="Women" id="20" us_price="147">
+				<Media>
+					<VideoThumb id="20" url="thumbs/Cortefiel_Woman_6.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="20.1" url="thumbs/Cortefiel_Woman_6_1.jpg"/>
+						<Image id="20.2" url="thumbs/Cortefiel_Woman_6_2.jpg"/>
+						<Image id="20.3" url="thumbs/Cortefiel_Woman_6_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="20" url="/Cortefiel_Woman_6.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[N/A]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Camel]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Brown Natural soft leather Tote Bag with braided strap]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Leather]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Jeans">
+			<Product gender="Women" id="21" us_price="59">
+				<Media>
+					<VideoThumb id="21" url="thumbs/Cortefiel_Woman_7.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="21.1" url="thumbs/Cortefiel_Woman_7_1.jpg"/>
+						<Image id="21.2" url="thumbs/Cortefiel_Woman_7_2.jpg"/>
+						<Image id="21.3" url="thumbs/Cortefiel_Woman_7_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="21" url="/Cortefiel_Woman_7.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38|40|42|44|46|48|50]]></us_en>
+				</Sizes>
+				<Colors>
+					<us_en><![CDATA[Dark Contrast]]></us_en>
+				</Colors>
+				<Descriptions>
+					<us_en><![CDATA[Blue Denim Jeans, skinny leg]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+	</Brand>
+</StoreData>

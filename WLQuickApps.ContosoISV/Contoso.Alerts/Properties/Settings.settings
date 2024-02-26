@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Contoso.Alerts.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Contoso_Alerts_Live_Alerts_Message_MessageWebServicesService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://services.alerts.live-ppe.com/axis/services/Message</Value>
+    </Setting>
+    <Setting Name="Contoso_Alerts_Live_Alerts_Subscription_AlertsWebServicesService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://services.alerts.live-ppe.com/axis/services/Subscription</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

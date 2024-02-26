@@ -1,0 +1,21 @@
+﻿<Canvas
+  xmlns="http://schemas.microsoft.com/client/2007"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  x:Name="canvas"
+  Background="#00ffffff">
+    <Canvas.Resources>
+    <Storyboard x:Name='cursorBlink' BeginTime='0' RepeatBehavior="Forever">
+      <DoubleAnimationUsingKeyFrames Storyboard.TargetName='cursor' Storyboard.TargetProperty='(UIElement.Opacity)' Duration='00:00:01'>
+        <LinearDoubleKeyFrame Value='1' KeyTime='0:0:0' />
+        <LinearDoubleKeyFrame Value='0' KeyTime='0:0:0.5' />
+        <LinearDoubleKeyFrame Value='1' KeyTime='0:0:1' />
+      </DoubleAnimationUsingKeyFrames>
+    </Storyboard>
+  </Canvas.Resources>
+	<Rectangle Stroke="Black" RadiusX="3" RadiusY="3" x:Name="border" Fill="#ffffffff" Canvas.ZIndex="-1"/>
+	<Canvas Width="2" Height="22.537" x:Name="ShiftCanvas">
+		<Rectangle x:Name="selection" Fill="Blue" Opacity=".3"/>
+		<Rectangle x:Name="cursor" Width="2" Fill="Black" Visibility="Collapsed"/>
+		<TextBlock x:Name="text"/>
+	</Canvas>
+</Canvas>

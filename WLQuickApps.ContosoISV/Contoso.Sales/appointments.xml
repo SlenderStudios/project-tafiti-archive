@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<appointments>
+	<appointment>
+		<clientCompany>Blue Yonder</clientCompany>
+		<clientName>Bob Smith</clientName>
+		<clientAddress>1 Microsoft Way, Redmond, WA, 98052, USA</clientAddress>
+		<clientPhone>555 8837</clientPhone>
+		<aptDate>2007-08-31</aptDate>
+		<aptTime>9:20am</aptTime>
+	</appointment>
+	<appointment>
+		<clientCompany>Blue Yonder</clientCompany>
+		<clientName>Bob Smith</clientName>
+		<clientAddress>1 Microsoft Way, Redmond, WA, 98052, USA</clientAddress>
+		<clientPhone>555 8837</clientPhone>
+		<aptDate>2007-08-30</aptDate>
+		<aptTime>9:20am</aptTime>
+	</appointment>
+	<appointment>
+        <clientCompany>Blue Yonder</clientCompany>
+        <clientName>Bob Smith</clientName>
+        <clientAddress>1 Microsoft Way, Redmond, WA, 98052, USA</clientAddress>
+        <clientPhone>555 8837</clientPhone>
+		<aptDate>2007-08-27</aptDate>
+		<aptTime>9:20am</aptTime>
+	</appointment>
+	<appointment>
+        <clientCompany>Blue Yonder</clientCompany>
+        <clientName>Bob Smith</clientName>
+        <clientAddress>1 Microsoft Way, Redmond, WA, 98052, USA</clientAddress>
+        <clientPhone>555 8837</clientPhone>
+		<aptDate>2007-08-27</aptDate>
+		<aptTime>11:20am</aptTime>
+	</appointment>	
+</appointments>

@@ -1,0 +1,706 @@
+﻿<UserControl x:Class="WLQuickApps.FieldManager.Silverlight.Page"
+    xmlns="http://schemas.microsoft.com/client/2007" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="980" Height="580" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:local="clr-namespace:WLQuickApps.FieldManager.Silverlight;assembly=WLQuickApps.FieldManager.Silverlight"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <local:WeatherToImagePathConverter x:Key="WeatherTypeConverter"/>
+        <local:IsOpenConverter x:Key="IsOpenConverter"/>
+
+        <!-- Initial animation -->
+        <Storyboard x:Name="panelShine">
+            <PointAnimationUsingKeyFrames Storyboard.TargetName="animateRect" Storyboard.TargetProperty="(Shape.Fill).(LinearGradientBrush.StartPoint)" BeginTime="00:00:00">
+                <SplinePointKeyFrame KeyTime="00:00:00" Value="0.966000020503998,0.0299999993294477"/>
+                <SplinePointKeyFrame KeyTime="00:00:01.6000000" Value="0.966000020503998,0.0299999993294477"/>
+                <SplinePointKeyFrame KeyTime="00:00:01.7000000" Value="0.966000020503998,0.0299999993294477"/>
+                <SplinePointKeyFrame KeyTime="00:00:02.5000000" Value="1.60099995136261,-0.598999977111816"/>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetName="animateRect" Storyboard.TargetProperty="(Shape.Fill).(LinearGradientBrush.EndPoint)" BeginTime="00:00:00">
+                <SplinePointKeyFrame KeyTime="00:00:00" Value="0.0140000004321337,0.986999988555908"/>
+                <SplinePointKeyFrame KeyTime="00:00:01.6000000" Value="0.0140000004321337,0.986999988555908"/>
+                <SplinePointKeyFrame KeyTime="00:00:01.7000000" Value="0.0140000004321337,0.986999988555908"/>
+                <SplinePointKeyFrame KeyTime="00:00:02.5000000" Value="0.648999989032745,0.358000010251999"/>
+            </PointAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="animateRect" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Offset)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.58899998664855957"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0.78599214553833008"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0.835"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="animateRect" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.78600001335144043"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0.893304705619812"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0.92"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0.134"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="animateRect" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="1"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="1"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0.268"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="animateRect" Storyboard.TargetProperty="(UIElement.Opacity)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <!-- Tab animations -->
+        <Storyboard x:Name="tabMouseOver">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="80"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" BeginTime="00:00:00">
+                <SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#FF4F4F4F"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" BeginTime="00:00:00">
+                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFCACACA"/>
+                <SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#FFFFFFFF"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.91500002145767212"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" BeginTime="00:00:00">
+                <SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#FFB7B7B7"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="tabMouseOut">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="80"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" BeginTime="00:00:00">
+                <SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#FF4F4F4F"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" BeginTime="00:00:00">
+                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFFFF"/>
+                <SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#FFCACACA"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.91500002145767212"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" BeginTime="00:00:00">
+                <SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#FFB7B7B7"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="tabSelect">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="80"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="85"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" BeginTime="00:00:00">
+                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF4F4F4E"/>
+                <SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#FFFFFFFF"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" BeginTime="00:00:00">
+                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFFFF">
+                    <SplineColorKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0.75,0" ControlPoint2="0.25,1"/>
+                    </SplineColorKeyFrame.KeySpline>
+                </SplineColorKeyFrame>
+                <SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#FFA3A3A3"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.171"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" BeginTime="00:00:00">
+                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFB7B7B6"/>
+                <SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#FFEBEBEB"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Offset)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="tabDeselect">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="85">
+                    <SplineDoubleKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0.75,0" ControlPoint2="0.25,1"/>
+                    </SplineDoubleKeyFrame.KeySpline>
+                </SplineDoubleKeyFrame>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="80"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" BeginTime="00:00:00">
+                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFFFF">
+                    <SplineColorKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0.75,0" ControlPoint2="0.25,1"/>
+                    </SplineColorKeyFrame.KeySpline>
+                </SplineColorKeyFrame>
+                <SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#FF777777"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" BeginTime="00:00:00">
+                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFA3A3A3">
+                    <SplineColorKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0.75,0" ControlPoint2="0.25,1"/>
+                    </SplineColorKeyFrame.KeySpline>
+                </SplineColorKeyFrame>
+                <SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#FFB7B7B7"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.91500002145767212"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" BeginTime="00:00:00">
+                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFEBEBEB">
+                    <SplineColorKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0.75,0" ControlPoint2="0.25,1"/>
+                    </SplineColorKeyFrame.KeySpline>
+                </SplineColorKeyFrame>
+                <SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#FFB7B7B6"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0">
+                    <SplineDoubleKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0.75,0" ControlPoint2="0.25,1"/>
+                    </SplineDoubleKeyFrame.KeySpline>
+                </SplineDoubleKeyFrame>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Offset)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1">
+                    <SplineDoubleKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0.75,0" ControlPoint2="0.25,1"/>
+                    </SplineDoubleKeyFrame.KeySpline>
+                </SplineDoubleKeyFrame>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <!-- Field List Animations -->
+        <Storyboard x:Name="fieldMouseOver">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Background).(GradientBrush.GradientStops)[0].(GradientStop.Color)" BeginTime="00:00:00">
+                <SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="#EEFFFFFF"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)" BeginTime="00:00:00">
+                <SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="#AAFFFFFF"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="fieldMouseOut">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Background).(GradientBrush.GradientStops)[0].(GradientStop.Color)" BeginTime="00:00:00">
+                <SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#AAFFFFFF"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)" BeginTime="00:00:00">
+                <SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#66FFFFFF"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <!-- LoadingThrobber Animations -->
+        <Storyboard x:Name="Loading" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="loadingThrobber" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="180"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="360"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="LoadingFadeIn">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="loadingThrobber" Storyboard.TargetProperty="(UIElement.Opacity)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0">
+                    <SplineDoubleKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0.75,0" ControlPoint2="0.25,1"/>
+                    </SplineDoubleKeyFrame.KeySpline>
+                </SplineDoubleKeyFrame>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="LoadingFadeOut" Completed="LoadingFadeOut_Completed">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="loadingThrobber" Storyboard.TargetProperty="(UIElement.Opacity)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1">
+                    <SplineDoubleKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0.75,0" ControlPoint2="0.25,1"/>
+                    </SplineDoubleKeyFrame.KeySpline>
+                </SplineDoubleKeyFrame>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+
+    <Canvas x:Name="FieldManager">
+        <Canvas.Resources>
+            <!-- Brush Resources -->
+            <LinearGradientBrush x:Key="panelsFill" EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFE9F0F8"/>
+                <GradientStop Color="#33FFFFFF" Offset=".6"/>
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Name="fieldsBorderBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFFF9900" Offset="0.0"/>
+                <GradientStop Color="#FFFFCC33" Offset="1.0"/>
+            </LinearGradientBrush>
+
+            <!-- Tab Path Resource -->
+            <Style x:Key="tabStyle" TargetType="Button">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Canvas Cursor="Hand" MouseEnter="_tab_MouseEnter" MouseLeave="_tab_MouseLeave" MouseLeftButtonDown="_tab_MouseLeftButtonDown"  Loaded="_tab_Loaded" >
+                                <!--Tab shadow-->
+                                <Path Height="70" Width="86" Canvas.Left="0" Canvas.Top="2" Fill="Black" Stretch="Fill" Data="M226.45,185.05 L226.45,117 L306.45001,117 Q308.5,117 310,118.45 Q311.45001,119.9 311.45001,122 L311.45001,172 Q311.45001,174.05 310,175.55 Q308.5,177 306.45001,177 L235.95,177 Q229.3,177 227.35001,180.25 Q226.55,181.64999 226.45,185.05">
+                                    <Path.OpacityMask>
+                                        <RadialGradientBrush>
+                                            <RadialGradientBrush.RelativeTransform>
+                                                <TransformGroup>
+                                                    <TranslateTransform X="0" Y="-0.5"/>
+                                                </TransformGroup>
+                                            </RadialGradientBrush.RelativeTransform>
+                                            <GradientStop Color="#FF000000" Offset="0"/>
+                                            <GradientStop Color="#33FFFFFF" Offset="1"/>
+                                        </RadialGradientBrush>
+                                    </Path.OpacityMask>
+                                </Path>
+                                <!-- Tab face -->
+                                <Path Height="70" Width="80" Stretch="Fill" Data="M226.45,185.05 L226.45,117 L306.45001,117 Q308.5,117 310,118.45 Q311.45001,119.9 311.45001,122 L311.45001,172 Q311.45001,174.05 310,175.55 Q308.5,177 306.45001,177 L235.95,177 Q229.3,177 227.35001,180.25 Q226.55,181.64999 226.45,185.05" x:Name="tabPath" RenderTransformOrigin="0.5,0.5" Canvas.Left="-0.5">
+                                    <Path.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Path.RenderTransform>
+                                    <Path.Fill>
+                                        <LinearGradientBrush EndPoint="-0.0430000014603138,0.493000000715256" StartPoint="1.10199999809265,0.493000000715256">
+                                            <GradientStop Color="#FF4F4F4F" Offset="1"/>
+                                            <GradientStop Color="#FFCACACA" Offset="0"/>
+                                            <GradientStop Color="#FFB7B7B7" Offset="0.915"/>
+                                        </LinearGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                            </Canvas>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!--Text Styles-->
+            <Style TargetType="TextBlock" x:Key="boldText">
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="FontFamily" Value="Trebuchet MS" />
+                <Setter Property="FontSize" Value="13" />
+                <Setter Property="VerticalAlignment" Value="Center" />
+            </Style>
+
+            <Style TargetType="TextBlock" x:Key="mediumText">
+                <Setter Property="FontFamily" Value="Trebuchet MS"/>
+                <Setter Property="FontSize" Value="13"/>
+            </Style>
+
+            <Style TargetType="TextBlock" x:Key="mapLegendText">
+                <Setter Property="FontFamily" Value="Trebuchet MS"/>
+                <Setter Property="FontSize" Value="11"/>
+            </Style>
+
+            <Style TargetType="HyperlinkButton" x:Key="topLinkStyle">
+                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="Margin" Value="15, 0, 0, 0"/>
+            </Style>
+
+            <Style TargetType="TextBlock" x:Key="welcomeStyle">
+                <Setter Property="FontSize" Value="13"/>
+                <Setter Property="Foreground" Value="White"/>
+            </Style>
+
+            <Style TargetType="TextBlock" x:Key="labelPanelStyle">
+                <Setter Property="FontFamily" Value="Trebuchet MS"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Margin" Value="5, 5, 0, 0"/>
+            </Style>
+
+            <Style TargetType="HyperlinkButton" x:Key="numberStyle">
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="Width" Value="25"/>
+                <Setter Property="Height" Value="25"/>
+            </Style>
+
+            <!--Other-->
+            <Style TargetType="Rectangle" x:Key="leftPanelStyle">
+                <Setter Property="Width" Value="350"/>
+                <Setter Property="RadiusX" Value="5"/>
+                <Setter Property="RadiusY" Value="5"/>
+            </Style>
+            <Style TargetType="Rectangle" x:Key="rightPanelStyle">
+                <Setter Property="Width" Value="610"/>
+                <Setter Property="RadiusX" Value="5"/>
+                <Setter Property="RadiusY" Value="5"/>
+            </Style>
+
+        </Canvas.Resources>
+
+        <!--Background image-->
+        <Canvas.Background>
+            <SolidColorBrush Color="#FF336699"/>
+        </Canvas.Background>
+        <Canvas.Clip>
+            <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0, 0, 980, 580"/>
+        </Canvas.Clip>
+
+        <Image Opacity="1" Canvas.Left="-109.828" Canvas.Top="-154.42" Width="1090" Height="889.655" Source="images/bg-cloud.jpg" Stretch="Fill" x:Name="bg" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Canvas>
+            <Path Height="181.648" Width="894.611" RenderTransformOrigin="0.5,0.5" Data="M414.48434,405.39978 C525.77057,329.31635 656.36151,515.55042 756.29199,415.61993 C856.22247,315.68945 522.36407,331.58719 522.36407,331.58719 C522.36407,331.58719 421.29816,365.65454 419.02701,384.95923 C416.75586,404.26392 414.48434,405.39978 414.48434,405.39978 z" Stretch="Fill" Canvas.Top="-68.675" Canvas.Left="-7.645">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1.0447309802233242" ScaleY="0.95718418145501494"/>
+                        <SkewTransform AngleY="0" AngleX="-25.13290484343419"/>
+                        <RotateTransform Angle="5.0017695653902479"/>
+                        <TranslateTransform X="0.16" Y="40.023"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+                <Path.Fill>
+                    <LinearGradientBrush EndPoint="0.493999987840652,-0.0320000015199184" StartPoint="0.483000010251999,1.61899995803833">
+                        <GradientStop Color="#00FFFFFF" Offset="0.786"/>
+                        <GradientStop Color="#FFFFE1A0" Offset="0"/>
+                        <GradientStop Color="#07FFFFFF" Offset="0.696"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+            </Path>
+            <Path Height="181.648" Width="894.611" RenderTransformOrigin="0.5,0.5" Data="M414.48434,405.39978 C525.77057,329.31635 656.36151,515.55042 756.29199,415.61993 C856.22247,315.68945 522.36407,331.58719 522.36407,331.58719 C522.36407,331.58719 421.29816,365.65454 419.02701,384.95923 C416.75586,404.26392 414.48434,405.39978 414.48434,405.39978 z" Stretch="Fill" Canvas.Top="-50.192" Canvas.Left="-7.645">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1.0447309802233242" ScaleY="0.95718418145501494"/>
+                        <SkewTransform AngleY="0" AngleX="-25.13290484343419"/>
+                        <RotateTransform Angle="5.0017695653902479"/>
+                        <TranslateTransform X="0.16" Y="40.023"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+                <Path.Fill>
+                    <LinearGradientBrush EndPoint="0.472000002861023,-0.0579999983310699" StartPoint="0.486999988555908,1.64900004863739">
+                        <GradientStop Color="#00FFFFFF" Offset="0.786"/>
+                        <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+            </Path>
+            <Path Height="181.648" Width="894.611" RenderTransformOrigin="0.5,0.5" Data="M414.48434,405.39978 C525.77057,329.31635 656.36151,515.55042 756.29199,415.61993 C856.22247,315.68945 522.36407,331.58719 522.36407,331.58719 C522.36407,331.58719 421.29816,365.65454 419.02701,384.95923 C416.75586,404.26392 414.48434,405.39978 414.48434,405.39978 z" Stretch="Fill" Canvas.Top="-24.067" Canvas.Left="-7.645">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1.0407560386409138" ScaleY="0.96083994230966974"/>
+                        <SkewTransform AngleY="0" AngleX="-26.522107457643457"/>
+                        <RotateTransform Angle="7.7753977694023284"/>
+                        <TranslateTransform X="0.16" Y="40.023"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+                <Path.Fill>
+                    <LinearGradientBrush EndPoint="0.512000024318695,-0.187000006437302" StartPoint="0.504000008106232,1.54999995231628">
+                        <GradientStop Color="#00FFFFFF" Offset="0.665"/>
+                        <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+            </Path>
+        </Canvas>
+
+        <!--Logo-->
+        <TextBlock x:Name="logoBg" Text="Field Manager" FontSize="30" Foreground="#FF000000" FontFamily="Trebuchet MS" FontWeight="Bold" Canvas.Top="9.5" Canvas.Left="8" d:IsHidden="True"/>
+        <TextBlock x:Name="logo" Text="Field Manager" FontSize="30" Foreground="White" FontFamily="Trebuchet MS" FontWeight="Bold" Canvas.Top="8.5" Canvas.Left="8"/>
+
+        <!-- Loading throbber -->
+        <Canvas x:Name="loadingThrobber" Height="28.006" HorizontalAlignment="Left" Width="28.002" VerticalAlignment="Top" Canvas.Top="13.5" Canvas.Left="230" Clip="M14.131643,6.7457457 C10.050873,6.7457457 6.7427549,10.053864 6.7427549,14.134634 C6.7427549,18.215405 10.050873,21.523523 14.131643,21.523523 C18.212414,21.523523 21.520533,18.215405 21.520533,14.134634 C21.520533,10.053864 18.212414,6.7457457 14.131643,6.7457457 z M14.002014,0.0050048828 C21.734001,0.0050048828 28.002014,6.2730184 28.002014,14.005005 C28.002014,21.736992 21.734001,28.005005 14.002014,28.005005 C6.2700276,28.005005 0.0020141602,21.736992 0.0020141602,14.005005 C0.0020141602,6.2730184 6.2700276,0.0050048828 14.002014,0.0050048828 z" RenderTransformOrigin="0.5,0.5" Loaded="loadingThrobber_Loaded">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Rectangle Height="28" Width="13.666" Canvas.Left="14.336" Canvas.Top="0.006" d:LayoutOverrides="Width">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7FFFFFFF" Offset="0.263"/>
+                        <GradientStop Color="#FFFFFFFF" Offset="0.79"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Height="28" Width="14.339" Canvas.Left="0.001">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7FFFFFFF" Offset="0.263"/>
+                        <GradientStop Color="#02FFFFFF" Offset="0.79"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+
+        </Canvas>
+
+        <!--Welcome Text-->
+        <StackPanel Width="600" Canvas.Top="8" Canvas.Left="370">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock Style="{StaticResource welcomeStyle}" Text="Welcome: "/>
+                <TextBlock Style="{StaticResource welcomeStyle}" x:Name="_userNameLabel" Text=""/>
+            </StackPanel>
+        </StackPanel>
+
+
+        <!--Select League Drop down-->
+        <Border Canvas.Left="650" Canvas.Top="32" BorderBrush="#FF5B788E" BorderThickness="1" CornerRadius="3">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#F5FFFFFF" Offset="0.3"/>
+                    <GradientStop Color="#E2FFFFFF" Offset=".8"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="_selectedLeagueLabel" Height="20" Width="300" FontFamily="Trebuchet MS" Margin="3,0,0,0"/>
+                <Button x:Name="_leaguesDropButton" Height="18" Width="18"  Click="_leaguesDropButton_Click" Margin="0,0,2,0" Content="▼"/>
+            </StackPanel>
+        </Border>
+        <ListBox x:Name="_leaguesListBox" Canvas.Left="652" Canvas.Top="51.976" Width="323" MaxHeight="115" Canvas.ZIndex="1" Visibility="Collapsed" SelectionChanged="_leaguesListBox_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Tag="{Binding LeagueID}">
+                        <TextBlock Padding="5,0,5,0" Style="{StaticResource mediumText}" Text="{Binding TitleAndDescription}" Tag="{Binding Title}" MaxWidth="299"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+
+        <!--Panels-->
+        <Canvas x:Name="Panels" Canvas.Top="60">
+            <!-- Fields list frame -->
+            <Canvas Canvas.Left="5" x:Name="panelMyFields" Background="#FF000000" Loaded="panelMyFields_Loaded">
+                <Rectangle Style="{StaticResource leftPanelStyle}" Fill="{StaticResource panelsFill}" Height="300" Stroke="#FF5B788E"/>
+                <Rectangle Height="300" Width="350" RadiusX="5" RadiusY="5" x:Name="animateRect">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush EndPoint="0.0140000004321337,0.986999988555908" StartPoint="0.966000020503998,0.0299999993294477">
+                            <GradientStop Color="#00FFFFFF" Offset="0.589"/>
+                            <GradientStop Color="#FFFFFFFF" Offset="0.786"/>
+                            <GradientStop Offset="1" Color="#00FFFFFF"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <StackPanel Orientation="Horizontal" Width="350">
+                    <TextBlock Style="{StaticResource labelPanelStyle}" Text="League" x:Name="_leagueNameLabel"/>
+                    <TextBlock Style="{StaticResource labelPanelStyle}" Text="Fields" Margin="5,5,0,0"/>
+                </StackPanel>
+
+                <TextBlock x:Name="_emptyFieldsLabel" Style="{StaticResource boldText}" Text="There are no fields to display." Canvas.Left="85" Canvas.Top="145" Visibility="Collapsed"/>
+                <ScrollViewer Height="270" Width="340" Canvas.Left="5" Canvas.Top="25" VerticalScrollBarVisibility="Auto" Background="#4CFFFFFF">
+                    <ItemsControl x:Name="_fieldsList">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Vertical" Tag="{Binding FieldID}" MouseLeftButtonDown="_fieldListItem_MouseLeftButtonDown" Cursor="Hand">
+                                    <Border Width="320" Height="50" Margin="0,0,0,3" Canvas.Top="85" BorderBrush="#FFCCCCCC" BorderThickness="1" CornerRadius="5" MouseEnter="_field_MouseEnter" MouseLeave="_field_MouseLeave">
+                                        <Border.Background>
+                                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                <GradientStop Color="#AAFFFFFF" Offset="0.3"/>
+                                                <GradientStop Color="#66FFFFFF" Offset=".8"/>
+                                            </LinearGradientBrush>
+                                        </Border.Background>
+                                        <Canvas>
+                                            <StackPanel Orientation="Vertical" Width="200" Margin="0,2,0,0" Canvas.Left="10">
+                                                <TextBlock Style="{StaticResource boldText}" Text="{Binding Title}"/>
+                                                <TextBlock Style="{StaticResource mediumText}" Text="{Binding Address}" TextWrapping="Wrap" MaxHeight="30"/>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal" Width="115" Canvas.Left="215" Canvas.Top="3">
+                                                <TextBlock Style="{StaticResource boldText}" Text="{Binding IsOpen, Converter={StaticResource IsOpenConverter}, Mode=OneWay}" Width="60" TextAlignment="Right" Margin="0,0,3,0"/>
+                                                <Image Source="{Binding CurrentWeather.WeatherSummary, Converter={StaticResource WeatherTypeConverter}, Mode=OneWay}" Height="40" Width="40" />
+                                            </StackPanel>
+                                        </Canvas>
+                                    </Border>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </Canvas>
+
+            <!-- Weather Frame -->
+            <Canvas Canvas.Left="5" Canvas.Top="310" x:Name="_weatherPanel">
+                <Rectangle Style="{StaticResource leftPanelStyle}" Fill="{StaticResource panelsFill}" Height="200" Stroke="#FF5B788E"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource labelPanelStyle}" Text="Weather for" />
+                    <TextBlock Style="{StaticResource labelPanelStyle}" x:Name="_weatherNameLabel" Text="" Margin="5,5,0,0"/>
+                </StackPanel>
+                <ScrollViewer Height="170" Width="340" Canvas.Left="5" Canvas.Top="25" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Hidden" Background="#4CFFFFFF">
+                    <ItemsControl x:Name="_weatherList" >
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel Orientation="Horizontal" />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border Width="75" Height="150" Margin="0,0,2,0" Canvas.Top="85" BorderBrush="#FFCCCCCC" BorderThickness="1" CornerRadius="5">
+                                    <Border.Background>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="#AAFFFFFF" Offset="0.3"/>
+                                            <GradientStop Color="#66FFFFFF" Offset=".8"/>
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                    <Canvas>
+                                        <StackPanel Orientation="Vertical" Width="75" Margin="0,5,0,0">
+                                            <TextBlock FontSize="10" x:Name="_weatherDayLabel" Text="{Binding Day}" FontWeight="Bold" Width="75" TextAlignment="Center" />
+                                            <Image Height="45" Width="45" Source="{Binding WeatherSummary, Converter={StaticResource WeatherTypeConverter}, Mode=OneWay}"/>
+                                            <TextBlock FontSize="14" x:Name="_weatherHighLabel" Text="{Binding MaxTemperature}" FontWeight="Bold" Foreground="#FF771111" Width="75" TextAlignment="Center" />
+                                            <TextBlock FontSize="14" x:Name="_weatherLowLabel" Text="{Binding MinTemperature}" FontWeight="Bold" Foreground="#FF111177" Width="75" TextAlignment="Center" />
+                                            <TextBlock FontSize="10" x:Name="_weatherSummaryLabel" Text="{Binding WeatherSummary}" Width="50" TextAlignment="Center" TextWrapping="Wrap" LineHeight="10" LineStackingStrategy="BlockLineHeight" />
+                                        </StackPanel>
+                                    </Canvas>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </Canvas>
+
+            <!-- Main Field Info Panel -->
+            <Canvas x:Name="_mainFieldPanel" Canvas.Left="365">
+                <Rectangle Style="{StaticResource rightPanelStyle}" Fill="{StaticResource panelsFill}" Height="510" Stroke="#FF5B788E"/>
+
+                <StackPanel Orientation="Horizontal" Width="430">
+                    <Image Width="25" Height="25" Source="images/field.png" Margin="10,5,0,0"/>
+                    <TextBlock Style="{StaticResource labelPanelStyle}" x:Name="_fieldNameLabel" Text="{Binding Title}" FontSize="18"/>
+                </StackPanel>
+                <StackPanel Width="420" Canvas.Top="40" Canvas.Left="8">
+                    <TextBlock Style="{StaticResource mediumText}" x:Name="address" Text="{Binding Address}"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource boldText}" Text="Phone: "/>
+                        <TextBlock Style="{StaticResource mediumText}" x:Name="phone" Text="{Binding PhoneNumber}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource boldText}" Text="Number of Fields: "/>
+                        <TextBlock Style="{StaticResource mediumText}" x:Name="numberOfFields" Text="{Binding NumberOfFields}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource boldText}" Text="Parking Lot: "/>
+                        <TextBlock Style="{StaticResource mediumText}" x:Name="parkingLot" Text="{Binding ParkingLot}"/>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Width="160" Canvas.Left="435" Canvas.Top="3">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,0">
+                        <Image x:Name="statusImage" Source="{Binding CurrentWeather.WeatherSummary, Converter={StaticResource WeatherTypeConverter}, Mode=OneWay}" Height="40" Width="40" Margin="0,0,5,0" />
+                        <TextBlock x:Name="statusText" Style="{StaticResource boldText}" Text="{Binding IsOpen, Converter={StaticResource IsOpenConverter}, Mode=OneWay}" VerticalAlignment="Center" FontWeight="Bold" FontSize="16" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5,0,0">
+                        <TextBlock Style="{StaticResource boldText}" Text="Date: "/>
+                        <TextBlock Style="{StaticResource mediumText}" x:Name="_dayLabel" Text="00/00/00"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5,0,0">
+                        <TextBlock Style="{StaticResource boldText}" Text="Time: "/>
+                        <TextBlock Style="{StaticResource mediumText}" x:Name="_timeLabel" Text="00:00 PM PST"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <!--Field Map, Directions, Traffic, People-->
+                <Canvas x:Name="panelDisplayPane" Canvas.Top="110" Canvas.Left="5">
+
+                    <!--Rectangle shadow-->
+                    <Rectangle Height="300" Width="515" RadiusX="5" RadiusY="5" Stretch="Fill" Fill="#FF000000" Canvas.Top="2" Canvas.Left="2">
+                        <Rectangle.OpacityMask>
+                            <RadialGradientBrush>
+                                <RadialGradientBrush.RelativeTransform>
+                                    <TransformGroup>
+                                        <TranslateTransform X="0.045" Y="-0.5"/>
+                                    </TransformGroup>
+                                </RadialGradientBrush.RelativeTransform>
+                                <GradientStop Color="#FF000000" Offset="0"/>
+                                <GradientStop Color="#33FFFFFF" Offset="1"/>
+                            </RadialGradientBrush>
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                    <Rectangle Height="300" Width="515" RadiusX="5" RadiusY="5" Stretch="Fill" Stroke="#0C000000">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFFFFFFF" Offset="0.138"/>
+                                <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+
+                    <Canvas Height="280" Width="495" Background="#FFE4E4E4" Canvas.Left="10" Canvas.Top="10"/>
+
+                </Canvas>
+
+                <!--Tabs-->
+                <Grid x:Name="tabs" Canvas.Top="120" Canvas.Left="520">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="65"/>
+                        <RowDefinition Height="65"/>
+                        <RowDefinition Height="65"/>
+                        <RowDefinition Height="65"/>
+                    </Grid.RowDefinitions>
+
+                    <Canvas Grid.Row="3" MouseLeftButtonUp="_viewContactsClick" >
+                        <Button Style="{StaticResource tabStyle}" x:Name="tabFriends" Click="tabFriends_Click" />
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Margin="0,15,0,0" IsHitTestVisible="False">
+                            <Image Source="images/friends.png" Width="20" Height="20"/>
+                            <TextBlock Style="{StaticResource mediumText}" HorizontalAlignment="Center" Text="People" x:Name="linkFriends"/>
+                        </StackPanel>
+                    </Canvas>
+                    <Canvas Grid.Row="2" MouseLeftButtonUp="_viewTrafficClick">
+                        <Button Style="{StaticResource tabStyle}" x:Name="tabTraffic" Click="tabTraffic_Click" />
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Margin="0,15,0,0" IsHitTestVisible="False">
+                            <Image Source="images/traffic.png" Width="20" Height="20"/>
+                            <TextBlock Style="{StaticResource mediumText}" HorizontalAlignment="Center" Text="Traffic" x:Name="linkTraffic"/>
+                        </StackPanel>
+                    </Canvas>
+                    <Canvas Grid.Row="1" MouseLeftButtonUp="_viewDirectionsClick" >
+                        <Button Style="{StaticResource tabStyle}" x:Name="tabDirections" Click="tabDirections_Click" />
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Margin="0,15,0,0" IsHitTestVisible="False">
+                            <Image Source="images/directions.png" Width="20" Height="20"/>
+                            <TextBlock Style="{StaticResource mediumText}" HorizontalAlignment="Center" Text="Directions" x:Name="linkDirections"/>
+                        </StackPanel>
+                    </Canvas>
+                    <Canvas Grid.Row="0" MouseLeftButtonUp="_viewFieldClick">
+                        <Button Style="{StaticResource tabStyle}" x:Name="tabField" Click="tabField_Click" />
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Margin="0,15,0,0" IsHitTestVisible="False">
+                            <Image Source="images/field.png" Width="20" Height="20" />
+                            <TextBlock Style="{StaticResource mediumText}" HorizontalAlignment="Center" Text="Field" FontWeight="Normal"/>
+                        </StackPanel>
+                    </Canvas>
+                </Grid>
+
+                <StackPanel Canvas.Top="413" Orientation="Horizontal">
+                    <StackPanel>
+                        <TextBlock Style="{StaticResource labelPanelStyle}" Text="Map Legend"/>
+                        <ScrollViewer Height="65" Width="135" VerticalScrollBarVisibility="Auto" Background="#55FFFFFF" Margin="5,0,0,0">
+                            <ScrollViewer.Clip>
+                                <RectangleGeometry RadiusX="8" RadiusY="5" Rect="0,0,135,65"/>
+                            </ScrollViewer.Clip>
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="images/inCollectionFieldPin.png" Width="15" Height="15" Margin="6,0,0,0"/>
+                                    <TextBlock Style="{StaticResource mapLegendText}" Text="In This League" TextWrapping="Wrap" Padding="4"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="images/notInCollectionFieldPin.png" Width="15" Height="15" Margin="6,0,0,0"/>
+                                    <TextBlock Style="{StaticResource mapLegendText}" Text="Not In This League" TextWrapping="Wrap" Padding="4"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="images/closedFieldPin.png" Width="15" Height="15" Margin="6,0,0,0"/>
+                                    <TextBlock Style="{StaticResource mapLegendText}" Text="Closed" TextWrapping="Wrap" Padding="4"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </StackPanel>
+                    <StackPanel x:Name="panelNotes">
+                        <TextBlock Style="{StaticResource labelPanelStyle}" Text="Field Notes"/>
+                        <ScrollViewer Height="65" Width="455" VerticalScrollBarVisibility="Auto" Background="#55FFFFFF" Margin="5,0,0,0">
+                            <ScrollViewer.Clip>
+                                <RectangleGeometry RadiusX="8" RadiusY="5" Rect="0,0,455,65"/>
+                            </ScrollViewer.Clip>
+                            <TextBlock Style="{StaticResource mediumText}" Text="{Binding Status}" TextWrapping="Wrap" Padding="5"/>
+                        </ScrollViewer>
+                    </StackPanel>
+                </StackPanel>
+            </Canvas>
+        </Canvas>
+
+    </Canvas>
+</UserControl>

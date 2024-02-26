@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Gadgets>
+  <Gadget>
+    <ID>1</ID>
+    <GadgetName>All Sports News</GadgetName>
+    <Description>A gadget for your live space that will keep you up to date with the latest sports scores</Description>
+    <Link>http://gallery.live.com/LiveItemDetail.aspx?li=1a83497f-cf47-4539-af24-67118f7cb98a</Link>
+     <Thumbnail>~/images/LinkContosoCup.png</Thumbnail>
+  </Gadget>
+  <Gadget>
+    <ID>2</ID>
+    <GadgetName>ASBP Forum Feed</GadgetName>
+    <Description>Need to keep up to date on the ASBP. This forum feed will sit in your Vista sidebar.</Description>
+    <Link>http://gallery.live.com/LiveItemDetail.aspx?li=7c7af151-94dd-40f3-8fb7-ef3aec27c74d</Link>
+    <Thumbnail>~/images/LinkTips.png</Thumbnail>
+  </Gadget>
+  <Gadget>
+    <ID>3</ID>
+    <GadgetName>Stocks</GadgetName>
+    <Description>No need to wade through figures upon figures as this handly little gadget will keep you on track</Description>
+    <Link>http://gallery.live.com/liveItemDetail.aspx?li=61b9dca8-214c-41bf-b972-b2050aeaab9c</Link>
+    <Thumbnail>~/images/LinkShares.png</Thumbnail>
+  </Gadget>
+</Gadgets>

@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WLQuickApps.SocialNetwork.VideoProcessorService.Settings" GeneratedClassName="MediaProcessorSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CommandLineTarget" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\program files\microsoft expression\media encoder 1.0\mediaencoder.exe</Value>
+    </Setting>
+    <Setting Name="ServiceWorkingDir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">d:\vid\servicedir\</Value>
+    </Setting>
+    <Setting Name="MediaSubmissionQueue" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.\Private$\TestQueue</Value>
+    </Setting>
+    <Setting Name="EventLogMachineName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.</Value>
+    </Setting>
+    <Setting Name="EventLogName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Application</Value>
+    </Setting>
+    <Setting Name="EventLogSourceName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">WLQuickApps Media Processor Service</Value>
+    </Setting>
+    <Setting Name="EventLogThreshold" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="ProcessorWorkingDir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">d:\vid\processordir\</Value>
+    </Setting>
+    <Setting Name="DebugFlag" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CommandLineTimeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="EMEFilesToPackage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">BasePlayer.js, MicrosoftAjax.js, player.js, StartPlayer.js, player.xaml, preview.jpg, manifest.xml</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

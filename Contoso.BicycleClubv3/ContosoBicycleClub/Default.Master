@@ -1,0 +1,141 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="WLQuickApps.ContosoBicycleClub.Default" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head runat="server">
+	<asp:ContentPlaceHolder ID="head" runat="server" />
+	<asp:ContentPlaceHolder ID="CssLinksPlaceHolder" runat="server" />
+	<asp:ContentPlaceHolder ID="ScriptLinksPlaceHolder" runat="server" />
+	
+	<!-- AdCenter Analytics Beta -->
+    <!-- Commented out every except the mslivelabs environment 
+    <script language="javascript" type="text/javascript" src="http://analytics.live.com/Analytics/msAnalytics.js"></script>
+    <script language="javascript" type="text/javascript">
+	    msAnalytics.ProfileId = 'C7F1';
+	    msAnalytics.TrackPage();
+    </script>  -->
+</head>
+
+<body>
+<div class="cbc-Container <asp:ContentPlaceHolder ID="ContainerClassPlaceHolder" runat="server" />">
+<form id="form1" runat="server">
+
+<asp:ContentPlaceHolder ID="ScriptManagerPlaceHolder" runat="server">
+	<asp:ScriptManager ID="ScriptManager1" runat="server">
+		<Scripts>
+			<asp:ScriptReference Path="~/assets/scripts/Profile.js" />
+			<asp:ScriptReference Path="~/assets/scripts/Presence.js" />
+		</Scripts>
+	</asp:ScriptManager>
+</asp:ContentPlaceHolder>
+
+<div class="cbc-Header">
+	<div class="cbc-Logo"><asp:Localize runat="server" ID="Logo" Text="<%$ Resources:ContosoBicycleClubWeb, WebsiteLabel %>" /></div>
+    
+		<ul class="cbc-NavPrimary">
+			<li><asp:HyperLink ID="HomeLink" CssClass="cbc-NavPrimary-home" runat="server" NavigateUrl="~/default.aspx" Text="<%$ Resources:ContosoBicycleClubWeb, HomeLabel %>" /></li>
+			<li><asp:HyperLink ID="RidesLink" CssClass="cbc-NavPrimary-rides" runat="server" NavigateUrl="~/rides/default.aspx" Text="<%$ Resources:ContosoBicycleClubWeb, RidesLabel %>" /></li>
+			<li><asp:HyperLink ID="EventsLink" CssClass="cbc-NavPrimary-events" runat="server" NavigateUrl="~/events/default.aspx" Text="<%$ Resources:ContosoBicycleClubWeb, EventsLabel %>" /></li>
+		</ul>
+		
+		<div class="cbc-UserInfo">
+			<asp:Image CssClass="cbc-UserThumbnail" ImageUrl="~/assets/images/default_user.jpg" AlternateText="" runat="server" />
+		
+			<div class="cbc-LoginStatus">
+				<asp:LoginView ID="LoginView1" runat="server">
+					<LoggedInTemplate>
+						<%= CurrentUserDisplayName %><br />
+						<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Profile.aspx" Text="<%$ Resources:ContosoBicycleClubWeb, UpdateProfileLabel %>" /><br />
+					</LoggedInTemplate>
+				</asp:LoginView>
+				<cbc:LoginLink runat="server" id="LiveIDLogin" />          
+			</div>
+
+			<asp:LoginView ID="LoginView2" runat="server">
+				<LoggedInTemplate>
+					<div class="cbc-EditEvents">
+						<asp:Localize runat="server" Text="<%$ Resources:ContosoBicycleClubWeb, OrganizeLabel %>" />
+						<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Edit.aspx?type=Ride" Text="<%$ Resources:ContosoBicycleClubWeb, RideLabel %>" />
+						<asp:Localize runat="server" Text="<%$ Resources:ContosoBicycleClubWeb, OrLabel %>" />
+						<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Edit.aspx?type=Event" Text="<%$ Resources:ContosoBicycleClubWeb, EventLabel %>" />
+					</div>
+				</LoggedInTemplate>
+			</asp:LoginView>
+ 		</div>
+ 		
+		<asp:ContentPlaceHolder ID="HeaderContentPlaceHolder" runat="server" />
+	</div>
+
+	<div class="cbc-ContentContainer">
+		<div class="cbc-ContentPrimaryContainer">
+			<div class="cbc-ContentPrimary">
+				<asp:ContentPlaceHolder ID="PageHeadingPlaceHolder" runat="server">
+					<div class="cbc-PageHeading">
+						<h1><%= SiteMap.CurrentNode.Title %></h1>
+					</div>
+				</asp:ContentPlaceHolder>
+
+				<asp:ContentPlaceHolder ID="PrimaryContentPlaceHolder" runat="server" />
+			</div>
+		</div>
+	</div>
+
+	<asp:ContentPlaceHolder ID="ChatUsersPlaceHolder" runat="server">
+		<div class="cbc-ChatUsersList">
+			<h2><asp:Localize runat="server" Text="<%$ Resources:ContosoBicycleClubWeb, ChatUsersListHeadingLabel %>" /></h2>
+			<asp:LoginView ID="LoginView3" runat="server">
+				<LoggedInTemplate>
+					<div id="cbc-NoChatUsers">
+						<asp:Localize runat="server" Text="<%$ Resources:ContosoBicycleClubWeb, ChatNoUsersLabel %>" />
+					</div>
+					<ul id="cbc-ChatUsersList"></ul>
+				</LoggedInTemplate>
+				<AnonymousTemplate>
+					<div class="cbc-NeedLogin">
+						<cbc:LoginLink runat="server" id="LiveIDLogin2" />
+						<asp:Localize runat="server" Text="<%$ Resources:ContosoBicycleClubWeb, ChatNeedLoginLabel %>" />
+					</div>
+				</AnonymousTemplate>
+			</asp:LoginView>
+		</div>
+
+		<asp:LoginView ID="LoginView4" runat="server">
+			<LoggedInTemplate>
+				<script type="text/javascript">InitPresence();</script>
+
+				<cbc:UserPresenceListControl runat="server" id="UserPresenceListControl1" >
+					<HeaderTemplate>
+						<script type="text/javascript">
+					</HeaderTemplate>
+					<ItemTemplate>
+						CHATUSERS['<%#Eval("LiveMessengerID")%>'] = {id:'<%#Eval("LiveMessengerID")%>', displayName:'<%#Eval("DisplayName")%>', email:'<%#Eval("Email")%>'};
+					</ItemTemplate>
+					<FooterTemplate>
+						</script>
+					</FooterTemplate>
+				</cbc:UserPresenceListControl>
+
+
+				<cbc:UserPresenceListControl runat="server" id="UserPresenceListControl2" >
+					<ItemTemplate>
+						<script type="text/javascript"
+							src="http://messenger.services.live.com/users/<%#Eval("LiveMessengerID")%>/presence/?cb=ShowPresence">
+						</script>
+					</ItemTemplate>
+				</cbc:UserPresenceListControl>
+			</LoggedInTemplate>
+		</asp:LoginView>
+	</asp:ContentPlaceHolder>
+	
+
+	<div class="cbc-Footer">
+		<asp:Literal runat="server" Text="<%$ Resources:ContosoBicycleClubWeb, CopyrightLabel %>" />
+		<span class="separator">&#160;|&#160;</span>
+		<asp:HyperLink runat="server" NavigateUrl="~/Privacy.aspx" Text="<%$ Resources:ContosoBicycleClubWeb, PrivacyPolicyLabel %>" />
+	</div>
+
+
+</form>
+</div>
+</body>
+</html>

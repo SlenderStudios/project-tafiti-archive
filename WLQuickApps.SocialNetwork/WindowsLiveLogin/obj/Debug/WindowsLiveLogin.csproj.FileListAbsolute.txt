@@ -1,0 +1,5 @@
+C:\Projects\Windows Live Quick Apps\WLQuickApps.SocialNetwork\WindowsLiveLogin\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Windows Live Quick Apps\WLQuickApps.SocialNetwork\WindowsLiveLogin\bin\Debug\WindowsLiveLogin.dll
+C:\Projects\Windows Live Quick Apps\WLQuickApps.SocialNetwork\WindowsLiveLogin\bin\Debug\WindowsLiveLogin.pdb
+C:\Projects\Windows Live Quick Apps\WLQuickApps.SocialNetwork\WindowsLiveLogin\obj\Debug\WindowsLiveLogin.dll
+C:\Projects\Windows Live Quick Apps\WLQuickApps.SocialNetwork\WindowsLiveLogin\obj\Debug\WindowsLiveLogin.pdb

@@ -1,0 +1,28 @@
+﻿
+#video-list li
+{
+    width: 45%;
+    float: left;
+}
+
+.video-thumbnail
+{
+    padding: 10px;
+}
+
+.video-thumbnail img
+{
+    float: left;
+    margin: 0 10px 3px 0;
+}
+
+.video-thumbnail a img 
+{
+    border: none;
+}
+
+.video-thumbnail p
+{
+    margin: 0.2em 0 0 0;
+}
+

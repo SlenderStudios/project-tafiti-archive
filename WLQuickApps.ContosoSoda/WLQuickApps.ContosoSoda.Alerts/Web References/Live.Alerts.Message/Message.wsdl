@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:tns1="messagecast.net" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://services.alerts.live.com/axis/services/Message" xmlns:intf="http://services.alerts.live.com/axis/services/Message" targetNamespace="http://services.alerts.live.com/axis/services/Message" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="messagecast.net">
+      <xsd:import namespace="http://services.alerts.live.com/axis/services/Message" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:complexType name="RecServicesHeader">
+        <xsd:sequence>
+          <xsd:element name="messageID" nillable="true" type="soapenc:string" />
+          <xsd:element name="timestamp" nillable="true" type="soapenc:string" />
+          <xsd:element name="version" nillable="true" type="soapenc:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RecServicesIdentification">
+        <xsd:sequence>
+          <xsd:element name="PINID" type="xsd:int" />
+          <xsd:element name="PW" nillable="true" type="soapenc:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RecServicesContact">
+        <xsd:sequence>
+          <xsd:element name="SGID" nillable="true" type="soapenc:int" />
+          <xsd:element name="from" nillable="true" type="soapenc:string" />
+          <xsd:element name="ord" type="xsd:int" />
+          <xsd:element name="sendToContactID" type="xsd:int" />
+          <xsd:element name="to" nillable="true" type="soapenc:string" />
+          <xsd:element name="transport" nillable="true" type="soapenc:string" />
+          <xsd:element name="transportID" type="xsd:int" />
+          <xsd:element name="transportTypeID" type="xsd:int" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RecServicesMessage">
+        <xsd:sequence>
+          <xsd:element name="actionURL" nillable="true" type="soapenc:string" />
+          <xsd:element name="contacts" nillable="true" type="intf:ArrayOf_tns1_RecServicesContact" />
+          <xsd:element name="content" nillable="true" type="soapenc:string" />
+          <xsd:element name="emailMessage" nillable="true" type="soapenc:string" />
+          <xsd:element name="locale" nillable="true" type="soapenc:string" />
+          <xsd:element name="messengerMessage" nillable="true" type="soapenc:string" />
+          <xsd:element name="method" nillable="true" type="soapenc:string" />
+          <xsd:element name="mobileMessage" nillable="true" type="soapenc:string" />
+          <xsd:element name="superToastMessage" nillable="true" type="soapenc:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RecServicesResponse">
+        <xsd:sequence>
+          <xsd:element name="SOAPRequest" nillable="true" type="soapenc:string" />
+          <xsd:element name="SOAPResponse" nillable="true" type="soapenc:string" />
+          <xsd:element name="statusCode" type="xsd:int" />
+          <xsd:element name="statusReason" nillable="true" type="soapenc:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RecServicesRequestResponse">
+        <xsd:sequence>
+          <xsd:element name="header" nillable="true" type="tns1:RecServicesHeader" />
+          <xsd:element name="response" nillable="true" type="tns1:RecServicesResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RecServicesInformation">
+        <xsd:sequence>
+          <xsd:element name="item" nillable="true" type="soapenc:string" />
+          <xsd:element name="response" nillable="true" type="tns1:RecServicesResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RecDetailRequestResponse">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns1:RecServicesRequestResponse">
+            <xsd:sequence>
+              <xsd:element name="info" nillable="true" type="intf:ArrayOf_tns1_RecServicesInformation" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="RecServicesGroupMessage">
+        <xsd:sequence>
+          <xsd:element name="actionURL" nillable="true" type="soapenc:string" />
+          <xsd:element name="content" nillable="true" type="soapenc:string" />
+          <xsd:element name="emailMessage" nillable="true" type="soapenc:string" />
+          <xsd:element name="fromContacts" nillable="true" type="intf:ArrayOf_tns1_RecServicesContact" />
+          <xsd:element name="groupName" nillable="true" type="soapenc:string" />
+          <xsd:element name="locale" nillable="true" type="soapenc:string" />
+          <xsd:element name="messengerMessage" nillable="true" type="soapenc:string" />
+          <xsd:element name="mobileMessage" nillable="true" type="soapenc:string" />
+          <xsd:element name="superToastMessage" nillable="true" type="soapenc:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RecUsersGroup">
+        <xsd:sequence>
+          <xsd:element name="fromContacts" nillable="true" type="intf:ArrayOf_tns1_RecServicesContact" />
+          <xsd:element name="groupName" nillable="true" type="soapenc:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RecUsersRequestResponse">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns1:RecServicesRequestResponse">
+            <xsd:sequence>
+              <xsd:element name="totalNumUsers" nillable="true" type="soapenc:int" />
+              <xsd:element name="users" nillable="true" type="intf:ArrayOf_tns1_RecUsersGroup" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="RecValidRequestResponse">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns1:RecServicesRequestResponse">
+            <xsd:sequence>
+              <xsd:element name="validRequest" type="xsd:boolean" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="RecAlertsRequestResponse">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns1:RecServicesRequestResponse">
+            <xsd:sequence>
+              <xsd:element name="URL" nillable="true" type="soapenc:string" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="RecGroupsRequestResponse">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns1:RecServicesRequestResponse">
+            <xsd:sequence>
+              <xsd:element name="subscriptionGroups" nillable="true" type="intf:ArrayOf_soapenc_string" />
+              <xsd:element name="unSubscribedGroups" nillable="true" type="intf:ArrayOf_soapenc_string" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://services.alerts.live.com/axis/services/Message">
+      <xsd:import namespace="messagecast.net" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:complexType name="ArrayOf_tns1_RecServicesContact">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="tns1:RecServicesContact[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOf_tns1_RecServicesInformation">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="tns1:RecServicesInformation[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOf_tns1_RecUsersGroup">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="tns1:RecUsersGroup[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOf_soapenc_string">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="soapenc:string[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GroupDeliverRequest">
+    <wsdl:part name="h" type="tns1:RecServicesHeader" />
+    <wsdl:part name="ID" type="tns1:RecServicesIdentification" />
+    <wsdl:part name="gm" type="tns1:RecServicesGroupMessage" />
+  </wsdl:message>
+  <wsdl:message name="DeliverResponse">
+    <wsdl:part name="DeliverReturn" type="tns1:RecDetailRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="GroupDeliverResponse">
+    <wsdl:part name="GroupDeliverReturn" type="tns1:RecServicesRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeliverRequest">
+    <wsdl:part name="h" type="tns1:RecServicesHeader" />
+    <wsdl:part name="ID" type="tns1:RecServicesIdentification" />
+    <wsdl:part name="m" type="tns1:RecServicesMessage" />
+  </wsdl:message>
+  <wsdl:portType name="MessageWebServices">
+    <wsdl:operation name="Deliver" parameterOrder="h ID m">
+      <wsdl:input name="DeliverRequest" message="intf:DeliverRequest" />
+      <wsdl:output name="DeliverResponse" message="intf:DeliverResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GroupDeliver" parameterOrder="h ID gm">
+      <wsdl:input name="GroupDeliverRequest" message="intf:GroupDeliverRequest" />
+      <wsdl:output name="GroupDeliverResponse" message="intf:GroupDeliverResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MessageSoapBinding" type="intf:MessageWebServices">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="Deliver">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="DeliverRequest">
+        <wsdlsoap:body use="encoded" namespace="http://soapservices.messagecast.net" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="DeliverResponse">
+        <wsdlsoap:body use="encoded" namespace="http://services.alerts.live.com/axis/services/Message" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GroupDeliver">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="GroupDeliverRequest">
+        <wsdlsoap:body use="encoded" namespace="http://soapservices.messagecast.net" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="GroupDeliverResponse">
+        <wsdlsoap:body use="encoded" namespace="http://services.alerts.live.com/axis/services/Message" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MessageWebServicesService">
+    <wsdl:port name="Message" binding="intf:MessageSoapBinding">
+      <wsdlsoap:address location="http://services.alerts.live.com/axis/services/Message" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

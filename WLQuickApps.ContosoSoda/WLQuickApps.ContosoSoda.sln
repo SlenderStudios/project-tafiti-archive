@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WLQuickApps.ContosoSoda.Alerts", "WLQuickApps.ContosoSoda.Alerts\WLQuickApps.ContosoSoda.Alerts.csproj", "{814FDE0B-E108-4314-8EC8-FD6258A80774}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WLQuickApps.ContosoSoda.Website", "WLQuickApps.ContosoSoda.Website", "{0DEEBCBC-073A-4CDD-998E-A61B2CFFCD2D}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/WLQuickApps.ContosoSoda.Website"
+		Debug.AspNetCompiler.PhysicalPath = "WLQuickApps.ContosoSoda.Website\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WLQuickApps.ContosoSoda.Website\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WLQuickApps.ContosoSoda.Website"
+		Release.AspNetCompiler.PhysicalPath = "WLQuickApps.ContosoSoda.Website\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WLQuickApps.ContosoSoda.Website\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "80"
+		VWDDynamicPort = "false"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs04.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WLQuickApps.ContosoSoda.Alerts\\WLQuickApps.ContosoSoda.Alerts.csproj
+		SccProjectName1 = WLQuickApps.ContosoSoda.Alerts
+		SccLocalPath1 = WLQuickApps.ContosoSoda.Alerts
+		SccWebProject2 = true
+		SccProjectUniqueName2 = WLQuickApps.ContosoSoda.Website
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = WLQuickApps.ContosoSoda.Website\\
+		SccProjectEnlistmentChoice2 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{814FDE0B-E108-4314-8EC8-FD6258A80774}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{814FDE0B-E108-4314-8EC8-FD6258A80774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{814FDE0B-E108-4314-8EC8-FD6258A80774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{814FDE0B-E108-4314-8EC8-FD6258A80774}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{814FDE0B-E108-4314-8EC8-FD6258A80774}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{814FDE0B-E108-4314-8EC8-FD6258A80774}.Release|.NET.ActiveCfg = Release|Any CPU
+		{814FDE0B-E108-4314-8EC8-FD6258A80774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{814FDE0B-E108-4314-8EC8-FD6258A80774}.Release|Any CPU.Build.0 = Release|Any CPU
+		{814FDE0B-E108-4314-8EC8-FD6258A80774}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{814FDE0B-E108-4314-8EC8-FD6258A80774}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0DEEBCBC-073A-4CDD-998E-A61B2CFFCD2D}.Debug|.NET.ActiveCfg = Debug|.NET
+		{0DEEBCBC-073A-4CDD-998E-A61B2CFFCD2D}.Debug|.NET.Build.0 = Debug|.NET
+		{0DEEBCBC-073A-4CDD-998E-A61B2CFFCD2D}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{0DEEBCBC-073A-4CDD-998E-A61B2CFFCD2D}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{0DEEBCBC-073A-4CDD-998E-A61B2CFFCD2D}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{0DEEBCBC-073A-4CDD-998E-A61B2CFFCD2D}.Release|.NET.ActiveCfg = Debug|.NET
+		{0DEEBCBC-073A-4CDD-998E-A61B2CFFCD2D}.Release|.NET.Build.0 = Debug|.NET
+		{0DEEBCBC-073A-4CDD-998E-A61B2CFFCD2D}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{0DEEBCBC-073A-4CDD-998E-A61B2CFFCD2D}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{0DEEBCBC-073A-4CDD-998E-A61B2CFFCD2D}.Release|Mixed Platforms.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

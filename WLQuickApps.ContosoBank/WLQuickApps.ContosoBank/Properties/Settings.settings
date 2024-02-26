@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WLQuickApps.ContosoBank.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WLQuickApps_ContosoBank_MapPointWebService_CommonService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://findv3.staging.mappoint.net/Find-30/Common.asmx</Value>
+    </Setting>
+    <Setting Name="WLQuickApps_ContosoBank_LiveSearchAPI_MSNSearchService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://soap.search.live.com:80/webservices.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

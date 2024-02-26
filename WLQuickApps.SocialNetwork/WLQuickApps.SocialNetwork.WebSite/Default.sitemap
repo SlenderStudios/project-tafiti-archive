@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Home" url="~/Default.aspx?">
+    <siteMapNode title="Resorts" url="~/Default.aspx#">
+      <siteMapNode url="~/Default.aspx?2" title="Home" />
+      <siteMapNode url="~/Landing.aspx?" title="Community" />
+      <siteMapNode url="~/Default.aspx#Reservations" title="Make a Reservation" />
+      <siteMapNode url="~/Default.aspx#Amenities" title="Amenities" />
+      <siteMapNode url="~/Default.aspx#Packages" title="Packages" />
+      <siteMapNode url="~/Default.aspx#ContactUs" title="Contact Us" />
+    </siteMapNode>
+    <siteMapNode title="Community" url="~/Landing.aspx#">
+      <siteMapNode title="My Profile" url="~/Friend/ViewProfile.aspx#">
+        <siteMapNode url="~/Friend/ViewProfile.aspx" title="View My Profile">
+          <siteMapNode title="My Profile" url="~/Friend/ViewProfile.aspx#2" />
+          <siteMapNode title="My Friends" url="~/Friend/ViewUsers.aspx#" />
+          <siteMapNode title="My Groups" url="~/Group/ViewGroups.aspx#"  />
+          <siteMapNode title="My Calendar" url="~/Event/ViewCalendar.aspx#" />
+          <siteMapNode title="My Media" url="~/Media/ViewAlbums.aspx#" />
+		  <siteMapNode title="Synchronize Albums" url="~/Media/SynchronizeAlbum.aspx" />
+  		  <siteMapNode title="My Maps &#38; Places" url="~/Collection/ViewCollections.aspx#" />
+  		  <siteMapNode title="What's New" url="~/Landing.aspx#2"/>
+        </siteMapNode>
+        <siteMapNode url="~/User/EditProfile.aspx" title="Edit My Profile" />
+        <siteMapNode url="~/User/Dashboard.aspx" title="Manage Requests" />
+        <siteMapNode url="~/Friend/Invite.aspx#" title="Invite People" />
+      </siteMapNode>
+      <siteMapNode title="Users" url="~/Friend/Default.aspx">
+        <siteMapNode url="~/Friend/ViewUsers.aspx" title="View My Friends">
+          <siteMapNode url="~/Friend/AddFriend.aspx" title="Add Friend" />
+          <siteMapNode url="~/Friend/RemoveFriend.aspx" title="Remove Friend"/>
+          <siteMapNode url="~/Friend/Share.aspx" title="Share" />
+        </siteMapNode>
+        <siteMapNode url="~/Friend/SearchProfiles.aspx" title="Search Profiles" />
+        <siteMapNode url="~/Friend/Default.aspx#" title="Browse Profiles" />
+        <siteMapNode url="~/Friend/Invite.aspx" title="Invite People" />
+      </siteMapNode>
+      <siteMapNode title="Groups" url="~/Group/Default.aspx">
+        <siteMapNode url="~/Group/ViewGroups.aspx" title="View My Groups">
+          <siteMapNode url="~/Group/ViewGroup.aspx" title="View Group" />
+          <siteMapNode url="~/Group/EditGroup.aspx" title="Edit Group" />
+          <siteMapNode url="~/Group/Transfer.aspx" title="Transfer Group" />
+        </siteMapNode>
+        <siteMapNode url="~/Group/CreateGroup.aspx" title="Create Group" />
+        <siteMapNode url="~/Group/SearchGroups.aspx" title="Search Groups" />
+        <siteMapNode url="~/Group/Default.aspx#" title="Browse Groups" />
+      </siteMapNode>
+      <siteMapNode title="Events" url="~/Event/Default.aspx">
+        <siteMapNode url="~/Event/ViewCalendar.aspx" title="View My Calendar">
+          <siteMapNode url="~/Event/EditEvent.aspx" title="Edit Event" />
+          <siteMapNode url="~/Event/ViewEvent.aspx" title="View Event"/>
+          <siteMapNode url="~/Event/AssociateEvent.aspx" title="Associate Event" />
+        </siteMapNode>
+        <siteMapNode url="~/Event/ViewEvents.aspx" title="View Events" />
+        <siteMapNode url="~/Event/AddEvent.aspx" title="Create Event" />
+        <siteMapNode url="~/Event/SearchEvents.aspx" title="Search Events" />
+        <siteMapNode url="~/Event/Default.aspx#" title="Browse Events" />
+      </siteMapNode>
+      <siteMapNode title="Media" url="~/Media/Default.aspx">
+        <siteMapNode url="~/Media/ViewAlbums.aspx" title="View My Galleries">
+          <siteMapNode url="~/Media/AssociateAlbum.aspx" title="Associate Gallery" />
+          <siteMapNode url="~/Media/ViewAlbum.aspx" title="View Album" />
+          <siteMapNode url="~/Media/ViewMedia.aspx" title="View Media" />
+            <siteMapNode title="Synchronize Albums" url="~/Media/SynchronizeAlbum.aspx#1" />
+        </siteMapNode>
+        <siteMapNode url="~/Media/CreateAlbum.aspx" title="Create Gallery">
+          <siteMapNode url="~/Media/EditMedia.aspx" title="Edit Media" />
+          <siteMapNode url="~/Media/EditAlbum.aspx" title="Edit Album" />
+  		  <siteMapNode url="~/Media/AddAudio.aspx" title="Add Audio" />
+          <siteMapNode url="~/Media/AddPicture.aspx" title="Add Picture" />
+          <siteMapNode url="~/Media/AddVideo.aspx" title="Add Video" />
+            <siteMapNode title="Synchronize Albums" url="~/Media/SynchronizeAlbum.aspx#2" />
+        </siteMapNode>
+        <siteMapNode url="~/Media/Default.aspx#" title="Browse Media" />
+          <siteMapNode title="Synchronize Albums" url="~/Media/SynchronizeAlbum.aspx#3" />
+      </siteMapNode>
+      <siteMapNode title="Maps &#38; Places" url="~/Collection/Default.aspx">
+        <siteMapNode url="~/Collection/ViewCollections.aspx" title="View My Maps &#38; Places">
+          <siteMapNode url="~/Collection/ViewCollection.aspx" title="View Map" />
+        </siteMapNode>
+        <siteMapNode url="~/Collection/CreateCollection.aspx" title="Create Map">
+          <siteMapNode url="~/Collection/EditItems.aspx" title="Edit Items" />
+        </siteMapNode>
+        <siteMapNode url="~/Collection/Default.aspx#" title="Browse Maps &#38; Places" />
+      </siteMapNode>
+      <siteMapNode url="~/Landing.aspx" title="What's New" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
+

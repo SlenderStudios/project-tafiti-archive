@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0014)about:internet -->
+<head>
+    <title>Silverlight Project Test Page </title>
+    <style type="text/css">
+        html, body
+        {
+            margin: 0px 0px 0px 0px;
+            overflow: visible;
+        }
+        body
+        {
+            padding: 0;
+            margin: 0;
+            background: url(mainBgd_files/WholeBackgroundImage.jpg) no-repeat top center;
+        }
+        #silverlightControlHost
+        {
+            height: 700px;
+            width: 894.5px;
+            background-color: Black;
+            background: "mainBgd_files/WholeBackgroundImage.jpg" no-repeat;
+        }
+        .footer
+        {
+            width: 90%;
+            z-index: 999;
+            color: #93958a;
+            font-size: 10pt;
+            bottom: 10px;
+            height:auto;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            if (args.errorType == "InitializeError")  {
+                var errorDiv = document.getElementById("errorLocation");
+                if (errorDiv != null)
+                    errorDiv.innerHTML = args.errorType + "- " + args.errorMessage;
+            }
+        }
+    </script>
+
+    <script language="javascript">
+		    var strDownloadUrl = "/Download";
+		    var strActiveXHTML = '<OBJECT height="40" width="410" ID="MsnMessengerSetupDownloadControl" CLASSID="CLSID:B38870E4-7ECB-40DA-8C6A-595F0A5519FF" codebase="../download/MsnMessengerSetupDownloader.cab#version=1,0,0,3" VIEWASTEXT><PARAM name="Url" value=""></OBJECT>';
+		    function LaunchDownload(){location.href=strDownloadUrl;}
+    </script>
+
+</head>
+
+<script type="text/javascript" lang="javascript" src="http://messenger.msn.com/Resource/P4AppLaunch.js"></script>
+
+<script type="text/javascript" lang="javascript">
+		strUrlExtension = '?';
+		strLcid = "1033";
+		strHost = "messenger.msn.com";
+		strBaseUrl = "";
+		fBrowser = true;
+		appId = '99995719';
+		emailId = "";
+		
+</script>
+
+<center>
+    <body>
+        <!-- Runtime errors from Silverlight will be displayed here.
+	This will contain debugging information and should be removed or hidden when debugging is completed -->
+        <div id='errorLocation' style="font-size: small; color: Gray;">
+        </div>
+        <div id="silverlightControlHost">
+            <object data="data:application/x-silverlight," type="application/x-silverlight-2-b2"
+                width="100%" height="100%">
+                <param name="source" value="ClientBin/RetailSiteKit.xap" />
+                <param name="onerror" value="onSilverlightError" />
+                <param name="background" value="black" />
+                <param name="initParams" value="test=a,video=streaming:/29748/retailSKTest,StaticAssetsURL=http://retailstaticassets.mslivelabs-int.com" />
+                <a href="http://go.microsoft.com/fwlink/?LinkID=116569" style="text-decoration: none;">
+                    <img src="http://go.microsoft.com/fwlink/?LinkId=116569" alt="Get Microsoft Silverlight"
+                        style="border-style: none" />
+                </a>
+            </object>
+            <iframe style='visibility: hidden; height: 0; width: 0; border: 0px'></iframe>
+        </div>
+        <div class="footer">
+            <div style="text-align: center;">
+                This is a <a href="http://dev.live.com/QuickApps/">demonstration site</a>.
+                <br />
+                <br />
+                The source code can be downloaded from the <a href="http://www.codeplex.com/WLQuickApps/Release/ProjectReleases.aspx">
+                    Windows Live Platform Quick Apps</a> CodePlex Project.<br />
+                <br />
+                The example companies, organizations, products, domain names, e-mail addresses,
+                logos, people, places, and events depicted herein are fictitious. No association
+                with any real company, organization, product, domain name, email address, logo,
+                person, places, or events is intended or should be inferred.
+            </div>
+        </div>
+    </body>
+</center>
+</html>

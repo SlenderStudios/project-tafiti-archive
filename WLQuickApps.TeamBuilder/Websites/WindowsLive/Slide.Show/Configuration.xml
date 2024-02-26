@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration width="100%" height="100%" windowless="true">
+	<modules>
+		<module type="SlideViewer" />
+		<module type="ProgressBar" />
+		<module type="NavigationTray">
+      <option name="slideAnimationDuration" value="0.5" />
+      <option name="toggleAlbumViewButton.right" value="5" />
+      <option name="toggleFullScreenModeButton.visibility" value="Collapsed" />
+      <option name="container.left" value="0" />
+      <option name="container.right" value="0" />
+      <option name="container.width" value="Auto" />
+      <option name="slideShowNavigation.loopAlbum" value="true" />
+      <option name="slideShowNavigation.visibility" value="Collapsed" />
+      <option name="thumbnailViewer.left" value="5" />
+      <option name="thumbnailViewer.width" value="264" />
+    </module>
+	</modules>
+	<transitions>
+    <transitions>
+      <transition type="FadeTransition" name="CrossFadeTransition" />
+    </transitions>
+  </transitions>
+  <dataProvider type="XmlDataProvider">
+    <option name="url" value="DataHandler.ashx" />
+  </dataProvider>
+</configuration>

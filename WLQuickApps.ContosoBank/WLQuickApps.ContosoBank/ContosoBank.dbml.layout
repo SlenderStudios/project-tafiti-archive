@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ContosoBank">
+  <DataContextMoniker Name="/ContosoBankDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e4b1720f-3181-4343-af43-c0b94dc932f7" absoluteBounds="1.375, 3.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ContosoBankDataContext/ForumSubject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5f3db943-2126-49e8-b044-e3126b489118" absoluteBounds="1.3900000000000001, 3.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ad3164fc-b8e9-425c-ae5e-0f7955031a8e" absoluteBounds="0.625, 0.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/ContosoBankDataContext/ForumReply" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f3dda29f-4e96-47fa-9f37-bcb7947a4a74" absoluteBounds="0.64000000000000012, 0.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2 : 3.25); (2 : 2.4631982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ContosoBankDataContext/ForumSubject/ForumSubject_ForumReply" />
+      <nodes>
+        <classShapeMoniker Id="e4b1720f-3181-4343-af43-c0b94dc932f7" />
+        <classShapeMoniker Id="ad3164fc-b8e9-425c-ae5e-0f7955031a8e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="4aa5998c-66a5-4313-9658-4a21689605ed" absoluteBounds="5.25, 4.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ContosoBankDataContext/Video" />
+      <nestedChildShapes>
+        <elementListCompartment Id="42309fe1-b437-48a6-8110-af15ec995183" absoluteBounds="5.265, 4.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b5dd2854-a97e-40b8-9d4b-a53f82973d45" absoluteBounds="4.5, 1.75, 2, 2.5401025390625">
+      <DataClassMoniker Name="/ContosoBankDataContext/UserProfile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c833c633-c06d-4f05-bbd7-aec413b1dcb0" absoluteBounds="4.515, 2.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.5 : 3.77005126953125); (3.375 : 3.77005126953125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ContosoBankDataContext/UserProfile/UserProfile_ForumSubject" />
+      <nodes>
+        <classShapeMoniker Id="b5dd2854-a97e-40b8-9d4b-a53f82973d45" />
+        <classShapeMoniker Id="e4b1720f-3181-4343-af43-c0b94dc932f7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 2.10659912109375); (2.625 : 2.10659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ContosoBankDataContext/UserProfile/UserProfile_ForumReply" />
+      <nodes>
+        <classShapeMoniker Id="b5dd2854-a97e-40b8-9d4b-a53f82973d45" />
+        <classShapeMoniker Id="ad3164fc-b8e9-425c-ae5e-0f7955031a8e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ef3ed411-ea35-422d-9ba8-fe9501171729" absoluteBounds="8.375, 2.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ContosoBankDataContext/Branch" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1f8cc8aa-86a0-4a9c-aca5-d6d04cacd76d" absoluteBounds="8.39, 2.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

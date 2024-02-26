@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ContosoBicycleClubDb">
+  <DataContextMoniker Name="/ContosoBicycleClubDbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="77814afa-ca26-4ba1-b421-944496d885d0" absoluteBounds="1, 1.375, 2, 2.73962646484375">
+      <DataClassMoniker Name="/ContosoBicycleClubDbDataContext/Ride" />
+      <nestedChildShapes>
+        <elementListCompartment Id="41f9ee9f-ec58-4522-bf88-777aee467abf" absoluteBounds="1.0150000000000001, 1.835, 1.9700000000000002, 2.17962646484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

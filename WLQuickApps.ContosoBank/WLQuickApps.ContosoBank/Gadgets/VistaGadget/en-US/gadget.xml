@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gadget>
+  <name>Contoso Bank Community Portal RSS</name>
+  <namespace>WLQuickApps.ContosoBank.gadget</namespace>
+  <version>1.0.0.0</version>
+  <author name="Contoso Bank">
+    <info url="http://contosobnk.com" text="http://contosobnk.com"/>
+    <logo src="logo.png"/>
+  </author>
+  <copyright></copyright>
+  <description>Show the latest forum posts from the Contoso Bank Community Portal.</description>
+  <icons>
+    <icon height="64" width="50" src="icon.png"/>
+  </icons>
+  <hosts>
+    <host name="sidebar">
+      <base type="HTML" apiVersion="1.0.0" src="ContosoRSS.html"/>
+      <permissions>Full</permissions>
+      <platform minPlatformVersion="1.0"/>
+      <defaultImage src="drag.png"/>
+    </host>
+  </hosts>
+</gadget>

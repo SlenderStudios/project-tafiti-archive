@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Events>
+  <LocalEvent>
+    <ID>1</ID>
+    <EventName>Small Business Awards</EventName>
+    <EventDescription>Small Business Awards 2008</EventDescription>
+    <EventDate>2008-03-13T00:00:00</EventDate>
+    <EventDuration>8:30am - 4:30pm</EventDuration>
+    <Latitude>-33.87338</Latitude>
+    <Longitude>151.19886</Longitude>
+    <Location>Sydney Convention Centre</Location>
+    <Address>Melbourne Exhibition Centre, Cnr Your Road and Queen Street, North Water, 8000</Address>
+    <ContactDetails>fakename@faceaddy.com.au</ContactDetails>
+    <Featured>True</Featured>
+  </LocalEvent>
+  <LocalEvent>
+    <ID>2</ID>
+    <EventName>Another Event with a big name</EventName>
+    <EventDescription>Small Business Awards 2008.</EventDescription>
+    <EventDate>2008-03-13T00:00:00</EventDate>
+    <EventDuration>8:30am - 4:30pm</EventDuration>
+    <Latitude>-27.4763</Latitude>
+    <Longitude>153.01792</Longitude>
+    <Location>Brisbane Convention Centre</Location>
+    <Address>Melbourne Exhibition Centre, Cnr Your Road and Queen Street, North Water, 8000</Address>
+    <ContactDetails>fakename@faceaddy.com.au</ContactDetails>
+    <Featured>False</Featured>
+  </LocalEvent>  
+</Events>

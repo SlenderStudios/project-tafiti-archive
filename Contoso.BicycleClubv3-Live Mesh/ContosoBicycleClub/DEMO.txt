@@ -1,0 +1,5 @@
+Contoso Bicycle Club
+
+For more information please see http://www.codeplex.com/WLQuickApps/Wiki/View.aspx?title=Contosos%20Bicycle%20Club&referringTitle=Home
+
+END

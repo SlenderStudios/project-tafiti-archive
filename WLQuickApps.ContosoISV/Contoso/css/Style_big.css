@@ -1,0 +1,67 @@
+body {text-align:center; padding: 0; margin: 0; font-family: Myriad, Arial, Verdana; color:#616161; font-size:12px; background:url(home_bg_tile_001.jpg);}
+h2 {font-size:12px; clear:both; line-height:8px;}
+hr {clear:both; line-height:12px;}
+
+.silverlightHost {position:absolute;left:72px;top:69px;Width:549px;Height:243px;}
+
+#Master {text-align:left; position:relative;width:960px; height:800px; margin-bottom: 10px; margin-right:auto; margin-left:auto; background:url(home_banner_001.png) 0px 69px no-repeat;}
+#Logo {position:absolute;left:55px;top:15px;Width:172px;Height:47px;Background:url(home_logo_001.png)}
+
+/*Navigation*/
+#NavBar {position:absolute;left:330px;top:0px;Width:625px;Height:63px;Background:url(nav_table_background.png)}
+#NavWelcome {position:absolute;left:40px;top:0px;Width:85px;Height:63px;Background:url(nav_table_002.png)}
+#NavWelcome.mouseover {Background:url(nav_table_002_roll.png)}
+#NavDevelopment {position:absolute;left:125px;top:0px;Width:107px;Height:63px;Background:url(nav_table_003.png)}
+#NavDevelopment.mouseover {Background:url(nav_table_003_roll.png)}
+#NavSystems {position:absolute;left:230px;top:0px;Width:78px;Height:63px;Background:url(nav_table_004.png)}
+#NavSystems.mouseover {Background:url(nav_table_004_roll.png)}
+#NavCaseStudies {position:absolute;left:305px;top:0px;Width:99px;Height:63px;Background:url(nav_table_005.png)}
+#NavCaseStudies.mouseover {Background:url(nav_table_005_roll.png)}
+#NavPartnerShips {position:absolute;left:405px;top:0px;Width:102px;Height:63px;Background:url(nav_table_006.png)}
+#NavPartnerShips.mouseover {Background:url(nav_table_006_roll.png)}
+#NavContact {position:absolute;left:505px;top:0px;Width:77px;Height:63px;Background:url(nav_table_007.png)}
+#NavContact.mouseover {Background:url(nav_table_007_roll.png)}
+
+#Feature {position:absolute;left:72px;top:68px;Width:549px;Height:243px;Background:url(home_video_001.png)}
+
+/*Favorite Panel*/
+#Favorite {position:absolute;left:641px;top:76px;Width:309px;Height:193px;Background:url(home_favorites_001.png)}
+#FavoriteLabel {position:absolute;left:15px;top:15px;Width:102px;Height:22px;Background:url(home_favorites_006.png)}
+#FavoriteContent {position:absolute;left:14px;top:48px;Width:260px;Height:108px; overflow:auto; padding:10px;}
+#FavoriteContent.dragover {background:blue; opacity:0.1; filter:alpha(opacity=10);}
+#FavoriteFooter {position:absolute;left:125px;bottom:20px;Width:138px;Height:11px;Background:url(home_favorites_005.png)}
+.FavoriteItemContent {width:220px; float:left; clear:both;}
+.FavoriteItemMore {float:right; clear:right; height:7px; width:4px; background:url(home_favorites_004.png)}
+
+/*News Panel*/
+#News {position:absolute;left:45px;top:319px;Width:593px;Height:630px;}
+#NewsTop {position:absolute;left:0px;top:0px;Width:593px;Height:73px;Background:url(home_news_top_001.png)}
+#NewsLabel {position:absolute;left:15px;top:20px;Width:91px;Height:37px;Background:url(home_news_title_001.png)}
+#NewsLeft {position:absolute;left:0px;top:73px;Width:27px;Height:186px;Background:url(home_news_left_001.png)}
+#NewsLeftFill {position:absolute;left:0px;top:259px;Width:27px;Height:343px;Background:url(home_news_left_filler_001.png)}
+#NewsContent {position:absolute;left:27px;top:73px;Width:503px;Height:500px;Background:#e7e7e7; padding:20px;}
+#NewsRight {position:absolute;left:568px;top:73px;Width:25px;Height:186px;Background:url(home_news_right_001.png)}
+#NewsRightFill {position:absolute;left:568px;top:259px;Width:25px;Height:343px;Background:url(home_news_right_filler_001.png)}
+#NewsBottom {position:absolute;left:0px;top:602px;Width:593px;Height:28px;Background:url(home_news_bottom_001.png)}
+.NewsItemAuthor {width:350px; float:left; clear:both; font-style:italic;}
+.NewsItemContent {width:470px; float:left; clear:both;}
+.NewsItemImage {width:120px; float:right;}
+.NewsItemMore {float:left; clear:both; width:100px;}
+.NewsItemAddFav {clear:both; width:109px; height:21px; margin-right:10px; margin-top: 5px; background:url(home_drag_to_favs_001.png);}
+
+/*Contact Panel*/
+#Contact {position:absolute;left:642px;top:270px;Width:309px;Height:680px;}
+#ContactTop {position:absolute;left:0px;top:0px;Width:309px;Height:48px;Background:url(home_messenger_top_001.png)}
+#ContactTabChat {position:absolute;left:12px;top:9px;Width:98px;Height:39px;Background:url(home_chat_tab_001.png)}
+#ContactTabChat.mouseover {Background:url(home_chat_tab_roll_001.png)}
+#ContactTabContacts {position:absolute;left:110px;top:9px;Width:97px;Height:38px;Background:url(home_contacts_tab_001.png)}
+#ContactTabContacts.mouseover {Background:url(home_contacts_tab_roll_001.png)}
+#ContactLeft {position:absolute;left:0px;top:48px;Width:12px;Height:296px;Background:url(home_messenger_left_001.png)}
+#ContactLeftFill {position:absolute;left:0px;top:344px;Width:12px;Height:309px;Background:url(home_messenger_left_filler_001.png)}
+#ContactContent {position:absolute;left:12px;top:48px;Width:284px;Height:605px;}
+#ContactRight {position:absolute;left:296px;top:48px;Width:13px;Height:296px;Background:url(home_messenger_right_001.png)}
+#ContactRightFill {position:absolute;left:296px;top:344px;Width:13px;Height:309px;Background:url(home_messenger_right_filler_001.png)}
+#ContactBottom {position:absolute;left:0px;top:653px;Width:309px;Height:27px;Background:url(home_messenger_bottom_001.png)}
+#ContactsPanel, #ChatPanel {Width:284px;Height:605px;}
+
+#FooterCopy {position:absolute;left:80px;top:950px;width:800px;text-align:center;}

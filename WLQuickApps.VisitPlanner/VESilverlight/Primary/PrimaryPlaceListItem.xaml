@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="VESilverlight.Primary.PrimaryPlaceListItem"
+	xmlns="http://schemas.microsoft.com/client/2007"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:VESilverlight="clr-namespace:VESilverlight.Primary;assembly=VESilverlight"
+	Width="190" Height="26">
+        <Canvas x:Name="LayoutRoot" Cursor="Hand">
+        <TextBlock Width="150" Height="19" Canvas.Top="5" Text="TextBlock" TextWrapping="NoWrap" Foreground="#FFFFFFFF" FontFamily="Verdana" x:Name="titleText" Canvas.Left="28" FontSize="11">
+		    <TextBlock.Clip>
+			    <RectangleGeometry Rect="0,0,150,19"/>
+		    </TextBlock.Clip>
+        </TextBlock>
+
+        <Rectangle Width="190" Height="24" Canvas.ZIndex="-2" Fill="#FFC57676" Visibility="Visible" Opacity="0"/>
+
+        <Image Width="14" Height="14" Canvas.Left="6" Canvas.Top="5" x:Name="typeIcon"/>
+
+    </Canvas>
+
+</UserControl>

@@ -1,0 +1,97 @@
+﻿<Canvas
+	xmlns="http://schemas.microsoft.com/client/2007"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Name="PopupCanvas" 
+	Width="86.5" Height="74.75"
+    Loaded="Page_Loaded"
+    x:Class="VESilverlight.Secondary.AttractionDropBox;assembly=ClientBin/VESilverlight.dll"
+	Opacity="1"
+	Visibility="Visible"
+	Background="#00000000"
+	>
+	
+	<Canvas.Resources>
+		<Storyboard x:Name="ShowOutline">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Outline" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="HideOutline">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Outline" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</Canvas.Resources>
+	
+	<Canvas.Triggers>
+		<EventTrigger RoutedEvent="Canvas.Loaded">
+			<BeginStoryboard x:Name="DropBoxToolTipShow_BeginStoryboard">
+				<Storyboard x:Name="DropBoxToolTipShow">
+					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="DropBoxToolTip" Storyboard.TargetProperty="(UIElement.Opacity)">
+						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+						<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+						<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+					</DoubleAnimationUsingKeyFrames>
+				</Storyboard>
+			</BeginStoryboard>
+		</EventTrigger>
+	</Canvas.Triggers>
+	
+	<Rectangle Width="87" Height="75" Fill="#FF07375D" Stroke="#00000000" Canvas.ZIndex="-1" Opacity="0.9" Canvas.Top="-0.125"/>
+	
+	<Rectangle Width="87" Height="75" Fill="#FF07375D" Stroke="#FF8FAABC" Canvas.ZIndex="-1" Opacity="0" x:Name="Outline" StrokeThickness="3" RadiusX="0" RadiusY="0" Canvas.Top="-0.125"/>
+	
+	<TextBlock Width="69" Height="20" Canvas.Top="5.875" Text="MY PLACES" TextWrapping="Wrap" Foreground="#FFFFFFFF" FontFamily="Georgia" FontSize="12" FontWeight="Normal" Canvas.Left="11" Opacity="0.9"/>
+	
+	<Path Visibility="Visible" x:Name="Plus" Width="40.007" Height="40" Fill="#FF0D630E" Stretch="Fill" Stroke="#FFFAF6F6" Canvas.Left="23" Canvas.Top="25.875" Data="F1 M1.4273731E-07,5.5131295E-08 L17,5.5131295E-08 17,11.496736 28.496735,11.492321 28.503262,28.492319 17,28.496737 17,40 1.4273731E-07,40 1.4273731E-07,28.503263 -11.496735,28.507679 -11.503263,11.50768 1.4273731E-07,11.503263 1.4273731E-07,5.5131295E-08 z" Opacity="0.9"/>
+	<Path RenderTransformOrigin="0.503,0.219" Visibility="Collapsed" x:Name="Minus" Width="40.007" Height="17.25" Fill="#FF820C1C" Stretch="Fill" Stroke="#FFFAF6F6" Data="M0.5,0.5 L39.507,0.5 L39.507,16.75 L0.5,16.75 z" Canvas.Left="23" Canvas.Top="37.625" Opacity="0.9"/>
+	
+	<Canvas Visibility="Collapsed" x:Name="DropBoxToolTip" Width="44.075" Height="83.844" Canvas.Top="4.494" Canvas.ZIndex="0" RenderTransformOrigin="0.5,0.5" Canvas.Left="21.838">
+		<Canvas.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform ScaleX="1" ScaleY="1"/>
+				<SkewTransform AngleX="0" AngleY="0"/>
+				<RotateTransform Angle="90"/>
+				<TranslateTransform X="0" Y="0"/>
+			</TransformGroup>
+		</Canvas.RenderTransform>
+		<Rectangle RenderTransformOrigin="0.5,0.5" x:Name="TourToolTipShadow" Width="84.13" Height="41.503" Fill="#4C000000" Stroke="#4C000000" StrokeThickness="0.5" RadiusX="2" RadiusY="2" Canvas.Left="-18.416" Canvas.Top="20.36">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="90"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle x:Name="ToolTipRect1" Width="41.363" Height="83.267" Stroke="#FF767676" RadiusX="2" RadiusY="2" RenderTransformOrigin="0.5,0.5" StrokeThickness="0.5" Canvas.Left="1.158" Canvas.Top="0.671">
+			<Rectangle.Fill>
+				<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+					<GradientStop Color="#FFFFFFFF" Offset="0"/>
+					<GradientStop Color="#FFE4E5F0" Offset="1"/>
+				</LinearGradientBrush>
+			</Rectangle.Fill>
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<TextBlock x:Name="ToolTipText" Width="78.275" Height="38.127" Canvas.Left="-17.401" Canvas.Top="23.069" FontFamily="Arial" FontSize="11" Foreground="#FF767676" Text="Drag items here to remove from your places" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Visibility="Visible">
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="-90"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+		</TextBlock>
+	</Canvas>
+	
+</Canvas>

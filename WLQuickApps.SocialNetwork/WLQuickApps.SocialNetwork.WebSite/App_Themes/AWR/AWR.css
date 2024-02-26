@@ -1,0 +1,1621 @@
+﻿/* ------------------------SITE-WIDE------------------------ */
+html
+{
+    background: url("images/bg.png") repeat-x;
+    background-color: #363;
+    height: 100%;     
+}
+
+body
+{
+    font-family: Arial;
+    font-size: .7em;
+    background: url("images/large-flower.png") no-repeat bottom left;
+    margin-left: 0px;  
+    margin-bottom: 0px;
+    min-height: 95%;
+}
+select
+{
+	border: solid 1px #666666;
+}
+
+h1
+{
+    font-size: 1.2em;
+    margin: 10px;
+    margin-bottom: -10px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h2
+{
+}
+
+h3
+{
+    font-size: 1.2em;
+    background-color: #363;
+    color: White;
+    margin-left: -9px;
+    margin-right: -11px;
+    padding: 2px 2px 2px 10px;
+}
+
+        html>/**/ body h3
+        {
+            position: relative;
+            top: -15px;
+            margin-right: -9px;
+        }
+
+h4 /*used in home page, what's new, viewGroup*/
+{
+    background-color: #363;
+    color: White;
+    font-size: 1.2em;
+    padding-left: 5px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+        html>/**/ body h4
+        {
+            position: relative;
+            top: -18px;
+        }
+
+hr
+{
+    height: .1em;
+    width: 150px;
+    color: #e4e4e4;
+}
+
+.clearFloats
+{
+	clear: both;
+}
+
+.aspPanel-liveAuth
+{
+	margin-bottom: 15px;	
+}
+
+.wizard
+{
+	margin-bottom: 30px;
+}
+
+li
+{
+	margin-left: -19px;
+}
+
+input
+{
+	font-family: Arial;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.underline
+{
+    text-decoration: underline;
+}
+
+/*---------------------------- LINKS ------------------------------*/
+a:link
+{
+    color: #363;
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: #363;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+.link /* for most links*/
+{
+    color: #363;
+    text-decoration: none;
+}
+        a.link:hover
+        {
+            text-decoration: underline;
+        }
+        
+.link2 /*orange-brown link */
+{
+    color: #C93;
+    text-decoration: none;
+}
+        a.link2:hover
+        {
+            text-decoration: underline;
+        }
+        a.link2
+        {
+            color: #C93;
+        }
+
+
+a.link-gray /* gray link */
+{
+    color: #999;
+    text-decoration: none;
+}
+        a.link-gray:hover
+        {
+            text-decoration: underline;
+        }
+
+.actionLink
+{
+	font-weight: bold;
+	position: relative;
+	left: 550px;
+}
+/* ------------------------END SITE-WIDE------------------------ */
+
+
+
+
+/* ------------------------MASTER PAGE------------------------ */
+#wrapper
+{
+    margin-top: -15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 996px;
+    min-height: 100%;
+}
+
+#upper
+{
+    background: url("images/upper.png") no-repeat;
+    height: 110px;
+    margin-left: 3px;
+}
+
+.community
+{
+    float: left;
+    position: relative;
+    left: 135px;
+    border-bottom: solid 1px white;
+}
+html>/**/body .community
+{
+    position: relative;
+    left: 99px;
+    z-index: 90;
+}
+
+#upperLeft
+{
+    float: left;
+    width: 700px;
+    padding-left: 10px;
+}
+
+#logo
+{
+    margin-top: 6px;
+    width: 250px;
+    height: 45px;
+}
+
+.topMenu
+{
+    margin-left: 45px;
+}
+
+html>/**/body .topMenu
+{
+    position: relative;
+    top: 1px;
+    left: -80px;
+}
+
+        .topMenu-item
+        {
+            color: White;
+            padding-right: 5px;
+            padding-left: 5px;
+            font-weight: bold;
+        }
+
+        .topMenu a
+        {
+            color: White;
+        }
+        .topMenu a:hover
+        {
+            color: #363;
+            background-color: White;
+            text-decoration: none;
+        }
+
+.mainMenu
+{
+    margin-left: 45px;
+    margin-bottom: 10px;
+}
+
+html>/**/body .mainMenu
+{
+    position: relative;
+    top: 2px;
+    left: -80px;
+    margin-bottom: 8px;
+}
+
+        .mainMenu-item
+        {
+            color: #4d4d4d;
+            padding-right: 5px;
+            padding-left: 5px;
+            font-weight: bold;
+        }
+
+        .mainMenu a:hover
+        {
+            text-decoration: none;
+            color: #C93;            
+        }
+
+.breadcrumb
+{
+    margin-left: 200px;
+    color: #C93;    
+}
+
+    .breadcrumb-current
+    {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    
+#upperRight
+{
+    float: right;
+    width: 260px;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+#loginStatus
+{
+    height: 30px;
+}
+
+html>/**/body #loginStatus
+{
+    margin-top: 2px;
+}
+
+        .status
+        {
+            color: #999;
+        }
+            html>/**/body .status
+            {
+                width: 255px;
+            }       
+            .status a
+                {
+                    color: #C93;
+                    text-transform: capitalize;
+                    font-weight: bold;
+                }
+        
+        .liveAuth
+        {
+	        text-transform: capitalize;
+	        font-weight: bold;
+        }
+
+        .liveAuth-link
+        {
+            color: #363;
+            text-decoration: none;
+        }
+        
+        a.liveAuth-link:hover
+        {
+            text-decoration: underline;
+        }
+
+#search
+{
+    margin-top: 2px;
+    margin-bottom: 28px;    
+}
+
+        .searchBox
+        {
+	        padding-left: 22px;
+	        background-image: url("images/search.gif");
+	        background-repeat: no-repeat;
+        }
+
+        .searchWatermark
+        {
+	        font-style: italic;
+	        color: #888;
+	        padding-left: 22px;
+	        background-image: url("images/search.gif");
+	        background-repeat: no-repeat;
+        }
+
+#page-tools
+{
+}
+
+#content
+{
+    width: 995px;
+}
+
+#sidePanel
+{
+    background-image: url("images/transparent-35.png");
+    background-repeat: repeat;
+    width: 185px;
+    min-height: 510px;
+    float: left;
+    /* transparency for ie
+    filter:alpha(opacity=80);*/
+    /* transparency for mozilla
+    -moz-opacity:0.8;*/
+}
+
+#mainPanel
+{
+    /* background: url("images/mainPanel-top.png") no-repeat top;*/
+    width: 780px;
+    min-height: 503px;
+    padding: 2px;
+    float: right; 
+    background-color: White;
+    border: solid 1px #363;
+}
+
+#footer
+{
+    height: 15px;
+    color: White;
+    text-align: right;
+    position: relative;
+    top: 10px;
+    margin-bottom: 5px;
+    padding-right: 10px;
+    background: url("images/footer.png") no-repeat;
+}
+
+        #footer a
+        {
+            color: White;
+            text-decoration: none;
+        }
+        
+        #footer a:hover
+        {
+            text-decoration: underline;
+        }
+
+/* ------------------------END MASTER PAGE------------------------ */
+
+/* ------------------------SIDEBAR------------------------ */
+#sidebar-content
+{
+    width: 210px;
+    padding-left: 4px;
+}
+
+#anonymous
+{
+    text-align: center;
+    margin-left: -30px;
+    font-size: 1.1em;
+}
+
+#Item
+{ 
+    background: url("images/sidebar-item.png") no-repeat;
+    width: 170px;
+    height: 70px;
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+#Item-picture
+{
+    float: left;
+}
+
+#Item-name
+{
+    float: right;
+    width: 105px;
+}
+
+a.Item-name
+{
+    font-weight: bold;
+    color: White;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+        a.Item-name:hover
+        {
+            text-decoration: underline;
+}
+
+.sidebar-notifications
+{
+    background-color: White;
+    width: 170px;
+    margin-bottom: 10px;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.sidebar-button
+{
+    background: url("images/sidebar-button.png") no-repeat;
+    width: 175px;
+    height: 25px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.sidebar-selected
+{
+    background: url("images/sidebar-button2.png") no-repeat;
+    width: 210px;
+    height: 25px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+        .sidebar-selected a:link
+        {
+            color: Black;
+            position: relative;
+            left: 50px;
+        }
+        .sidebar-selected a:visited
+        {
+            color: Black;
+            position: relative;
+            left: 50px;
+        }
+        .sidebar-selected a:active
+        {
+            color: Black;
+            position: relative;
+            left: 50px;
+        }
+        
+a.sidebar-link
+{
+    color: White;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    position: relative;
+    top: 5px;
+    left: 20px;
+}
+
+        a.sidebar-link:hover
+        {
+            text-decoration: underline;
+        }
+
+/* ------------------------END SIDEBAR------------------------ */
+
+
+
+
+/* ------------------------START PAGES------------------------ */
+
+/*HOME*/
+#home-welcome
+{
+    float: left;
+    width: 775px;
+    height: 518px;
+    margin-top: -5px;
+}
+
+.home-text
+{
+    position:relative;
+    left:360px;
+    margin-top:-290px;
+    width:400px;
+}
+
+.home-image
+{
+}
+
+.home-menu
+{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.home-links
+{
+    margin-left: 150px;
+}
+
+#home-right
+{
+    float: right;
+    margin-top: -5px;
+}
+
+.home-rightPanel
+{
+    background-color: white;
+    border: solid 1px #ccc;    
+    width: 210px;
+    margin-bottom: 10px;
+}
+
+.home-users
+{
+    z-index: 2;
+}
+
+.home-pictures
+{
+    z-index: 1;
+}
+
+.home-videos
+{
+    z-index: 0;
+}
+
+.home-items
+{
+    position: relative;
+    left: 15px;
+}
+
+html>/**/body .home-items
+{
+    margin-top: -7px;
+}
+
+/*COLLECTIONS*/
+
+.ViewCollection-Sidebar
+{
+	float: right;
+}
+
+html>/**/body .ViewCollection-Sidebar
+{
+    margin-right: -290px;
+}
+
+.ViewCollection-ItemsPanel
+{
+}
+
+.ViewCollection-DetailsPanel
+{
+}
+.ViewCollection-ItemTitleLink
+{
+	color: #06C;
+	display: block;
+	font-weight: bold;
+}
+
+.ViewCollection-ItemDescriptionLabel
+{
+	display: block;
+	margin-bottom: 5px;
+}
+
+.EditCollectionItems-ItemsTitlePanel
+{
+	right: 5px;
+}
+
+.EditCollectionItems-AddItemPanel
+{
+	float: left;
+	width: 425px;
+}
+
+.EditCollectionItems-ItemsPanel
+{
+	float: right;
+	width: 225px;
+}
+
+.EditCollectionItems-UpdateProgressPanel
+{
+	float: right;
+	font-weight: bold;
+	position: relative;
+	right: 35px;
+	width: 225px;
+}
+
+
+/*VIEW PROFILE*/
+.ViewProfile-AboutPanel
+{
+	min-height: 93px;
+}
+
+.ViewProfile-GroupsPanel
+{
+	min-height: 99px;
+}
+
+/*INVITE AND SHARE*/
+.ShareInvite-WrapperPanel
+{
+	position: relative;
+	padding-top: 20px;
+}
+
+.ShareInvite-SideBar
+{
+	position: absolute;
+	top: 5px;
+	width: 755px;
+	margin-left: 10px;
+	background-color: #e5ece5;
+	font-size: 1.1em;	
+}
+
+.border
+{
+    border: solid 5px #363;
+}
+
+/*VIEW GROUP/EVENT*/
+.groupForm-link /*view group form links */
+{
+    text-decoration: none;
+    color: #363;
+    display: block;    
+}
+        a.groupForm-link:hover
+        {
+            background-color: #363;
+            color: White;
+            text-decoration: none;
+        }
+
+/*VIEW MEDIA*/        
+.ViewMedia-Image
+{
+    text-align: center;
+}
+
+html>/**/body .ViewMedia-Image
+{
+    height: 600px;
+}
+
+/* ------------------------END PAGES------------------------ */
+
+
+
+
+
+/* ------------------------MAIN PANELS------------------------ */
+.LocationPanel
+{
+	border: 1px solid Gray;
+	background-color: #fafafa;
+	margin: 5px;
+	padding: 8px;
+	width: 300px;
+}
+
+.BorderPanel
+{
+    border: solid 1px #e4e4e4;
+    background-color: #e5ece5;
+	margin: 10px;
+	padding: 8px;
+	width: 740px;
+	margin-bottom: 20px;
+	z-index: 3;
+}
+
+.TitledBorderPanel
+{
+	margin-top: 30px;
+}
+
+.TitledFloatPanel
+{
+	margin-top: 10px;
+}
+
+.BorderPanel-floatLeft
+{
+	width: 350px;
+	float: left;
+	margin-right: 5px;
+}
+
+/**:first-child+html .BorderPanel-floatLeft
+{
+	margin-right: 10px;
+}*/
+
+.BorderPanel-floatRight
+{
+	width: 350px;
+	float: right;
+	position: relative;
+	right: 0px;
+}
+
+.ShadowPanel
+{
+	position: relative;
+}
+
+.shadow-upperRight
+{
+	background-image: url("images/corner-topright.png");
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	height: 8px;
+	width: 8px;
+}
+
+.shadow-lowerRight
+{
+	background-image: url("images/corner-bottomright.png");
+	position: absolute;
+	bottom: -1px;
+	right: -1px;
+	height: 8px;
+	width: 8px;
+}
+
+.shadow-lowerLeft
+{
+	background-image: url("images/corner-bottomleft.png");
+	position: absolute;
+	bottom: -1px;
+	left: -1px;
+	height: 8px;
+	width: 8px;
+}
+
+.shadow-right
+{
+	background-image: url("images/corner-topleft.png");
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	height: 8px;
+	width: 8px;
+}
+
+/* ------------------------END MAIN PANELS------------------------ */
+
+
+
+
+
+/* ------------------------METAGALLERY------------------------ */
+
+
+/* used in metagallery */
+.Item-Panel 
+{
+    width: 160px;
+    text-align: center;
+    margin: 0px 5px 10px 5px;
+    padding-top: 5px;
+    border: solid 1px #ccc;
+    background-color: #f5f5f5;    
+}
+
+.Item-Picture
+{
+    padding: 3px;
+    border: solid px #999;
+}
+
+.Item-DetailsPanel
+{
+    text-align: left;
+    margin-top: 5px;
+    background-color: White;
+}
+
+.itemLabel /*metagallery item hyperlink */
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+    text-transform: capitalize;
+}
+        a.itemLabel:link
+        {
+            color: #363;
+        }                
+        a.itemLabel:hover
+        {
+            text-decoration: underline;
+        }
+        a.itemLabel:visited
+        {
+            color: #363;
+        }
+
+.Item-Details
+{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.metagallery-link /* metagallery links */
+{
+    text-decoration: none;
+    color: #363;
+    display: block;    
+}
+        a.metagallery-link:hover
+        {
+            background-color: #363;
+            color: White;
+            text-decoration: none;
+        }
+
+.LocationIcon
+{
+    vertical-align: bottom;
+}
+
+/*THUMBNAIL PopUp*/
+.MetaGallery-ThumbnailPopup-Panel
+{
+    background-color: White;
+    border: solid 1px #363;
+    width: 250px;
+    padding: 5px;
+    z-index: 10;
+    position: absolute;
+}
+.MetaGallery-ThumbnailPopup-PicturePanel
+{
+    float: left;
+    width: 128px;
+    text-align: center;
+    z-index: 10;    
+}
+
+.MetaGallery-ThumbnailPopup-Details
+{
+    float: right;
+    width: 122px;
+    text-align: left;
+    z-index: 10;    
+}
+
+.MetaGallery-ThumbnailPopup-Hyperlink
+{
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    z-index: 10;    
+}
+
+ /*-----------------------------------------------------------------------------------*/
+
+.imageGallery
+{
+	margin: 30px 0px 20px 20px;
+	border: solid 1px #e4e4e4;
+	padding: 10px;
+	width: 625px;
+}
+
+.imageGallery-title
+{
+	text-align: left;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 250px;
+	position: relative;
+	top: 0px;
+	margin-bottom: 10px;
+}
+
+.imageGallery-titleRight
+{
+
+	width: 320px;
+	text-transform: none;
+	text-align: right;
+	color: black;
+	position: absolute;
+	left: 370px;
+	top: 8px;
+}
+
+.imageGallery-imagePanel
+{
+	text-align: center;
+	min-height: 110px;
+	width: 96px;
+	border: solid 1px #efefef;
+	margin: 5px;
+	padding: 10px 7px 10px;
+	background-color: white;
+}
+
+.imageGallery-caption
+{
+	font-size: .8em;
+	font-weight: bold;
+	display: block;
+	padding: 1px;
+	margin-top: -10px;
+}
+
+.imageGallery-toolLink
+{
+	display: block;
+	font-size: .8em;
+	position: relative;
+	top: -30px;
+	margin-left: -40px;
+}
+
+html>/**/body .imageGallery-toolLink
+{
+
+    margin-bottom: 50px;
+    left: 90px;
+}
+
+.imageGallery-delete
+{
+	left: 92px;
+	width: 45px;
+}
+
+.imageGallery-subCaption
+{
+	font-size: .8em;
+	font-weight: bold;
+}
+
+.imageGallery-listPanel
+{
+	background-color: White;
+	border: solid 1px #efefef;
+	padding: 3px;
+	margin: 2px;
+	width: 200px;
+	min-height: 64px;
+}
+
+.imageGallery-listPicture
+{
+	position: absolute;
+	margin-right: 10px;
+}
+
+.imageGallery-listLabel
+{
+	font-size: .9em;
+	font-weight: bold;
+}
+
+.imageGallery-listAction
+{
+	font-size: .8em;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.imageGallery-listDelete  { background-image: url("images/delete.gif"); }
+.imageGallery-listReject  { background-image: url("images/decline.gif"); }
+.imageGallery-listApprove { background-image: url("images/approve.gif"); }
+.imageGallery-listCancel  { background-image: url("images/decline.gif"); }
+.imageGallery-listEdit    { background-image: url("images/edit.gif"); }
+.imageGallery-listJoin    { background-image: url("images/add.gif"); }
+.imageGallery-listLeave   { background-image: url("images/decline.gif"); }
+
+.imageGallery-listText
+{
+	margin-left: 74px;
+}
+
+.imageGallery-iconPicture
+{
+	float: left;
+	width: 32px;
+}
+
+.imageGallery-iconLabel
+{
+	margin-left: 5px;
+	position: relative;
+	top: 2px;
+	color: #06C;
+	display: block;
+	margin-left: -4px;
+}
+
+.imageGallery-iconPanel
+{
+    float: right;
+    width: 150px;
+	display: inline-block;
+}
+
+html>/**/body .imageGallery-iconPanel
+{
+    display: -moz-inline-box;
+}
+
+.ImageGallery-IconWrapperPanel
+{
+	position: relative;
+	width: 200px;
+	background-color: White;
+	padding: 2px;
+	border: solid 1px #f0f0f0;
+}
+
+html>/**/body .ImageGallery-IconWrapperPanel
+{
+    min-height: 50px;
+}
+/* -----------------------END METAGALLERY------------------------ */
+
+
+
+
+.tagItem
+{
+	height: 20px;
+	display: inline;
+	white-space: nowrap;
+}
+
+.button-hidden
+{
+	display: none;
+}
+
+.ratingStar {
+    font-size: 0pt;
+    width: 13px;
+    height: 12px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.filledRatingStar {
+    background-image: url(Images/FilledStar.png);
+
+}
+
+.emptyRatingStar {
+    background-image: url(Images/EmptyStar.png);
+}
+
+.savedRatingStar {
+    background-image: url(Images/SavedStar.png);
+}
+
+.form-errorRow
+{
+	font-weight: bold;
+	color: Red;
+}
+
+.form-label
+{
+	margin-bottom: -12px;
+	display: block;
+	width: 180px;
+	text-align: right;
+	position: relative;
+	top: 8px;
+}
+
+.subform-label
+{
+	margin-bottom: -20px;
+	display: block;
+	width: 80px;
+	text-align: right;
+	padding-top: 8px;
+}
+
+.form-required
+{
+	font-weight: bold;
+}
+
+.form-field
+{
+	margin-left: 200px;
+}
+
+.subform-field
+{
+	margin-left: 100px;
+}
+
+.UserCalendar-SimpleView
+{
+	margin-left: 15px;
+}
+
+html>/**/body #Invite-ContactsControl
+{
+	margin-top: -25px;
+	margin-bottom: 35px;
+}
+
+.CommentPanel
+{
+	background-color: White;
+	width: 645px;
+	overflow-x: hidden;
+}
+
+.DetailPane-image
+{
+	float: left;
+	margin-right: 8px;
+}
+
+.DetailPane-title
+{
+	font-size: 1.5em;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+.DetailPane-title:hover
+{
+	text-decoration: none;
+}
+
+.DetailPane-description
+{
+	position: relative;
+	left: 8px;
+	margin-right: 18px;
+}
+
+.MediaDescription
+{
+	float: left;
+	margin-top: 10px;
+}
+
+.DetailPane-actionLink
+{
+	background-color: White;
+	padding: 8px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.UserCalendar-DetailsPanel
+{
+	display: inline-block;
+}
+
+
+.Event-title
+{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.comment-timestamp
+{
+	font-weight: bold;
+	font-size: .6em;
+}
+
+.newTagWatermark
+{
+	background-color: #ffffcc;
+	border: solid 1px #cccccc;
+	color: #666666;
+}
+
+.indentedSection
+{
+	margin-left: 10px;
+}
+
+.modalBackground
+{
+	background-image: url("images/modalBG.png");
+}
+
+.ModalPopup
+{
+	background-color: White;
+	border: solid 5px Gray;
+}
+
+.ModalPopup-content
+{
+	padding: 20px;
+	/*max-height: 300px;
+	overflow: scroll;
+	overflow-x: hidden;*/
+}
+
+.ModalPopup-buttons
+{
+	padding: 10px;
+	background-color: #0052A6;
+	text-align: right;
+}
+
+.ModalPopup-group
+{
+	background-color: #f7f7f7;
+	padding: 5px;
+	max-width: 280px;
+}
+
+.blogItem-date
+{
+	font-weight: bold;
+}
+
+.CalendarPopup
+{
+	position: absolute;
+	display: block;
+	z-index: 100;
+}
+
+.CalendarPopup .ajax__calendar_container
+{
+	border: 1px solid #646464;
+	background-color: White;
+	color: Black;
+}
+
+.ajax__tab_xp .ajax__tab_outer
+{
+	background: none !important;
+	padding: 0px !important;
+}
+
+.ajax__tab_xp .ajax__tab_inner
+{
+	background: none !important;
+	padding: 0px !important;
+}
+
+.ajax__tab_xp .ajax__tab_tab
+{
+	background: #efefef !important;
+	border: solid 1px #999;
+	margin-right: -1px !important;
+	position: relative;
+	top: -2px;
+}
+
+.ajax__tab_xp .ajax__tab_hover .ajax__tab_tab
+{
+	background: White !important;
+}
+
+.ajax__tab_xp .ajax__tab_active .ajax__tab_tab
+{
+	background: White !important;
+	font-weight: bold;
+	border-bottom: none;
+	padding: 5px;
+	top: -3px;
+}
+
+.Tab
+{
+	font-size: .8em;
+	font-weight: bold;
+	border: 1px solid Gray;
+	border-bottom: 1px solid Gray;
+	background-color: #f7f7f7;
+	position: relative;
+	top: -28px;
+	padding: 4px;
+}
+
+.Tab a:hover
+{
+	text-decoration: none;
+}
+
+.Tab-Selected
+{
+	border-bottom-color: White;
+	background-color: White;
+}
+
+.pager
+{
+	width: 100%;
+	text-align: right;
+}
+
+.pager-link-False
+{
+	margin-left: 3px;
+	color: Black;
+}
+
+.pager-link-True
+{
+	margin-left: 6px;
+	margin-right: 3px;
+	font-weight: bold;
+	color: Black;
+}
+
+.button
+{
+	border: solid 1px #000;
+	background-color: #363;
+	color: White;
+	margin-top: 10px;
+	font-size: 1em;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.addItemForm
+{
+	position: relative;
+	right: 100px;
+}
+
+.CommentBox
+{
+	border: solid 1px #999999;
+	font-family: Arial;
+	height: 90px;
+	margin-top: 5px;
+	width: 660px;
+}
+
+.SmallCommentBox
+{
+	border: solid 1px #999999;
+	font-family: Arial;
+	height: 90px;
+	margin-top: 5px;
+	width: 430px;
+}
+
+.CommentButton
+{
+	margin-top: 10px;
+	float: right;
+	margin-right:5px;
+}
+
+.SmallCommentButton
+{
+	margin-top: 10px;
+	float: right;
+	margin-right: 10px;
+}
+
+.CommentsControl-Validators
+{
+	margin-top: 10px;
+	float: left;
+}
+
+.textBox
+{
+	border: solid 1px #666666;
+}
+
+.Dashboard-RequestsLabel
+{
+	display: block;
+	font-weight: bold;
+}
+
+.Dashboard-RequestsGallery
+{
+	margin-top: 5px;
+	margin-bottom: 7px;
+}
+
+.TabPanel-Tab
+{
+    background-color: Red;
+}
+
+/* Is this obsolete?
+.subMenuBar
+{
+	text-align: right;
+	background-color: #EFE;
+	padding: 0px 0px 0px 20px;
+	margin: 0px 0px 20px 0px;
+}
+*/
+
+.UserDetails-Picture
+{
+	display: block;
+	border-right: solid 1px #999999;
+	padding-right: 10px;
+}
+
+.UserDetails-Title
+{
+	text-align: center;
+	font-weight: bold;
+	padding: 7px;
+	margin-bottom: -15px;
+	position: relative;
+	top: -26px;
+	min-width: 50px;
+	font-size: 1.3px;
+}
+
+.autocomplete_completionListElement 
+{  
+	visibility : hidden;
+	margin : 0px!important;
+	background-color : white;
+	color : windowtext;
+	border : solid 1px #666666;
+	border-width : 1px;
+	border-style : solid;
+	cursor : 'default';
+	overflow : auto;
+	height : 180px;
+    text-align : left; 
+    list-style-type : none;
+    font-size: 0.9em;
+}
+
+.autocomplete_highlightedListItem
+{
+	background-color: #ffff99;
+	color: black;
+	padding: 1px;
+	margin-left: 0px;
+	font-weight: bold;
+	border-bottom: solid 1px #666666;
+}
+
+.autocomplete_listItem 
+{
+	background-color : #f3f3f3;
+	color : windowtext;
+	padding : 1px;
+	margin-left: 0px;
+	border-bottom: solid 1px #666666;
+}
+
+.progress_SynchronizeAlbum
+{ 
+	z-index: 0; 
+	position: absolute; 
+	width: 100%; 
+	height: 100%; 
+	left: 0px; 
+	top: 0px; 
+	background-color: Gray; 
+	filter:alpha(opacity=60); 
+	-moz-opacity: 0.6; 
+	opacity: 0.6; 
+	color:Orange; 
+	font-size: large; 
+	text-align:center; 
+	vertical-align:middle; 
+	padding-top:120px;
+}
+                /*DUPLICATE -  TO DELETE
+                .shadow-lowerLeft
+                {
+	                position: absolute;
+	                bottom: -7px;
+	                left: 0px;
+	                height: 8px;
+	                width: 8px;
+	                background-image: url("images/lower-left.gif");
+	                z-index: 1;
+                }
+
+                .shadow-lowerRight
+                {
+	                position: absolute;
+	                bottom: -7px;
+	                right: -7px;
+	                height: 8px;
+	                width: 8px;
+	                background-image: url("images/lower-right.gif");
+	                z-index: 2;
+                }
+
+                .shadow-upperRight
+                {
+	                position: absolute;
+	                top: 0px;
+	                right: -7px;
+	                height: 8px;
+	                width: 8px;
+	                background-image: url("images/upper-right.gif");
+	                z-index: 1;
+                }
+
+                .shadow-right
+                {
+	                position: absolute;
+	                height: 100%;
+	                right: -7px;
+	                top: 8px;
+	                width: 8px;
+	                background-image: url("images/right.gif");
+	                z-index: 1;
+                }
+
+                .shadow-lower
+                {
+	                position: absolute;
+	                width: 100%;
+	                bottom: -7px;
+	                left: 8px;
+	                height: 8px;
+	                background-image: url("images/lower.gif");
+	                z-index: 1;
+                }
+                */

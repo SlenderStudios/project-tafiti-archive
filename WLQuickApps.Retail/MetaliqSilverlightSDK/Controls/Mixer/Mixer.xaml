@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="MetaliqSilverlightSDK.Controls.Mixer.Mixer"
+    xmlns="http://schemas.microsoft.com/client/2007" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:Mixer="clr-namespace:MetaliqSilverlightSDK.Controls.Mixer;assembly=MetaliqSilverlightSDK"
+    xmlns:Components="clr-namespace:MetaliqSilverlightSDK.Controls;assembly=MetaliqSilverlightSDK"
+    >
+    <Canvas x:Name="LayoutRoot">
+        <Canvas x:Name="Content" Width="500" Height="500">
+            <StackPanel x:Name="Timeline" Orientation="Horizontal">
+                <Canvas Width="500">
+                    <Mixer:MixerLibrary x:Name="Library" Canvas.Left="8"  />
+                    <Mixer:MixerTimeline x:Name="VideoTrack" Canvas.Left="8" Canvas.Top="242.6" />
+                    <Mixer:MixerTimeline x:Name="AudioTrack" Canvas.Left="8" Canvas.Top="343.4" />
+                </Canvas>
+                <Components:ScrollingTextBox x:Name="DebugTextBox" Width="600" Height="500" />
+            </StackPanel>
+        </Canvas>
+    </Canvas>
+</UserControl>

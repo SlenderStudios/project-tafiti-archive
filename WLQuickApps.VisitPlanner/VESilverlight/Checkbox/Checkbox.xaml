@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="VESilverlight.Primary.Checkbox"
+    xmlns="http://schemas.microsoft.com/client/2007" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+	Width="14" Height="14">
+    <Canvas x:Name="LayoutRoot" Cursor="Hand">
+        <Rectangle Width="14" Height="14" Stroke="#FFE6E5B9" Canvas.Left="0" Canvas.Top="0" StrokeThickness="1" Fill="#FF000000"/>
+        <TextBlock Width="19.071" Height="22.149" Text="a" TextWrapping="Wrap" FontFamily="Webdings" FontSize="22" RenderTransformOrigin="0.5,0.5" Canvas.Left="-3.057" Canvas.Top="-4.599" Foreground="#FFE6E5B9" Visibility="Collapsed" x:Name="Check">
+		    <TextBlock.RenderTransform>
+			    <TransformGroup>
+				    <ScaleTransform ScaleX="1" ScaleY="1"/>
+				    <SkewTransform AngleX="0" AngleY="0"/>
+				    <RotateTransform Angle="0.042"/>
+				    <TranslateTransform X="0" Y="0"/>
+			    </TransformGroup>
+		    </TextBlock.RenderTransform>
+	    </TextBlock>
+    </Canvas>
+</UserControl>

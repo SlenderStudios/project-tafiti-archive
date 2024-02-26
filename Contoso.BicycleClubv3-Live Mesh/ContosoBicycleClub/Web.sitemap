@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap enableLocalization="true" xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+	<siteMapNode url="~/Default.aspx" title="$resources:ContosoBicycleClubWeb,HomeLabel">
+		<siteMapNode url="~/Rides/Default.aspx" title="$resources:ContosoBicycleClubWeb,RidesLabel">
+			<siteMapNode url="~/Rides/RideInfo.aspx" title="$resources:ContosoBicycleClubWeb,RideInfoLabel"/>
+    </siteMapNode>
+		<siteMapNode url="~/Events/Default.aspx" title="$resources:ContosoBicycleClubWeb,EventsLabel">
+			<siteMapNode url="~/Events/EventInfo.aspx" title="$resources:ContosoBicycleClubWeb,EventInfoLabel"/>
+    </siteMapNode>
+		<siteMapNode url="~/Profile.aspx" title="$resources:ContosoBicycleClubWeb,UpdateProfileLabel">
+      <siteMapNode url="~/InviteContacts.aspx" title="$resources:ContosoBicycleClubWeb,InviteContactsLabel"/>
+    </siteMapNode>
+    <siteMapNode url="~/UploadPhotos.aspx" title="$resources:ContosoBicycleClubWeb,UploadPhotoLabel"/>
+    <siteMapNode url="~/Edit.aspx" title="$resources:ContosoBicycleClubWeb,OrganizeEventLabel"/>
+		<siteMapNode url="~/Privacy.aspx" title="$resources:ContosoBicycleClubWeb,PrivacyPolicyLabel"/>
+		<siteMapNode url="~/MessengerConsentResult.aspx" title="$resources:ContosoBicycleClubWeb,MessengerConsentLabel"/>
+	</siteMapNode>
+</siteMap>

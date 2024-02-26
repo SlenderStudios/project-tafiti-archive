@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="VESilverlight.RepeatButton"
+    xmlns="http://schemas.microsoft.com/client/2007" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="17"
+        Height="15">
+    <Canvas x:Name="LayoutRoot" MouseLeftButtonDown="OnMouseLeftButtonDown" MouseLeftButtonUp="OnMouseLeftButtonUp">
+        <!-- the storyboard triggers the repeating events when the mouse button is held down -->
+        <Canvas.Resources>
+            <Storyboard Duration="0:0:0.1" x:Name="storyboard" Completed="OnRepeat"/>
+        </Canvas.Resources >
+
+        <!-- required - the outline of the button -->
+        <Path StrokeThickness="0.5" StrokeMiterLimit="1.000000" Data="F1 M 6.132813,7.489258 C 6.132813,11.165039 3.501953,14.232422 0.000000,14.953125 L 0.000000,14.981445 L 17.229492,14.981445 L 17.229492,0.000000 L 0.000000,0.000000 L 0.000000,0.024414 C 3.501953,0.745117 6.132813,3.811523 6.132813,7.489258 Z" Visibility="Visible">
+            <Path.Fill>
+                <LinearGradientBrush MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Offset="0.000000" Color="#00FFFFFF"/>
+                    <GradientStop Offset="0.455056" Color="#00C9ECFA"/>
+                    <GradientStop Offset="1.000000" Color="#0093DAF6"/>
+                </LinearGradientBrush>
+            </Path.Fill>
+        </Path>
+
+        <!-- not required - shown when the mouse is over (briefly hide when clicked.) -->
+        <Path x:Name="highlight" Opacity="0" StrokeThickness="0.5" StrokeMiterLimit="1.000000" Data="F1 M 6.132813,7.489258 C 6.132813,11.165039 3.501953,14.232422 0.000000,14.953125 L 0.000000,14.981445 L 17.229492,14.981445 L 17.229492,0.000000 L 0.000000,0.000000 L 0.000000,0.024414 C 3.501953,0.745117 6.132813,3.811523 6.132813,7.489258 Z">
+            <Path.Fill>
+                <LinearGradientBrush MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Offset="0.000000" Color="#00FFFFFF"/>
+                    <GradientStop Offset="0.455056" Color="#00E2E2DD"/>
+                    <GradientStop Offset="1.000000" Color="#00C6C6BC"/>
+                </LinearGradientBrush>
+            </Path.Fill>
+        </Path>
+
+        <!-- shadow of the mark element. This does not change. -->
+        <Path x:Name="markshadow" Fill="#ffffffff" Data="F1 M 8.970703,2.448242 L 7.378906,4.038086 C 7.378906,4.038086 9.789063,6.448242 10.841797,7.500000 C 9.789063,8.550781 7.378906,10.960938 7.378906,10.960938 L 8.970703,12.550781 L 14.023438,7.500000 L 8.970703,2.448242 Z" Opacity="0"/>
+
+        <!-- button mark - this is the one that gets highlighted when pressed -->
+        <Path x:Name="outline" Data="F1 M 9.828125,2.448242 L 8.238281,4.038086 C 8.238281,4.038086 10.647461,6.448242 11.701172,7.500000 C 10.647461,8.550781 8.238281,10.960938 8.238281,10.960938 L 9.828125,12.550781 L 14.882813,7.500000 L 9.828125,2.448242 Z" >
+            <Path.Fill>
+                <SolidColorBrush x:Name="normalBrush" Color="#FFE9E7B7" />
+            </Path.Fill>
+        </Path>
+        <Path x:Name="outlineHighlight">
+            <Path.Fill >
+                <SolidColorBrush x:Name="highlightBrush" Color="#FF8FABB9" />
+            </Path.Fill>
+        </Path>
+
+    </Canvas>
+</UserControl>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4FEB1156-8165-4163-A933-8114D9C43252}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WLQuickApps.SocialNetwork.TestSuite</RootNamespace>
+    <AssemblyName>WLQuickApps.SocialNetwork.TestSuite</AssemblyName>
+    <WarningLevel>4</WarningLevel>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>WLQuickApps.SocialNetwork.snk</AssemblyOriginatorKeyFile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiveNet, Version=0.2.2933.3463, Culture=neutral, PublicKeyToken=d8bb199f80ad08c5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\songhaitao\Desktop\WindowsLiveApp\CommonDLL\LiveNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyMethods.cs" />
+    <Compile Include="Business\AlbumTests.cs" />
+    <Compile Include="Business\BaseItemTests.cs" />
+    <Compile Include="Business\CollectionTests.cs" />
+    <Compile Include="Business\CommunicationTests.cs" />
+    <Compile Include="Business\ForumTests.cs" />
+    <Compile Include="Business\HealthMonitoringTests.cs" />
+    <Compile Include="Business\StatisticsTests.cs" />
+    <Compile Include="Business\PendingInviteTests.cs" />
+    <Compile Include="Business\SearchTests.cs" />
+    <Compile Include="Business\UserTests.cs" />
+    <Compile Include="Business\LocationTests.cs" />
+    <Compile Include="Business\GroupTests.cs" />
+    <Compile Include="Business\FriendTests.cs" />
+    <Compile Include="Business\MediaTests.cs" />
+    <Compile Include="Business\TagTests.cs" />
+    <Compile Include="Business\EventTests.cs" />
+    <Compile Include="Business\CommentTests.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Scrap.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TemporaryUser.cs" />
+    <Compile Include="UtilitiesTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AuthoringTests.txt" />
+    <Content Include="Resources\TestAudio.wma" />
+    <Content Include="Resources\TestVideo.wmv" />
+    <None Include="Resources\xbox360controller_small.jpg" />
+    <None Include="WLQuickApps.SocialNetwork.snk" />
+    <None Include="WLQuickApps.SocialNetwork.TestSuite.dll.mda.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\bad" />
+    <None Include="Resources\TestPicture.png" />
+    <None Include="WebSite\TopLevelPages.webtest" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WLQuickApps.SocialNetwork.Business\WLQuickApps.SocialNetwork.Business.csproj">
+      <Project>{B64941B4-2AAE-4646-A5B5-D6D4E75224D5}</Project>
+      <Name>WLQuickApps.SocialNetwork.Business</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+</Project>

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:i0="WLQuickApps.FieldManager.WebSite" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="SiteService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="WLQuickApps.FieldManager.WebSite" location="http://fieldmanager.local.com/SiteService.svc?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_SiteService" type="i0:SiteService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateLeague">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/CreateLeague" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateField">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/CreateField" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLeague">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/GetLeague" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLeagues">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/GetAllLeagues" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLeagues">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/GetLeagues" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetField">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/GetField" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWeather">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/GetWeather" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeFieldStatus">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/ChangeFieldStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyFields">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/GetMyFields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldsForUser">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/GetFieldsForUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldsForUserCount">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/GetFieldsForUserCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldsInRange">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/GetFieldsInRange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldsForLeague">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/GetFieldsForLeague" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersForLeague">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/GetUsersForLeague" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserNameByEmail">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/GetUserNameByEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplayName">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/GetDisplayName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddToMyFields">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/AddToMyFields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddToMyLeagues">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/AddToMyLeagues" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddFieldAdmin">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/AddFieldAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddFieldToLeague">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/AddFieldToLeague" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLeague">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/UpdateLeague" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateField">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/UpdateField" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMessengerID">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/UpdateMessengerID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLeague">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/DeleteLeague" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteField">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/DeleteField" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveLeague">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/RemoveLeague" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveField">
+      <soap:operation soapAction="WLQuickApps.FieldManager.WebSite/SiteService/RemoveField" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebHttpBinding_SiteService" type="i0:SiteService">
+    <wsdl:operation name="CreateLeague">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="CreateField">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetLeague">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLeagues">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetLeagues">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetField">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetWeather">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeFieldStatus">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyFields">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldsForUser">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldsForUserCount">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldsInRange">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetFieldsForLeague">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersForLeague">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserNameByEmail">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplayName">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="AddToMyFields">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="AddToMyLeagues">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="AddFieldAdmin">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="AddFieldToLeague">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLeague">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateField">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMessengerID">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLeague">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteField">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveLeague">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveField">
+      <wsdl:input />
+      <wsdl:output />
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SiteService">
+    <wsdl:port name="BasicHttpBinding_SiteService" binding="tns:BasicHttpBinding_SiteService">
+      <soap:address location="http://fieldmanager.local.com/SiteService.svc/soap" />
+    </wsdl:port>
+    <wsdl:port name="WebHttpBinding_SiteService" binding="tns:WebHttpBinding_SiteService" />
+  </wsdl:service>
+</wsdl:definitions>

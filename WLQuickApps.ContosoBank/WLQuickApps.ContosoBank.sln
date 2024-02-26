@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WLQuickApps.ContosoBank", "WLQuickApps.ContosoBank\WLQuickApps.ContosoBank.csproj", "{156D6912-B62D-407E-BDD3-1E45283415F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1ABB855B-F241-4577-BB09-CF60EA11C87A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs04.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WLQuickApps.ContosoBank\\WLQuickApps.ContosoBank.csproj
+		SccProjectName1 = WLQuickApps.ContosoBank
+		SccLocalPath1 = WLQuickApps.ContosoBank
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{156D6912-B62D-407E-BDD3-1E45283415F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{156D6912-B62D-407E-BDD3-1E45283415F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{156D6912-B62D-407E-BDD3-1E45283415F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{156D6912-B62D-407E-BDD3-1E45283415F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

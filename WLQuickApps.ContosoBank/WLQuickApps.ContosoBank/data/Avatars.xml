@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Avatars>
+  <Avatar>
+    <ID>1</ID>
+    <Name>Star</Name>
+    <Location>/avatars/Avatar1.png</Location>
+    <IsDefault>True</IsDefault>
+  </Avatar>
+  <Avatar>
+    <ID>2</ID>
+    <Name>Cup</Name>
+    <Location>/avatars/Avatar2.png</Location>
+    <IsDefault>False</IsDefault>
+  </Avatar>
+  <Avatar>
+    <ID>3</ID>
+    <Name>Spanner</Name>
+    <Location>/avatars/Avatar3.png</Location>
+    <IsDefault>False</IsDefault>
+  </Avatar>
+  <Avatar>
+    <ID>4</ID>
+    <Name>Tie</Name>
+    <Location>/avatars/Avatar4.png</Location>
+    <IsDefault>False</IsDefault>
+  </Avatar>
+</Avatars>

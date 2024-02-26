@@ -1,0 +1,80 @@
+﻿<Canvas
+	xmlns="http://schemas.microsoft.com/client/2007"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Name="PopupCanvas" 
+	Width="224" Height="136"
+    Loaded="Page_Loaded"
+    x:Class="VESilverlight.Secondary.PopupItem;assembly=ClientBin/VESilverlight.dll"
+	Opacity="1"
+	Visibility="Visible"
+	Canvas.ZIndex="0"
+	>
+	
+	<Canvas.Triggers>
+		<EventTrigger RoutedEvent="Canvas.Loaded">
+			<BeginStoryboard>
+				<Storyboard x:Name="PopupShow">
+					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PopupCanvas" Storyboard.TargetProperty="(UIElement.Opacity)">
+						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+						<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+					</DoubleAnimationUsingKeyFrames>
+				</Storyboard>
+			</BeginStoryboard>
+			<BeginStoryboard>
+				<Storyboard x:Name="PopupHide">
+					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PopupCanvas" Storyboard.TargetProperty="(UIElement.Opacity)">
+						<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1"/>
+						<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+					</DoubleAnimationUsingKeyFrames>
+				</Storyboard>
+			</BeginStoryboard>
+			<BeginStoryboard>
+				<Storyboard x:Name="PopupHide3D">
+					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PopupCanvas" Storyboard.TargetProperty="(UIElement.Opacity)">
+						<SplineDoubleKeyFrame KeyTime="00:00:00.9750000" Value="1"/>
+						<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+					</DoubleAnimationUsingKeyFrames>
+				</Storyboard>
+			</BeginStoryboard>
+			<BeginStoryboard>
+				<Storyboard x:Name="CloseFast">
+					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PopupCanvas" Storyboard.TargetProperty="(UIElement.Opacity)">
+						<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+					</DoubleAnimationUsingKeyFrames>
+				</Storyboard>
+			</BeginStoryboard>
+			<BeginStoryboard>
+				<Storyboard x:Name="CloseFast3D">
+					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PopupCanvas" Storyboard.TargetProperty="(UIElement.Opacity)">
+						<SplineDoubleKeyFrame KeyTime="00:00:00.0999" Value="1"/>
+						<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+					</DoubleAnimationUsingKeyFrames>
+				</Storyboard>
+			</BeginStoryboard>
+		</EventTrigger>
+	</Canvas.Triggers>
+	
+	<TextBlock Width="84.75" Height="14.5" Text="TextBlock" TextWrapping="Wrap" Foreground="#FF8FAABD" FontFamily="Arial" x:Name="TypeText" Canvas.Left="86.75" Canvas.Top="18.5" FontSize="11"/>
+	
+	<TextBlock Width="127" Height="16" Canvas.Top="36.5" Text="TextBlock" TextWrapping="Wrap" Foreground="#FFEBE7B7" FontFamily="Verdana" x:Name="TitleText" Canvas.Left="86.5" FontSize="11"/>
+	
+	<TextBlock Width="193.5" Height="50.5" Canvas.Top="70.5" Text="TextBlock" TextWrapping="WrapWithOverflow" Foreground="#FFFFFFFF" FontFamily="Arial" x:Name="DescriptionText" Canvas.Left="16" FontSize="11" FontStretch="Normal" Canvas.ZIndex="1"/>
+	
+	<Rectangle Width="224" Height="136" Fill="#FF07375D" Stroke="#FF000000" Canvas.ZIndex="-1" Opacity="0.9" x:Name="ItemContainer" StrokeThickness="0" RadiusX="0" RadiusY="0"/>
+	
+	<Rectangle x:Name="Frame" Width="208" Height="120" Stroke="#FFEBE7B7" RadiusX="7.5" RadiusY="7.5" Canvas.Left="8" Canvas.Top="8"/>
+	<Canvas Cursor="Hand" x:Name="Close" Width="15" Height="15" Canvas.Left="194.625" Canvas.Top="13.25">
+		<Rectangle Width="15" Height="15" Stroke="#FFEBE7B7" RadiusX="2" RadiusY="2" Opacity="1" Cursor="Hand" x:Name="CloseButton" Fill="#0007375D"/>
+	
+		<Path Width="10" Height="10" Fill="#FFFFFFFF" Stretch="Fill" Stroke="#FFEBE7B7" Canvas.Left="2.625" Canvas.Top="2.5" Data="M200,24 L208,16" Cursor="Hand"/>
+		<Path RenderTransformOrigin="0.583,0.708" Width="10" Height="10" Fill="#FFFFFFFF" Stretch="Fill" Stroke="#FFEBE7B7" Canvas.Left="2.625" Canvas.Top="2.5" Data="M200,16 L208,24" Cursor="Hand"/>
+	</Canvas>
+	<Canvas Cursor="Hand" x:Name="Open" Width="16" Height="16" Canvas.Left="172.5" Canvas.Top="13.25">
+		<Rectangle Width="10" Height="10" Fill="#FFEBE7B7" Stroke="#FFEBE7B7" Canvas.Top="6"/>
+	
+		<Rectangle Width="12" Height="12" Stroke="#FFEBE7B7" Canvas.Left="4" Opacity="1" Fill="#0007375D"/>
+	</Canvas>
+	<Image x:Name="Picture" Width="64" Height="48" Canvas.Left="16.75" Canvas.Top="16.25"/>
+	<Rectangle Width="68" Height="52" Stroke="#FF8FAABD" StrokeThickness="2" Canvas.Left="14.5" Canvas.Top="14.25" x:Name="PictureFrame"/>
+	
+</Canvas>

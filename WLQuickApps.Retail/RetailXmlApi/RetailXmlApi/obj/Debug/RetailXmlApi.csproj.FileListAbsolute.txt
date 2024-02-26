@@ -1,0 +1,196 @@
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.dll
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.pdb
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\AppManifest.xaml
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.xap
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\TestPage.html
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\MetaliqSilverlightSDK.dll
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.dll
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.Extended.dll
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.Extended.xml
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\MetaliqSilverlightSDK.pdb
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.xml
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\ja\System.Windows.Controls.Extended.resources.dll
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\ja\System.Windows.Controls.resources.dll
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\ResolveAssemblyReference.cache
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.g.resources
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\App.g.cs
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\Page.g.cs
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.dll
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.pdb
+C:\_METALIQ_\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\XapCacheFile.xml
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.dll
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.pdb
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\AppManifest.xaml
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.xap
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\TestPage.html
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\MetaliqSilverlightSDK.dll
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.dll
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.Extended.dll
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.Extended.xml
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\MetaliqSilverlightSDK.pdb
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.xml
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\ja\System.Windows.Controls.Extended.resources.dll
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\ja\System.Windows.Controls.resources.dll
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.g.resources
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\App.g.cs
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\Page.g.cs
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.dll
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.pdb
+C:\Documents and Settings\Eric Anderson\My Documents\_metaliq\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\XapCacheFile.xml
+C:\_METALIQ_\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.dll
+C:\_METALIQ_\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.pdb
+C:\_METALIQ_\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\AppManifest.xaml
+C:\_METALIQ_\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.xap
+C:\_METALIQ_\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\TestPage.html
+C:\_METALIQ_\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\MetaliqSilverlightSDK.dll
+C:\_METALIQ_\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.dll
+C:\_METALIQ_\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.Extended.dll
+C:\_METALIQ_\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.Extended.xml
+C:\_METALIQ_\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\MetaliqSilverlightSDK.pdb
+C:\_METALIQ_\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.xml
+C:\_METALIQ_\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\ja\System.Windows.Controls.Extended.resources.dll
+C:\_METALIQ_\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\ja\System.Windows.Controls.resources.dll
+C:\_METALIQ_\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\ResolveAssemblyReference.cache
+C:\_METALIQ_\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.g.resources
+C:\_METALIQ_\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\App.g.cs
+C:\_METALIQ_\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\Page.g.cs
+C:\_METALIQ_\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.dll
+C:\_METALIQ_\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.pdb
+C:\_METALIQ_\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\XapCacheFile.xml
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\source2\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\ResolveAssemblyReference.cache
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\source2\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.g.resources
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\source2\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\App.g.cs
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\source2\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\Page.g.cs
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\source2\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.dll
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\source2\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.pdb
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\source2\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\AppManifest.xaml
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\source2\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.xap
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\source2\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\TestPage.html
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\source2\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\MetaliqSilverlightSDK.dll
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\source2\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.dll
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\source2\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.Extended.dll
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\source2\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.Extended.xml
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\source2\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\MetaliqSilverlightSDK.pdb
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\source2\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.xml
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\source2\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\ja\System.Windows.Controls.Extended.resources.dll
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\source2\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\ClientBin\ja\System.Windows.Controls.resources.dll
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\source2\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.dll
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\source2\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.pdb
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\source2\3_24\microsoftRetailSiteKit2\RetailXmlApi\RetailXmlApi\obj\Debug\XapCacheFile.xml
+C:\Users\user\Desktop\rsk\RetailXmlApi\RetailXmlApi\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\user\Desktop\rsk\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.g.resources
+C:\Users\user\Desktop\rsk\RetailXmlApi\RetailXmlApi\obj\Debug\App.g.cs
+C:\Users\user\Desktop\rsk\RetailXmlApi\RetailXmlApi\obj\Debug\Page.g.cs
+C:\Users\user\Desktop\rsk\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.pdb
+C:\Users\user\Desktop\rsk\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.dll
+C:\Users\user\Desktop\rsk\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.pdb
+C:\Users\user\Desktop\rsk\RetailXmlApi\RetailXmlApi\ClientBin\AppManifest.xaml
+C:\Users\user\Desktop\rsk\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.xap
+C:\Users\user\Desktop\rsk\RetailXmlApi\RetailXmlApi\ClientBin\TestPage.html
+C:\Users\user\Desktop\rsk\RetailXmlApi\RetailXmlApi\ClientBin\MetaliqSilverlightSDK.dll
+C:\Users\user\Desktop\rsk\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.dll
+C:\Users\user\Desktop\rsk\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.Extended.dll
+C:\Users\user\Desktop\rsk\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.Extended.xml
+C:\Users\user\Desktop\rsk\RetailXmlApi\RetailXmlApi\ClientBin\MetaliqSilverlightSDK.pdb
+C:\Users\user\Desktop\rsk\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.xml
+C:\Users\user\Desktop\rsk\RetailXmlApi\RetailXmlApi\ClientBin\ja\System.Windows.Controls.Extended.resources.dll
+C:\Users\user\Desktop\rsk\RetailXmlApi\RetailXmlApi\ClientBin\ja\System.Windows.Controls.resources.dll
+C:\Users\user\Desktop\rsk\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.dll
+C:\Users\user\Desktop\rsk\RetailXmlApi\RetailXmlApi\obj\Debug\XapCacheFile.xml
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\ResolveAssemblyReference.cache
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\App.g.cs
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\Page.g.cs
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.g.resources
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.pdb
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\AppManifest.xaml
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.xap
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\TestPage.html
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\MetaliqSilverlightSDK.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.Extended.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.Extended.xml
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\MetaliqSilverlightSDK.pdb
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\de\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\es\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\fr\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\it\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\ja\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\ko\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\zh-hant\System.Windows.Controls.Extended.Resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\zh-hans\System.Windows.Controls.Extended.Resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.pdb
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\XapCacheFile.xml
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.pdb
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\AppManifest.xaml
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.xap
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\TestPage.html
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\MetaliqSilverlightSDK.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.Extended.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.Extended.xml
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\MetaliqSilverlightSDK.pdb
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\de\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\es\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\fr\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\it\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\ja\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\ko\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\zh-hant\System.Windows.Controls.Extended.Resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\zh-hans\System.Windows.Controls.Extended.Resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\ResolveAssemblyReference.cache
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\App.g.cs
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\Page.g.cs
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.g.resources
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.pdb
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\XapCacheFile.xml
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\App.g.cs
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\Page.g.cs
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.g.resources
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\AppManifest.xaml
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.pdb
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.xap
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\TestPage.html
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\MetaliqSilverlightSDK.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\MetaliqSilverlightSDK.pdb
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.xml
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\de\System.Windows.Controls.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\es\System.Windows.Controls.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\fr\System.Windows.Controls.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\it\System.Windows.Controls.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\ja\System.Windows.Controls.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\ko\System.Windows.Controls.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\zh-Hans\System.Windows.Controls.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\zh-Hant\System.Windows.Controls.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.pdb
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\XapCacheFile.xml
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\AppManifest.xaml
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.pdb
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\RetailXmlApi.xap
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\TestPage.html
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\MetaliqSilverlightSDK.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\MetaliqSilverlightSDK.pdb
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\System.Windows.Controls.xml
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\de\System.Windows.Controls.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\es\System.Windows.Controls.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\fr\System.Windows.Controls.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\it\System.Windows.Controls.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\ja\System.Windows.Controls.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\ko\System.Windows.Controls.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\zh-Hans\System.Windows.Controls.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\ClientBin\zh-Hant\System.Windows.Controls.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\ResolveAssemblyReference.cache
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\App.g.cs
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\Page.g.cs
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.g.resources
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\RetailXmlApi.pdb
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailXmlApi\RetailXmlApi\obj\Debug\XapCacheFile.xml

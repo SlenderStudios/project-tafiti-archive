@@ -1,0 +1,299 @@
+﻿/* General HTML elements */
+body {margin:0;padding:0;text-align:center;font:11px verdana,helvetica,sans-serif}
+h1,h2,h3 {font-size:15px;font-weight:bold;width:700px}
+h1,h2 {background:url(../images/h1.png) no-repeat right center}
+h1.Medium,h2.Medium {background:url(../images/h1Med.png) no-repeat right center}
+h1.Large,h2.Large {background:url(../images/h1Large.png) no-repeat right center}
+h3 {margin-top:2px;margin-bottom:5px}
+ul {list-style-image:url(../Images/Bullet.png);font-weight:bold;font-size:10px}
+img {border:none}
+a {color:#015257}
+a:hover {color:#ff7e24}
+
+/* Login Control */
+.LoginLink {color:#015257}
+ 
+/* SiteLayout */
+.SiteWrapper {position:relative;width:982px;margin-left:auto;margin-right:auto;text-align:left}
+.SiteHeader {color:White;background:url(../Images/Header.png);height:107px;width:765px;position:relative}
+.SiteTitle {position:absolute;left:120px;top:10px}
+.SiteTitle h2 {font-size:14px;font-weight:bold;margin:0}
+.SiteTitle h3 {font-size:12px;font-weight:bold;margin:0}
+.SiteWelcome {position:absolute;right:30px;top:48px}
+.SiteWelcome a {color:#fdfa07}
+.SiteWelcome a:hover {color:#ff7e24}
+.SiteContent {background:url(../Images/ContentRepeat.png) repeat-y;display:table}
+.ContentPane {float:left;width:702px;margin-left:30px;margin-right:20px}
+.RightPane {float:left;width:230px}
+.IEClearFix {clear:both}
+.SiteFooter {background:url(../Images/Footer.png);clear:both;height:22px;width:765px}
+.SearchBox {position:absolute;right:15px; top:69px;}
+
+/* Side Panel */
+.SidePanelItem {margin-bottom:20px;width:228px}
+.SidePanelItem .ItemHeader {background:url(../Images/SidePanelSprite.png) no-repeat 0px -112px;height:55px;width:200px;padding-left:28px}
+.SidePanelItem .ItemContent {background:url(../Images/SidePanelRepeat.png) repeat-y;width:182px;padding-left:34px;padding-right:12px;display:table}
+.SidePanelItem .ItemFooter {background:url(../Images/SidePanelSprite.png) no-repeat 0px -167px;height:28px;width:228px}
+.SidePanelAboutUs {background:url(../Images/AboutUs.png);height:70px;width:200px;text-align:center;padding-left:28px;font-size:10px}
+.SidePanelAboutUs hr {height:1px;color:Black;margin:0 10px 0 0; clear:both;}
+.HostLogo {background:url(../Images/Contoso.png);height:27px;width:130px;float:right;}
+.ContactsHeader {background:url(../Images/SidePanelHeaderSprite.png) no-repeat 0px -46px;height:21px;width:69px}
+.QuickLinksHeader {background:url(../Images/SidePanelHeaderSprite.png) no-repeat 0px 0px;height:24px;width:80px}
+.AdvisorsHeader {background:url(../Images/SidePanelHeaderSprite.png) no-repeat 0px -67px;height:22px;width:69px}
+.VideoHeader {background:url(../Images/SidePanelHeaderSprite.png) no-repeat 0px -24px;height:22px;width:56px}
+
+/* Command Buttons */
+.CommandButton {background:url(../Images/ButtonSprite.png) no-repeat 0px -92px;height:23px;width:161px;line-height:23px;font-size:10px;padding-left:10px;margin-left:10px;margin-bottom:5px}
+.CommandButton:hover {background-position:0px -115px;}
+.CommandButton a {color:Black;text-decoration:none;background:url(../Images/ButtonText.gif);padding-right:5px}
+.CommandButton:hover a {background:url(../Images/ButtonTextOver.gif)}
+.CommandButtonMedium {background:url(../Images/ButtonSprite.png) no-repeat 0px -46px;height:23px;width:107px;line-height:23px;font-size:10px;padding-left:2px;margin-left:2px;margin-bottom:5px}
+.CommandButtonMedium:hover {background-position:0px -69px;}
+.CommandButtonMedium a {color:Black;text-decoration:none;background:url(../Images/ButtonSmallestText.gif);padding-right:5px}
+.CommandButtonMedium:hover a {background:url(../Images/ButtonTextOver.gif)}
+.CommandButtonSmall {background:url(../Images/ButtonSprite.png) no-repeat 0px 0px;height:23px;width:73px;line-height:23px;font-size:10px;padding-left:2px;margin-left:2px;margin-bottom:5px}
+.CommandButtonSmall:hover {background-position:0px -23px;}
+.CommandButtonSmall a {color:Black;text-decoration:none;background:url(../Images/ButtonSmallestText.gif);padding-right:5px}
+.CommandButtonSmall:hover a {background:url(../Images/ButtonTextOver.gif)}
+
+/* Contact Panel */
+.LiveSpaceButton {background:url(../Images/ButtonSprite.png) no-repeat 0px -138px;height:33px;width:171px;cursor:pointer;margin-left:5px}
+.LiveSpaceButton:hover {background-position:0px -171px;}
+
+/* LatestVideos */
+.VideoSideImageWrapper {height:90px;text-align:center;width:160px;margin-left:10px}
+.VideoSideImage {width:155px}
+.VideoSideImage:hover {width:160px;border:solid 1px black}
+
+/* Videos */
+.VideoFrame {width:700px;height:464px;background:url(../Images/VideoFrame.png) no-repeat 40px 0;padding-top:10px;text-align:center;}
+.VideoWrapper {width:160px;margin:0;height:100px}
+.VideoImageWrapper {width:160px;text-align:center;height:90px;margin-left:6px;}
+.VideoRating {position:absolute;height:12px;width:100px;left:7px;top:4px}
+.VideoRatingBorder {position:relative;background:url(../Images/RatingsFrame.png) no-repeat 0 0;width:111px;height:20px;margin-top:5px;margin-left:30px;}
+.VideoDataList .AspNet-DataList tr {background:url(../Images/ItemPanel.png) no-repeat;position:relative}
+.VideoDataList .AspNet-DataList td {height:180px;width:175px;background:none}
+
+/* Forum Highlights */
+.ForumSummary {float:left;background:url(../Images/LatestForumPostsBackground.png) no-repeat 170px 5px;width:520px}
+.ForumSummaryItem {background:url(../Images/ForumSummaryItem.png);height:32px;width:439px;line-height:30px;padding-left:10px;position:relative}
+.ForumSummaryLink {position:absolute;right:30px;top:0}
+
+/* Home Ads */
+.HomeAd {float:right;margin-top:10px;margin-right:20px}
+
+/* Map Common */
+.mymapdashboard {position:absolute;left:9px;top:9px;background:#bcda6a;opacity:0.7;filter:alpha(opacity=70);width:84px;height:535px;border:1px solid black;text-align:left}
+.mymapdashboardCollapse {width:20px;height:20px;overflow:hidden}
+.mymapdashboard:hover {opacity:1.0;filter:alpha(opacity=100)}
+.mymapdashboard hr {height:1px;color:Black}
+.mapdashboardHandle {border-bottom:1px solid black;width:84px;height:19px;background:url(../Images/MapDashBoardHeaderBack.png);cursor:pointer;text-align:right;line-height:19px;text-indent:10px}
+.mapdashboardSubTitle {border-bottom:1px solid black;border-top:1px solid black;width:84px;background:url(../Images/MapDashBoardHeaderBack.png);text-indent:10px;margin:5px 0}
+.mymapdashboard .MapAction {cursor:pointer;width:84px;height:19px;line-height:19px;text-indent:10px;background:url(../Images/ToggleOff.png) no-repeat 60px 3px}
+.mymapdashboard .MapActionEnabled {background:url(../Images/ToggleOn.png) no-repeat 60px 3px}
+.mymapdashboard .MapActionDisbaled {background:url(../Images/ToggleOff.png) no-repeat 60px 3px;opacity:0.5;filter:alpha(opacity=50);cursor:not-allowed}
+.mymapdashboard .MapAction a {color:Black;font-size:10px}
+.mymapdashboard .MapZoomBar {text-indent:10px;position:relative}
+.MapZoomBar .ZoomIn {cursor:pointer;position:absolute;background:url(../Images/ZoomIn.png);height:23px;width:23px;left:50px;top:290px}
+.MapZoomBar .ZoomBar {cursor:pointer;position:absolute;background:url(../Images/ZoomBar.png);height:291px;width:40px;left:10px;top:20px}
+.MapZoomBar .ZoomBarMarker {cursor:pointer;position:absolute;height:16px;width:39px;left:4px}
+.MapZoomBar .ZoomBarMarker img {position:absolute;left:0}
+.MapZoomBar .ZoomOut {cursor:pointer;position:absolute;background:url(../Images/ZoomOut.png);height:24px;width:23px;left:50px;top:17px}
+.mymapminimaptoggle {position:absolute;background:url(../Images/MiniMapToggle.gif) no-repeat 0 -15px;height:15px;width:15px}
+.mymapminimaptoggle:hover {background:url(../Images/MiniMapToggle.gif) no-repeat 0 -30px}
+.mymapminimaptoggleEnabled {background:url(../Images/MiniMapToggle.gif) no-repeat 0 0}
+.mymapminimaptoggleEnabled:hover {background:url(../Images/MiniMapToggle.gif) no-repeat 0 -45px}
+#MSVE_minimap_resize {visibility:hidden}
+
+/* Home Map */
+.HomeMapFrame {position:relative;clear:both;background:url(../Images/MapFrame.png);height:555px;width:700px;margin-top:0px;top:10px;}
+.HomeMapFrame .mymap {left:10px;top:10px}
+.HomeMapFrame .mymapminimaptoggle {left:675px;top:10px}
+
+/* Home Map Pins */
+.MemberPinSmall {width:33px;height:62px;margin-top:-52px;background:url(../Images/PinSprite.png) no-repeat -64px -233px;}
+.MemberPinMedium {width:49px;height:98px;margin-top:-88px;background:url(../Images/PinSprite.png) no-repeat -64px -131px;}
+.MemberPinLarge {width:63px;height:130px;margin-top:-120px;background:url(../Images/PinSprite.png) no-repeat -64px 0px;}
+.ATMPinSmall {width:35px;height:64px;margin-top:-54px;background:url(../Images/PinSprite.png) no-repeat 0px -233px;}
+.ATMPinMedium {width:52px;height:102px;margin-top:-92px;background:url(../Images/PinSprite.png) no-repeat 0px -131px;}
+.ATMPinLarge {width:64px;height:131px;margin-top:-121px;background:url(../Images/PinSprite.png) no-repeat 0px 0px;}
+
+/* Event Pin */
+.EventPin {width:34px;height:42px;background:url(../Images/Pins/EventPin.png)}
+
+/* Event Map */
+.EventMapFrame {position:absolute;background:url(../Images/MapFramePopup.png);height:485px;width:640px;display:none}
+.EventMapFrame .mymap {left:9px;top:9px}
+.EventMapFrame .mymapminimaptoggle {left:587px;top:9px}
+.EventMapFrame .mymapclose {position:absolute;left:540px;top:465px;background:url(../Images/Close.png) no-repeat center right;height:15px;width:60px;color:White;font-weight:bold;cursor:pointer}
+
+/* Over ride styles for custom infobox look */
+.customInfoBox-body {background-color:transparent!important;background:url(../Images/InfoBox.png);width:205px;height:171px;overflow:hidden;border:0!important;left:0!important;padding:5px!important;top:0!important}
+.customInfoBox-shadow {background-color:transparent!important;background:url(../Images/InfoBoxShadow.png) no-repeat top right!important;width:358px;height:181px;left:-375px!important;top:20px!important}
+.customInfoBox-with-leftBeak {width:0!important;height:0!important}
+.VE_Pushpin_Popup_Title {color:white!important;padding-top:5px}
+.VE_Pushpin_Popup_Body {color:white!important;text-align:left;margin-left:10px}
+
+/* Demo notice */
+.DemoText {color:white;text-align:center}
+.DemoText a {color:#fdfa07}
+.DemoText a:hover {color:#ff7e24}
+
+/* Menu */
+.AspNet-Menu-Horizontal {float:left;width:606px;margin-left:12px;position:relative;height:41px;top:54px}
+.AspNet-Menu-Horizontal ul {margin:0;padding:10px 10px 0;list-style:none;height:41px}
+.AspNet-Menu-Horizontal li {float:left;display:inline;margin:0;padding:0 20px 0 0;height:41px;line-height:41px}
+.AspNet-Menu-Horizontal a {float:left;display:block;position:relative;left:-6px;margin-right:-6px;top:-5px;width:.1em;padding:0 20px;color:white;text-decoration:none;font-size:12px;height:41px;font-weight:bold}
+.AspNet-Menu-Horizontal > ul a {width:auto}
+.AspNet-Menu-Horizontal a {float:none}
+.AspNet-Menu-Horizontal li.AspNet-Menu-Selected {background:url(../images/MenuOver.png) no-repeat right top}
+.AspNet-Menu-Horizontal .AspNet-Menu-Selected a {color:Black;text-transform:capitalize}
+.AspNet-Menu-Horizontal li:hover a {color:#ff7e24;background:none}
+
+/*Advisors */
+.Advisor {font-size:9px}
+
+/* Community */
+.ArticlesResources {float:left;width:400px}
+.ArticlesResources h2 {font-size:15px;font-weight:bold;width:400px;background:url(../images/h1.png) no-repeat right center}
+.TagCloud {float:right;}
+.TagCloud h2 {font-size:14px;font-weight:bold;width:280px;background:url(../images/h1.png) no-repeat right center}
+.TagCloudImage {margin-left:15px}
+
+/* Articles/Resources */
+.ResourcesAccordion {font-size:10px}
+.ResourcesAccordionHeader,.ResourcesAccordionHeaderSelected {line-height:18px;text-indent:5px}
+.ResourcesAccordionHeaderSelected {background:url(../images/AccordionHeaderOpen.png) no-repeat;height:20px}
+.ResourcesAccordionHeader {cursor:pointer;background:url(../images/AccordionHeaderClosed.png) no-repeat;height:20px}
+.ResourcesContent {background:url(../images/AccordionPanel.png) no-repeat}
+.ResourcesColumns,.ResourcesColumnsAlternate {width:385px;display:table;line-height:24px;margin-left:2px}
+.ResourcesColumnsAlternate {background:white}
+.ResourcesColumn1 {width:230px;float:left}
+.ResourcesColumn2 {width:85px;float:left}
+.ResourcesColumn3 {width:50px;float:left;font-size:9px}
+
+/*Generic Table*/
+.PortalTable {width:704px}
+.PortalTable a {text-decoration:none}
+.PortalRow,.PortalRowAlternate {height:31px;text-indent:5px}
+.PortalRow td {background:none}
+.PortalRow {background:url(../Images/ItemHeaderPanel.png) no-repeat;position:relative}
+.PortalRowAlternate {background:url(../Images/ItemHeaderPanelAlt.png) no-repeat;position:relative}
+.PortalSummaryHeader {margin-bottom:5px;}
+.PortalRowAlternate td {background:none}
+.PortalSummaryHeader th {font-size:12px;font-weight:normal;border-bottom:solid 1px #56584B;height:30px;padding:1px 5px;color:Black;background:none}
+.PortalSummaryText {font-size:9px}
+.PortalSummaryText a {cursor:pointer}
+.PortalSubjectTextHighlight {color:#014F59;font-size:9px}
+.PortalItemHeader {float:left;width:360px}
+.PortalItemHeaderIcon {width:26px;float:left;margin-left:5px}
+.PortalItemHeaderLeft {float:left;width:405px}
+.PortalItemHeaderRight {float:left;width:280px}
+.PortalSubjectTitle {font-size:14px;font-weight:800;color:#04515B}
+.PortalHighlight2 {color:#989A8D;font-size:9px}
+.PortalHighlight3 {color:#56584B;font-weight:600;font-size:12px}
+.PortalSubjectText {color:#696A64;font-size:9px}
+.PortalContent {float:left;height:179px;width:704px;text-indent:5px}
+.PortalContent {background:url(../Images/ItemPanel.png) no-repeat}
+.PortalContentAlternate {background:url(../Images/ItemPanelAlt.png) no-repeat}
+.PortalContentLeft {float:left;width:165px;margin-top:10px}
+.PortalContentRight {margin-top:10px}
+
+/* Sticky Posts */
+.ForumItemHeader {width:704px;height:24px;padding-top:8px;text-indent:5px;background:url(../Images/ItemHeaderPanel.png) no-repeat;position:relative}
+.ForumItemHeader a {text-decoration:none}
+.ForumItemHeaderIcon {width:26px;float:left;margin-left:5px}
+.ForumItemHeaderLeft {float:left;width:365px}
+.ForumItemHeaderRight {float:left;width:300px}
+.ForumContentLeft {float:left;width:165px;height:185;padding-left:20px}
+.ForumContentRight {height:185;overflow:auto}
+.ForumContent {height:169px;width:694px;margin-bottom:10px;padding:5px;background:url(../Images/ItemPanel.png) no-repeat;clear:both}
+.ForumSubjectTextHighlight {color:#014F59;font-size:9px}
+.ForumSubjectTitle {font-size:14px;font-weight:800;color:#04515B}
+.ForumSubjectTitle :hover {color:#ff7e24}
+.ForumSubjectText {color:#696A64;font-size:9px}
+.ForumTagTitle {color:#989A8D;font-size:9px}
+.ForumItemHeaderAlternate {background:url(../Images/ItemHeaderPanelAlt.png) no-repeat}
+.ForumContentAlternate {float:left;height:169px;width:697px; padding-right:7px; background:url(../Images/ItemPanelAlt.png) no-repeat}
+
+/* ProfileDisplay */
+.ProfileDisplay {position:relative;background:url(../Images/AvatarBackground.png) no-repeat 0 20px;width:133px;height:111px}
+.ProfileDisplayName {color:#56584B;font-weight:600;font-size:12px}
+.ProfileDisplayPosts {position:absolute;height:100px;width:65px;left:65px;top:25px;color:#989A8D;font-size:9px}
+.ProfileDisplayImage {position:absolute;height:48px;width:47px;left:10px;top:29px}
+.ProfileDisplayRating {position:absolute;height:20px;width:111px;left:10px;top:80px;background:url(../Images/RatingsFrame.png) no-repeat 0 0}
+.ProfileRatingItem {position:absolute;margin-left:6px;margin-top:4px}
+.ProfileActions .CommandButtonSmall {float:left;margin-right:70px}
+.ProfileDetail {text-align:center;width:702px;margin:0;margin-top:50px}
+.ProfileDetailTable {text-align:left;margin-left:auto;margin-right:auto;position:relative}
+
+/* Avatar */
+.AvatarDisplay {position:relative;background:url(../Images/AvatarFrame.png) no-repeat 0 0;width:49px;height:50px}
+.AvatarImage {margin-top:3px;margin-left:3px}
+
+/* Events */
+.FeaturedEventHeader {height:27px;background:url(../Images/ItemHeaderPanel.png) no-repeat;position:relative;padding-top:5px}
+.FeaturedEventHeaderIcon {width:15px;float:left;margin-left:5px}
+.FeaturedEventHeaderLeft {float:left;width:425px}
+.FeaturedEventHeaderRight {float:left;width:250px}
+.FeaturedEvent {margin:5px 20px;width:674px}
+.FeaturedEvent td {color:#696A64;font-size:9px;vertical-align:top;padding:2px}
+.FeaturedEvent .CommandButton {float:left;margin-left:0}
+.FeaturedEvent .ContactLinks {float:right}
+
+/* Appointments */
+.CalendarControl {clear:both;width:714px;padding-top:15px}
+.CalendarDayHeader {font-size:10px;color:#777777;background:url(../images/CalendarHeaderTile.png)}
+.CalendarTitle td {font-size:12px;font-weight:800;color:#014F59}
+.CalendarLegend {float:left;width:85px;margin-top:45px;margin-left:10px;height:418px; background:url(../images/CalendarLegend.png) no-repeat;}
+.CalendarContact {width:610px;margin-left:90px}
+.CalendarContact .CommandButtonSmall {float:left;line-height:23px;font-size:10px;padding-left:2px;margin-left:2px;margin-bottom:5px;margin-right:45px}
+.CalendarWrapper {margin-left:90px;margin-top:20px}
+.CalendarDay {text-align:left}
+.AppointmentTable {width:560px}
+.CalendarAfternoon,.CalendarMorning {height:37px;width:80px;opacity:0.7;filter:alpha(opacity=70)}
+.CalendarMorning {margin-top:-12px}
+
+/* Tools */
+.ToolsWatermark {background:url(../Images/ToolsWatermark.png) no-repeat;width:737px;height:937px;margin:-15px}
+.ToolPanelTop {float:left;width:358px;height:300px;margin-left:10px}
+.ToolPanelMiddle {float:left;width:358px;height:340px;margin-left:10px}
+.ToolPanelBottom {float:left;width:358px;margin-left:10px}
+.ToolPanel {float:left;width:358px;margin-left:10px;margin-top:20px}
+h2.ToolPanelHeader {margin-top:20px;margin-bottom:5px;font-size:15px;font-weight:bold;width:345px;margin-left:10px;background:url(../images/h1.png) no-repeat right center}
+.ToolSearchBox {float:left;margin-left:-2px}
+.BusinessSoftware {text-align:center}
+.BusinessSearch {background:url(../Images/BusinessSearch.png) no-repeat;width:279px;height:229px;position:absolute;top:140px;left:425px}
+.MapSearch {background:url(../Images/MapSearch.png) no-repeat;width:279px;height:229px;position:absolute;top:455px;left:425px}
+.BusinessData {background:url(../Images/BusinessData.png) no-repeat;width:275px;height:275px;position:absolute;top:440px;left:60px}
+.BusinesSearchItem {position:absolute;top:150px;left:405px}
+.MapSearchItem {position:absolute;top:465px;left:405px}
+.ToolsItemPanel {background:url(../Images/LinkGadgetWhiteBox.png) no-repeat;width:325px;height:26px}
+
+/* Calculator */
+.CalculatorIcon {background:url(../Images/CalcSprite.png) no-repeat 0px 0px;width:39px;height:62px;position:absolute;left:7px;top:-9px}
+.CalculatorIconAlternate {background:url(../Images/CalcSprite.png) no-repeat -39px 0px}
+.CalculatorDetailsItem {margin-left:50px;width:275px;font-size:9px}
+.CalculatorCommandButton .CommandButton {margin:25px 0 5px 45px}
+
+/* Gadgets Links */
+.GadgetItem,.GadgetItemAlternate {position:relative;margin-bottom:40px}
+.GadgetTitleItem {font-weight:bold}
+.GadgetDetailsItem {margin-left:80px;width:245px;margin-bottom:25px;font-size:9px}
+.GadgetImageItem {width:103px;height:84px;position:absolute;top:-20px;left:-6px}
+.GadgetItem .GadgetTitleItem {margin:20px 0 0 80px}
+.GadgetItemAlternate .GadgetTitleItem {text-align:right;margin:20px 100px 0 0}
+.GadgetItemAlternate .GadgetDetailsItem {margin-left:10px}
+.GadgetItemAlternate .GadgetImageItem {top:-20px;left:260px}
+
+/* Admin */
+.SiteStatistics {float:left;width:720px}
+.StatsList {background:url(../Images/AdminTargets.png) no-repeat;width:342px;height:249px;float:left}
+.StatsGraph {background:url(../Images/AdminGraph.png) no-repeat;width:371px;height:249px;float:left;margin-left:5px}
+.TasksWorkflow {background:url(../Images/AdminTasks.png) no-repeat;width:715px;height:310px}
+
+/* Rating */
+.RatingStar {background-repeat:no-repeat;cursor:pointer;display:block;height:11px;width:19px}
+.RatingEmpty {background:url(../Images/EmptyStar.png)}
+.RatingFilled {background:url(../Images/FilledStar.png)}
+.RatingSaved {background:url(../Images/SavedStar.png)}

@@ -1,0 +1,11 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/client/2007"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="RetailSiteKit.CartControl2"
+	d:DesignWidth="640" d:DesignHeight="480">
+
+	<Canvas Height="488" Width="2221.5" x:Name="LayoutCart" Clip="M0.5,0.5 L1199.5,0.5 L1199.5,487.5 L0.5,487.5 z"/>
+</UserControl>

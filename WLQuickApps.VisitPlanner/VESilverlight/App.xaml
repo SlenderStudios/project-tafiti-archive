@@ -1,0 +1,19 @@
+﻿<Application xmlns="http://schemas.microsoft.com/client/2007"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             x:Class="VESilverlight.App"
+             >
+    <Application.Resources>
+        <Style x:Key="TextBoxNoBorder" TargetType="TextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Grid x:Name="RootElement">
+                            <ScrollViewer x:Name="ContentElement" BorderThickness="0" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Application.Resources>
+</Application>

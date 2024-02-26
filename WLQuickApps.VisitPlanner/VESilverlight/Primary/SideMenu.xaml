@@ -1,0 +1,198 @@
+﻿<UserControl x:Class="VESilverlight.Primary.SideMenu"
+	xmlns="http://schemas.microsoft.com/client/2007"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:VESilverlight="clr-namespace:VESilverlight;assembly=VESilverlight"
+	xmlns:VESilverlight_Primary="clr-namespace:VESilverlight.Primary;assembly=VESilverlight"	
+	Width="210" Height="389.833">
+    <Canvas x:Name="LayoutRoot">
+        <Canvas.Triggers>
+            <EventTrigger RoutedEvent="Canvas.Loaded">
+                <BeginStoryboard x:Name="ConciergeToolTipShow_BeginStoryboard">
+                    <Storyboard x:Name="ConciergeToolTipShow">
+                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ConciergeToolTip" Storyboard.TargetProperty="(UIElement.Opacity)">
+                            <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                            <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                            <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+                        </DoubleAnimationUsingKeyFrames>
+                    </Storyboard>
+                </BeginStoryboard>
+                <BeginStoryboard>
+                    <Storyboard x:Name="MyPlaceToolTipShow">
+                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MyPlaceToolTip" Storyboard.TargetProperty="(UIElement.Opacity)">
+                            <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                            <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                            <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+                        </DoubleAnimationUsingKeyFrames>
+                    </Storyboard>
+                </BeginStoryboard>
+                <BeginStoryboard>
+                    <Storyboard x:Name="SearchToolTipShow">
+                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="SearchToolTip" Storyboard.TargetProperty="(UIElement.Opacity)">
+                            <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                            <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                            <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+                        </DoubleAnimationUsingKeyFrames>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Canvas.Triggers>
+        <Canvas Width="210" Height="37" Canvas.Top="8" x:Name="ThreeTabsCanvas">
+            <Canvas Width="75" Height="37" x:Name="ConciergeButton" Cursor="Hand">
+                <Image Width="72" Height="16" x:Name="cSelected" Source="/images/ConciergeButtonSelected.png"  />
+                <Image Width="72" Height="16" x:Name="cNotSelected" Source="/images/ConciergeButtonNotSelected.jpg"  Visibility="Collapsed"  />
+                <Rectangle Width="75" Height="37" Fill="#00000000"/>
+            </Canvas>
+            <Canvas Width="74" Height="37" x:Name="MyTripsButton" Canvas.Left="73" >
+                <Image Width="76" Height="16" x:Name="tSelected" Source="/images/PlacesButtonSelected.jpg"  Visibility="Collapsed" Canvas.Left="-2" />
+                <Image Width="76" Height="16" x:Name="tNotSelected" Source="/images/PlacesButtonNotSelected.png"  />
+                <Rectangle Width="74" Height="37" Fill="#00000000"/>
+            </Canvas>
+            <Canvas Width="61" Height="37" x:Name="SearchButton" Canvas.Left="146.66" Cursor="Hand">
+                <Image Width="55" Height="16" x:Name="sSelected" Source="/images/SearchButtonSelected.jpg"  Visibility="Collapsed" Canvas.Top="-1" />
+                <Image Width="55" Height="16" x:Name="sNotSelected" Source="/images/SearchButtonNotSelected.png"  />
+                <Rectangle Width="75" Height="37" Fill="#00000000"/>
+            </Canvas>
+        </Canvas>
+        <VESilverlight_Primary:ConciergeToolBar Canvas.Top="49" x:Name="conciergeToolBar" Width="220" Height="340.833"/>
+        <VESilverlight_Primary:MyPlacesToolBar Canvas.Top="49" x:Name="myPlacesToolBar" Visibility="Collapsed" Width="220" Height="344.833"/>
+        <VESilverlight_Primary:SearchToolBar Canvas.Top="49" x:Name="searchToolBar" Visibility="Collapsed" Width="220" Height="344.833"/>
+        <Canvas Visibility="Collapsed" x:Name="ConciergeToolTip" Width="19.579" Height="190.859" Canvas.Top="-100.5" Canvas.ZIndex="0" RenderTransformOrigin="0.5,0.5" Canvas.Left="83">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                    <SkewTransform AngleX="0" AngleY="0"/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform X="0" Y="0"/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Rectangle RenderTransformOrigin="0.5,0.5" x:Name="TourToolTipShadow" Width="190.25" Height="17.25" Fill="#4C000000" Stroke="#4C000000" StrokeThickness="0.5" RadiusX="2" RadiusY="2" Canvas.Left="-84.765" Canvas.Top="86.594">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="1"/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform X="0" Y="0"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle x:Name="ToolTipRect1" Width="17.407" Height="189.39" Stroke="#FF767676" RadiusX="2" RadiusY="2" RenderTransformOrigin="0.5,0.5" StrokeThickness="0.5" Canvas.Top="1.719">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                        <GradientStop Color="#FFE4E5F0" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="1"/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform X="0" Y="0"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <TextBlock x:Name="ToolTipText1" Width="185.001" Height="13.127" Canvas.Left="-84.471" Canvas.Top="89.557" FontFamily="Arial" FontSize="11" Foreground="#FF767676" Text="See what the Concierge recommends" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5">
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="-90"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+		</TextBlock>
+        </Canvas>
+        <Canvas Visibility="Collapsed" x:Name="MyPlaceToolTip" Width="34.329" Height="173.609" Canvas.Top="-99.25" Canvas.ZIndex="0" RenderTransformOrigin="0.5,0.5" Canvas.Left="95.5">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                    <SkewTransform AngleX="0" AngleY="0"/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform X="0" Y="0"/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Rectangle RenderTransformOrigin="0.5,0.5" x:Name="TourToolTipShadow1" Width="171.25" Height="31.25" Fill="#4C000000" Stroke="#4C000000" StrokeThickness="0.5" RadiusX="2" RadiusY="2" Canvas.Left="-68.015" Canvas.Top="71.344">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="1"/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform X="0" Y="0"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle x:Name="ToolTipRect2" Width="30.907" Height="170.14" Stroke="#FF767676" RadiusX="2" RadiusY="2" RenderTransformOrigin="0.5,0.5" StrokeThickness="0.5" Canvas.Top="3.219" Canvas.Left="0.25">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                        <GradientStop Color="#FFE4E5F0" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="1"/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform X="0" Y="0"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <TextBlock x:Name="MyPlaceToolTipText" Width="163.751" Height="26.627" Canvas.Left="-66.846" Canvas.Top="75.682" FontFamily="Arial" FontSize="11" Foreground="#FF767676" Text="Sign in to Windows Live to create your personalized trip plan" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5">
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="-90"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+		</TextBlock>
+        </Canvas>
+        <Canvas Visibility="Collapsed" x:Name="SearchToolTip" Width="19.579" Height="106.359" Canvas.Top="-57.75" Canvas.ZIndex="0" RenderTransformOrigin="0.5,0.5" Canvas.Left="163.75">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                    <SkewTransform AngleX="0" AngleY="0"/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform X="0" Y="0"/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Rectangle RenderTransformOrigin="0.5,0.5" x:Name="TourToolTipShadow2" Width="103.25" Height="17.25" Fill="#4C000000" Stroke="#4C000000" StrokeThickness="0.5" RadiusX="2" RadiusY="2" Canvas.Left="-41.015" Canvas.Top="44.094">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="1"/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform X="0" Y="0"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle x:Name="ToolTipRect3" Width="17.407" Height="101.89" Stroke="#FF767676" RadiusX="2" RadiusY="2" RenderTransformOrigin="0.5,0.5" StrokeThickness="0.5" Canvas.Top="3.219" Canvas.Left="0.25">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                        <GradientStop Color="#FFE4E5F0" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="1"/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform X="0" Y="0"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <TextBlock x:Name="ToolTipText2" Width="97.751" Height="13.127" Canvas.Left="-40.596" Canvas.Top="47.182" FontFamily="Arial" FontSize="11" Foreground="#FF767676" Text="Find what you need" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5">
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="-90"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+		</TextBlock>
+        </Canvas>
+    </Canvas>
+</UserControl>

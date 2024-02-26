@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<Appointments>
+  <Appointment>
+    <AdvisorID>1</AdvisorID>
+    <AppointmentSlot>1</AppointmentSlot>
+    <AppointmentDate>2008-03-19T00:00:00</AppointmentDate>
+  </Appointment>
+  <Appointment>
+    <AdvisorID>1</AdvisorID>
+    <AppointmentSlot>2</AppointmentSlot>
+    <AppointmentDate>2008-03-19T00:00:00</AppointmentDate>
+  </Appointment>
+  <Appointment>
+    <AdvisorID>1</AdvisorID>
+    <AppointmentSlot>2</AppointmentSlot>
+    <AppointmentDate>2008-03-22T00:00:00</AppointmentDate>
+  </Appointment>
+</Appointments>

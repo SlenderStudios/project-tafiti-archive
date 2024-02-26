@@ -1,0 +1,5 @@
+﻿/* Side Panel */
+#VideosSidePanel .ItemHeader {background:url(../Images/ie6/SidePanelSprite.gif) no-repeat 0px 0px;height:56px;}
+#VideosSidePanel .ItemContent {background:url(../Images/ie6/SidePanelRepeatSelected.gif) repeat-y;}
+#VideosSidePanel .ItemFooter {background:url(../Images/ie6/SidePanelSprite.gif) no-repeat 0px -56px;height:27px}
+.VideoHeader {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/IE6/Videos.png', sizingMethod='image');height:22px; width:56px;}

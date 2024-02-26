@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StoreData>
+	<Brand id="PdH">
+	  <ProductGroup id="Purse">
+			<Product gender="Women" id="1" color="TBD" us_price="100">
+				<Media>
+					<VideoThumb id="1" url="thumbs/PdH_Women_1.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="1.1" url="thumbs/PdH_Women_1_1.jpg"/>
+						<Image id="1.2" url="thumbs/PdH_Women_1_2.jpg"/>
+						<Image id="1.3" url="thumbs/PdH_Women_1_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="1" url="/small/PdH_Women_1_small.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[TBD]]></us_en>
+				</Sizes>
+				<Descriptions>
+					<us_en><![CDATA[Purse (unidentified)]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[TBD]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Skirt">
+			<Product gender="Women" id="2" color="Mink" us_price="512">
+				<Media>
+					<VideoThumb id="2" url="thumbs/PdH_Women_2.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="2.1" url="thumbs/PdH_Women_2_1.jpg"/>
+						<Image id="2.2" url="thumbs/PdH_Women_2_2.jpg"/>
+						<Image id="2.3" url="thumbs/PdH_Women_2_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="2" url="/small/PdH_Women_2_small.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[36-42]]></us_en>
+				</Sizes>
+				<Descriptions>
+					<us_en><![CDATA[Embroidered full mink skirt]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Silk]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Shirt">
+			<Product gender="Women" id="3" color="Mink" us_price="249">
+				<Media>
+					<VideoThumb id="3" url="thumbs/PdH_Women_3.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="3.1" url="thumbs/PdH_Women_3_1.jpg"/>
+						<Image id="3.2" url="thumbs/PdH_Women_3_2.jpg"/>
+						<Image id="3.3" url="thumbs/PdH_Women_3_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="3" url="/small/PdH_Women_3_small.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38-44]]></us_en>
+				</Sizes>
+				<Descriptions>
+					<us_en><![CDATA[Sleeveless top with mink gathered]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Silk]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sandals">
+			<Product gender="Women" id="4" color="Black" us_price="241">
+				<Media>
+					<VideoThumb id="4" url="thumbs/PdH_Women_4.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="4.1" url="thumbs/PdH_Women_4_1.jpg"/>
+						<Image id="4.2" url="thumbs/PdH_Women_4_2.jpg"/>
+						<Image id="4.3" url="thumbs/PdH_Women_4_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="4" url="/small/PdH_Women_4_small.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38-41]]></us_en>
+				</Sizes>
+				<Descriptions>
+					<us_en><![CDATA[Suede heel sandal with metalic bands]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Suede]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Purse">
+			<Product gender="Women" id="5" color="Strawberry" us_price="417">
+				<Media>
+					<VideoThumb id="5" url="thumbs/PdH_Women_5.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="5.1" url="thumbs/PdH_Women_5_1.jpg"/>
+						<Image id="5.2" url="thumbs/PdH_Women_5_2.jpg"/>
+						<Image id="5.3" url="thumbs/PdH_Women_5_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="5" url="/small/PdH_Women_5_small.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[NA]]></us_en>
+				</Sizes>
+				<Descriptions>
+					<us_en><![CDATA[Shopping purse with strawberry patent leather]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[70% cotton 30% cow leather]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Dress">
+			<Product gender="Women" id="6" color="Black" us_price="373">
+				<Media>
+					<VideoThumb id="6" url="thumbs/PdH_Women_6.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="6.1" url="thumbs/PdH_Women_6_1.jpg"/>
+						<Image id="6.2" url="thumbs/PdH_Women_6_2.jpg"/>
+						<Image id="6.3" url="thumbs/PdH_Women_6_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="6" url="/small/PdH_Women_6_small.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38-44]]></us_en>
+				</Sizes>
+				<Descriptions>
+					<us_en><![CDATA[Black mexican dress]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[61% (poliuretano) 26% polyester 13% (viscosa)]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sandals">
+			<Product gender="Women" id="7" color="Green" us_price="241">
+				<Media>
+					<VideoThumb id="7" url="thumbs/PdH_Women_7.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="7.1" url="thumbs/PdH_Women_7_1.jpg"/>
+						<Image id="7.2" url="thumbs/PdH_Women_7_2.jpg"/>
+						<Image id="7.3" url="thumbs/PdH_Women_7_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="7" url="/small/PdH_Women_7_small.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38-41]]></us_en>
+				</Sizes>
+				<Descriptions>
+					<us_en><![CDATA[Suede heel sandal with metalic bands]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Suede]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Purse">
+			<Product gender="Women" id="8" color="Mustard" us_price="100">
+				<Media>
+					<VideoThumb id="8" url="thumbs/PdH_Women_8.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="8.1" url="thumbs/PdH_Women_8_1.jpg"/>
+						<Image id="8.2" url="thumbs/PdH_Women_8_2.jpg"/>
+						<Image id="8.3" url="thumbs/PdH_Women_8_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="8" url="/small/PdH_Women_8_small.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[NA]]></us_en>
+				</Sizes>
+				<Descriptions>
+					<us_en><![CDATA[Mini-flown purse with plastic canvas and gathered logo]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[25 cow leather, 30% cotton, 30% linen 15% (poliuretano)]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Pants">
+			<Product gender="Women" id="9" color="Tile" us_price="176">
+				<Media>
+					<VideoThumb id="9" url="thumbs/PdH_Women_9.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="9.1" url="thumbs/PdH_Women_9_1.jpg"/>
+						<Image id="9.2" url="thumbs/PdH_Women_9_2.jpg"/>
+						<Image id="9.3" url="thumbs/PdH_Women_9_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="9" url="/small/PdH_Women_9_small.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38-44]]></us_en>
+				</Sizes>
+				<Descriptions>
+					<us_en><![CDATA[Tile (plastic) pants]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Blouse">
+			<Product gender="Women" id="10" color="TBD" us_price="200">
+				<Media>
+					<VideoThumb id="10" url="thumbs/PdH_Women_10.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="10.1" url="thumbs/PdH_Women_10_1.jpg"/>
+						<Image id="10.2" url="thumbs/PdH_Women_10_2.jpg"/>
+						<Image id="10.3" url="thumbs/PdH_Women_10_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="10" url="/small/PdH_Women_10_small.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[TBD]]></us_en>
+				</Sizes>
+				<Descriptions>
+					<us_en><![CDATA[Blouse (unidentified)]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[TBD]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Sandals">
+			<Product gender="Women" id="11" color="Yellow" us_price="241">
+				<Media>
+					<VideoThumb id="11" url="thumbs/PdH_Women_11.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="11.1" url="thumbs/PdH_Women_11_1.jpg"/>
+						<Image id="11.2" url="thumbs/PdH_Women_11_2.jpg"/>
+						<Image id="11.3" url="thumbs/PdH_Women_11_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="11" url="/small/PdH_Women_11_small.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38-41]]></us_en>
+				</Sizes>
+				<Descriptions>
+					<us_en><![CDATA[Suede heel sandal with metalic bands]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Suede]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Dress">
+			<Product gender="Women" id="12" color="Tile" us_price="366">
+				<Media>
+					<VideoThumb id="12" url="thumbs/PdH_Women_12.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="12.1" url="thumbs/PdH_Women_12_1.jpg"/>
+						<Image id="12.2" url="thumbs/PdH_Women_12_2.jpg"/>
+						<Image id="12.3" url="thumbs/PdH_Women_12_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="12" url="/small/PdH_Women_12_small.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38-44]]></us_en>
+				</Sizes>
+				<Descriptions>
+					<us_en><![CDATA[Tile flying dress]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[100% Silk]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Clogs">
+			<Product gender="Women" id="13" color="Mustard" us_price="227">
+				<Media>
+					<VideoThumb id="13" url="thumbs/PdH_Women_13.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="13.1" url="thumbs/PdH_Women_13_1.jpg"/>
+						<Image id="13.2" url="thumbs/PdH_Women_13_2.jpg"/>
+						<Image id="13.3" url="thumbs/PdH_Women_13_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="13" url="/small/PdH_Women_13_small.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38-41]]></us_en>
+				</Sizes>
+				<Descriptions>
+					<us_en><![CDATA[Heel wood clog]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[83% PVC 11% polyester 6% cotton]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+		<ProductGroup id="Blouse">
+			<Product gender="Women" id="14" color="Black" us_price="241">
+				<Media>
+					<VideoThumb id="14" url="thumbs/PdH_Women_14.jpg"/>
+					<MoreInfoThumbs>
+						<Image id="14.1" url="thumbs/PdH_Women_14_1.jpg"/>
+						<Image id="14.2" url="thumbs/PdH_Women_14_2.jpg"/>
+						<Image id="14.3" url="thumbs/PdH_Women_14_3.jpg"/>
+					</MoreInfoThumbs>
+					<Video id="14" url="/small/PdH_Women_14_small.wmv"/>
+				</Media>
+				<Sizes>
+					<us_en><![CDATA[38-44]]></us_en>
+				</Sizes>
+				<Descriptions>
+					<us_en><![CDATA[Black banalia blouse]]></us_en>
+				</Descriptions>
+				<Compositions>
+					<us_en><![CDATA[76% cotton 19% poliamid 5% elastanid]]></us_en>
+				</Compositions>
+			</Product>
+		</ProductGroup>
+    <ProductGroup id="Pants">
+      <Product gender="Women" id="15" color="Black" us_price="198">
+        <Media>
+          <VideoThumb id="15" url="thumbs/PdH_Women_15.jpg"/>
+          <MoreInfoThumbs>
+            <Image id="15.1" url="thumbs/PdH_Women_15_1.jpg"/>
+            <Image id="15.2" url="thumbs/PdH_Women_15_2.jpg"/>
+            <Image id="15.3" url="thumbs/PdH_Women_15_3.jpg"/>
+          </MoreInfoThumbs>
+          <Video id="15" url="/small/PdH_Women_15_small.wmv"/>
+        </Media>
+        <Sizes>
+          <us_en><![CDATA[38-44]]></us_en>
+        </Sizes>
+        <Descriptions>
+          <us_en><![CDATA[Black banalia pants]]></us_en>
+        </Descriptions>
+        <Compositions>
+          <us_en><![CDATA[76% cotton 19% poliamid 5% elastanid]]></us_en>
+        </Compositions>
+      </Product>
+    </ProductGroup>
+    <ProductGroup id="PantsDuplicate">
+      <Product gender="Women" id="15" color="Black" us_price="198">
+        <Media>
+          <VideoThumb id="15" url="thumbs/PdH_Women_15.jpg"/>
+          <MoreInfoThumbs>
+            <Image id="15.1" url="thumbs/PdH_Women_15_1.jpg"/>
+            <Image id="15.2" url="thumbs/PdH_Women_15_2.jpg"/>
+            <Image id="15.3" url="thumbs/PdH_Women_15_3.jpg"/>
+          </MoreInfoThumbs>
+          <Video id="15" url="/small/PdH_Women_15_small.wmv"/>
+        </Media>
+        <Sizes>
+          <us_en><![CDATA[38-44]]></us_en>
+        </Sizes>
+        <Descriptions>
+          <us_en><![CDATA[Black banalia pants]]></us_en>
+        </Descriptions>
+        <Compositions>
+          <us_en><![CDATA[76% cotton 19% poliamid 5% elastanid]]></us_en>
+        </Compositions>
+      </Product>
+    </ProductGroup>
+  </Brand>
+</StoreData>

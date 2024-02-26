@@ -1,0 +1,288 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EAAC6103-0712-49CF-9E51-097B50E8FCAE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VisitPlanner</RootNamespace>
+    <AssemblyName>VisitPlanner</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SERVER_SIDE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;SERVER_SIDE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AntiXSSLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22fcbaca00f1b3ee, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\AntiXSSLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Resource Include="images\bg_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientBin\VESilverlight.dll" />
+    <Content Include="ClientBin\VESilverlight.pdb" />
+    <Content Include="Default.aspx" />
+    <Content Include="images\food.png" />
+    <Content Include="images\movie.png" />
+    <Content Include="images\music.png" />
+    <Content Include="images\other.png" />
+    <Content Include="images\separator.png" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\VESilverlight\Attraction.cs">
+      <Link>Attraction.cs</Link>
+    </Compile>
+    <Compile Include="DrivingDirections.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrivingDirections.aspx.designer.cs">
+      <DependentUpon>DrivingDirections.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintAttraction.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrintAttraction.aspx.designer.cs">
+      <DependentUpon>PrintAttraction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Share.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share.aspx.designer.cs">
+      <DependentUpon>Share.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisitPlannerMaster.master.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisitPlannerMaster.master.designer.cs">
+      <DependentUpon>VisitPlannerMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="webauth-handler.aspx.cs">
+      <DependentUpon>webauth-handler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WindowsLiveLogin.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Secondary\PopupItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Secondary\FloatingPin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Secondary\TourControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Primary\Page.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Secondary\TourItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\AddToMyDay.png" />
+    <Content Include="images\Directions.png" />
+    <Content Include="images\Mail.png" />
+    <Content Include="images\Print.png" />
+    <Content Include="images\Video.png" />
+    <Content Include="script\VisitPlanner.js" />
+    <Content Include="style\VisitPlanner.css" />
+    <Content Include="webauth-handler.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VisitPlanner_BusinessObjects\VisitPlanner.BusinessObjects.csproj">
+      <Project>{1A831118-6C7D-4D69-84CC-904EEE67197E}</Project>
+      <Name>VisitPlanner.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VisitPlanner_Business\VisitPlanner.Business.csproj">
+      <Project>{F77DE7E7-6E3F-4D2E-8B7F-71E6469EF099}</Project>
+      <Name>VisitPlanner.Business</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="script\Silverlight.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\hotel_sym_yellow.png" />
+    <Content Include="images\panelCorner.png" />
+    <Content Include="images\PlacesButtonNotSelected.png" />
+    <Content Include="images\SearchButtonNotSelected.png" />
+    <Content Include="images\Status_Offline.png" />
+    <Content Include="images\Status_Online.png" />
+    <Content Include="PrintAttraction.aspx" />
+    <Content Include="Share.aspx" />
+    <Content Include="VisitPlannerMaster.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\ConciergeButtonNotSelected.jpg" />
+    <Content Include="images\Main_Logo.jpg" />
+    <Content Include="images\PlacesButtonSelected.jpg" />
+    <Content Include="images\SearchButtonSelected.jpg" />
+    <Content Include="Secondary\PlaceListHover.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Channel.htm" />
+    <Content Include="images\Btn_PushPin_searchSaved.png" />
+    <Content Include="images\Btn_Directions.png" />
+    <Content Include="images\Btn_Directions_on.png" />
+    <Content Include="images\Btn_Get_Directions.png" />
+    <Content Include="images\Btn_Get_Directions_over.png" />
+    <Content Include="images\Btn_PushPin.png" />
+    <Content Include="images\Btn_PushPin_saved.png" />
+    <Content Include="images\ConciergeButtonSelected.png" />
+    <Content Include="View.aspx" />
+    <Content Include="Secondary\AttractionDropBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\food.png" />
+    <Content Include="images\movie.png" />
+    <Content Include="images\music.png" />
+    <Content Include="images\other.png" />
+    <Content Include="images\Btn_searchFind.png" />
+    <Content Include="images\Btn_searchFind_On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Secondary\DirectionsButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DemoImages\90A2853B6CFBCC2AFC987BB18B832.jpg" />
+    <Content Include="DemoImages\angelofwater.jpg" />
+    <Content Include="DemoImages\anmh.jpg" />
+    <Content Include="DemoImages\another-shark.jpg" />
+    <Content Include="DemoImages\birdland.jpg" />
+    <Content Include="DrivingDirections.aspx" />
+    <Content Include="DemoImages\emp.jpg" />
+    <Content Include="DemoImages\entrance.jpg" />
+    <Content Include="GenericErrorPage.htm" />
+    <Content Include="images\Btn_PushPin_Faded.png" />
+    <Content Include="images\Btn_PushPin_search.png" />
+    <Content Include="images\DIVIDER.png" />
+    <Content Include="images\header.png" />
+    <Content Include="images\homeLocation.png" />
+    <Content Include="images\location_flower.png" />
+    <Content Include="images\logo_main.png" />
+    <Content Include="images\minus.png" />
+    <Content Include="images\plus.png" />
+    <Content Include="DemoImages\jonesspa.jpg" />
+    <Content Include="DemoImages\pinkdoor.gif" />
+    <Content Include="DemoImages\pinkdoor.JPG" />
+    <Content Include="Secondary\DirectionsDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DemoImages\spaceneedle.gif" />
+    <Content Include="DemoImages\spaceneedle.JPG" />
+    <Content Include="DemoImages\speedway.wmv" />
+    <Content Include="DemoImages\star-trek-experience.jpg" />
+    <Content Include="DemoImages\statueliberty.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63046</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/VisitPlanner</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <ProjectOutputReferences>
+            <Ref Project="{3146B2AB-3235-4A9A-898C-3010E1FC5565}" Folder="" />
+          </ProjectOutputReferences>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

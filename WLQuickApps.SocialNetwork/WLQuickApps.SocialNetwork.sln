@@ -1,0 +1,163 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{855ABA97-FBBD-426C-9A8D-E7571182FB20}"
+	ProjectSection(SolutionItems) = preProject
+		cibuild.testrunconfig = cibuild.testrunconfig
+		localtestrun.testrunconfig = localtestrun.testrunconfig
+		Readme.txt = Readme.txt
+		teambuild.testrunconfig = teambuild.testrunconfig
+		WLQuickApps.SocialNetwork.snk = WLQuickApps.SocialNetwork.snk
+		WLQuickApps.SocialNetwork.vsmdi = WLQuickApps.SocialNetwork.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WLQuickApps.SocialNetwork.Business", "WLQuickApps.SocialNetwork.Business\WLQuickApps.SocialNetwork.Business.csproj", "{B64941B4-2AAE-4646-A5B5-D6D4E75224D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WLQuickApps.SocialNetwork.Data", "WLQuickApps.SocialNetwork.Data\WLQuickApps.SocialNetwork.Data.csproj", "{BE1A09DF-677B-4046-9053-F356E134D691}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WLQuickApps.SocialNetwork.TestSuite", "WLQuickApps.SocialNetwork.TestSuite\WLQuickApps.SocialNetwork.TestSuite.csproj", "{4FEB1156-8165-4163-A933-8114D9C43252}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WLQuickApps.SocialNetwork.VideoProcessorService", "WLQuickApps.SocialNetwork.VideoProcessorService\WLQuickApps.SocialNetwork.VideoProcessorService.csproj", "{2965A431-BFD7-491D-8606-4918B038E3BE}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WLQuickApps.SocialNetwork.WebSite", "WLQuickApps.SocialNetwork.WebSite", "{CC47CBED-D973-43F4-B9AE-E17F71AB818E}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFramework = "3.5"
+		ProjectReferences = "{B64941B4-2AAE-4646-A5B5-D6D4E75224D5}|WLQuickApps.SocialNetwork.Business.dll;{BE1A09DF-677B-4046-9053-F356E134D691}|WLQuickApps.SocialNetwork.Data.dll;{582C1671-18E4-4D27-8034-7FDF869FC486}|WindowsLiveLogin.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/WLQuickApps.SocialNetwork.WebSite"
+		Debug.AspNetCompiler.PhysicalPath = "WLQuickApps.SocialNetwork.WebSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WLQuickApps.SocialNetwork.WebSite\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WLQuickApps.SocialNetwork.WebSite"
+		Release.AspNetCompiler.PhysicalPath = "WLQuickApps.SocialNetwork.WebSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WLQuickApps.SocialNetwork.WebSite\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50008"
+		VWDDynamicPort = "false"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database Scripts", "Database Scripts", "{16D272E8-3E10-4FEB-B493-DD53E648D7E8}"
+	ProjectSection(SolutionItems) = preProject
+		AddPhotoAPICapabilities.sql = AddPhotoAPICapabilities.sql
+		Migration5_6.0.sql = Migration5_6.0.sql
+		SocialNetwork_All_Up.sql = SocialNetwork_All_Up.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsLiveLogin", "WindowsLiveLogin\WindowsLiveLogin.csproj", "{582C1671-18E4-4D27-8034-7FDF869FC486}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs04.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WLQuickApps.SocialNetwork.Business\\WLQuickApps.SocialNetwork.Business.csproj
+		SccProjectName1 = WLQuickApps.SocialNetwork.Business
+		SccLocalPath1 = WLQuickApps.SocialNetwork.Business
+		SccProjectUniqueName2 = WLQuickApps.SocialNetwork.Data\\WLQuickApps.SocialNetwork.Data.csproj
+		SccProjectName2 = WLQuickApps.SocialNetwork.Data
+		SccLocalPath2 = WLQuickApps.SocialNetwork.Data
+		SccProjectUniqueName3 = WLQuickApps.SocialNetwork.TestSuite\\WLQuickApps.SocialNetwork.TestSuite.csproj
+		SccProjectName3 = WLQuickApps.SocialNetwork.TestSuite
+		SccLocalPath3 = WLQuickApps.SocialNetwork.TestSuite
+		SccProjectUniqueName4 = WLQuickApps.SocialNetwork.VideoProcessorService\\WLQuickApps.SocialNetwork.VideoProcessorService.csproj
+		SccProjectName4 = WLQuickApps.SocialNetwork.VideoProcessorService
+		SccLocalPath4 = WLQuickApps.SocialNetwork.VideoProcessorService
+		SccWebProject5 = true
+		SccProjectUniqueName5 = WLQuickApps.SocialNetwork.WebSite
+		SccProjectName5 = WLQuickApps.SocialNetwork.WebSite
+		SccLocalPath5 = WLQuickApps.SocialNetwork.WebSite
+		SccProjectEnlistmentChoice5 = 2
+		SccProjectUniqueName6 = WindowsLiveLogin\\WindowsLiveLogin.csproj
+		SccProjectName6 = WindowsLiveLogin
+		SccLocalPath6 = WindowsLiveLogin
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = WLQuickApps.SocialNetwork.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B64941B4-2AAE-4646-A5B5-D6D4E75224D5}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{B64941B4-2AAE-4646-A5B5-D6D4E75224D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B64941B4-2AAE-4646-A5B5-D6D4E75224D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B64941B4-2AAE-4646-A5B5-D6D4E75224D5}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B64941B4-2AAE-4646-A5B5-D6D4E75224D5}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B64941B4-2AAE-4646-A5B5-D6D4E75224D5}.Release|.NET.ActiveCfg = Release|Any CPU
+		{B64941B4-2AAE-4646-A5B5-D6D4E75224D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B64941B4-2AAE-4646-A5B5-D6D4E75224D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B64941B4-2AAE-4646-A5B5-D6D4E75224D5}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B64941B4-2AAE-4646-A5B5-D6D4E75224D5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{BE1A09DF-677B-4046-9053-F356E134D691}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{BE1A09DF-677B-4046-9053-F356E134D691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE1A09DF-677B-4046-9053-F356E134D691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE1A09DF-677B-4046-9053-F356E134D691}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{BE1A09DF-677B-4046-9053-F356E134D691}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{BE1A09DF-677B-4046-9053-F356E134D691}.Release|.NET.ActiveCfg = Release|Any CPU
+		{BE1A09DF-677B-4046-9053-F356E134D691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE1A09DF-677B-4046-9053-F356E134D691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE1A09DF-677B-4046-9053-F356E134D691}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{BE1A09DF-677B-4046-9053-F356E134D691}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4FEB1156-8165-4163-A933-8114D9C43252}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{4FEB1156-8165-4163-A933-8114D9C43252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FEB1156-8165-4163-A933-8114D9C43252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FEB1156-8165-4163-A933-8114D9C43252}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4FEB1156-8165-4163-A933-8114D9C43252}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4FEB1156-8165-4163-A933-8114D9C43252}.Release|.NET.ActiveCfg = Release|Any CPU
+		{4FEB1156-8165-4163-A933-8114D9C43252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FEB1156-8165-4163-A933-8114D9C43252}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FEB1156-8165-4163-A933-8114D9C43252}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4FEB1156-8165-4163-A933-8114D9C43252}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2965A431-BFD7-491D-8606-4918B038E3BE}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{2965A431-BFD7-491D-8606-4918B038E3BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2965A431-BFD7-491D-8606-4918B038E3BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2965A431-BFD7-491D-8606-4918B038E3BE}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2965A431-BFD7-491D-8606-4918B038E3BE}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2965A431-BFD7-491D-8606-4918B038E3BE}.Release|.NET.ActiveCfg = Release|Any CPU
+		{2965A431-BFD7-491D-8606-4918B038E3BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2965A431-BFD7-491D-8606-4918B038E3BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2965A431-BFD7-491D-8606-4918B038E3BE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2965A431-BFD7-491D-8606-4918B038E3BE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{CC47CBED-D973-43F4-B9AE-E17F71AB818E}.Debug|.NET.ActiveCfg = Debug|.NET
+		{CC47CBED-D973-43F4-B9AE-E17F71AB818E}.Debug|.NET.Build.0 = Debug|.NET
+		{CC47CBED-D973-43F4-B9AE-E17F71AB818E}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{CC47CBED-D973-43F4-B9AE-E17F71AB818E}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{CC47CBED-D973-43F4-B9AE-E17F71AB818E}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{CC47CBED-D973-43F4-B9AE-E17F71AB818E}.Release|.NET.ActiveCfg = Debug|.NET
+		{CC47CBED-D973-43F4-B9AE-E17F71AB818E}.Release|.NET.Build.0 = Debug|.NET
+		{CC47CBED-D973-43F4-B9AE-E17F71AB818E}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{CC47CBED-D973-43F4-B9AE-E17F71AB818E}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{CC47CBED-D973-43F4-B9AE-E17F71AB818E}.Release|Mixed Platforms.Build.0 = Debug|.NET
+		{582C1671-18E4-4D27-8034-7FDF869FC486}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{582C1671-18E4-4D27-8034-7FDF869FC486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{582C1671-18E4-4D27-8034-7FDF869FC486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{582C1671-18E4-4D27-8034-7FDF869FC486}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{582C1671-18E4-4D27-8034-7FDF869FC486}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{582C1671-18E4-4D27-8034-7FDF869FC486}.Release|.NET.ActiveCfg = Release|Any CPU
+		{582C1671-18E4-4D27-8034-7FDF869FC486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{582C1671-18E4-4D27-8034-7FDF869FC486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{582C1671-18E4-4D27-8034-7FDF869FC486}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{582C1671-18E4-4D27-8034-7FDF869FC486}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{16D272E8-3E10-4FEB-B493-DD53E648D7E8} = {855ABA97-FBBD-426C-9A8D-E7571182FB20}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="VESilverlight.MainPage"
+    xmlns="http://schemas.microsoft.com/client/2007" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:VESilverlight="clr-namespace:VESilverlight;assembly=VESilverlight"
+	xmlns:Primary="clr-namespace:VESilverlight.Primary;assembly=VESilverlight"
+    xmlns:Secondary="clr-namespace:VESilverlight.Secondary;assembly=VESilverlight">
+    <Canvas x:Name="LayoutRoot">
+        <Primary:Page></Primary:Page>
+        <Secondary:TourControl Width="757" Height="42" Canvas.Top="-500" Canvas.Left="22"></Secondary:TourControl>
+        <Secondary:TourItem Canvas.Top="-500" Canvas.Left="-500"></Secondary:TourItem>
+        <Secondary:PopupItem Canvas.Top="-500"></Secondary:PopupItem>
+        <Secondary:FloatingPin></Secondary:FloatingPin>
+        <Secondary:PlaceListHover Canvas.Top="-500" Canvas.Left="-500" Width="284" Height="50"></Secondary:PlaceListHover>
+        <Secondary:AttractionDropBox Canvas.Top="-500" Canvas.Left="-500" Width="87" Height="75"></Secondary:AttractionDropBox>
+        <Secondary:DirectionsButton Canvas.Top="103" Canvas.Left="588" Width="190" Height="36"></Secondary:DirectionsButton>
+        <Secondary:DirectionsDialog Canvas.Top="103" Canvas.Left="588" Width="190" Height="330"></Secondary:DirectionsDialog>
+    </Canvas>
+</UserControl>

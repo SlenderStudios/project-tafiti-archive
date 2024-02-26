@@ -1,0 +1,243 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E5EF12E7-8DC7-4587-A5C1-0979D43A2EE2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ContosoUniversity.LiveFX</RootNamespace>
+    <AssemblyName>ContosoUniversity.LiveFX</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AntiXssLibrary, Version=1.5.0.0, Culture=neutral, PublicKeyToken=5906d2bb3d8a12c4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\songhaitao\Desktop\新建文件夹\AntiXssLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\Encryption.cs" />
+    <Compile Include="Classes\HtmlProcessor.cs" />
+    <Compile Include="Classes\LiveContacts.cs" />
+    <Compile Include="Classes\WindowsLiveLogin.cs" />
+    <Compile Include="LiveContactsService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\Location.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsStory.aspx.cs">
+      <DependentUpon>NewsStory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsStory.aspx.designer.cs">
+      <DependentUpon>NewsStory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process.aspx.cs">
+      <DependentUpon>Process.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process.aspx.designer.cs">
+      <DependentUpon>Process.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\ContactsControl.ascx.cs">
+      <DependentUpon>ContactsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ContactsControl.ascx.designer.cs">
+      <DependentUpon>ContactsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\EventsControl.ascx.cs">
+      <DependentUpon>EventsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\EventsControl.ascx.designer.cs">
+      <DependentUpon>EventsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FeaturedSpacesControl.ascx.cs">
+      <DependentUpon>FeaturedSpacesControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\FeaturedSpacesControl.ascx.designer.cs">
+      <DependentUpon>FeaturedSpacesControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LatestNewsControl.ascx.cs">
+      <DependentUpon>LatestNewsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\LatestNewsControl.ascx.designer.cs">
+      <DependentUpon>LatestNewsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LiveSearch.ascx.cs">
+      <DependentUpon>LiveSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\LiveSearch.ascx.designer.cs">
+      <DependentUpon>LiveSearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PromotionalPhotoControl.ascx.cs">
+      <DependentUpon>PromotionalPhotoControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PromotionalPhotoControl.ascx.designer.cs">
+      <DependentUpon>PromotionalPhotoControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WhereAreTheyNow.aspx.cs">
+      <DependentUpon>WhereAreTheyNow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WhereAreTheyNow.aspx.designer.cs">
+      <DependentUpon>WhereAreTheyNow.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin.aspx" />
+    <Content Include="App_Themes\Default\images\arrow_off.gif" />
+    <Content Include="App_Themes\Default\images\arrow_on.gif" />
+    <Content Include="App_Themes\Default\images\blank-roommate.jpg" />
+    <Content Include="App_Themes\Default\images\contoso_uni_bg.jpg" />
+    <Content Include="App_Themes\Default\images\cu_bg_scaling.gif" />
+    <Content Include="App_Themes\Default\images\cu_logo.png" />
+    <Content Include="App_Themes\Default\images\cu_logo_background.jpg" />
+    <Content Include="App_Themes\Default\images\delicious.gif" />
+    <Content Include="App_Themes\Default\images\digg-guy-icon.gif" />
+    <Content Include="App_Themes\Default\images\fav.gif" />
+    <Content Include="App_Themes\Default\images\featuredspaces_off.gif" />
+    <Content Include="App_Themes\Default\images\featuredspaces_on.gif" />
+    <Content Include="App_Themes\Default\images\go_off.gif" />
+    <Content Include="App_Themes\Default\images\im_icon.gif" />
+    <Content Include="App_Themes\Default\images\location_icon.gif" />
+    <Content Include="App_Themes\Default\images\location_map_icon.gif" />
+    <Content Include="App_Themes\Default\images\logo.jpg" />
+    <Content Include="App_Themes\Default\images\mail_icon.gif" />
+    <Content Include="App_Themes\Default\images\message_icon.gif" />
+    <Content Include="App_Themes\Default\images\news_overlay.jpg" />
+    <Content Include="App_Themes\Default\images\watn.jpg" />
+    <Content Include="App_Themes\Default\images\watn_button_off.png" />
+    <Content Include="App_Themes\Default\images\watn_button_on.png" />
+    <Content Include="App_Themes\Default\StyleSheet.css" />
+    <Content Include="App_Themes\TextOnly\StyleSheet.css" />
+    <Content Include="DEMO.txt" />
+    <Content Include="js\Cookies.js" />
+    <Content Include="js\Default.js" />
+    <Content Include="js\Map.js" />
+    <Content Include="LICENSE.txt" />
+    <Content Include="LiveContactsService.asmx" />
+    <Content Include="Privacy.htm" />
+    <Content Include="README.txt" />
+    <Content Include="TextOnly.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Default\images\alerts_button.gif" />
+    <Content Include="App_Themes\Default\images\alert_signup_eng.gif" />
+    <Content Include="Default.aspx" />
+    <Content Include="NewsStory.aspx" />
+    <Content Include="player.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Process.aspx" />
+    <Content Include="UserControls\ContactsControl.ascx" />
+    <Content Include="UserControls\EventsControl.ascx" />
+    <Content Include="UserControls\FeaturedSpacesControl.ascx" />
+    <Content Include="UserControls\LatestNewsControl.ascx" />
+    <Content Include="UserControls\LiveSearch.ascx" />
+    <Content Include="UserControls\PromotionalPhotoControl.ascx" />
+    <Content Include="WhereAreTheyNow.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- TODO
+Commented by ALOGAN because this tag breaks VS2005
+
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+-->
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>80</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,150 @@
+﻿/* General HTML elements */
+h1,h2 {background:url(../images/ie6/h1.gif) no-repeat right center;}
+h1.Medium,h2.Medium {background:url(../images/ie6/h1Med.gif) no-repeat right center;}
+h1.Large,h2.Large {background:url(../images/ie6/h1Large.gif) no-repeat right center;}
+ul {list-style-image:url(../Images/ie6/Bullet.gif)}
+ 
+/* SiteLayout */
+.SiteHeader {background:url(../Images/ie6/Header.gif);}
+.SiteContent {background:url(../Images/ie6/ContentRepeat.gif) repeat-y;}
+.SiteFooter {background:url(../Images/ie6/Footer.gif);}
+
+/* SiteLayout */
+.SiteWrapper {width:1002px;}
+.ContentPane {margin-left:0px;margin-right:0px;padding-left:30px;padding-right:20px;overflow:hidden}
+
+/* Side Panel */
+.SidePanelItem .ItemHeader {background:url(../Images/ie6/SidePanelSprite.gif) no-repeat 0px -83px;}
+.SidePanelItem .ItemContent {background:url(../Images/ie6/SidePanelRepeat.gif);}
+.SidePanelItem .ItemFooter {background:url(../Images/ie6/SidePanelSprite.gif) no-repeat 0px -139px;;}
+.SidePanelAboutUs {background:url(../Images/ie6/AboutUs.gif);}
+.HostLogo {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/Contoso.png', sizingMethod='image');}
+
+.ContactsHeader {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/ie6/Contacts.png', sizingMethod='image');}
+.QuickLinksHeader {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/ie6/QuickLinks.png', sizingMethod='image');}
+.AdvisorsHeader {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/ie6/Advisors.png', sizingMethod='image');}
+.VideoHeader {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/ie6/Videos.png', sizingMethod='image');}
+
+/* Command Buttons */
+.CommandButton {background:url(../Images/ie6/Button.gif);}
+.CommandButtonMedium {background:url(../Images/ie6/ButtonSmaller.gif);}
+.CommandButtonSmall {background:url(../Images/ie6/ButtonSmallest.gif);}
+
+/* Contact Panel */
+.LiveSpaceButton {background:url(../Images/ie6/LiveSpaceLink.gif);}
+
+/* Videos */
+.VideoFrame {background:url(../Images/ie6/VideoFrame.gif) no-repeat 40px 0px;}
+.VideoRatingBorder {background:url(../Images/ie6/RatingsFrame.gif);}
+.VideoDataList .AspNet-DataList tr {background:url(../Images/ie6/ItemPanel.gif);}
+
+/* Forum Highlights */
+.ForumSummary {background:url(../Images/ie6/LatestForumPostsBackground.gif) no-repeat 170px 5px;}
+.ForumSummaryItem {background:url(../Images/ie6/ForumSummaryItem.gif);}
+
+/* Forum Highlights */
+.ForumSummary {overflow:hidden}
+
+/* Map Common */
+.mapdashboardHandle {background:url(../Images/ie6/MapDashBoardHeaderBack.gif);}
+.mapdashboardSubTitle {background:url(../Images/ie6/MapDashBoardHeaderBack.gif);}
+.mymapdashboard .MapAction {background:url(../Images/ie6/ToggleOff.gif) no-repeat 60px 3px;}
+.mymapdashboard .MapActionEnabled {background:url(../Images/ie6/ToggleOn.gif) no-repeat 60px 3px;}
+.mymapdashboard .MapActionDisbaled {background:url(../Images/ie6/ToggleOff.gif) no-repeat 60px 3px;}
+.MapZoomBar .ZoomIn {background:url(../Images/ie6/ZoomIn.gif);}
+.MapZoomBar .ZoomBar {background:url(../Images/ie6/ZoomBar.gif);}
+.MapZoomBar .ZoomOut {background:url(../Images/ie6/ZoomOut.gif);}
+.mymapdashboard {filter:alpha(opacity=100)}
+
+/* Home Map */
+.HomeMapFrame {background:url(../Images/ie6/MapFrame.gif);}
+
+/* Home Map Pins */
+.MemberPinSmall {margin-top:0px;top:-52px;position:absolute;background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/Pins/MemberPinSmall.png', sizingMethod='image');}
+.MemberPinMedium {margin-top:0px;top:-88px;position:absolute;background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/Pins/MemberPinMedium.png', sizingMethod='image');}
+.MemberPinLarge {margin-top:0px;top:-120px;position:absolute;background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/Pins/MemberPinLarge.png', sizingMethod='image');}
+.ATMPinSmall {margin-top:0px;top:-54px;position:absolute;background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/Pins/ATMPinSmall.png', sizingMethod='image');}
+.ATMPinMedium {margin-top:0px;top:-92px;position:absolute;background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/Pins/ATMPinMedium.png', sizingMethod='image');}
+.ATMPinLarge {margin-top:0px;top:-121px;position:absolute;background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/Pins/ATMPinLarge.png', sizingMethod='image');}
+
+/* Event Pin */
+.EventPin {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/Pins/EventPin.png', sizingMethod='image');}
+
+/* Event Map */
+.EventMapFrame {background:url(../Images/ie6/MapFramePopup.gif);}
+.EventMapFrame .mymapclose {background:url(../Images/ie6/Close.gif) no-repeat center right;}
+
+/* Over ride styles for custom infobox look */
+.customInfoBox-body {background:url(../Images/ie6/InfoBox.gif);}
+.customInfoBox-shadow {background:transparent url(../Images/ie6/InfoBoxShadow.gif) no-repeat top right!important;}
+
+/* Menu */
+.AspNet-Menu-Horizontal li.AspNet-Menu-Selected {background:url(../images/ie6/MenuOver.gif) right top;}
+.AspNet-Menu-Horizontal {width:610px}
+
+/* Community */
+.ArticlesResources h2 {background:url(../images/ie6/h1.gif) no-repeat right center}
+.TagCloud h2 {background:url(../images/ie6/h1.gif) no-repeat right center}
+
+/* Articles/Resources */
+.ResourcesAccordionHeaderSelected {background:url(../images/ie6/AccordionHeaderOpen.gif);}
+.ResourcesAccordionHeader {background:url(../images/ie6/AccordionHeaderClosed.gif);}
+.ResourcesContent {background:url(../images/ie6/AccordionPanel.gif) no-repeat;}
+
+/*Generic Table*/
+.PortalRow {background:url(../Images/ie6/ItemHeaderPanel.gif) no-repeat;}
+.PortalRowAlternate {background:url(../Images/ie6/ItemHeaderPanelAlt.gif) no-repeat;}
+.PortalContent {background:nurl(../Images/ie6/ItemPanel.gif) no-repeat;}
+.PortalContentAlternate {background:url(../Images/ie6/ItemPanelAlt.gif) no-repeat;}
+
+/* Sticky Posts */
+.ForumItemHeader {background:url(../Images/ie6/ItemHeaderPanel.gif) no-repeat;}
+.ForumContent {background:url(../Images/ie6/ItemPanel.gif) no-repeat;}
+.ForumItemHeaderAlternate {background:url(../Images/ie6/ItemHeaderPanelAlt.gif) no-repeat;}
+.ForumContentAlternate {background:url(../Images/ie6/ItemPanelAlt.gif) no-repeat;}
+
+/* ProfileDisplay */
+.ProfileDisplay {background:url(../Images/ie6/AvatarBackground.gif) no-repeat 0px 20px;}
+.ProfileDisplayRating {background:url(../Images/ie6/RatingsFrame.gif) no-repeat;}
+
+/* Avatar */
+.AvatarDisplay {background:url(../Images/ie6/AvatarFrame.gif) no-repeat;}
+
+/* Events */
+.FeaturedEventHeader {background:url(../Images/ie6/ItemHeaderPanel.gif) no-repeat;}
+
+/* Tools */
+.ToolsWatermark {background:url(../Images/ie6/ToolsWatermark.gif);}
+h2.ToolPanelHeader {background:url(../images/ie6/h1.gif) no-repeat right center;}
+.BusinessSearch {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/BusinessSearch.png', sizingMethod='image');}
+.MapSearch {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/MapSearch.png', sizingMethod='image');}
+.BusinessData {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/BusinessData.png', sizingMethod='image');}
+.ToolsItemPanel {background:url(../Images/ie6/LinkGadgetWhiteBox.gif) no-repeat;}
+
+.ToolPanelTop {margin-left:5px;overflow:hidden}
+.ToolPanelMiddle {margin-left:5px;overflow:hidden}
+.ToolPanelBottom {margin-left:5px;overflow:hidden}
+.BusinesSearchItem, .MapSearchItem {width:400px;}
+.GadgetImageItem {left:-95px}
+.GadgetItemAlternate .GadgetImageItem {left:120px}
+.GadgetItem .GadgetTitleItem {margin:20px 0 0 95px}
+.GadgetDetailsItem {margin-left:95px;width:240px;}
+
+/* Calculator */
+.CalculatorIcon {left:-38px;top:-9pxbackground:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/ie6/Calc1.png', sizingMethod='image');}
+.CalculatorIconAlternate {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/ie6/Calc2.png', sizingMethod='image');}
+
+
+/* Admin */
+.StatsList {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/AdminTargets.png', sizingMethod='image');}
+.StatsGraph {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/AdminGraph.png', sizingMethod='image');}
+.TasksWorkflow {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../Images/AdminTasks.png', sizingMethod='image');}
+
+/* Rating */
+.RatingEmpty {background:url(../Images/ie6/EmptyStar.gif) no-repeat;}
+.RatingFilled {background:url(../Images/ie6/FilledStar.gif) no-repeat;}
+.RatingSaved {background:url(../Images/ie6/SavedStar.gif) no-repeat;}
+
+/*Calendar*/
+.CalendarContact {width:612px;}
+.CalendarLegend {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/CalendarLegend.png', sizingMethod='image');}

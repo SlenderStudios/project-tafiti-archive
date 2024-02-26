@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tracking>
+  
+  <!-- Example Atlas Tag -->
+  <atlas id="0" description="This is the atlas tag desc" />
+
+  <!-- Example WebTrends Tag -->
+  <webtrends id="0" 
+             description="This is the webtrends tag desc" 
+             dcsuri="/dac/machinima/video/prealpha/play" 
+             ti="Tools: Pre-Alpha Play" 
+             cg_n="Machinima"
+             customTag="DCSext.dac"
+             customTagValue="TestValue"/>
+</tracking>

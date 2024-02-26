@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TeamResults>
+  <TeamResult>
+    <ID>1</ID>
+    <Name>Fabricam</Name>
+    <Played>4</Played>
+    <Won>1</Won>
+    <Lost>1</Lost>
+    <Draw>0</Draw>
+  </TeamResult>
+  <TeamResult>
+    <ID>2</ID>
+    <Name>Blue Yonder</Name>
+    <Played>5</Played>
+    <Won>2</Won>
+    <Lost>2</Lost>
+    <Draw>1</Draw>
+  </TeamResult>
+  <TeamResult>
+    <ID>3</ID>
+    <Name>Adventure Works</Name>
+    <Played>4</Played>
+    <Won>3</Won>
+    <Lost>1</Lost>
+    <Draw>1</Draw>
+  </TeamResult>
+  <TeamResult>
+    <ID>4</ID>
+    <Name>Contoso</Name>
+    <Played>5</Played>
+    <Won>4</Won>
+    <Lost>1</Lost>
+    <Draw>0</Draw>
+  </TeamResult>
+</TeamResults>

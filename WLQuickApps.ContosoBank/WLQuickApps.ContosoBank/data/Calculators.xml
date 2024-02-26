@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Calculators>
+  <Calculator>
+    <ID>1</ID>
+    <CalculatorName>Income Tax Excelulator</CalculatorName>
+    <Description>Need to work out your income tax - &lt;a href="calculators/Loan Calculator.xlsx" target="_blank"&gt;download&lt;/a&gt; this fantastic tool absolutely free of charge!</Description>
+    <DownloadLink>/calculators/Loan Calculator.xlsx</DownloadLink>
+  </Calculator>
+  <Calculator>
+    <ID>2</ID>
+    <CalculatorName>Loan Excelulator</CalculatorName>
+    <Description>Need to work out how heavy your loan is - &lt;a href="calculators/Loan Calculator.xlsx" target="_blank"&gt;download&lt;/a&gt; this great tool absolutely free!</Description>
+    <DownloadLink>/calculators/Loan Calculator.xlsx</DownloadLink>
+  </Calculator>
+  <Calculator>
+    <ID>3</ID>
+    <CalculatorName>Depreciation Excelulator</CalculatorName>
+    <Description>Is your investment worth the paper it's written on? - &lt;a href="calculators/Loan Calculator.xlsx" target="_blank"&gt;download&lt;/a&gt; this calculator for more info.</Description>
+    <DownloadLink>/calculators/Loan Calculator.xlsx</DownloadLink>
+  </Calculator>  
+</Calculators>

@@ -1,0 +1,83 @@
+﻿<Canvas
+	xmlns="http://schemas.microsoft.com/client/2007"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:VESilverlight="clr-namespace:VESilverlight;assembly=ClientBin/VESilverlight.dll"
+	x:Name="PopupCanvas" 
+	Width="190" Height="330"
+    Loaded="Page_Loaded"
+    x:Class="VESilverlight.Secondary.DirectionsDialog;assembly=ClientBin/VESilverlight.dll"
+	Opacity="1"
+	Visibility="Visible"
+	Background="#00000000"
+	>
+	
+	<Rectangle Width="190" Height="330" Fill="#FF5a764e" Stroke="#FF5a764e" Canvas.ZIndex="-1" Opacity="0.795"/>
+	
+	<Canvas Width="123" Height="28" Canvas.Left="34" Canvas.Top="4" x:Name="directionsButton" Cursor="Hand" Opacity="1">
+	
+		<Image Width="123" Height="24" x:Name="ButtonUp" Source="images/Btn_Directions.png" />
+		<Image Width="123" Height="24" x:Name="ButtonDown" Source="images/Btn_Directions_on.png" Visibility="Collapsed" />
+	
+	</Canvas>
+	
+	<Canvas Width="96" Height="18" Canvas.Left="10" Canvas.Top="130" x:Name="getDirectionsButton" Cursor="Hand" Opacity="1">
+	
+		<Image Width="96" Height="18" x:Name="GetButtonUp" Source="images/Btn_Get_Directions.png" />
+		<Image Width="96" Height="18" x:Name="GetButtonDown" Source="images/Btn_Get_Directions_over.png" Visibility="Collapsed" />
+	
+	</Canvas>
+	
+	<Canvas Width="170" Height="19" Canvas.Left="10" Canvas.Top="45">
+	
+		<Rectangle Width="170" Height="18" Stroke="#FFEAE7B7" RadiusX="8" RadiusY="15"/>
+	
+		<TextBlock Width="41" Height="18" Text="Start:" TextWrapping="Wrap" FontFamily="Verdana" FontSize="12" Foreground="#FFEAE7B7" Canvas.Left="10" Canvas.Top="1"/>
+	
+		<TextBlock Width="112" Height="18" Text="Start:" x:Name="StartText" TextWrapping="NoWrap" FontFamily="Verdana" FontSize="11" Foreground="#FFEAE7B7" Canvas.Left="50" Canvas.Top="2">
+			<TextBlock.Clip>
+				<RectangleGeometry Rect="0,0,110,18"/>
+			</TextBlock.Clip>
+		</TextBlock>
+	
+	</Canvas>
+	
+	<Canvas Width="170" Height="19" Canvas.Left="10" Canvas.Top="85">
+	
+		<Rectangle Width="170" Height="18" Stroke="#FFEAE7B7" RadiusX="8" RadiusY="15"/>
+	
+		<TextBlock Width="41" Height="18" Text="End:" TextWrapping="Wrap" FontFamily="Verdana" FontSize="12" Foreground="#FFEAE7B7" Canvas.Left="10" Canvas.Top="1"/>
+	
+		<TextBlock Width="122" Height="18" Text="(Pick a Destination)" x:Name="EndText" TextWrapping="NoWrap" FontFamily="Verdana" FontSize="11" Foreground="#FFEAE7B7" Canvas.Left="40" Canvas.Top="2">
+			<TextBlock.Clip>
+				<RectangleGeometry Rect="0,0,120,18"/>
+			</TextBlock.Clip>
+		</TextBlock>
+	
+	</Canvas>
+	
+	<TextBlock Width="135" Height="18" Text="Get directions to:" TextWrapping="Wrap" FontFamily="Verdana" FontSize="13" Foreground="#FFEAE7B7" Canvas.Left="10" Canvas.Top="155"/>
+	
+	<Image Width="187" Height="3" Canvas.Left="1" Canvas.Top="177" Source="images/DIVIDER.png" />
+	
+	<VESilverlight:Repeater Canvas.Top="185" Canvas.Left="10" Width="170" Height="145" x:Name="Repeater"/>
+	<Path RenderTransformOrigin="0.5,0.5" Width="12" Height="12" Fill="#FFEAE7B7" Stretch="Fill" Canvas.Left="10" Canvas.Top="10.75" Data="M0,0 L12,0 0,12 z" x:Name="DownArrow1">
+		<Path.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform ScaleX="1" ScaleY="1"/>
+				<SkewTransform AngleX="0" AngleY="0"/>
+				<RotateTransform Angle="45"/>
+				<TranslateTransform X="0" Y="0"/>
+			</TransformGroup>
+		</Path.RenderTransform>
+	</Path>
+	<Path RenderTransformOrigin="0.5,0.5" Width="12" Height="12" Fill="#FFEAE7B7" Stretch="Fill" Canvas.Left="170" Canvas.Top="10.75" Data="M0,0 L12,0 0,12 z" x:Name="DownArrow2">
+		<Path.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform ScaleX="1" ScaleY="1"/>
+				<SkewTransform AngleX="0" AngleY="0"/>
+				<RotateTransform Angle="45"/>
+				<TranslateTransform X="0" Y="0"/>
+			</TransformGroup>
+		</Path.RenderTransform>
+	</Path>
+</Canvas>

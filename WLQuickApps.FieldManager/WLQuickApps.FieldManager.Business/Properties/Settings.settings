@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WLQuickApps.FieldManager.Business.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WLQuickApps_FieldManager_Business_WeatherService_ndfdXML" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.weather.gov/forecasts/xml/SOAP_server/ndfdXMLserver.php</Value>
+    </Setting>
+    <Setting Name="WLQuickApps_FieldManager_Business_LiveAlertsMessageService_MessageWebServicesService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://services.alerts.live-ppe.com/axis/services/Message</Value>
+    </Setting>
+    <Setting Name="WLQuickApps_FieldManager_Business_LiveAlertsSubscriptionService_AlertsWebServicesService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://services.alerts.live-ppe.com/axis/services/Subscription</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

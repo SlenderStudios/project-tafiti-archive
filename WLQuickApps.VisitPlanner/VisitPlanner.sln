@@ -1,0 +1,155 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitPlanner.Business", "VisitPlanner_Business\VisitPlanner.Business.csproj", "{F77DE7E7-6E3F-4D2E-8B7F-71E6469EF099}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitPlanner.BusinessObjects", "VisitPlanner_BusinessObjects\VisitPlanner.BusinessObjects.csproj", "{1A831118-6C7D-4D69-84CC-904EEE67197E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitPlanner.Data", "VisitPlanner_DAL\VisitPlanner.Data.csproj", "{CA1FE47B-F565-435B-8058-BDFF97A8F7C7}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "WS_VisitPlanner", "WS_VisitPlanner\WS_VisitPlanner.vdproj", "{18E42937-682D-47EA-9553-6B59CB0081EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database Setup", "Database Setup", "{87A1EF08-1F87-40AC-AA81-63B29235412C}"
+	ProjectSection(SolutionItems) = preProject
+		Database Setup\VisitPlannerSetup.sql = Database Setup\VisitPlannerSetup.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample Dataset", "Sample Dataset", "{A4BF6230-7354-478E-8E26-3994423B48D5}"
+	ProjectSection(SolutionItems) = preProject
+		Sample Dataset\LasVegas.xml = Sample Dataset\LasVegas.xml
+		Sample Dataset\NewYork.xml = Sample Dataset\NewYork.xml
+		Sample Dataset\Seattle.xml = Sample Dataset\Seattle.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VESilverlight", "VESilverlight\VESilverlight.csproj", "{6DB6EEE3-C9E5-4652-B03D-F011E7265627}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "VisitPlanner", "VisitPlanner", "{41349D9A-7432-4426-8DFB-A4D5CEFA099B}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFramework = "3.5"
+		ProjectReferences = "{F77DE7E7-6E3F-4D2E-8B7F-71E6469EF099}|VisitPlanner.Business.dll;{1A831118-6C7D-4D69-84CC-904EEE67197E}|VisitPlanner.BusinessObjects.dll;{CA1FE47B-F565-435B-8058-BDFF97A8F7C7}|VisitPlanner.DAL.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/VisitPlanner"
+		Debug.AspNetCompiler.PhysicalPath = "VisitPlanner\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\VisitPlanner\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/VisitPlanner"
+		Release.AspNetCompiler.PhysicalPath = "VisitPlanner\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\VisitPlanner\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "80"
+		VWDDynamicPort = "false"
+		VWDVirtualPath = "/"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs04.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = VisitPlanner_Business\\VisitPlanner.Business.csproj
+		SccProjectName1 = VisitPlanner_Business
+		SccLocalPath1 = VisitPlanner_Business
+		SccProjectUniqueName2 = VisitPlanner_BusinessObjects\\VisitPlanner.BusinessObjects.csproj
+		SccProjectName2 = VisitPlanner_BusinessObjects
+		SccLocalPath2 = VisitPlanner_BusinessObjects
+		SccProjectUniqueName3 = VisitPlanner_DAL\\VisitPlanner.Data.csproj
+		SccProjectName3 = VisitPlanner_DAL
+		SccLocalPath3 = VisitPlanner_DAL
+		SccProjectUniqueName4 = WS_VisitPlanner\\WS_VisitPlanner.vdproj
+		SccProjectName4 = WS_VisitPlanner
+		SccLocalPath4 = WS_VisitPlanner
+		SccProjectUniqueName5 = VESilverlight\\VESilverlight.csproj
+		SccProjectName5 = VESilverlight
+		SccLocalPath5 = VESilverlight
+		SccWebProject6 = true
+		SccProjectUniqueName6 = VisitPlanner
+		SccProjectName6 = VisitPlanner
+		SccLocalPath6 = VisitPlanner
+		SccProjectEnlistmentChoice6 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F77DE7E7-6E3F-4D2E-8B7F-71E6469EF099}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{F77DE7E7-6E3F-4D2E-8B7F-71E6469EF099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F77DE7E7-6E3F-4D2E-8B7F-71E6469EF099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F77DE7E7-6E3F-4D2E-8B7F-71E6469EF099}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F77DE7E7-6E3F-4D2E-8B7F-71E6469EF099}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F77DE7E7-6E3F-4D2E-8B7F-71E6469EF099}.Release|.NET.ActiveCfg = Release|Any CPU
+		{F77DE7E7-6E3F-4D2E-8B7F-71E6469EF099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F77DE7E7-6E3F-4D2E-8B7F-71E6469EF099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F77DE7E7-6E3F-4D2E-8B7F-71E6469EF099}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F77DE7E7-6E3F-4D2E-8B7F-71E6469EF099}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1A831118-6C7D-4D69-84CC-904EEE67197E}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{1A831118-6C7D-4D69-84CC-904EEE67197E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A831118-6C7D-4D69-84CC-904EEE67197E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A831118-6C7D-4D69-84CC-904EEE67197E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1A831118-6C7D-4D69-84CC-904EEE67197E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1A831118-6C7D-4D69-84CC-904EEE67197E}.Release|.NET.ActiveCfg = Release|Any CPU
+		{1A831118-6C7D-4D69-84CC-904EEE67197E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A831118-6C7D-4D69-84CC-904EEE67197E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A831118-6C7D-4D69-84CC-904EEE67197E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1A831118-6C7D-4D69-84CC-904EEE67197E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{CA1FE47B-F565-435B-8058-BDFF97A8F7C7}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{CA1FE47B-F565-435B-8058-BDFF97A8F7C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA1FE47B-F565-435B-8058-BDFF97A8F7C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA1FE47B-F565-435B-8058-BDFF97A8F7C7}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{CA1FE47B-F565-435B-8058-BDFF97A8F7C7}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{CA1FE47B-F565-435B-8058-BDFF97A8F7C7}.Release|.NET.ActiveCfg = Release|Any CPU
+		{CA1FE47B-F565-435B-8058-BDFF97A8F7C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA1FE47B-F565-435B-8058-BDFF97A8F7C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA1FE47B-F565-435B-8058-BDFF97A8F7C7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{CA1FE47B-F565-435B-8058-BDFF97A8F7C7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{18E42937-682D-47EA-9553-6B59CB0081EA}.Debug|.NET.ActiveCfg = Debug
+		{18E42937-682D-47EA-9553-6B59CB0081EA}.Debug|.NET.Build.0 = Debug
+		{18E42937-682D-47EA-9553-6B59CB0081EA}.Debug|Any CPU.ActiveCfg = Debug
+		{18E42937-682D-47EA-9553-6B59CB0081EA}.Debug|Any CPU.Build.0 = Debug
+		{18E42937-682D-47EA-9553-6B59CB0081EA}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{18E42937-682D-47EA-9553-6B59CB0081EA}.Release|.NET.ActiveCfg = Release
+		{18E42937-682D-47EA-9553-6B59CB0081EA}.Release|.NET.Build.0 = Release
+		{18E42937-682D-47EA-9553-6B59CB0081EA}.Release|Any CPU.ActiveCfg = Release
+		{18E42937-682D-47EA-9553-6B59CB0081EA}.Release|Any CPU.Build.0 = Release
+		{18E42937-682D-47EA-9553-6B59CB0081EA}.Release|Mixed Platforms.ActiveCfg = Release
+		{18E42937-682D-47EA-9553-6B59CB0081EA}.Release|Mixed Platforms.Build.0 = Release
+		{6DB6EEE3-C9E5-4652-B03D-F011E7265627}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{6DB6EEE3-C9E5-4652-B03D-F011E7265627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DB6EEE3-C9E5-4652-B03D-F011E7265627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DB6EEE3-C9E5-4652-B03D-F011E7265627}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6DB6EEE3-C9E5-4652-B03D-F011E7265627}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6DB6EEE3-C9E5-4652-B03D-F011E7265627}.Release|.NET.ActiveCfg = Release|Any CPU
+		{6DB6EEE3-C9E5-4652-B03D-F011E7265627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DB6EEE3-C9E5-4652-B03D-F011E7265627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DB6EEE3-C9E5-4652-B03D-F011E7265627}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6DB6EEE3-C9E5-4652-B03D-F011E7265627}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{41349D9A-7432-4426-8DFB-A4D5CEFA099B}.Debug|.NET.ActiveCfg = Debug|.NET
+		{41349D9A-7432-4426-8DFB-A4D5CEFA099B}.Debug|.NET.Build.0 = Debug|.NET
+		{41349D9A-7432-4426-8DFB-A4D5CEFA099B}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{41349D9A-7432-4426-8DFB-A4D5CEFA099B}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{41349D9A-7432-4426-8DFB-A4D5CEFA099B}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{41349D9A-7432-4426-8DFB-A4D5CEFA099B}.Release|.NET.ActiveCfg = Debug|.NET
+		{41349D9A-7432-4426-8DFB-A4D5CEFA099B}.Release|.NET.Build.0 = Debug|.NET
+		{41349D9A-7432-4426-8DFB-A4D5CEFA099B}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{41349D9A-7432-4426-8DFB-A4D5CEFA099B}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{41349D9A-7432-4426-8DFB-A4D5CEFA099B}.Release|Mixed Platforms.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

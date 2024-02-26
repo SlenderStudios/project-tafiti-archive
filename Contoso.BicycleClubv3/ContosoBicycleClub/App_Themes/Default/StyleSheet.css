@@ -1,0 +1,1109 @@
+/**********************************************************************/
+/* Stylesheet for Contoso Bicycle Club Windows Live Platform QuickApp */
+/**********************************************************************/
+
+@media screen, projection, handheld {
+
+/*------------------------------------------------------------
+
+HTML Elements
+
+------------------------------------------------------------*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: url(images/bg_body.jpg) repeat-y 50% 0px #e8e2d4;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: x-small;
+voice-family: "\"}\""; 
+voice-family: inherit;
+	font-size: small;
+}
+html>body {
+	font-size: small;
+}
+
+a:link, a:visited, a:hover {
+	color: #881e13;
+}
+
+a:hover {
+	color: #000;
+}
+
+h2 {
+	margin: 0 0 0.6em 0;
+	line-height: normal;
+	text-transform: uppercase;
+	font-size: 108%;
+}
+
+h3 {
+	margin: 0;
+	line-height: normal;
+	font-size: 100%;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0 0 0.8em 0;
+}
+
+
+
+
+
+/*------------------------------------------------------------
+
+HTML Classes
+
+------------------------------------------------------------*/
+
+.clearBoth {
+	clear: both;
+}
+
+.floatRight {
+	float: right;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.lowercase {
+	text-transform: lowercase;	
+}
+
+.cbc-RSS {
+	padding-right: 22px;
+	background: url(images/icon_rss.gif) no-repeat top right;
+	height: 16px;
+	display: block;
+}
+
+.cbc-EventsRSS:link, .cbc-EventsRSS:visited {
+	float: right;
+	margin-top: -24px;
+	margin-right: 18px;
+	color: #FFF;
+	text-decoration: none;
+}
+html>body .cbc-EventsRSS:not([class='foobar']) {
+	position: relative;
+}
+
+
+
+.cbc-EventsRSS:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+/*------------------------------------------------------------
+
+Layout
+
+------------------------------------------------------------*/
+
+.cbc-Container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 860px;
+}
+
+.cbc-ContentContainer {
+	background: url(images/bg_UpcomingEvents.gif) repeat-x 0px 50px #e2d7c0;
+	padding-bottom: 1px;
+}
+
+.cbc-GenericContent {
+	margin: 18px;
+	padding: 19px 319px 19px 19px;
+	height: 300px;
+	min-height: 300px;
+}
+html>body .cbc-GenericContent {
+	height: auto;
+}
+
+
+
+
+
+/*------------------------------------------------------------
+
+Header elements
+
+------------------------------------------------------------*/
+
+.cbc-Header {
+	height: 136px;
+	background: url(images/bg_Header.jpg) no-repeat top left;
+	overflow: hidden;
+}
+
+/* logo */
+
+.cbc-Logo {
+	display: block;
+	position: absolute;
+	clear: both;
+	width: 400px;
+	height: 80px;
+	background: url(images/logo_contoso.gif) no-repeat bottom right;
+	letter-spacing: -1em;
+	font-size: 1px;
+	line-height: 1px;
+	text-decoration: none;
+	color: #c3dbe7;
+	margin: 0 0 0 -340px;
+}
+html>body .cbc-Logo:not([class='foobar']) {
+	margin: 0;
+}
+
+
+
+
+
+/*------------------------------------------------------------
+
+Primary navigation
+
+------------------------------------------------------------*/
+
+.cbc-NavPrimary {
+	float: left;
+	margin: 0 0 0 33px;
+	padding: 0;
+	list-style: none;
+}
+html>body .cbc-NavPrimary {
+	margin-left: 66px;
+}
+
+.cbc-NavPrimary li {
+	float: left;
+	padding-top: 24px;
+}
+
+.cbc-NavPrimary a {
+	display: block;
+	letter-spacing: -1em;
+	font-size: 1px;
+	line-height: 1px;
+	text-decoration: none;
+	color: #c3dbe7;
+	width: 89px;
+	height: 183px;
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+.cbc-NavPrimary a:hover, .cbc-NavPrimary a.selected {
+	background-position: 0 -183px;
+}
+
+a.cbc-NavPrimary-home {
+	background-image: url(images/bg_NavPrimary_home.gif);
+}
+
+a.cbc-NavPrimary-rides {
+	background-image: url(images/bg_NavPrimary_rides.gif);
+	width: 95px;
+}
+
+a.cbc-NavPrimary-events {
+	background-image: url(images/bg_NavPrimary_events.gif);
+}
+
+
+
+
+
+/*------------------------------------------------------------
+
+User Info Box
+
+------------------------------------------------------------*/
+
+.cbc-UserInfo {
+	font-size: 85%;
+	float: right;
+	background: #8db7d3;
+	margin: 8px 8px 0 0;
+	padding: 8px;
+	width: 186px;
+voice-family: "\"}\""; 
+voice-family: inherit;
+	width: 170px;
+}
+html>body .cbc-UserInfo {
+	margin-right: 16px;
+	width: 170px;
+	background: url(images/bg_UserInfo.png) no-repeat top left transparent;
+}
+
+.cbc-UserThumbnail {
+	float: left;
+	border: 2px solid #FFF;
+	margin-right: 8px;
+}
+
+.cbc-LoginStatus {
+	margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+/*------------------------------------------------------------
+
+Page Heading
+
+------------------------------------------------------------*/
+
+.cbc-PageHeading h1 {
+	font-size: 115%;
+	line-height: normal;
+	margin: 0 0 0.2em 0;
+	text-transform: uppercase;
+}
+
+.cbc-PageHeading {
+	border-top: 1px solid #FFF;
+	background: #881e13;
+	color: #FFF;
+	margin: 0;
+	padding: 18px 19px 18px 19px;
+	width: 860px;
+voice-family: "\"}\""; 
+voice-family: inherit;
+	width: 822px;
+}
+html>body .cbc-PageHeading {
+	width: 822px;
+}
+
+.cbc-PageHeading div {
+	font-size: 92%;
+}
+
+.cbc-PageHeading abbr {
+	border: none;
+}
+
+.cbc-PageHeading .back {
+	float: right;
+	color: #FFF;
+	font-size: 92%;
+}
+
+
+
+
+
+/*------------------------------------------------------------
+
+Latest Events / Rides
+
+------------------------------------------------------------*/
+
+.cbc-LatestEvents {
+	border-top: 1px solid #FFF;
+	background: #881e13;
+	padding: 18px 0 18px 18px;
+	color: #FFF;
+}
+
+
+/* header */
+.cbc-LatestEvents h2 {
+	padding-left: 2px;
+}
+
+.cbc-LatestEvents h2 a:link, .cbc-LatestEvents h2 a:visited,
+.cbc-LatestEvents h3 a:link, .cbc-LatestEvents h3 a:visited
+{
+	color: #FFF;
+	text-decoration: none;
+}
+
+.cbc-LatestEvents h2 a:hover,
+.cbc-LatestEvents h3 a:hover
+{
+	color: #FFF;
+	text-decoration: underline;
+}
+
+
+/* events list */
+.cbc-LatestEvents ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 570px;
+	clear: both;
+	overflow: auto;
+}
+
+.cbc-LatestEvents li {
+	float: left;
+	font-size: 85%;
+	overflow: hidden;
+	padding: 0 14px 12px 10px;
+	width: 190px;
+voice-family: "\"}\""; 
+voice-family: inherit;
+	width: 166px;
+}
+html>body .cbc-LatestEvents li {
+	width: 166px;
+}
+
+.cbc-LatestEvents li h3 {
+	font-size: 118%;
+	margin-left: -1px;
+}
+
+.cbc-LatestEvents li abbr {
+	border: none;
+}
+
+.cbc-LatestEvents .thumbnail {
+	border: none;
+	padding: 8px;	
+	background: url(images/bg_LatestEvents_thumbnail.gif) repeat-x top left #e2d7c0;
+	display: block;
+	margin-bottom: 8px;
+	margin-left: -10px;
+	width: 176px;
+voice-family: "\"}\""; 
+voice-family: inherit;
+	width: 160px;
+}
+html>body .cbc-LatestEvents .thumbnail {
+	width: 160px;
+}
+
+.cbc-LatestEvents .vcard {
+	width: 160px;
+	overflow: hidden;
+}
+
+.cbc-LatestEvents a.more {
+	color: #FFF;
+	margin-left: 10px;
+	clear: both;
+}
+
+.cbc-LatestEvents a.more:hover {
+	color: #000;
+}
+
+.cbc-LatestEvents .more span {
+	font-size: 120%;
+}
+
+
+
+
+
+
+/*------------------------------------------------------------
+
+Upcoming Events / Rides
+
+------------------------------------------------------------*/
+
+.cbc-UpcomingEvents {
+	overflow: auto;
+	padding: 18px;
+	min-height: 244px;
+}
+html>body .cbc-UpcomingEvents {
+	background: url(images/bg_UpcomingEvents.gif) repeat-x 0px -55px #e2d7c0;
+}
+
+
+/* headings */
+.cbc-UpcomingEvents h2 {
+	padding-left: 2px;
+	margin-bottom: 0;
+}
+
+.cbc-UpcomingEvents h2 a:link, .cbc-UpcomingEvents h2 a:visited,
+.cbc-UpcomingEvents h3 a:link, .cbc-UpcomingEvents h3 a:visited
+{
+	color: #881e13;
+	text-decoration: none;
+}
+
+.cbc-UpcomingEvents h2 a:hover,
+.cbc-UpcomingEvents h3 a:hover
+{
+	color: #881e13;
+	text-decoration: underline;
+}
+
+
+/* events list */
+.cbc-UpcomingEvents ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 606px;
+	clear: both;
+}
+
+.cbc-UpcomingEvents li {
+	float: left;
+	font-size: 85%;
+	overflow: hidden;
+	padding: 12px 33px 12px 100px;
+	width: 303px;
+voice-family: "\"}\""; 
+voice-family: inherit;
+	width: 170px;
+}
+html>body .cbc-UpcomingEvents li {
+	width: 170px;
+}
+
+.cbc-UpcomingEvents li.alt {
+	clear: left;
+}
+
+.cbc-UpcomingEvents li h3 {
+	font-size: 118%;
+	margin-left: -1px;
+}
+
+.cbc-UpcomingEvents li abbr {
+	border: none;
+}
+
+.cbc-UpcomingEvents .thumbnail {
+	float: left;
+	position: absolute;
+	border: 4px solid #FFF;
+	margin-left: -97px;
+	display: block;
+	width: 90px;
+voice-family: "\"}\""; 
+voice-family: inherit;
+	width: 82px;
+}
+html>body .cbc-UpcomingEvents .thumbnail {
+	width: 82px;
+}
+
+.cbc-UpcomingEvents .vcard {
+	color: #881e13;
+	width: 160px;
+	overflow: hidden;
+}
+
+.cbc-UpcomingEvents a.more {
+	margin-left: 10px;
+	clear: both;
+}
+
+.cbc-UpcomingEvents .more span {
+	font-size: 120%;
+}
+
+
+
+
+
+/*------------------------------------------------------------
+
+footer
+
+------------------------------------------------------------*/
+
+.cbc-Footer {
+	background: #e2d7c0;
+	color: #000;
+	font-size: 85%;
+	padding: 10px 20px 25px 20px;
+	width: 860px;
+voice-family: "\"}\""; 
+voice-family: inherit;
+	width: 820px;
+}
+html>body .cbc-Footer {
+	width: 820px;
+}
+
+.cbc-Footer a:link, .cbc-Footer a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+.cbc-Footer a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+
+
+
+
+/*------------------------------------------------------------
+
+Users available for chat
+
+------------------------------------------------------------*/
+
+.cbc-ChatUsersList {
+	clear: both;
+	position: absolute;
+	top: 153px;
+	margin-left: 605px;
+	background: #f2ece3 url(images/bg_ChatUsers_heading.gif) no-repeat top left;
+	border: 8px solid #FFF;
+	padding: 61px 10px 0 10px;
+	width: 230px;
+voice-family: "\"}\""; 
+voice-family: inherit;
+	width: 194px;
+}
+html>body .cbc-ChatUsersList {
+	padding: 0 0 20px 0;
+	border: none;
+	width: 230px;
+	background: transparent;
+}
+
+.cbc-ChatUsersList h2 {
+	color: #881e13;
+}
+html>body .cbc-ChatUsersList h2 {
+	padding: 71px 21px 0.6em 21px;
+	margin: 0;
+	background: url(images/bg_ChatUsers_top.png) no-repeat top left;
+}
+
+.cbc-ChatUsersList ul, .cbc-ChatUsersList .cbc-NeedLogin {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	min-height: 250px;
+	height: 250px;
+}
+html>body .cbc-ChatUsersList ul, html>body .cbc-ChatUsersList .cbc-NeedLogin {
+	padding: 0 21px 11px 21px;
+	height: auto;
+	background: url(images/bg_ChatUsers_bottom.png) no-repeat bottom left;
+}
+
+html>body #cbc-NoChatUsers {
+	padding: 0 21px 0 21px;
+	background: url(images/bg_ChatUsers_bottom.png) no-repeat top left;
+}
+
+
+.cbc-ChatUsersList li {
+	color: #881e13;
+	margin-bottom: 10px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.cbc-ChatUsersList li img {
+	vertical-align: text-bottom;
+	margin-right: 5px;
+}
+
+.cbc-ChatUsersList li.hover span {
+	text-decoration: underline;
+}
+
+
+
+
+/*------------------------------------------------------------
+
+Home Page
+
+------------------------------------------------------------*/
+
+.cbc-HomePage .cbc-Header {
+	height: 375px;
+}
+
+.cbc-AboutContoso {
+	position: absolute;
+	margin-left: -289px;
+	top: 140px;
+	background: url(images/bg_AboutContoso.gif) no-repeat top left;
+	font-size: 120%;
+	padding: 47px 40px 20px 38px;
+	width: 338px;
+	height: 207px;
+voice-family: "\"}\""; 
+voice-family: inherit;
+	width: 260px;
+	height: 140px;
+}
+html>body .cbc-AboutContoso:not([class='foobar']) {
+	width: 260px;
+	height: 140px;
+	margin-left: 50px;
+	background-image: url(images/bg_AboutContoso.png);
+}
+
+.cbc-HomePage .cbc-LatestEvents {
+	border: none;
+	background: url(images/bg_LatestEvents.gif) no-repeat top left #881e13;
+	padding-top: 19px;
+}
+
+.cbc-HomePage .cbc-UpcomingEvents {
+	padding: 0;
+	min-height: 290px;
+	background-position: 0px -45px;
+}
+
+.cbc-HomePage .cbc-UpcomingEvents .column {
+	float: left;
+	padding: 18px 0 18px 18px;
+	width: 303px;
+voice-family: "\"}\""; 
+voice-family: inherit;
+	width: 285px;
+}
+html>body .cbc-HomePage .cbc-UpcomingEvents .column {
+	width: 285px;
+}
+
+.cbc-HomePage .cbc-UpcomingEvents ul {
+	width: auto;
+	clear: none;
+}
+
+.cbc-HomePage .cbc-UpcomingEvents li {
+	float: none;
+	padding: 12px 15px 12px 100px;
+	width: 260px;
+voice-family: "\"}\""; 
+voice-family: inherit;
+	width: 145px;
+}
+html>body .cbc-HomePage .cbc-UpcomingEvents li {
+	width: 145px;
+}
+
+.cbc-HomePage .cbc-ChatUsersList {
+	top: 392px;
+}
+
+
+
+
+
+/*------------------------------------------------------------
+
+Event Info page
+
+------------------------------------------------------------*/
+
+.cbc-EventInfo .cbc-ChatUsersList {
+	top: 560px;
+	margin-left: 618px;
+}
+
+.cbc-EventInfo .cbc-PageHeading {
+	padding-bottom: 0;
+	height: 110px;
+voice-family: "\"}\""; 
+voice-family: inherit;
+	height: 86px;
+}
+html>body .cbc-EventInfo .cbc-PageHeading {
+	height: 86px;
+}
+
+#cbc-EventOwner img {
+	vertical-align: text-bottom;
+}
+
+#cbc-EventOwner.hover {
+	cursor: pointer;
+}
+
+#cbc-EventOwner.hover span {
+	text-decoration: underline;
+}
+
+
+
+
+
+/*------------------------------------------------------------
+
+Multimedia area
+
+------------------------------------------------------------*/
+
+.cbc-EventMultimedia {
+	background: #FFF;
+	margin: -30px 6px 0 0;
+	float: right;
+	padding: 11px 8px 11px 0;
+	width: 836px;
+	height: 340px;
+voice-family: "\"}\""; 
+voice-family: inherit;
+	width: 828px;
+	height: 318px;
+}
+html>body .cbc-EventMultimedia {
+	margin-right: 12px;
+	padding: 11px 11px 11px 0;
+	width: 825px;
+	height: 318px;
+	background: url(images/bg_EventMultimedia.png) no-repeat top left transparent;
+}
+
+
+
+/* VE Map */
+
+#MapPanel {
+	position: relative;
+	width: 480px !important;
+	height: 318px !important;
+	padding: 0;
+	float: right;
+}
+
+.cbc-VeWayPoint {
+	position: absolute;
+	top: -30px;
+	left: -5px;
+}
+
+.cbc-VePosition {
+	position: absolute;
+	top: -30px;
+	left: -5px;
+}
+
+
+
+
+/* tab switcher */
+
+.cbc-TabSwitcherContainer {
+	float: left;
+	padding-left: 11px;
+}
+
+.cbc-TabSwitcher {
+	list-style: none;
+	margin: 0;
+	padding:0;
+	height: 24px;
+	width: 320px;
+}
+
+.cbc-TabSwitcher li {
+	float: left;
+	height: 16px;
+	padding-left: 20px;
+	margin-right: 16px;
+	visibility: hidden;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #666;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: top left;
+	filter:alpha(opacity=65);
+	-moz-opacity:.65;
+	opacity:.65;
+}
+
+#VideoTab {
+	background-image: url(images/icon_video.gif);
+}
+
+#SlideShowTab {
+	background-image: url(images/icon_photo.gif);
+}
+
+#DirectionsTab {
+	background-image: url(images/icon_map.gif);
+}
+
+.cbc-TabSwitcher li:hover {
+	color: #881e13;
+	text-decoration: underline;
+}
+
+.cbc-TabSwitcher li.selected {
+	color: #881e13;
+	cursor: default;
+	filter:alpha(opacity=100);
+	-moz-opacity:1;
+	opacity:1;
+}
+
+
+
+/* silverlight video panel */
+
+.silverlightHost {
+	width: 320px;
+	height: 295px;
+	overflow: hidden;
+	position: absolute;
+	background: url(images/logo_silverlight.gif) no-repeat 0px 250px;
+	visibility: hidden;
+}
+
+
+
+/* photo album slideshow panel */
+
+#SlideShowPanel {
+	position: absolute;
+	overflow: hidden;
+	width: 320px;
+	height: 295px;
+	visibility: hidden;
+	text-align: center;
+}
+
+#SlideShowPanel div {
+	margin-bottom: 11px;
+}
+
+
+
+/* map directions panel */
+
+#DirectionsPanel {
+	position: absolute;
+	overflow: auto;
+	width: 320px;
+	height: 295px;
+	visibility: hidden;
+}
+
+#DirectionsPanel ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#DirectionsPanel li {
+	display: block;
+	font-size: 92%;
+	overflow: auto;
+	clear: both;
+	margin: 0 8px 0.2em 0;
+}
+
+#DirectionsPanel li a {
+	float: left;
+}
+
+#DirectionsPanel .distance {
+	float: right;
+}
+
+#DirectionsPanel .DirectionsTotal {
+	margin: 0.6em 8px 0 0;
+	overflow: auto;
+	font-weight: bold;
+}
+
+.DirectionsTotal .label {
+	float: left;
+}
+
+
+
+
+
+/*------------------------------------------------------------
+
+event post and comments
+
+------------------------------------------------------------*/
+
+.cbc-EventPost {
+	clear: both;
+	padding: 10px 260px 28px 28px;
+}
+
+.cbc-EventPost h2 {
+	color: #881e13;
+}
+
+.cbc-EventComments {
+	padding: 10px 260px 28px 28px;
+}
+
+.cbc-EventComments h2 {
+	color: #881e13;
+	float: left;
+}
+
+.cbc-EventCommentsLinks {
+	float: right;
+	font-size: 92%;
+}
+
+.cbc-EventCommentsLinks a, .cbc-EventCommentsLinks span {
+	display: block;
+	float: left;
+}
+
+.cbc-EventCommentsLinks span {
+	padding: 0 3px 0 3px;
+}
+
+.comment {
+	clear: both;
+	padding: 8px;
+	background: #eee7d9;	
+	margin-top: 8px;
+}
+
+.commentBody {
+}
+
+.commentMeta {
+	margin-top: 8px;
+	font-size: 84%;
+}
+
+
+
+
+
+
+
+/*------------------------------------------------------------
+
+forms
+
+------------------------------------------------------------*/
+
+.cbc-Form-Fieldset {
+	border: 0;
+	background: #FFF;
+	padding: 19px 19px 19px 219px;
+	margin: 18px;
+	min-height: 300px;
+}
+
+.cbc-Form-Fieldset .error {
+	border: 3px dashed #C00;
+	padding: 15px;
+	margin-bottom: 2em;
+	color: #C00;
+}
+
+.cbc-Form-Fieldset .success {
+	border: 3px dashed #090;
+	padding: 15px;
+	margin-bottom: 2em;
+	color: #090;
+}
+
+
+
+.cbc-Form-LabelValue {
+	margin-bottom: 12px;
+}
+
+.cbc-Form-LabelValue label {
+	color: #881e13;
+	font-weight: bold;
+}
+
+.cbc-Form-Fieldset input {
+	vertical-align: middle;
+	margin-top: 4px;
+}
+
+.cbc-Form-Fieldset textarea {
+	vertical-align: middle;
+	margin-top: 4px;
+}
+
+
+.cbc-Form-Notes {
+	margin-top: 0.4em;
+	font-size: 92%;
+}
+
+.cbc-Form-Input-Long {
+	width: 250px;
+}
+
+.cbc-Form-Input-ExtraLong {
+	width: 400px;
+}
+
+.cbc-Form-Button {
+	background: #881e13;
+	color: #FFF;
+	text-transform: uppercase;
+	border: none;
+	padding: 3px 10px 3px 10px;
+	font-weight: bold;
+}
+
+.cbc-Form-Menu {
+	margin-left: -200px;
+	float: left;
+	position: absolute;
+}
+
+.cbc-Form-Menu select {
+	width: 180px;
+}
+
+.cbc-Form-Input-Long-Greyout {
+	color: silver;
+	width: 250px;
+}
+
+.cbc-UploadTextbox {
+	display:block;
+}
+
+#cbc-LoadingPanel {
+	display: none;
+	border: 3px dashed #FC0;
+	padding: 15px;
+	margin-bottom: 2em;
+}
+
+#cbc-LoadingPanel img {
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
+
+
+}

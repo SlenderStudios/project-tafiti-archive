@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.Common", "Contoso.Common\Contoso.Common.csproj", "{A81F58E1-A9AD-49D0-85E6-35FAF6710167}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.Alerts", "Contoso.Alerts\Contoso.Alerts.csproj", "{FE3DFA9B-2DE1-4763-8E7E-B8D80F6A3C71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.Sales", "Contoso.Sales\Contoso.Sales.csproj", "{912685A5-60A4-4A96-B028-821E616BBD7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso", "Contoso\Contoso.csproj", "{18261AB5-776B-49C2-9E57-E93762F48D75}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs04.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Contoso.Common\\Contoso.Common.csproj
+		SccProjectName1 = Contoso.Common
+		SccLocalPath1 = Contoso.Common
+		SccProjectUniqueName2 = Contoso.Alerts\\Contoso.Alerts.csproj
+		SccProjectName2 = Contoso.Alerts
+		SccLocalPath2 = Contoso.Alerts
+		SccProjectUniqueName3 = Contoso.Sales\\Contoso.Sales.csproj
+		SccProjectName3 = Contoso.Sales
+		SccLocalPath3 = Contoso.Sales
+		SccProjectUniqueName4 = Contoso\\Contoso.csproj
+		SccProjectName4 = Contoso
+		SccLocalPath4 = Contoso
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A81F58E1-A9AD-49D0-85E6-35FAF6710167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A81F58E1-A9AD-49D0-85E6-35FAF6710167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A81F58E1-A9AD-49D0-85E6-35FAF6710167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A81F58E1-A9AD-49D0-85E6-35FAF6710167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE3DFA9B-2DE1-4763-8E7E-B8D80F6A3C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE3DFA9B-2DE1-4763-8E7E-B8D80F6A3C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE3DFA9B-2DE1-4763-8E7E-B8D80F6A3C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE3DFA9B-2DE1-4763-8E7E-B8D80F6A3C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{912685A5-60A4-4A96-B028-821E616BBD7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{912685A5-60A4-4A96-B028-821E616BBD7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{912685A5-60A4-4A96-B028-821E616BBD7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{912685A5-60A4-4A96-B028-821E616BBD7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18261AB5-776B-49C2-9E57-E93762F48D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18261AB5-776B-49C2-9E57-E93762F48D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18261AB5-776B-49C2-9E57-E93762F48D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18261AB5-776B-49C2-9E57-E93762F48D75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

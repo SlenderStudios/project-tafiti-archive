@@ -1,0 +1,6 @@
+﻿body {margin:0px; padding:0px;text-align:left;font-family:verdana, helvetica, sans-serif;background:url(../images/GadgetContosoCupBlank.png) no-repeat;font-size:9px; font-weight:500}
+tbody{font-family:verdana, helvetica, sans-serif;font-size:9px; font-weight:500}
+th{color:Red}
+.CupPlayer, .CupLeader{width:155px;margin-left:13px;}
+.CupLeader{margin-top:60px; margin-left:10px}
+.Score{width:15px;}

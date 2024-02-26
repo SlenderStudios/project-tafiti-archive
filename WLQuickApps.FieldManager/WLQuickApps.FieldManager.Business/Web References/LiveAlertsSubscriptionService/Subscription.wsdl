@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:tns1="messagecast.net" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://services.alerts.live-ppe.com/axis/services/Subscription" xmlns:intf="http://services.alerts.live-ppe.com/axis/services/Subscription" targetNamespace="http://services.alerts.live-ppe.com/axis/services/Subscription" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="messagecast.net">
+      <xsd:import namespace="http://services.alerts.live-ppe.com/axis/services/Subscription" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:complexType name="RecServicesHeader">
+        <xsd:sequence>
+          <xsd:element name="messageID" nillable="true" type="soapenc:string" />
+          <xsd:element name="timestamp" nillable="true" type="soapenc:string" />
+          <xsd:element name="version" nillable="true" type="soapenc:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RecServicesIdentification">
+        <xsd:sequence>
+          <xsd:element name="PINID" type="xsd:int" />
+          <xsd:element name="PW" nillable="true" type="soapenc:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RecServicesResponse">
+        <xsd:sequence>
+          <xsd:element name="SOAPRequest" nillable="true" type="soapenc:string" />
+          <xsd:element name="SOAPResponse" nillable="true" type="soapenc:string" />
+          <xsd:element name="statusCode" type="xsd:int" />
+          <xsd:element name="statusReason" nillable="true" type="soapenc:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RecServicesRequestResponse">
+        <xsd:sequence>
+          <xsd:element name="header" nillable="true" type="tns1:RecServicesHeader" />
+          <xsd:element name="response" nillable="true" type="tns1:RecServicesResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RecAlertsRequestResponse">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns1:RecServicesRequestResponse">
+            <xsd:sequence>
+              <xsd:element name="URL" nillable="true" type="soapenc:string" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="RecServicesContact">
+        <xsd:sequence>
+          <xsd:element name="SGID" nillable="true" type="soapenc:int" />
+          <xsd:element name="from" nillable="true" type="soapenc:string" />
+          <xsd:element name="ord" type="xsd:int" />
+          <xsd:element name="sendToContactID" type="xsd:int" />
+          <xsd:element name="to" nillable="true" type="soapenc:string" />
+          <xsd:element name="transport" nillable="true" type="soapenc:string" />
+          <xsd:element name="transportID" type="xsd:int" />
+          <xsd:element name="transportTypeID" type="xsd:int" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RecUsersGroup">
+        <xsd:sequence>
+          <xsd:element name="fromContacts" nillable="true" type="intf:ArrayOf_tns1_RecServicesContact" />
+          <xsd:element name="groupName" nillable="true" type="soapenc:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RecUsersRequestResponse">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns1:RecServicesRequestResponse">
+            <xsd:sequence>
+              <xsd:element name="totalNumUsers" nillable="true" type="soapenc:int" />
+              <xsd:element name="users" nillable="true" type="intf:ArrayOf_tns1_RecUsersGroup" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="RecGroupsRequestResponse">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns1:RecServicesRequestResponse">
+            <xsd:sequence>
+              <xsd:element name="subscriptionGroups" nillable="true" type="intf:ArrayOf_soapenc_string" />
+              <xsd:element name="unSubscribedGroups" nillable="true" type="intf:ArrayOf_soapenc_string" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="RecServicesInformation">
+        <xsd:sequence>
+          <xsd:element name="item" nillable="true" type="soapenc:string" />
+          <xsd:element name="response" nillable="true" type="tns1:RecServicesResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RecDetailRequestResponse">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns1:RecServicesRequestResponse">
+            <xsd:sequence>
+              <xsd:element name="info" nillable="true" type="intf:ArrayOf_tns1_RecServicesInformation" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="RecValidRequestResponse">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns1:RecServicesRequestResponse">
+            <xsd:sequence>
+              <xsd:element name="validRequest" type="xsd:boolean" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://services.alerts.live-ppe.com/axis/services/Subscription">
+      <xsd:import namespace="messagecast.net" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:complexType name="ArrayOf_soapenc_string">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="soapenc:string[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOf_tns1_RecServicesContact">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="tns1:RecServicesContact[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOf_tns1_RecUsersGroup">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="tns1:RecUsersGroup[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOf_tns1_RecServicesInformation">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="tns1:RecServicesInformation[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ValidateSubscriberGroupResponse">
+    <wsdl:part name="ValidateSubscriberGroupReturn" type="tns1:RecValidRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindAllUsersRequest">
+    <wsdl:part name="h" type="tns1:RecServicesHeader" />
+    <wsdl:part name="ID" type="tns1:RecServicesIdentification" />
+    <wsdl:part name="groupName" type="soapenc:string" />
+    <wsdl:part name="startIndex" type="soapenc:int" />
+    <wsdl:part name="endIndex" type="soapenc:int" />
+  </wsdl:message>
+  <wsdl:message name="UserSignUpRequest">
+    <wsdl:part name="h" type="tns1:RecServicesHeader" />
+    <wsdl:part name="ID" type="tns1:RecServicesIdentification" />
+    <wsdl:part name="name" type="soapenc:string" />
+    <wsdl:part name="feedURL" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="RemoveGroupRequest">
+    <wsdl:part name="h" type="tns1:RecServicesHeader" />
+    <wsdl:part name="ID" type="tns1:RecServicesIdentification" />
+    <wsdl:part name="group" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="PartnerSignUpRequest">
+    <wsdl:part name="h" type="tns1:RecServicesHeader" />
+    <wsdl:part name="ID" type="tns1:RecServicesIdentification" />
+    <wsdl:part name="name" type="soapenc:string" />
+    <wsdl:part name="feedURL" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="FindAllUsersResponse">
+    <wsdl:part name="FindAllUsersReturn" type="tns1:RecUsersRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="UnsubscribeAllResponse">
+    <wsdl:part name="UnsubscribeAllReturn" type="tns1:RecServicesRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="InitiateSignupResponse">
+    <wsdl:part name="InitiateSignupReturn" type="tns1:RecAlertsRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="UnsubscribeAllRequest">
+    <wsdl:part name="h" type="tns1:RecServicesHeader" />
+    <wsdl:part name="ID" type="tns1:RecServicesIdentification" />
+    <wsdl:part name="name" type="soapenc:string" />
+    <wsdl:part name="partnerUID" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="PartnerSignUpResponse">
+    <wsdl:part name="PartnerSignUpReturn" type="tns1:RecServicesRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserSignUpResponse">
+    <wsdl:part name="UserSignUpReturn" type="tns1:RecServicesRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindAllGroupsRequest">
+    <wsdl:part name="h" type="tns1:RecServicesHeader" />
+    <wsdl:part name="ID" type="tns1:RecServicesIdentification" />
+  </wsdl:message>
+  <wsdl:message name="RemoveGroupResponse">
+    <wsdl:part name="RemoveGroupReturn" type="tns1:RecServicesRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddGroupRequest">
+    <wsdl:part name="h" type="tns1:RecServicesHeader" />
+    <wsdl:part name="ID" type="tns1:RecServicesIdentification" />
+    <wsdl:part name="group" type="soapenc:string" />
+    <wsdl:part name="groupDescription" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="FindGroupsForUserResponse">
+    <wsdl:part name="FindGroupsForUserReturn" type="tns1:RecGroupsRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindAllGroupsResponse">
+    <wsdl:part name="FindAllGroupsReturn" type="tns1:RecGroupsRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddGroupResponse">
+    <wsdl:part name="AddGroupReturn" type="tns1:RecServicesRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidateSubscriberGroupRequest">
+    <wsdl:part name="h" type="tns1:RecServicesHeader" />
+    <wsdl:part name="ID" type="tns1:RecServicesIdentification" />
+    <wsdl:part name="partnerUID" type="soapenc:string" />
+    <wsdl:part name="groupName" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="InitiateSignupRequest">
+    <wsdl:part name="h" type="tns1:RecServicesHeader" />
+    <wsdl:part name="ID" type="tns1:RecServicesIdentification" />
+    <wsdl:part name="partnerUID" type="soapenc:string" />
+    <wsdl:part name="returnURL" type="soapenc:string" />
+    <wsdl:part name="transportType" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="ChangeSubscriptionRequest">
+    <wsdl:part name="h" type="tns1:RecServicesHeader" />
+    <wsdl:part name="ID" type="tns1:RecServicesIdentification" />
+    <wsdl:part name="partnerUID" type="soapenc:string" />
+    <wsdl:part name="groups" type="intf:ArrayOf_soapenc_string" />
+    <wsdl:part name="action" type="soapenc:string" />
+    <wsdl:part name="email" type="soapenc:string" />
+    <wsdl:part name="routingRule" type="soapenc:int" />
+    <wsdl:part name="locale" type="soapenc:string" />
+    <wsdl:part name="timeZone" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="ChangeSubscriptionResponse">
+    <wsdl:part name="ChangeSubscriptionReturn" type="tns1:RecServicesRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindGroupsForUserRequest">
+    <wsdl:part name="h" type="tns1:RecServicesHeader" />
+    <wsdl:part name="ID" type="tns1:RecServicesIdentification" />
+    <wsdl:part name="partnerUID" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:portType name="AlertsWebServices">
+    <wsdl:operation name="InitiateSignup" parameterOrder="h ID partnerUID returnURL transportType">
+      <wsdl:input name="InitiateSignupRequest" message="intf:InitiateSignupRequest" />
+      <wsdl:output name="InitiateSignupResponse" message="intf:InitiateSignupResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeSubscription" parameterOrder="h ID partnerUID groups action email routingRule locale timeZone">
+      <wsdl:input name="ChangeSubscriptionRequest" message="intf:ChangeSubscriptionRequest" />
+      <wsdl:output name="ChangeSubscriptionResponse" message="intf:ChangeSubscriptionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="UnsubscribeAll" parameterOrder="h ID name partnerUID">
+      <wsdl:input name="UnsubscribeAllRequest" message="intf:UnsubscribeAllRequest" />
+      <wsdl:output name="UnsubscribeAllResponse" message="intf:UnsubscribeAllResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="AddGroup" parameterOrder="h ID group groupDescription">
+      <wsdl:input name="AddGroupRequest" message="intf:AddGroupRequest" />
+      <wsdl:output name="AddGroupResponse" message="intf:AddGroupResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="PartnerSignUp" parameterOrder="h ID name feedURL">
+      <wsdl:input name="PartnerSignUpRequest" message="intf:PartnerSignUpRequest" />
+      <wsdl:output name="PartnerSignUpResponse" message="intf:PartnerSignUpResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="UserSignUp" parameterOrder="h ID name feedURL">
+      <wsdl:input name="UserSignUpRequest" message="intf:UserSignUpRequest" />
+      <wsdl:output name="UserSignUpResponse" message="intf:UserSignUpResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveGroup" parameterOrder="h ID group">
+      <wsdl:input name="RemoveGroupRequest" message="intf:RemoveGroupRequest" />
+      <wsdl:output name="RemoveGroupResponse" message="intf:RemoveGroupResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="FindGroupsForUser" parameterOrder="h ID partnerUID">
+      <wsdl:input name="FindGroupsForUserRequest" message="intf:FindGroupsForUserRequest" />
+      <wsdl:output name="FindGroupsForUserResponse" message="intf:FindGroupsForUserResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="FindAllGroups" parameterOrder="h ID">
+      <wsdl:input name="FindAllGroupsRequest" message="intf:FindAllGroupsRequest" />
+      <wsdl:output name="FindAllGroupsResponse" message="intf:FindAllGroupsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="FindAllUsers" parameterOrder="h ID groupName startIndex endIndex">
+      <wsdl:input name="FindAllUsersRequest" message="intf:FindAllUsersRequest" />
+      <wsdl:output name="FindAllUsersResponse" message="intf:FindAllUsersResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateSubscriberGroup" parameterOrder="h ID partnerUID groupName">
+      <wsdl:input name="ValidateSubscriberGroupRequest" message="intf:ValidateSubscriberGroupRequest" />
+      <wsdl:output name="ValidateSubscriberGroupResponse" message="intf:ValidateSubscriberGroupResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SubscriptionSoapBinding" type="intf:AlertsWebServices">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="InitiateSignup">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="InitiateSignupRequest">
+        <wsdlsoap:body use="encoded" namespace="http://soapservices.messagecast.net" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="InitiateSignupResponse">
+        <wsdlsoap:body use="encoded" namespace="http://services.alerts.live-ppe.com/axis/services/Subscription" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeSubscription">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="ChangeSubscriptionRequest">
+        <wsdlsoap:body use="encoded" namespace="http://soapservices.messagecast.net" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="ChangeSubscriptionResponse">
+        <wsdlsoap:body use="encoded" namespace="http://services.alerts.live-ppe.com/axis/services/Subscription" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnsubscribeAll">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="UnsubscribeAllRequest">
+        <wsdlsoap:body use="encoded" namespace="http://soapservices.messagecast.net" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="UnsubscribeAllResponse">
+        <wsdlsoap:body use="encoded" namespace="http://services.alerts.live-ppe.com/axis/services/Subscription" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddGroup">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="AddGroupRequest">
+        <wsdlsoap:body use="encoded" namespace="http://soapservices.messagecast.net" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="AddGroupResponse">
+        <wsdlsoap:body use="encoded" namespace="http://services.alerts.live-ppe.com/axis/services/Subscription" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PartnerSignUp">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="PartnerSignUpRequest">
+        <wsdlsoap:body use="encoded" namespace="http://soapservices.messagecast.net" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="PartnerSignUpResponse">
+        <wsdlsoap:body use="encoded" namespace="http://services.alerts.live-ppe.com/axis/services/Subscription" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserSignUp">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="UserSignUpRequest">
+        <wsdlsoap:body use="encoded" namespace="http://soapservices.messagecast.net" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="UserSignUpResponse">
+        <wsdlsoap:body use="encoded" namespace="http://services.alerts.live-ppe.com/axis/services/Subscription" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveGroup">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="RemoveGroupRequest">
+        <wsdlsoap:body use="encoded" namespace="http://soapservices.messagecast.net" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="RemoveGroupResponse">
+        <wsdlsoap:body use="encoded" namespace="http://services.alerts.live-ppe.com/axis/services/Subscription" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindGroupsForUser">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="FindGroupsForUserRequest">
+        <wsdlsoap:body use="encoded" namespace="http://soapservices.messagecast.net" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="FindGroupsForUserResponse">
+        <wsdlsoap:body use="encoded" namespace="http://services.alerts.live-ppe.com/axis/services/Subscription" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAllGroups">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="FindAllGroupsRequest">
+        <wsdlsoap:body use="encoded" namespace="http://soapservices.messagecast.net" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="FindAllGroupsResponse">
+        <wsdlsoap:body use="encoded" namespace="http://services.alerts.live-ppe.com/axis/services/Subscription" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAllUsers">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="FindAllUsersRequest">
+        <wsdlsoap:body use="encoded" namespace="http://soapservices.messagecast.net" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="FindAllUsersResponse">
+        <wsdlsoap:body use="encoded" namespace="http://services.alerts.live-ppe.com/axis/services/Subscription" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateSubscriberGroup">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="ValidateSubscriberGroupRequest">
+        <wsdlsoap:body use="encoded" namespace="http://soapservices.messagecast.net" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="ValidateSubscriberGroupResponse">
+        <wsdlsoap:body use="encoded" namespace="http://services.alerts.live-ppe.com/axis/services/Subscription" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AlertsWebServicesService">
+    <wsdl:port name="Subscription" binding="intf:SubscriptionSoapBinding">
+      <wsdlsoap:address location="http://services.alerts.live-ppe.com/axis/services/Subscription" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

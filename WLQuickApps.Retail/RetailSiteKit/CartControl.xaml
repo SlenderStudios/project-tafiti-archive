@@ -1,0 +1,54 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/client/2007"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="RetailSiteKit.CartControl"
+	d:DesignWidth="640" d:DesignHeight="480">
+	<UserControl.Resources>
+		<Storyboard x:Name="MaskEditOpen">
+			<PointAnimationUsingKeyFrames Storyboard.TargetName="LayoutCart" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.StartPoint)" BeginTime="00:00:00">
+				<SplinePointKeyFrame KeyTime="00:00:00.3000000" Value="0.5,161"/>
+			</PointAnimationUsingKeyFrames>
+			<PointAnimationUsingKeyFrames Storyboard.TargetName="LayoutCart" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.Segments)[0].(LineSegment.Point)" BeginTime="00:00:00">
+				<SplinePointKeyFrame KeyTime="00:00:00.3000000" Value="2221,161"/>
+			</PointAnimationUsingKeyFrames>
+			<PointAnimationUsingKeyFrames Storyboard.TargetName="LayoutCart" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(LineSegment.Point)" BeginTime="00:00:00">
+				<SplinePointKeyFrame KeyTime="00:00:00.3000000" Value="2221,533"/>
+			</PointAnimationUsingKeyFrames>
+			<PointAnimationUsingKeyFrames Storyboard.TargetName="LayoutCart" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(LineSegment.Point)" BeginTime="00:00:00">
+				<SplinePointKeyFrame KeyTime="00:00:00.3000000" Value="0.5,533"/>
+			</PointAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="MaskEditClose">
+			<PointAnimationUsingKeyFrames Storyboard.TargetName="LayoutCart" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.StartPoint)" BeginTime="00:00:00">
+				<SplinePointKeyFrame KeyTime="00:00:00.3000000" Value="0.5,221.5"/>
+			</PointAnimationUsingKeyFrames>
+			<PointAnimationUsingKeyFrames Storyboard.TargetName="LayoutCart" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.Segments)[0].(LineSegment.Point)" BeginTime="00:00:00">
+				<SplinePointKeyFrame KeyTime="00:00:00.3000000" Value="2221,221.5"/>
+			</PointAnimationUsingKeyFrames>
+			<PointAnimationUsingKeyFrames Storyboard.TargetName="LayoutCart" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(LineSegment.Point)" BeginTime="00:00:00">
+				<SplinePointKeyFrame KeyTime="00:00:00" Value="2221,499.5"/>
+				<SplinePointKeyFrame KeyTime="00:00:00.3000000" Value="2221,499.5"/>
+			</PointAnimationUsingKeyFrames>
+			<PointAnimationUsingKeyFrames Storyboard.TargetName="LayoutCart" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(LineSegment.Point)" BeginTime="00:00:00">
+				<SplinePointKeyFrame KeyTime="00:00:00" Value="0.5,499.5"/>
+				<SplinePointKeyFrame KeyTime="00:00:00.3000000" Value="0.5,499.5"/>
+			</PointAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+
+	<Canvas Height="500" Width="2221.5" x:Name="LayoutCart">
+		<Canvas.Clip>
+			<PathGeometry>
+				<PathFigure IsClosed="True" StartPoint="0.5,221.5">
+					<LineSegment Point="2221,221.5"/>
+					<LineSegment Point="2221,499.5"/>
+					<LineSegment Point="0.5,499.5"/>
+				</PathFigure>
+			</PathGeometry>
+		</Canvas.Clip>
+		<Canvas Height="500" Width="2221.5" x:Name="LayoutCartNav"/>
+	</Canvas>
+</UserControl>

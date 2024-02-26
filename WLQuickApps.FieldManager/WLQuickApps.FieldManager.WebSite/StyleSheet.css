@@ -1,0 +1,207 @@
+﻿body
+{
+    background: url("Images/bg-gradient.png") repeat-x #83ACD6;
+    font-family: "Segoe UI" Arial;
+    font-size: .8em;
+}
+
+h3, h4
+{
+    margin-bottom: 2px;
+}
+
+.wrapper
+{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -15px;
+}
+
+html>/**/body .wrapper
+{
+    margin-top: 0px;
+}
+
+*html .wrapper
+{
+    margin-top: 0px;
+}
+
+.topLinks
+{
+    text-align: right;
+    color: #DDD;
+    margin-bottom: 5px;
+}
+
+a.topLink
+{
+    color: #555;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-bottom: solid 1px Transparent;
+}
+
+a.topLink:hover
+{
+    border-bottom: solid 1px #69C;
+}
+
+/* Silverlight page */
+#_silverlight
+{
+}
+
+.SilverlightMap
+{
+    position: relative;    
+    left: 380px;
+    margin-top: -400px;
+    width: 495px !important;
+    height: 280px !important;
+}
+
+.SilverlightDirections
+{
+    position: relative;    
+    margin-left: 380px;
+    margin-top: -280px;
+    width: 495px !important;
+    height: 280px !important;
+    text-align: center;
+    overflow: auto;
+}
+
+.SilverlightContacts
+{
+    font-family: "Trebuchet MS";
+    position: relative;
+    margin-left: 380px;
+    margin-top: -280px;
+    width: 475px;
+    height: 260px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: none;
+    margin-bottom: -280px;
+    overflow-y: auto;
+}
+
+.SilverlightContacts hr
+{
+    width: 470px;
+}
+
+.SilverlightContacts ul
+{
+    margin: 0px;
+}
+
+.SilverlightContacts li
+{
+    list-style: none;
+    display: block;
+    width: 225px;
+    cursor: pointer;
+    padding: 2px;
+    border: 1px Solid #f0f0f0;
+}
+
+.SilverlightContacts li:hover
+{
+    background-color: #fff;
+    border: 1px Solid #aaa;
+}
+
+.SilverlightContacts li>a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.SilverlightContacts li>img
+{
+    position: relative;
+    top: 2px;
+}
+
+.SilverlightAddress
+{
+    font-family: "Trebuchet MS";
+    position: relative;
+    border: 10px Solid #fff;
+    left: 480px;
+    margin-top: -200px;
+    width: 275px;
+    height: 100px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: none;
+    margin-bottom: -120px;
+}
+
+.SilverlightAddressInput
+{
+    font-family: "Trebuchet MS", "Segoe UI", Verdana;
+    width: 270px;
+    height: 40px;
+    margin-top: 4px;
+}
+
+.SilverlightAddressConfirm
+{
+    font-family: "Trebuchet MS", "Segoe UI", Verdana;
+    margin-left: 155px;
+    width: 120px;
+}
+
+.SilverlightDirections>em
+{
+    padding: 5px;
+    background-color: #fff;
+    border: 3px Solid #cfcfcf;
+    position: relative;
+    top: 15px;
+}
+
+#MSVE_obliqueNotification
+{
+    visibility: hidden;
+}
+
+.SilverlightPrintBg
+{
+    position: relative;
+    top: -280px;
+    left: 775px;
+    width: 100px;
+    height: 27px;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    background-color: #234087;
+    display: none;
+}
+
+.SilverlightPrint
+{
+    position: relative;
+    margin-top: -300px;
+    margin-left: 783px;
+    display: none;
+    font-size: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-family: Verdana;
+}
+
+#disclaimer
+{
+	position: absolute;
+	top: 620px;
+	clear: both;
+	width: auto;
+	text-align: left;
+	font-size: small;
+}

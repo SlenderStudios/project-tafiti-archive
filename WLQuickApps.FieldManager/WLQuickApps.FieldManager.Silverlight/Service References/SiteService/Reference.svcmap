@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b6acdfcc-55f3-4005-8eaf-5c665e2324c5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://fieldmanager.local.com/SiteService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SiteService.wsdl" MetadataType="Wsdl" ID="17ca5428-d0fa-4963-bec7-c3c169a976a1" SourceId="1" SourceUrl="http://fieldmanager.local.com/SiteService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="SiteService.xsd" MetadataType="Schema" ID="c0d6005a-ae3f-4fa3-a368-0303eaa66423" SourceId="1" SourceUrl="http://fieldmanager.local.com/SiteService.svc?xsd=xsd2" />
+    <MetadataFile FileName="SiteService1.wsdl" MetadataType="Wsdl" ID="33b46c8c-1f7f-4367-b6f0-b890bf61b4dd" SourceId="1" SourceUrl="http://fieldmanager.local.com/SiteService.svc?wsdl" />
+    <MetadataFile FileName="SiteService1.xsd" MetadataType="Schema" ID="435cf9c5-7c5f-4c69-8f6d-82049fc14884" SourceId="1" SourceUrl="http://fieldmanager.local.com/SiteService.svc?xsd=xsd3" />
+    <MetadataFile FileName="SiteService.disco" MetadataType="Disco" ID="fcad5246-4fdc-413b-b95e-705d0fc7ecf3" SourceId="1" SourceUrl="http://fieldmanager.local.com/SiteService.svc?disco" />
+    <MetadataFile FileName="SiteService2.xsd" MetadataType="Schema" ID="990ee43f-2e45-48f7-8207-e4917efb4785" SourceId="1" SourceUrl="http://fieldmanager.local.com/SiteService.svc?xsd=xsd1" />
+    <MetadataFile FileName="SiteService3.xsd" MetadataType="Schema" ID="9b694bd7-81d5-4747-a819-9a33de09a919" SourceId="1" SourceUrl="http://fieldmanager.local.com/SiteService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

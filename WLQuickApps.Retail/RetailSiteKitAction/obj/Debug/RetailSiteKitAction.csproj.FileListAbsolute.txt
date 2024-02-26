@@ -1,0 +1,121 @@
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\ClientBin\RetailSiteKitAction.dll
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\ClientBin\RetailSiteKitAction.pdb
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\ClientBin\AppManifest.xaml
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\ClientBin\RetailSiteKitAction.xap
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\ClientBin\TestPage.html
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\ClientBin\MetaliqSilverlightSDK.dll
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\ClientBin\System.Windows.Controls.dll
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\ClientBin\System.Windows.Controls.Extended.dll
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\ClientBin\System.Windows.Controls.Extended.xml
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\ClientBin\MetaliqSilverlightSDK.pdb
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\ClientBin\System.Windows.Controls.xml
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\ClientBin\ja\System.Windows.Controls.Extended.resources.dll
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\ClientBin\ja\System.Windows.Controls.resources.dll
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\obj\Debug\ResolveAssemblyReference.cache
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\obj\Debug\RetailSiteKitAction.g.resources
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\obj\Debug\ThumbControl.g.cs
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\obj\Debug\App.g.cs
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\obj\Debug\Page.g.cs
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\obj\Debug\RetailSiteKitAction.dll
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\obj\Debug\RetailSiteKitAction.pdb
+C:\_METALIQ_\microsoftRetailSiteKit\trunk\develop\MessengerActivity\RetailSiteKitAction\RetailSiteKitAction\obj\Debug\XapCacheFile.xml
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\ResolveAssemblyReference.cache
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\App.g.cs
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\ThumbControl.g.cs
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\Page.g.cs
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\RetailSiteKitAction.g.resources
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\RetailSiteKitAction.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\RetailSiteKitAction.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\RetailSiteKitAction.pdb
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\AppManifest.xaml
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\RetailSiteKitAction.xap
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\TestPage.html
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\MetaliqSilverlightSDK.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\System.Windows.Controls.Extended.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\System.Windows.Controls.Extended.xml
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\MetaliqSilverlightSDK.pdb
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\de\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\es\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\fr\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\it\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\ja\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\ko\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\zh-hant\System.Windows.Controls.Extended.Resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\zh-hans\System.Windows.Controls.Extended.Resources.dll
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\RetailSiteKitAction.pdb
+D:\Codeplex\Angus\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\XapCacheFile.xml
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\RetailSiteKitAction.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\RetailSiteKitAction.pdb
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\AppManifest.xaml
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\RetailSiteKitAction.xap
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\TestPage.html
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\MetaliqSilverlightSDK.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\System.Windows.Controls.Extended.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\System.Windows.Controls.Extended.xml
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\MetaliqSilverlightSDK.pdb
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\de\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\es\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\fr\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\it\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\ja\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\ko\System.Windows.Controls.Extended.resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\zh-hant\System.Windows.Controls.Extended.Resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\zh-hans\System.Windows.Controls.Extended.Resources.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\ResolveAssemblyReference.cache
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\App.g.cs
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\ThumbControl.g.cs
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\Page.g.cs
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\RetailSiteKitAction.g.resources
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\RetailSiteKitAction.dll
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\RetailSiteKitAction.pdb
+D:\Codeplex\QuickApps\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\XapCacheFile.xml
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\App.g.cs
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\ThumbControl.g.cs
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\Page.g.cs
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\RetailSiteKitAction.g.resources
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\AppManifest.xaml
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\RetailSiteKitAction.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\RetailSiteKitAction.pdb
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\RetailSiteKitAction.xap
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\TestPage.html
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\MetaliqSilverlightSDK.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\System.Windows.Controls.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\MetaliqSilverlightSDK.pdb
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\System.Windows.Controls.xml
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\de\System.Windows.Controls.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\es\System.Windows.Controls.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\fr\System.Windows.Controls.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\it\System.Windows.Controls.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\ja\System.Windows.Controls.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\ko\System.Windows.Controls.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\zh-Hans\System.Windows.Controls.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\zh-Hant\System.Windows.Controls.resources.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\RetailSiteKitAction.dll
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\RetailSiteKitAction.pdb
+C:\Documents and Settings\Administrator\桌面\QuickApps_7.1\WLQuickApps-21556\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\XapCacheFile.xml
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\AppManifest.xaml
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\RetailSiteKitAction.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\RetailSiteKitAction.pdb
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\RetailSiteKitAction.xap
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\TestPage.html
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\MetaliqSilverlightSDK.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\System.Windows.Controls.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\MetaliqSilverlightSDK.pdb
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\System.Windows.Controls.xml
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\de\System.Windows.Controls.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\es\System.Windows.Controls.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\fr\System.Windows.Controls.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\it\System.Windows.Controls.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\ja\System.Windows.Controls.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\ko\System.Windows.Controls.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\zh-Hans\System.Windows.Controls.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\ClientBin\zh-Hant\System.Windows.Controls.resources.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\ResolveAssemblyReference.cache
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\App.g.cs
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\ThumbControl.g.cs
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\Page.g.cs
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\RetailSiteKitAction.g.resources
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\RetailSiteKitAction.dll
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\RetailSiteKitAction.pdb
+D:\codes\WLQuickApp\WLQuickApps.Retail\RetailSiteKitAction\obj\Debug\XapCacheFile.xml

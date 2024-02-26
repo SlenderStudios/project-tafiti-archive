@@ -1,0 +1,43 @@
+﻿<Canvas
+	xmlns="http://schemas.microsoft.com/client/2007"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Name="PopupCanvas" 
+	Width="190" Height="36"
+    Loaded="Page_Loaded"
+    x:Class="VESilverlight.Secondary.DirectionsButton;assembly=ClientBin/VESilverlight.dll"
+	Opacity="1"
+	Visibility="Visible"
+	Background="#00000000"
+	>
+	
+	<Rectangle Width="190" Height="36" Fill="#FF5a764e" Stroke="#FF5a764e" Canvas.ZIndex="-1" Opacity="0.795"/>
+	
+	<Canvas Width="123" Height="28" Canvas.Left="34" Canvas.Top="4" x:Name="directionsButton" Cursor="Hand" Opacity="1" >
+	
+		<Image Width="123" Height="24" x:Name="ButtonUp" Source="images/Btn_Directions.png" />
+		<Image Width="123" Height="24" x:Name="ButtonDown" Source="images/Btn_Directions_on.png" Visibility="Collapsed" />
+	
+	</Canvas>
+	
+	<Path Opacity="1" RenderTransformOrigin="0.5,0.5" Width="12" Height="12" Fill="#FFEAE7B7" Stretch="Fill" Canvas.Left="10.25" Canvas.Top="7.25" Data="M0,0 L12,0 0,12 z" x:Name="DownArrow1">
+		<Path.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform ScaleX="1" ScaleY="1"/>
+				<SkewTransform AngleX="0" AngleY="0"/>
+				<RotateTransform Angle="225"/>
+				<TranslateTransform X="0" Y="0"/>
+			</TransformGroup>
+		</Path.RenderTransform>
+	</Path>
+	<Path RenderTransformOrigin="0.5,0.5" Width="12" Height="12" Fill="#FFEAE7B7" Stretch="Fill" Canvas.Left="170.25" Canvas.Top="7.25" Data="M0,0 L12,0 0,12 z" Opacity="1" x:Name="DownArrow2">
+		<Path.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform ScaleX="1" ScaleY="1"/>
+				<SkewTransform AngleX="0" AngleY="0"/>
+				<RotateTransform Angle="225"/>
+				<TranslateTransform X="0" Y="0"/>
+			</TransformGroup>
+		</Path.RenderTransform>
+	</Path>
+	
+</Canvas>

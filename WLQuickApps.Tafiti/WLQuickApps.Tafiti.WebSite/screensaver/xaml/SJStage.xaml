@@ -1,0 +1,84 @@
+<Canvas Width="1024" Height="768" xmlns="http://schemas.microsoft.com/client/2007" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Canvas.Resources>
+		<!-- Timer callback -->
+		<Storyboard x:Name="timer">
+			<DoubleAnimation Duration="00:00:0" Storyboard.TargetName="_timer" Storyboard.TargetProperty="width"/>
+		</Storyboard>
+	</Canvas.Resources>
+
+
+	<!-- Debug output -->
+	<!--Canvas Canvas.Top="10" Canvas.Left="0" IsHitTestVisible="False">
+		<TextBlock Visibility="Visible" Canvas.Left="10" Foreground="#FFFFFFFF" x:Name="txtDebug0" Text="txtDebug0" />
+		<TextBlock Visibility="Collapsed" Canvas.Left="10" Canvas.Top="20" Foreground="#FFFFFFFF" x:Name="txtDebug1" Text="txtDebug1" />
+	</Canvas-->
+
+
+	<!-- Dummy target for timer linkage -->
+	<Rectangle x:Name="_timer" Visibility="Collapsed" Opacity="0" IsHitTestVisible="False"/>
+
+
+	<!-- Background -->
+	<Image x:Name="bg" Source="screensaver/gfx/TreeBG_back.png" Canvas.ZIndex="-100000" IsHitTestVisible="false">
+		<Image.RenderTransform>
+			<ScaleTransform ScaleX="0.64" ScaleY="0.64"/>
+		</Image.RenderTransform>
+	</Image>
+	<Image x:Name="fg" Source="screensaver/gfx/TreeBG_front.png" Canvas.Top="653" Canvas.ZIndex="99999" IsHitTestVisible="false" />
+
+	
+	<!-- Slider control -->
+	<Canvas x:Name="clip_slider" Canvas.Left="60" Canvas.Top="632" Canvas.ZIndex="100000">
+		<Image x:Name="slider_bg" Source="screensaver/gfx/tree_slider.png" />
+		<Image Source="screensaver/gfx/single.png" Canvas.Left="67" Canvas.Top="41" />
+		<Image Source="screensaver/gfx/small_tree.png" Canvas.Left="794" Canvas.Top="40" />
+		<Path Stroke="White" StrokeThickness="0.2" Data="M 112,56 H 767" />
+		<Ellipse Canvas.Left="111" Canvas.Top="53" Fill="#FFFFFFFF" Height="5" Width="5"/>
+		<Ellipse Canvas.Left="767" Canvas.Top="53" Fill="#FFFFFFFF" Height="5" Width="5"/>
+		<Ellipse x:Name="slider" Canvas.Left="352" Canvas.Top="40" Fill="#00FFFFFF" Height="30" Width="30" StrokeThickness="8" Stroke="#FFFFFFFF"/>
+	</Canvas>
+
+
+	<!-- Rotation buttons -->
+	<Canvas x:Name="clip_scroll_left" Canvas.Left="100" Canvas.Top="240">
+		<Canvas x:Name="scroll_left" Opacity="1.0" Background="#00666666">
+			<Ellipse Fill="#00FFFFFF" Width="300" Height="300" Canvas.Left="-130" Canvas.Top="-130"/>
+		</Canvas>
+		<Image x:Name="scroll_left_btn_up" Opacity="0" Source="screensaver/gfx/left_tree_arw.png" />
+		<Image x:Name="scroll_left_btn" Opacity="0" Source="screensaver/gfx/left_tree_arw_hvr.png" />
+	</Canvas>
+
+	<Canvas x:Name="clip_scroll_right" Canvas.Left="874" Canvas.Top="240">
+		<Canvas x:Name="scroll_right" Opacity="1.0" Background="#00666666">
+			<Ellipse Fill="#00FFFFFF" Width="300" Height="300" Canvas.Left="-130" Canvas.Top="-130"/>
+		</Canvas>
+		<Image x:Name="scroll_right_btn_up" Opacity="0" Source="screensaver/gfx/rt_tree_arw.png" />
+		<Image x:Name="scroll_right_btn" Opacity="0" Source="screensaver/gfx/rt_tree_arw_hvr.png" />
+	</Canvas>
+
+
+	<!-- Fullscreen -->
+	<Canvas x:Name="clip_fullscreen" Canvas.Left="949" Canvas.Top="22">
+		<Image x:Name="btn_fullscreen_up" Visibility="Visible" Source="screensaver/gfx/max.png" />
+		<Image x:Name="btn_fullscreen" Visibility="Visible" Opacity="0" Source="screensaver/gfx/max_hvr.png" />
+	</Canvas>
+
+	<!-- Windowed -->
+	<Canvas x:Name="clip_windowed" Canvas.Left="25" Canvas.Top="22" Visibility="Visible">
+		<Image x:Name="btn_windowed_up" Visibility="Visible" Source="screensaver/gfx/min.png" />
+		<Image x:Name="btn_windowed" Visibility="Visible" Opacity="0" Source="screensaver/gfx/min_hvr.png" />
+	</Canvas>
+
+
+	<!-- Tooltip -->
+	<Canvas x:Name="tooltip" Visibility="Collapsed" Opacity="0" Canvas.Top="400" Canvas.Left="399" Canvas.ZIndex="110000" IsHitTestVisible="True">
+		<Rectangle x:Name="tooltip_bg" Fill="#D0FFFFBF" Stroke="Black" StrokeThickness="1" Width="300" Height="150" />
+		<TextBlock x:Name="tooltip_info" Canvas.Left="4" Canvas.Top="2" Width="292" Height="146" TextWrapping="Wrap" FontSize="12" Foreground="Black">
+			<TextBlock.Clip>
+				<RectangleGeometry x:Name="tooltip_clip" Rect="0,0 296 146"/>
+			</TextBlock.Clip>
+		</TextBlock>
+		<TextBlock x:Name="tooltip_link" Canvas.Left="4" Canvas.Top="150" TextWrapping="NoWrap" FontSize="10" FontFamily="Verdana" FontWeight="Bold" FontStyle="Italic" Foreground="Blue" TextDecorations="Underline">http://some.link.com</TextBlock>
+		<TextBlock x:Name="tooltip_date" Canvas.Left="2" Canvas.Top="160" TextWrapping="NoWrap" FontSize="10" FontFamily="Verdana" FontWeight="Bold" FontStyle="Italic" Foreground="Black">20 Dec 1997</TextBlock>
+	</Canvas>
+</Canvas>

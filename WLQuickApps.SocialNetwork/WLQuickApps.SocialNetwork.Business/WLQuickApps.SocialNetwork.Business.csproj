@@ -1,0 +1,279 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B64941B4-2AAE-4646-A5B5-D6D4E75224D5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WLQuickApps.SocialNetwork.Business</RootNamespace>
+    <AssemblyName>WLQuickApps.SocialNetwork.Business</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>WLQuickApps.SocialNetwork.snk</AssemblyOriginatorKeyFile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiveNet, Version=0.2.2932.14530, Culture=neutral, PublicKeyToken=d8bb199f80ad08c5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\songhaitao\Desktop\WindowsLiveApp\CommonDLL\LiveNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseItemManager.cs" />
+    <Compile Include="CollectionItemManager.cs" />
+    <Compile Include="CommunicationManager.cs" />
+    <Compile Include="CollectionManager.cs" />
+    <Compile Include="ForumManager.cs" />
+    <Compile Include="HealthMonitoringManager.cs" />
+    <Compile Include="LiveAlertsWrapper.cs" />
+    <Compile Include="MapPointWrapper.cs" />
+    <Compile Include="MediaManager.cs" />
+    <Compile Include="MediaUtil.cs" />
+    <Compile Include="Objects\Album.cs" />
+    <Compile Include="AlbumManager.cs" />
+    <Compile Include="Objects\Collection.cs" />
+    <Compile Include="Objects\Comment.cs" />
+    <Compile Include="CommentManager.cs" />
+    <Compile Include="FriendManager.cs" />
+    <Compile Include="Objects\BaseItem.cs" />
+    <Compile Include="Objects\Constants.cs" />
+    <Compile Include="GroupPrivacyException.cs" />
+    <Compile Include="Objects\CollectionItem.cs" />
+    <Compile Include="Objects\Forum.cs" />
+    <Compile Include="Objects\SearchResults.cs" />
+    <Compile Include="Objects\Media.cs" />
+    <Compile Include="Objects\Group.cs" />
+    <Compile Include="GroupManager.cs" />
+    <Compile Include="Objects\Stats.cs" />
+    <Compile Include="Objects\WebEvent.cs" />
+    <Compile Include="PhotoAPI.cs" />
+    <Compile Include="PhotoToken.cs" />
+    <Compile Include="PhotoUtil.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchManager.cs" />
+    <Compile Include="SettingsWrapper.cs" />
+    <Compile Include="StatisticsManager.cs" />
+    <Compile Include="UserCacheModule.cs" />
+    <Compile Include="UserManager.cs" />
+    <Compile Include="Objects\User.cs" />
+    <Compile Include="Objects\Event.cs" />
+    <Compile Include="EventManager.cs" />
+    <Compile Include="Objects\Location.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocationManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Objects\Tag.cs" />
+    <Compile Include="TagManager.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="Web References\LiveAlertsMessageService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\LiveAlertsSubscriptionService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MapPointService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WebEventManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\processing.zip" />
+    <None Include="Web References\LiveAlertsMessageService\Message.wsdl" />
+    <None Include="Web References\LiveAlertsMessageService\RecDetailRequestResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\LiveAlertsMessageService\RecServicesRequestResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\LiveAlertsMessageService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\LiveAlertsSubscriptionService\RecAlertsRequestResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\LiveAlertsSubscriptionService\RecGroupsRequestResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\LiveAlertsSubscriptionService\RecServicesRequestResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\LiveAlertsSubscriptionService\RecUsersRequestResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\LiveAlertsSubscriptionService\RecValidRequestResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\LiveAlertsSubscriptionService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\LiveAlertsSubscriptionService\Subscription.wsdl" />
+    <None Include="Web References\MapPointService\Address.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointService\CountryRegionInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointService\DataSource.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointService\EntityType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointService\FindResults.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointService\LatLong.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointService\LineDriveMapImage.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointService\Location.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointService\MapImage.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointService\mappoint.wsdl" />
+    <None Include="Web References\MapPointService\MapViewRepresentations.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointService\PixelCoord.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MapPointService\Route.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointService\VersionInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="WLQuickApps.SocialNetwork.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WLQuickApps.SocialNetwork.Data\WLQuickApps.SocialNetwork.Data.csproj">
+      <Project>{BE1A09DF-677B-4046-9053-F356E134D691}</Project>
+      <Name>WLQuickApps.SocialNetwork.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WLQuickApps.SocialNetwork.VideoProcessorService\WLQuickApps.SocialNetwork.VideoProcessorService.csproj">
+      <Project>{2965A431-BFD7-491D-8606-4918B038E3BE}</Project>
+      <Name>WLQuickApps.SocialNetwork.VideoProcessorService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://services.alerts.live-ppe.com/axis/services/Message%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\LiveAlertsMessageService\</RelPath>
+      <UpdateFromURL>http://services.alerts.live-ppe.com/axis/services/Message%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SharpLogic_SocialNetwork_Business_LiveAlertsMessageService_MessageWebServicesService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://services.alerts.live-ppe.com/axis/services/Subscription%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\LiveAlertsSubscriptionService\</RelPath>
+      <UpdateFromURL>http://services.alerts.live-ppe.com/axis/services/Subscription%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SharpLogic_SocialNetwork_Business_LiveAlertsSubscriptionService_AlertsWebServicesService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://staging.mappoint.net/standard-30/mappoint.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MapPointService\</RelPath>
+      <UpdateFromURL>http://staging.mappoint.net/standard-30/mappoint.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SharpLogic_SocialNetwork_Business_MapPointService_CommonService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

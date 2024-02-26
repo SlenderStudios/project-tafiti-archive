@@ -1,0 +1,625 @@
+/**********************************************************************/
+/* Stylesheet for Contoso Bicycle Club Windows Live Platform QuickApp */
+/**********************************************************************/
+
+/*****************************************/
+/* Global Styles					 */
+/*****************************************/
+
+body 
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #333333;
+	margin: 0px;
+	padding: 0px;
+	background-color: #949494;
+}
+
+h1 
+{
+	font-weight: bold;
+	font-size: 16px;
+	color: #4b2269;
+}
+
+h2 
+{
+	color: #4b2269;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+img
+{ 
+	vertical-align: bottom
+}  
+
+a 
+{
+	text-decoration: none;
+}
+
+a:hover 
+{
+	text-decoration: none;
+}
+
+span.Normal 
+{
+	color: Black;
+	font-size: 10pt;
+}
+
+.VEAPI_Pushpin
+  {
+    margin-top:  -24px;
+  }
+
+
+/*****************************************/
+/* Master Page Styling				 */
+/*****************************************/
+
+div#MasterContainer
+{
+	background: url(images/background.jpg) no-repeat;
+	height: 100%;
+	min-height: 768px;
+	width: 1048px;
+	margin: 0 auto 0;
+	position: relative;
+}
+
+
+/*****************************************/
+/* Home Page					    	 */
+/*****************************************/
+
+#footer{
+    position: absolute; 
+    text-align: center; 
+    width: 100%; 
+    top: 720px;
+}
+
+.HomeTitle
+{
+	font-size: 28px;
+	color: #414243;
+	margin-left: 30px;
+	margin-top: 50px;
+}
+
+.HomeText
+{
+	font-size: 18px;
+	color: #414243;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+
+div#latestRides 
+{  
+	background-color:transparent;
+	color:Black;
+	font-size:11pt;
+	left:65px;
+	position:relative;
+	top:144px;
+	width:176px;
+}
+
+div#latestRides .Title
+{
+	color: #4b2269; 
+	font-size: 7pt;
+    background-color:Transparent; 
+    left: 5px;
+    position: relative;
+    font-weight: bold;
+}
+
+div#latestRidesContent
+{
+	margin-top: 14px;
+	padding: 0px;
+}
+
+div#latestRidesContent td.left
+{
+	
+}
+
+div#latestRidesContent td.right
+{
+	
+}
+
+div#latestRidesContent td.right .title
+{
+	padding-left: 3px;
+}
+
+div#latestRidesContent td.right .title a
+{
+	color: #4b2269;
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+div#latestRidesContent td.right .description
+{
+	padding: 5px 0px 2px 0px;
+	font-size: 8pt;
+	margin-left: 3px;
+}
+
+div#latestRidesContent .hr
+{
+	background-color: #D9D9D9;
+	height: 1px;
+	margin: 4px 0px 4px 0px;
+}
+
+div#ridesAndEvents
+{
+	background-color:transparent;
+	color:Black;
+	font-size:11pt;
+	left:65px;
+	position:absolute;
+	top:475px;
+	width:176px;
+}
+
+div#ridesAndEvents .Title
+{
+	color: #4b2269; 
+	font-size: 7pt;
+    background-color:Transparent; 
+    left: 5px;
+    position: relative;
+    font-weight: bold;
+}
+
+div#eventsContent
+{
+	margin-top: 14px;
+	padding: 0px;
+}
+
+div#eventsContent .title
+{
+	padding-left: 2px;
+}
+
+div#eventsContent .title a
+{
+	color: #4b2269;
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+div#eventsContent .description
+{
+	padding: 5px 0px 2px 0px;
+	font-size: 8pt;
+	margin-left: 2px;
+}
+
+div#eventsContent .hr
+{
+	background-color: #C7C7C7;
+	height: 1px;
+	margin: 4px 0px 4px 0px;
+}
+
+
+
+/*****************************************/
+/* Tab Bar						 */
+/*****************************************/
+
+a.TabLink 
+{
+	position: absolute; 
+	font-size: 10pt;
+	top: 10px;
+	color: #000000;
+	font-weight: normal;
+	width: 141px;
+	height: 54px;
+	background: url(images/tab_bar/tab_centre_off.png) no-repeat top left;
+	text-align: center;
+	line-height: 45px;
+}
+
+a.TabLinkLeft 
+{
+	position: absolute; 
+	font-size: 10pt;
+	top: 10px;
+	color: #000000;
+	font-weight: normal;
+	width: 146px;
+	height: 54px;
+	background: url(images/tab_bar/tab_left_off.png) no-repeat top left;
+	text-align: center;
+	line-height: 45px;
+}
+
+a.TabLinkRight
+{
+	position: absolute; 
+	font-size: 10pt;
+	top: 10px;
+	color: #000000;
+	font-weight: normal;
+	width: 148px;
+	height: 54px;
+	background: url(images/tab_bar/tab_right_off.png) no-repeat top left;
+	text-align: center;
+	line-height: 45px;
+}
+
+
+a.TabLink:hover
+{
+	background: url(images/tab_bar/tab_centre_on.png) no-repeat center;
+}
+
+a.TabLinkLeft:hover
+{
+	background: url(images/tab_bar/tab_left_on.png) no-repeat center;
+}
+
+a.TabLinkRight:hover
+{
+	background: url(images/tab_bar/tab_right_on.png) no-repeat center;
+}
+
+a#HomeLink 
+{
+    left: 260px;
+    top: 0px;
+}
+
+a#RidesLink 
+{
+    left: 406px;
+    top: 0px;
+}
+
+a#EventsLink 
+{
+    left: 547px;
+    top: 0px;
+}
+
+a#ForumLink 
+{
+    left: 688px;
+    top: 0px;
+}
+
+a#ClassifiedsLink 
+{
+    left: 829px;
+    top: 0px;
+}
+
+
+div#ridesMenuDiv 
+{
+	position: absolute; 
+	left: 410px;
+	top: 51px; 
+	width: 372px;
+	height: 197px;
+	background: url(images/tab_bar/popout_left.png) no-repeat;
+	visibility: hidden;
+	z-index: 9999;
+	padding: 24px 12px 12px 12px;
+	font-weight: 700;
+}
+
+div#eventsMenuDiv 
+{
+	position: absolute; 
+    	left: 550px;
+    	top: 51px; 
+    	width: 372px;
+    	height: 197px;
+	background: url(images/tab_bar/popout_left.png) no-repeat;
+	visibility: hidden;
+	z-index: 9999;
+	padding: 24px 12px 12px 12px;
+}
+
+div#ridesMenuDiv .Title, div#eventsMenuDiv .Title
+{
+	padding: 4px;
+}
+
+div#ridesMenuDiv .Title a, div#eventsMenuDiv .Title a
+{
+	color: #4b2269;
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+
+/*****************************************/
+/* Content Panel					 */
+/*****************************************/
+
+div#MainPanel 
+{
+    position: absolute; 
+    left: 260px;
+    top: 82px; 
+    width: 700px;
+    height: 620px;
+    border: 0px;
+    visibility: visible; 
+    overflow:auto;
+}
+
+div#contentPanel
+{
+	background: url(images/cbc_contentpanel.png) no-repeat;
+	width: 713px;
+	height: 742px;
+	position: absolute;
+	top: 60px;
+	left: 265px;
+	visibility: hidden;
+}
+
+div#MenuPanel 
+{
+	position: absolute; 
+	left: 260px;
+	top: 70px; 
+	width: 259px;
+	height: 214px;
+	visibility:hidden;
+}
+
+div#MenuPanel a
+{
+	background: url(images/centre_nav_off.png) no-repeat center;
+	width:120px;
+	height: 39px;
+	text-align: center;
+	line-height: 39px;
+	color: #4b2269;
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+div#MenuPanel a:hover
+{
+	background: url(images/centre_nav_on.png) no-repeat center;
+}
+
+a#MapLink 
+{
+	position: absolute; 
+    top: 145px;
+    left: 140px;
+}
+
+a#ViewRouteLink 
+{
+	position: absolute; 
+    top: 103px;
+    left: 140px;
+}
+
+
+
+a#PhotosFromRideLink 
+{
+	position: absolute; 
+    top: 145px;
+    left: 10px;
+}
+
+a#RideReportLink 
+{
+	position: absolute; 
+    top: 185px;
+    left: 10px;
+}
+
+a#DirectionsLink 
+{
+	position: absolute; 
+    top: 185px;
+    left: 140px;
+}
+
+div#TextPanel 
+{
+	left: 545px;
+    position: absolute; 
+    top: 82px; 
+    width: 410px;
+    height: 230px;
+    border: 0px;
+    overflow:auto;
+    visibility: hidden;
+}
+
+div#VideoWrapper 
+{
+	left: 590px;
+    position: absolute; 
+    top: 78px; 
+    width: 320px;
+    height: 240px;
+    border: 0px;
+    overflow:hidden;
+	visibility: hidden;
+
+}
+
+
+iframe#SlideShowPanel 
+{
+	left: 590px;
+    position: absolute; 
+    top: 78px; 
+    width: 320px;
+    height: 240px;
+    background-color: Transparent;
+    visibility: hidden;
+}
+
+div#DirectionsPanel 
+{
+	left: 545px;
+    position: absolute; 
+    top: 82px; 
+    width: 410px;
+    height: 230px;
+    border: 0px;
+    overflow:auto; 
+    visibility: hidden;
+}
+
+div#DirectionsPanel .distance
+{
+	float: right;
+	width: 100px;
+}
+
+div#DirectionsPanel .direction a
+{
+	color: #000000;
+	font-size: 8pt;
+	font-weight: normal;
+}
+
+div#DirectionsPanel div.direction
+{
+	padding: 3px;
+	padding-left: 10px;
+}
+
+a#BikeCamLink 
+{
+	position: absolute; 
+    top: 103px;
+    left: 10px;
+}
+
+span#RideReportTitle 
+{
+	color: #333333; 
+	left: 30px; 
+	position: absolute; 
+	top: 75px;     
+	font-size: 12px;  
+	font-weight: bold;
+	background-color:Transparent; 
+}
+
+span#RideTheRouteTitle 
+{
+	color: #333333; 
+	left: 150px; 
+	position: absolute; 
+	top: 76px;  
+	font-size: 12px;  
+	font-weight: bold;     
+	background-color:Transparent; 
+}
+          
+            
+span#RidesAndEventsTitle 
+{
+	color: White; 
+	left: 56px; 
+	position: absolute; 
+	top: 454px;  
+	background-color:Transparent; 
+}
+
+div#Title 
+{
+	position: absolute; 
+	top: 18px; 
+	left: 22px; 
+	color: #4b2269; 
+	font-size: 16px;
+	font-weight: bold;     
+	background-color:Transparent; 
+}
+
+div#classifieds
+{
+	padding: 5px;
+	padding-left: 10px;
+}
+
+div#classifieds td
+{
+	height: 60px;
+	vertical-align: top;
+	padding: 8px 0px 8px 0px;
+}
+
+div#classifieds a
+{
+	color: #4b2269;
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+div#classifieds .title
+{
+	padding-left: 10px;
+}
+
+div#classifieds .description
+{
+	padding-left: 10px;
+	color: #000000;
+	font-size: 8pt;
+}
+
+div#classifieds .price
+{
+	font-weight: bold;
+}
+
+.heavy{
+ font-weight: bold;
+}
+
+.DirectionsTotal{
+    border-top: solid 1px black;
+}
+
+/*****************************************/
+/* Map Styles						 */
+/*****************************************/
+
+
+div#MapPanel
+{
+	visibility:hidden;
+    overflow: auto;
+}
+
+
+div#mapContainerPanel
+{
+	position: absolute; 
+	left: 11px; 
+	top: 275px;
+}

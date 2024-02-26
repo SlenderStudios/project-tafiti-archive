@@ -1,0 +1,268 @@
+﻿<UserControl x:Class="RetailSiteKit.videoItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="205" Height="133" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+    <UserControl.Resources>
+        <Storyboard x:Name="itemMouseOver_In">
+            <PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="selectedSmall" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.StartPoint)">
+                <SplinePointKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:00.3000000" Value="0.5,90"/>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="selectedSmall" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.Segments)[0].(LineSegment.Point)">
+                <SplinePointKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:00.3000000" Value="199.861,90"/>
+            </PointAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="description" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="thumbImage" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0" KeySpline="0,1,1,1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="redBorderSmall_In">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="redBorderSmall" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.984"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="redBorderSmall" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.981"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="redBorderSmall" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="smallRedHighlight" Storyboard.TargetProperty="(Shape.StrokeThickness)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="8"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="smallRedHighlight" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.975"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="smallRedHighlight" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.478"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="smallRedHighlight" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.95"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="smallRedHighlight" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.832"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="smallRedHighlight" Storyboard.TargetProperty="(UIElement.Opacity)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="smallRedHighlight" Storyboard.TargetProperty="(Canvas.Left)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-5.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="smallRedHighlight" Storyboard.TargetProperty="(Canvas.Top)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-5.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="smallRedHighlight" Storyboard.TargetProperty="(FrameworkElement.Height)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="132.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="itemDetailSelected" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="5.077"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="itemDetailSelected" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-0.98"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="redBorderSmall" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-0.417"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="redBorderSmall" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-1.187"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="redBorderSmall_Out">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="redBorderSmall" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.85"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="redBorderSmall" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.85"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="redBorderSmall" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="itemMouseOver_Out">
+
+            <PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="selectedSmall" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.StartPoint)">
+                <SplinePointKeyFrame KeySpline="0,0,1,0" KeyTime="00:00:00.5000000" Value="0.500000000000007,118.833333333333"/>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="selectedSmall" Storyboard.TargetProperty="(UIElement.Clip).(PathGeometry.Figures)[0].(PathFigure.Segments)[0].(LineSegment.Point)">
+                <SplinePointKeyFrame KeySpline="0,0,1,0" KeyTime="00:00:00.5000000" Value="199.861,118.833333333333"/>
+            </PointAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="description" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="thumbImage" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1" KeySpline="0,1,1,1"/>
+            </DoubleAnimationUsingKeyFrames>
+
+        </Storyboard>
+        <Storyboard x:Name="foregroundFade">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="darkForeground" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0" KeySpline="0,1,1,1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="LoadingAnimation" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="LoaderCanvas" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" BeginTime="00:00:00">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:01" Value="359"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="LoaderFadeIn">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="LoaderCanvas" Storyboard.TargetProperty="(UIElement.Opacity)" BeginTime="00:00:00.5">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.595">
+                    <SplineDoubleKeyFrame.KeySpline>
+                        <KeySpline ControlPoint1="0.5,0" ControlPoint2="0.393999993801117,1"/>
+                    </SplineDoubleKeyFrame.KeySpline>
+                </SplineDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Canvas Width="197.5" Height="121" x:Name="VideoItemCanvas" Canvas.Left="1.5" Canvas.Top="1.5" d:LayoutOverrides="Width, Height" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="3.25,6.5,4.25,5.5">
+            <Rectangle Width="196" Height="119.5" Fill="#FF1E1E1E" x:Name="darkBackground" Opacity="0"/>
+            <Rectangle Width="196" Height="119.5" Canvas.Left="0" Canvas.Top="0" x:Name="VideoDisplayHitTarget" Stretch="Fill" Fill="#FFFFFFFF"/>
+            <Image Width="197" Height="120" IsHitTestVisible="False" x:Name="thumbImage" Source="PdH_Women_1.jpg" Canvas.Top="0" Canvas.Left="0"/>
+        </Canvas>
+        <Canvas x:Name="backgroundCanvas" Width="200.361" Height="122.951" IsHitTestVisible="False" HorizontalAlignment="Stretch" Margin="1.82000005245209,5.52500009536743,2.81900000572205,4.52400016784668" VerticalAlignment="Stretch" d:LayoutOverrides="Height">
+            <Rectangle x:Name="darkForeground" Width="196" Height="119.5" Fill="#FF1E1E1E" IsHitTestVisible="False" Opacity="0"/>
+            <Rectangle Width="200" Height="123" Stretch="Fill" StrokeThickness="4" StrokeLineJoin="Round" Stroke="#FFFFFFFF"/>
+            <Rectangle Width="197" Height="120" Stretch="Fill" StrokeLineJoin="Round" Canvas.Left="1.5" Canvas.Top="1.333">
+                <Rectangle.Stroke>
+                    <LinearGradientBrush StartPoint="-0.0004911,4.23418" EndPoint="5.88924,4.23418">
+                        <LinearGradientBrush.RelativeTransform>
+                            <TransformGroup>
+                                <SkewTransform CenterX="-0.0004911" CenterY="4.23418" AngleX="-25.032" AngleY="0"/>
+                                <RotateTransform CenterX="-0.0004911" CenterY="4.23418" Angle="-45.8814"/>
+                            </TransformGroup>
+                        </LinearGradientBrush.RelativeTransform>
+                        <GradientStop Color="#FF000000" Offset="0"/>
+                        <GradientStop Color="#FF7F7F7F" Offset="0.520548"/>
+                        <GradientStop Color="#FFFFFFFF" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Stroke>
+            </Rectangle>
+        </Canvas>
+        <Canvas Width="200.361" Height="122.951" x:Name="selectedSmall" IsHitTestVisible="False" VerticalAlignment="Stretch" Margin="1.82000005245209,5.52500009536743,2.81900000572205,4.52400016784668" HorizontalAlignment="Stretch" d:LayoutOverrides="Height">
+            <Canvas.Clip>
+                <PathGeometry>
+                    <PathFigure IsClosed="True" StartPoint="0.333333333333329,118.833333333333">
+                        <LineSegment Point="199.694333333333,118.833333333333"/>
+                        <LineSegment Point="199.861,120.5"/>
+                        <LineSegment Point="0.5,120.5"/>
+                    </PathFigure>
+                </PathGeometry>
+            </Canvas.Clip>
+            <Canvas Width="189.768" Height="21.0075" Canvas.Top="98.276" x:Name="itemDetailSelected" RenderTransformOrigin="0.5,0.5">
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1.000249981880188" ScaleY="1.0003600120544434"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="5.41" Y="-0.98014652729034424"/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+                <Rectangle Width="189.768" Height="21.0075" Canvas.Left="0" Canvas.Top="0" Stretch="Fill" Fill="#B7FFFFFF"/>
+                <TextBlock Canvas.Left="3.25" Canvas.Top="4.501" Opacity="0" x:Name="description" FontFamily="Arial" FontWeight="Bold" FontSize="10" Text="Urban Chic Maxi Jacket" Foreground="#FF000000" Width="182.85"/>
+		</Canvas>
+            <Canvas Width="62.0156" Height="21.0075" Canvas.Top="97.276" x:Name="favoriteSelected" Canvas.Left="132.9" Visibility="Collapsed">
+                <Rectangle Width="62.0156" Height="21.0075" Canvas.Left="0" Canvas.Top="0" Stretch="Fill" Fill="#FFFFFFFF"/>
+                <TextBlock Canvas.Left="0" Canvas.Top="0.25" Opacity="0" x:Name="textBlock1"><TextBlock.RenderTransform>
+					<TransformGroup>
+						<MatrixTransform Matrix="1.00025,0,0,1.00036,3.97506,4.39299"/>
+					</TransformGroup>
+				</TextBlock.RenderTransform><Run FontFamily="Arial" FontWeight="Bold" FontSize="10" Text="Favorite" Foreground="#FF3D3729"/></TextBlock>
+                <Path Width="12.003" Height="12.0043" Canvas.Left="46.5846" Canvas.Top="3.43933" Stretch="Fill" Data="F1 M 52.5861,3.43933L 54.4404,7.39117L 58.5875,8.02478L 55.5868,11.1008L 56.2947,15.4436L 52.5861,13.3933L 48.8767,15.4436L 49.5853,11.1008L 46.5846,8.02478L 50.7318,7.39117L 52.5861,3.43933 Z " x:Name="star">
+                    <Path.Fill>
+                        <LinearGradientBrush StartPoint="0.649999,0.0833291" EndPoint="0.383349,1.08333">
+                            <GradientStop Color="#FFCB0404" Offset="0"/>
+                            <GradientStop Color="#FF860202" Offset="0.410959"/>
+                            <GradientStop Color="#FF420000" Offset="0.995434"/>
+                        </LinearGradientBrush>
+                    </Path.Fill>
+                </Path>
+            </Canvas>
+        </Canvas>
+        <Canvas x:Name="redBorderSmall" Width="200" Height="122.951" RenderTransformOrigin="0.5,0.5" Opacity="0" IsHitTestVisible="False" d:LayoutOverrides="Width, Height" Margin="2,5.52500009536743,3,4.52400016784668" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="0.85" ScaleY="0.85"/>
+                    <SkewTransform AngleX="0" AngleY="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0" Y="0"/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Rectangle Width="209" Height="132.618" Stretch="Fill" StrokeThickness="11" StrokeMiterLimit="2.75" Opacity="1" RenderTransformOrigin="0.5,0.5" x:Name="smallRedHighlight" Canvas.Left="-5.664" Canvas.Top="-5.664">
+                <Rectangle.Stroke>
+                    <LinearGradientBrush StartPoint="0.976779,0.956714" EndPoint="2.32316,0.956714">
+                        <LinearGradientBrush.RelativeTransform>
+                            <TransformGroup>
+                                <SkewTransform CenterX="0.976779" CenterY="0.956714" AngleX="23.311" AngleY="0"/>
+                                <RotateTransform CenterX="0.976779" CenterY="0.956714" Angle="224.23"/>
+                            </TransformGroup>
+                        </LinearGradientBrush.RelativeTransform>
+                        <GradientStop Color="#FFB23333" Offset="0"/>
+                        <GradientStop Color="#FF7E1919" Offset="0.557078"/>
+                        <GradientStop Color="#FF4A0000" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Stroke>
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="1"/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform X="0" Y="0"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+        </Canvas>
+        <TextBlock x:Name="price" Width="123" Height="41" Canvas.Top="140" Text="TextBlock" TextWrapping="Wrap" Visibility="Collapsed" HorizontalAlignment="Stretch" Margin="40.5,46.5,41.5,45.5" VerticalAlignment="Stretch" d:LayoutOverrides="Width, Height"/>
+	<Canvas Height="65" Width="65" Canvas.Left="67.5" Canvas.Top="24.5" x:Name="LoaderCanvas" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" IsHitTestVisible="False" Opacity="0" VerticalAlignment="Stretch" d:LayoutOverrides="Width, Height" Margin="37,2,0,66" HorizontalAlignment="Left">
+		<Canvas.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform/>
+				<SkewTransform/>
+				<RotateTransform/>
+				<TranslateTransform/>
+			</TransformGroup>
+		</Canvas.RenderTransform>
+		<Ellipse Height="65" Width="65" StrokeThickness="13" RenderTransformOrigin="0.5,0.5">
+			<Ellipse.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="0.55" ScaleY="0.55"/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Ellipse.RenderTransform>
+			<Ellipse.Stroke>
+				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+					<GradientStop Color="#FF000000"/>
+					<GradientStop Color="#FFFFFFFF" Offset="0.888"/>
+				</LinearGradientBrush>
+			</Ellipse.Stroke>
+			<Ellipse.Fill>
+				<RadialGradientBrush>
+					<GradientStop Color="#00000000" Offset="0.455"/>
+					<GradientStop Color="#FFFFFFFF" Offset="1"/>
+				</RadialGradientBrush>
+			</Ellipse.Fill>
+		</Ellipse>
+		<Canvas Height="65" Width="65" Clip="M-52,-10.5 L33,-10.5 L33,74.5 L-52,74.5 z">
+			<Ellipse Height="65" Width="65" StrokeThickness="13" Stroke="#FFFFFFFF" RenderTransformOrigin="0.5,0.5">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleX="0.55" ScaleY="0.55"/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+			</Ellipse>
+		</Canvas>
+	</Canvas>
+    </Grid>
+</UserControl>

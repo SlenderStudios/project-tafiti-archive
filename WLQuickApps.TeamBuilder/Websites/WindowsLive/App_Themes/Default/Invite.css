@@ -1,0 +1,53 @@
+﻿
+#content
+{
+    padding: 10px;
+}
+
+#contacts-header,
+#contacts-wrapper
+{
+    width: 500px;
+}
+
+#contacts-header
+{
+    border: solid 1px;
+}
+
+#contacts-wrapper
+{
+    height: 300px;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    overflow: auto;
+}
+
+#contacts-header table,
+#contacts-wrapper table
+{
+    width: 483px;
+}
+
+#contacts-header th,
+#contacts-wrapper td
+{
+    margin: 0;
+    padding: 2px;
+}
+
+#contacts-header th.checkbox,
+#contacts-wrapper td.checkbox
+{
+    text-align: left;
+    width: 20px;
+}
+
+#contacts-header th.name-column,
+#contacts-header th.mail-column,
+#contacts-wrapper td.name-column,
+#contacts-wrapper td.mail-column
+{
+    text-align: left;
+    width: 225px;
+}

@@ -1,0 +1,11 @@
+<SilverlightApp>
+	<loadFunction>StartWithParent</loadFunction>
+	<jsOrder>
+		<js>MicrosoftAjax.js</js>
+		<!--<js>PlayerStrings.js</js>-->
+		<js>PreviewMedia.js</js>
+		<js>BasePlayer.js</js>
+		<js>player.js</js>
+		<js>StartPlayer.js</js>
+	</jsOrder>
+</SilverlightApp>

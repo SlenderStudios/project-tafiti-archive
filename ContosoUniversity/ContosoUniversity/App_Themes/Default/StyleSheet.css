@@ -1,0 +1,183 @@
+﻿/* Contoso University */
+
+#footer{
+    position: absolute; 
+    text-align: center; 
+    width: 100%; 
+    bottom: -40px;
+}
+
+div#MasterContainer { width:1024px; height:768px; background-image: url(images/contoso_uni_bg.jpg); background-repeat: no-repeat; position:absolute; top:0px; left:0px}
+.NewsStoryBody {background-image: url(images/news_overlay.jpg);	background-repeat: no-repeat;	background-color:Transparent; font-family: Tahoma; font-size: 10px;	color: black; z-index :200;	margin-left:50px; margin-top: 20px;}
+div#NewsStoryHeadline {position:relative;  width: 825px; font-family:Arial; height:120px; font-size: 44px; color:White; z-index :200;}
+div#NewsStoryPublishDate {font-family:Georgia,Tahoma; font-size: 12px; width: 825px; font-weight:bold; border-bottom: dotted 1px red; padding-bottom:5px;}
+div#NewsStoryText { font-family:Georgia,Tahoma; font-size: 14px; width: 825px; z-index :200; border-bottom: dotted 1px red; padding-bottom:10px;	margin-bottom:20px;}
+
+.external {font-size:12px; color:#AC1D23;}
+
+body#Home { font-family: Tahoma; font-size: 12px; color: White; background-color:#5A6B58;background-image: url(images/cu_bg_scaling.gif); background-repeat:repeat-x;}
+a {color: White; text-decoration: none;	font-family: Tahoma; font-size: 12px;}
+a:hover {color: White;}
+
+.WhereBody {background-image: url(images/watn.jpg); background-repeat: no-repeat; font-family: Tahoma; font-size: 12px; color: White;	background-color:Transparent;}
+
+div#Contacts {color: white; left: 522px; top: 480px;overflow: auto; width: 320px; position: absolute;  height: 210px;}
+
+.Pager { background-color: transparent;}	
+.Pager td {font-family: Tahoma; font-size: 12px; color:#AF1D20; font-weight:900 }
+.Pager a { color:#AF1D20; text-decoration:none; font-weight:normal;}
+.Pager a:hover { color:#AF1D20; text-decoration:underline; font-weight:normal;}
+		
+.ContactsMsg {color: #9BA59B;}
+
+div#WhereContacts {color:#9BA59B; left: 19px; width: 237px; position: absolute; top: 112px; height: 475px;}
+.CampusLocations {position:absolute; left: 705px; top: 38px; background-color:Transparent; width:155px;}
+table#pushpin 
+    {
+        font-weight: bold; 
+        color: #9BA59B; 
+        font-family: Tahoma; 
+        font-size:12px;  
+        background-color: white;
+        border-top: #9BA59B 2px solid;
+        border-left: #9BA59B 2px solid;
+        border-right: #9BA59B 2px solid;
+        border-bottom: #9BA59B 2px solid;
+    }
+div#ShowOverlay {position: absolute; left:743px; top:638px;}
+div#AddCenterPushpin {position: absolute; left:270px; top:641px;}
+div#WhereAreTheyNow {position: absolute; left:850px; top:510px; width:123px; height:116px;}
+.SeeAllLink { display: none; color: #9BA59B}
+  
+.ContactsGridControl {width:100%; background-color:Transparent;}
+.ContactCell {font-size:12px; background-color: #9BA59B; width:26px;}
+.NameCell {font-size:12px; color:white; padding-left:5px; font-weight:bold; background-color: #9BA59B; width:90%; overflow:hidden;}
+
+div#SignIn {position: absolute; top: 10px; left: 220px;	font-size: 12px; color:#AD1F1E;	text-decoration:none;}
+div#SignIn a {color:#AD1F1E;}
+div#SignIn a:hover {text-decoration: underline;}
+
+div#TVWrapper {left: 152px;  top: 533px; width: 190px;  height: 144px; position: absolute; overflow: hidden;}
+input#channel0 {left: 378px; top: 510px; height: 20px; width: 36px; font-size:9px; font-weight:bold; color: White; background-color: #750A00; position: absolute;}
+input#channel1 {left: 378px; top: 530px; height: 20px; width: 36px; font-size:9px; font-weight:bold; color: White; background-color: #1E1C21; position: absolute;}
+input#channel2 {left: 378px; top: 550px; height: 20px; width: 36px; font-size:9px; font-weight:bold; color: White; background-color: #1E1C21; position: absolute;}
+
+a#TextOnly {position: absolute; top: 10px; left: 515px;	font-size: 12px; color:#592412;	text-decoration:none;}
+
+p.TextOnly {display:none}
+
+div#Search {left: 660px; width: 200px; color: white; position: absolute; top: 14px; height: 210px; overflow: auto;}
+   
+div#LatestNews {left: 220px; width: 205px; color: white; position: absolute; top: 135px; height: 210px; overflow:hidden;}
+div#LatestNews a {color: White; text-decoration: none;}
+div#LatestNews a:hover {color: #ac1c1c;}
+div#NewsLink {border-top: White 1px solid; padding-top: 5px; padding-bottom: 5px;}
+a#NewsSeeAll {position:absolute; top: 115px; left: 390px;}
+a#NewsSeeAll:hover {color: #ac1c1c;}
+div#AlertSignup {position:absolute; top: 115px; left: 370px;}
+    
+div#Events { border-top: #5B2312 1px solid; border-bottom: #5B2312 1px solid; width: 217px; color:#ac1c1c; left: 527px; width: 280px; position: absolute; top: 132px; height: 185px;}
+div#Events table {width:100%;}
+div#Events td {color: #AF1D20; font-family:Tahoma; font-weight:bold; font-size: 12px; border-bottom: #C5B6AF 1px solid; padding-bottom: 10px; padding-top: 10px;}
+div#Today {font-weight:bold; font-family:Tahoma; font-size: 12px; left: 527px; position: absolute; top: 107px; color:#5b240f;}
+	
+div#MarketPlace {left: 65px; overflow: auto; width: 350px; position: absolute; top: 815px; }
+div#ClassifiedCategories {padding-bottom:10px; font-size: 18px; color:Red; border-bottom: white 1px solid;}
+div#ClassifiedCategories a {font-size: 18px; color: White; font-weight: bold; text-decoration: none;}
+div#ClassifiedCategories a:hover { text-decoration: underline;}
+div#ClassifiedCategories a:active {color: red; font-weight: bold;}
+
+div#ClassifiedListings {color:White;}
+div#ClassifiedListings a {color: White; text-decoration: none;}
+div#ClassifiedListings a:hover {text-decoration: underline;}
+div#ClassifiedListings td {font-size: 12px;border-bottom: Gray 1px solid; padding-bottom: 5px; padding-top: 5px}
+div#ClassifiedListings table {margin-bottom: 5px;}
+
+div#ProcessPage {font-family: Arial, Tahoma; font-size: 12px; padding-left:30px; color: Black;}
+div#ProcessPage a {color: black; text-decoration: underline}
+img#PromotionalPhoto 
+{
+	position: absolute; 
+	top: 135px; 
+	left:55px;  
+}
+
+img#RoomMate1
+{
+	position: absolute; 
+	left:505px;  
+	top: 847px; 
+	width: 55px;
+	height: 92px;
+	border: 0;
+}
+
+img#RoomMate2
+{
+	position: absolute; 
+	left:638px; 
+	top: 847px; 
+	width: 55px;
+	height: 92px;
+	border: 0;
+}
+
+img#RoomMate3
+{
+	position: absolute; 
+	left:756px;  
+	top: 847px; 
+	width: 55px;
+	height: 92px;
+	border: 0;
+}
+
+img#RoomMate4
+{
+	position: absolute; 
+	left:876px; 
+	top: 847px; 
+	border: 0;
+	width: 55px;
+	height: 92px;
+}
+
+img#FeaturedSpace1
+{
+	position: absolute; 
+	left:887px;  
+	top: 81px; 
+	width: 56px;
+	height:65px;
+	border: 0;
+}
+
+img#FeaturedSpace2
+{
+	position: absolute; 
+	left:882px; 
+	top: 178px; 
+	width: 65px;
+	height:70px;
+	border: 0;
+}
+
+img#FeaturedSpace3
+{
+	position: absolute; 
+	left:881px;  
+	top: 274px; 
+	width: 66px;
+	height:70px;
+	border: 0;
+}
+
+img#FeaturedSpace4
+{
+	position: absolute; 
+	left:883px; 
+	top: 372px; 
+	width: 62px;
+	height:68px;
+	border: 0;
+}

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<rss version="2.0" xmlns:binding="http://www.live.com">
+  <channel>
+    <!-- Specifies the name of your Gadget -->
+    <title>Contoso Cup</title>
+    <link>http://www.contosobnk.com</link>
+    <!-- Gives a short description of your Gadget -->
+    <description>Latest leaderboard results for the Contoso Cup.</description>
+    <!-- Specifies the default locale for your Gadget -->
+    <language>en-us</language>
+    <!-- Specifies the JavaScript object that defines your Gadget (this object must be defined in the JavaScript linked to below) -->
+    <binding:type>WLQuickApps.ContosoBank.ContosoCupGadget</binding:type>
+    <item>
+      <!-- Specifies the JavaScript file that contains the code for your Gadget -->
+      <link>ContosoCupGadget.js</link>
+    </item>
+    <item>
+      <!-- Specifies the css file that contains the styles for your Gadget -->
+      <link binding:type="css">ContosoCupGadget.css</link>
+    </item>
+  </channel>
+</rss>
+

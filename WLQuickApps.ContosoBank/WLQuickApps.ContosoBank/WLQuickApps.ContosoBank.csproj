@@ -1,0 +1,838 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{156D6912-B62D-407E-BDD3-1E45283415F8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WLQuickApps.ContosoBank</RootNamespace>
+    <AssemblyName>WLQuickApps.ContosoBank</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.20229.20843, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\jyhan\Desktop\Work docs\WLRockStar\Codes\RockStar_20081103\RockStar_20081103\RockStar_2008-10-31\RockStar\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Live.ServerControls, Version=0.1.0.0, Culture=neutral, PublicKeyToken=a35181cdd213910b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Windows Live Tools\Microsoft.Live.ServerControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Net">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Silverlight, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Administrator.aspx.cs">
+      <DependentUpon>Administrator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Administrator.aspx.designer.cs">
+      <DependentUpon>Administrator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appointments.aspx.cs">
+      <DependentUpon>Appointments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appointments.aspx.designer.cs">
+      <DependentUpon>Appointments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BasePage.aspx.cs">
+      <DependentUpon>BasePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePage.aspx.designer.cs">
+      <DependentUpon>BasePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\PinXYComparer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Utilities.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Community.aspx.cs">
+      <DependentUpon>Community.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Community.aspx.designer.cs">
+      <DependentUpon>Community.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContosoBank.designer.cs">
+      <DependentUpon>ContosoBank.dbml</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="ContosoBank.Master.cs">
+      <DependentUpon>ContosoBank.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContosoBank.Master.designer.cs">
+      <DependentUpon>ContosoBank.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ContosoCup.aspx.cs">
+      <DependentUpon>ContosoCup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContosoCup.aspx.designer.cs">
+      <DependentUpon>ContosoCup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContosoRss.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controls\AdvisorListControl.ascx.cs">
+      <DependentUpon>AdvisorListControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\AdvisorListControl.ascx.designer.cs">
+      <DependentUpon>AdvisorListControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\AppointmentsControl.ascx.cs">
+      <DependentUpon>AppointmentsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\AppointmentsControl.ascx.designer.cs">
+      <DependentUpon>AppointmentsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\ArticlesResources.ascx.cs">
+      <DependentUpon>ArticlesResources.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\ArticlesResources.ascx.designer.cs">
+      <DependentUpon>ArticlesResources.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\Avatar.ascx.cs">
+      <DependentUpon>Avatar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\Avatar.ascx.designer.cs">
+      <DependentUpon>Avatar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\Calculator.ascx.cs">
+      <DependentUpon>Calculator.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\Calculator.ascx.designer.cs">
+      <DependentUpon>Calculator.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\EventsListControl.ascx.cs">
+      <DependentUpon>EventsListControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\EventsListControl.ascx.designer.cs">
+      <DependentUpon>EventsListControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\FeaturedEventControl.ascx.cs">
+      <DependentUpon>FeaturedEventControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\FeaturedEventControl.ascx.designer.cs">
+      <DependentUpon>FeaturedEventControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\ForumReplies.ascx.cs">
+      <DependentUpon>ForumReplies.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\ForumReplies.ascx.designer.cs">
+      <DependentUpon>ForumReplies.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\ForumSummaryControl.ascx.cs">
+      <DependentUpon>ForumSummaryControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\ForumSummaryControl.ascx.designer.cs">
+      <DependentUpon>ForumSummaryControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\Gadgets.ascx.cs">
+      <DependentUpon>Gadgets.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\Gadgets.ascx.designer.cs">
+      <DependentUpon>Gadgets.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\LatestPostsControl.ascx.cs">
+      <DependentUpon>LatestPostsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\LatestPostsControl.ascx.designer.cs">
+      <DependentUpon>LatestPostsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\LatestVideoSideControl.ascx.cs">
+      <DependentUpon>LatestVideoSideControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\LatestVideoSideControl.ascx.designer.cs">
+      <DependentUpon>LatestVideoSideControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\QuickLinksControl.ascx.cs">
+      <DependentUpon>QuickLinksControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\QuickLinksControl.ascx.designer.cs">
+      <DependentUpon>QuickLinksControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\SearchResultsControl.ascx.cs">
+      <DependentUpon>SearchResultsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\SearchResultsControl.ascx.designer.cs">
+      <DependentUpon>SearchResultsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\StickyPosts.ascx.cs">
+      <DependentUpon>StickyPosts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\StickyPosts.ascx.designer.cs">
+      <DependentUpon>StickyPosts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Advisor.cs" />
+    <Compile Include="Entity\Appointment.cs" />
+    <Compile Include="Entity\ArticlesResources.cs" />
+    <Compile Include="Entity\Avatar.cs" />
+    <Compile Include="Entity\Background.cs" />
+    <Compile Include="Entity\BaseForum.cs" />
+    <Compile Include="Entity\Bounds.cs" />
+    <Compile Include="Entity\Calculator.cs" />
+    <Compile Include="Entity\ClusteredPin.cs" />
+    <Compile Include="Entity\ContosoCup.cs" />
+    <Compile Include="Entity\ContosoCupDraw.cs" />
+    <Compile Include="Entity\ForumSubject.cs" />
+    <Compile Include="Entity\Gadget.cs" />
+    <Compile Include="Entity\LatLong.cs" />
+    <Compile Include="Entity\LocalEvent.cs" />
+    <Compile Include="Entity\QuickLink.cs" />
+    <Compile Include="Entity\TeamResult.cs" />
+    <Compile Include="Events.aspx.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Events.aspx.designer.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForumThread.aspx.cs">
+      <DependentUpon>ForumThread.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForumThread.aspx.designer.cs">
+      <DependentUpon>ForumThread.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LatestForumRSS.ashx.cs">
+      <DependentUpon>LatestForumRSS.ashx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\AdvisorLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\AppointmentLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\ArticlesResourcesLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\AvatarLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\BackgroundLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\BranchLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\CalculatorLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\ClusterBusinessLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\ContosoCupLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\EventLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\ForumLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\GadgetLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\MapPointLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\QuickLinkLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\TeamResultLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\UserLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\VideoLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PopularForumRSS.ashx.cs">
+      <DependentUpon>PopularForumRSS.ashx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProfilePage.aspx.cs">
+      <DependentUpon>ProfilePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProfilePage.aspx.designer.cs">
+      <DependentUpon>ProfilePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="SearchResults.aspx.cs">
+      <DependentUpon>SearchResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchResults.aspx.designer.cs">
+      <DependentUpon>SearchResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ContosoBankService.asmx.cs">
+      <DependentUpon>ContosoBankService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tools.aspx.cs">
+      <DependentUpon>Tools.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tools.aspx.designer.cs">
+      <DependentUpon>Tools.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Videos.aspx.cs">
+      <DependentUpon>Videos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Videos.aspx.designer.cs">
+      <DependentUpon>Videos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\LiveSearchAPI\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MapPointWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Appointments.aspx" />
+    <Content Include="Community.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Events.aspx" />
+    <Content Include="privacyPolicy.htm" />
+    <Content Include="Tools.aspx" />
+    <Content Include="Videos.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IDBHOLib">
+      <Guid>{FD609BF1-0E01-403F-8F20-EA238F5CDCC3}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Administrator.aspx" />
+    <Content Include="Admin\Web.config" />
+    <Content Include="App_Browsers\CSSFriendlyAdapters.browser" />
+    <Content Include="App_Code\Adapters\ChangePasswordAdapter.cs" />
+    <Content Include="App_Code\Adapters\CompositeDataBoundControlAdapter.cs" />
+    <Content Include="App_Code\Adapters\CreateUserWizardAdapter.cs" />
+    <Content Include="App_Code\Adapters\DataListAdapter.cs" />
+    <Content Include="App_Code\Adapters\DetailsViewAdapter.cs" />
+    <Content Include="App_Code\Adapters\FormViewAdapter.cs" />
+    <Content Include="App_Code\Adapters\GridViewAdapter.cs" />
+    <Content Include="App_Code\Adapters\LoginAdapter.cs" />
+    <Content Include="App_Code\Adapters\LoginStatusAdapter.cs" />
+    <Content Include="App_Code\Adapters\MenuAdapter.cs" />
+    <Content Include="App_Code\Adapters\PasswordRecoveryAdapter.cs" />
+    <Content Include="App_Code\Adapters\TreeViewAdapter.cs" />
+    <Content Include="App_Code\Adapters\WebControlAdapterExtender.cs" />
+    <Content Include="avatars\Avatar1.png" />
+    <Content Include="avatars\Avatar2.png" />
+    <Content Include="avatars\Avatar3.png" />
+    <Content Include="avatars\Avatar4.png" />
+    <Content Include="BasePage.aspx" />
+    <Content Include="ContosoBank.Master" />
+    <Content Include="ContosoCup.aspx" />
+    <Content Include="controls\AdvisorListControl.ascx" />
+    <Content Include="controls\AppointmentsControl.ascx" />
+    <Content Include="controls\ArticlesResources.ascx" />
+    <Content Include="controls\Avatar.ascx" />
+    <Content Include="controls\Calculator.ascx" />
+    <Content Include="controls\EventsListControl.ascx" />
+    <Content Include="controls\FeaturedEventControl.ascx" />
+    <Content Include="controls\ForumReplies.ascx" />
+    <Content Include="controls\ForumSummaryControl.ascx" />
+    <Content Include="controls\Gadgets.ascx" />
+    <Content Include="controls\LatestPostsControl.ascx" />
+    <Content Include="controls\LatestVideoSideControl.ascx" />
+    <Content Include="controls\QuickLinksControl.ascx" />
+    <Content Include="controls\SearchResultsControl.ascx" />
+    <Content Include="controls\StickyPosts.ascx" />
+    <Content Include="css\Appointments.css" />
+    <Content Include="css\AppointmentsIE6.css" />
+    <Content Include="css\BrowserSpecific\IEMenu6.css" />
+    <Content Include="css\ChangePassword.css" />
+    <Content Include="css\ContosoCupGadget.css" />
+    <Content Include="css\CreateUserWizard.css" />
+    <Content Include="css\DataList.css" />
+    <Content Include="css\DetailsView.css" />
+    <Content Include="css\FormView.css" />
+    <Content Include="css\GridView.css" />
+    <Content Include="css\Import.css" />
+    <Content Include="css\Login.css" />
+    <Content Include="css\LoginStatus.css" />
+    <Content Include="css\Menu.css" />
+    <Content Include="css\PasswordRecovery.css" />
+    <Content Include="css\player.xml" />
+    <Content Include="css\StyleSheet.css" />
+    <Content Include="css\StyleSheetIE6.css" />
+    <Content Include="css\StyleSheetIE7.css" />
+    <Content Include="css\TreeView.css" />
+    <Content Include="css\Videos.css" />
+    <Content Include="css\VideosIE6.css" />
+    <Content Include="data\Advisors.xml" />
+    <Content Include="data\Appointments.xml" />
+    <Content Include="data\ArticlesResources.xml" />
+    <Content Include="data\Avatars.xml" />
+    <Content Include="data\Backgrounds.xml" />
+    <Content Include="data\Calculators.xml" />
+    <Content Include="data\ContosoCupDraw.xml" />
+    <Content Include="data\events.xml" />
+    <Content Include="data\Gadgets.xml" />
+    <Content Include="data\QuickLinks.xml" />
+    <Content Include="data\TeamResults.xml" />
+    <Content Include="ForumThread.aspx" />
+    <Content Include="Gadgets\ContosoCup\ContosoCupGadget.css" />
+    <Content Include="Gadgets\ContosoCup\ContosoCupGadget.js" />
+    <Content Include="Gadgets\ContosoCup\gadget.xml" />
+    <Content Include="Gadgets\ContosoCup\GadgetContosoCupBlank.png" />
+    <Content Include="Gadgets\VistaGadget\drag.png" />
+    <Content Include="Gadgets\VistaGadget\en-US\ContosoRSS.html" />
+    <Content Include="Gadgets\VistaGadget\en-US\css\ContosoRSS.css" />
+    <Content Include="Gadgets\VistaGadget\en-US\css\settings.css" />
+    <Content Include="Gadgets\VistaGadget\en-US\gadget.xml" />
+    <Content Include="Gadgets\VistaGadget\en-US\js\ContosoRSS.js" />
+    <Content Include="Gadgets\VistaGadget\en-US\settings.html" />
+    <Content Include="Gadgets\VistaGadget\icon.png" />
+    <Content Include="Gadgets\VistaGadget\images\in_sidebar\GadgetVistaDocked.png" />
+    <Content Include="Gadgets\VistaGadget\images\on_desktop\GadgetVistaUnDocked.png" />
+    <Content Include="Gadgets\VistaGadget\logo.png" />
+    <Content Include="Help.aspx" />
+    <Content Include="images\AboutUs.png" />
+    <Content Include="images\AccordionHeaderClosed.png" />
+    <Content Include="images\AccordionHeaderOpen.png" />
+    <Content Include="images\AccordionPanel.png" />
+    <Content Include="images\Ad.jpg" />
+    <Content Include="images\AdminGraph.png" />
+    <Content Include="images\AdminTargets.png" />
+    <Content Include="images\AdminTasks.png" />
+    <Content Include="images\AdOfficeLive.gif" />
+    <Content Include="images\AdOfficeSmallBus.gif" />
+    <Content Include="images\ArrowBack.png" />
+    <Content Include="images\ArrowFwd.png" />
+    <Content Include="images\AvatarBackground.png" />
+    <Content Include="images\AvatarFrame.png" />
+    <Content Include="images\BackRepeat.png" />
+    <Content Include="images\BackRepeat2.png" />
+    <Content Include="images\BackRepeat3.png" />
+    <Content Include="images\Bullet.png" />
+    <Content Include="images\BusinessData.png" />
+    <Content Include="images\BusinessData1.png" />
+    <Content Include="images\BusinessData2.png" />
+    <Content Include="images\BusinessData3.png" />
+    <Content Include="images\BusinessData4.png" />
+    <Content Include="images\BusinessSearch.png" />
+    <Content Include="images\ButtonSmallestText.gif" />
+    <Content Include="images\ButtonSprite.png" />
+    <Content Include="images\ButtonText.gif" />
+    <Content Include="images\ButtonTextOver.gif" />
+    <Content Include="images\CalcSprite.png" />
+    <Content Include="images\CalendarHeaderTile.png" />
+    <Content Include="images\CalendarLegend.png" />
+    <Content Include="images\CalendarTileOver.png" />
+    <Content Include="images\CalendarTiles\CalendarTileBusyCurrent.png" />
+    <Content Include="images\CalendarTiles\CalendarTileBusyCurrentWeekend.png" />
+    <Content Include="images\CalendarTiles\CalendarTileBusyFuture.png" />
+    <Content Include="images\CalendarTiles\CalendarTileBusyFutureWeekend.png" />
+    <Content Include="images\CalendarTiles\CalendarTileBusyPast.png" />
+    <Content Include="images\CalendarTiles\CalendarTileBusyPastWeekend.png" />
+    <Content Include="images\CalendarTiles\CalendarTileFreeCurrent.png" />
+    <Content Include="images\CalendarTiles\CalendarTileFreeCurrentWeekend.png" />
+    <Content Include="images\CalendarTiles\CalendarTileFreeFuture.png" />
+    <Content Include="images\CalendarTiles\CalendarTileFreeFutureWeekend.png" />
+    <Content Include="images\CalendarTiles\CalendarTileOver.png" />
+    <Content Include="images\Close.png" />
+    <Content Include="images\ContentRepeat.png" />
+    <Content Include="images\Contoso.gif" />
+    <Content Include="images\Contoso.png" />
+    <Content Include="images\EmptyStar.png" />
+    <Content Include="images\FilledStar.png" />
+    <Content Include="images\Footer.png" />
+    <Content Include="images\ForumSummaryItem.png" />
+    <Content Include="images\GadgetContosoCupBlank.png" />
+    <Content Include="images\H1.png" />
+    <Content Include="images\H1Large.png" />
+    <Content Include="images\H1Med.png" />
+    <Content Include="images\Header.png" />
+    <Content Include="images\IconLghtBulbOff.png" />
+    <Content Include="images\IconLghtBulbOn.png" />
+    <Content Include="images\IconQuestion.png" />
+    <Content Include="images\ie6\AboutUs.gif" />
+    <Content Include="images\ie6\AccordionHeaderClosed.gif" />
+    <Content Include="images\ie6\AccordionHeaderOpen.gif" />
+    <Content Include="images\ie6\AccordionPanel.gif" />
+    <Content Include="images\ie6\Advisors.png" />
+    <Content Include="images\ie6\AvatarBackground.gif" />
+    <Content Include="images\ie6\AvatarFrame.gif" />
+    <Content Include="images\ie6\Bullet.gif" />
+    <Content Include="images\ie6\BusinessData.gif" />
+    <Content Include="images\ie6\BusinessData1.gif" />
+    <Content Include="images\ie6\BusinessData2.gif" />
+    <Content Include="images\ie6\BusinessData3.gif" />
+    <Content Include="images\ie6\BusinessData4.gif" />
+    <Content Include="images\ie6\Button.gif" />
+    <Content Include="images\ie6\ButtonSmaller.gif" />
+    <Content Include="images\ie6\ButtonSmallest.gif" />
+    <Content Include="images\ie6\Calc1.png" />
+    <Content Include="images\ie6\Calc2.png" />
+    <Content Include="images\ie6\Close.gif" />
+    <Content Include="images\ie6\Contacts.png" />
+    <Content Include="images\ie6\ContentRepeat.gif" />
+    <Content Include="images\ie6\Contoso.gif" />
+    <Content Include="images\ie6\EmptyStar.gif" />
+    <Content Include="images\ie6\FilledStar.gif" />
+    <Content Include="images\ie6\Footer.gif" />
+    <Content Include="images\ie6\ForumSummaryItem.gif" />
+    <Content Include="images\ie6\H1.gif" />
+    <Content Include="images\ie6\H1Large.gif" />
+    <Content Include="images\ie6\H1Med.gif" />
+    <Content Include="images\ie6\Header.gif" />
+    <Content Include="images\ie6\IconLghtBulbOff.gif" />
+    <Content Include="images\ie6\IconLghtBulbOn.gif" />
+    <Content Include="images\ie6\IconQuestion.gif" />
+    <Content Include="images\ie6\InfoBox.gif" />
+    <Content Include="images\ie6\InfoBoxShadow.gif" />
+    <Content Include="images\ie6\ItemHeaderPanel.gif" />
+    <Content Include="images\ie6\ItemHeaderPanelAlt.gif" />
+    <Content Include="images\ie6\ItemPanel.gif" />
+    <Content Include="images\ie6\ItemPanelAlt.gif" />
+    <Content Include="images\ie6\LatestForumPostsBackground.gif" />
+    <Content Include="images\ie6\LinkGadgetWhiteBox.gif" />
+    <Content Include="images\ie6\LiveSpaceLink.gif" />
+    <Content Include="images\ie6\MapDashBoardHeaderBack.gif" />
+    <Content Include="images\ie6\MapFrame.gif" />
+    <Content Include="images\ie6\MapFramePopup.gif" />
+    <Content Include="images\ie6\MenuOver.gif" />
+    <Content Include="images\ie6\QuickLinks.png" />
+    <Content Include="images\ie6\RatingsFrame.gif" />
+    <Content Include="images\ie6\SavedStar.gif" />
+    <Content Include="images\ie6\SidePanelFooter.gif" />
+    <Content Include="images\ie6\SidePanelFooterSelected.gif" />
+    <Content Include="images\ie6\SidePanelHeader.gif" />
+    <Content Include="images\ie6\SidePanelHeaderSelected.gif" />
+    <Content Include="images\ie6\SidePanelRepeat.gif" />
+    <Content Include="images\ie6\SidePanelRepeatSelected.gif" />
+    <Content Include="images\ie6\SidePanelSprite.gif" />
+    <Content Include="images\ie6\ToggleOff.gif" />
+    <Content Include="images\ie6\ToggleOn.gif" />
+    <Content Include="images\ie6\ToolsWatermark.gif" />
+    <Content Include="images\ie6\VideoFrame.gif" />
+    <Content Include="images\ie6\Videos.png" />
+    <Content Include="images\ie6\ZoomBar.gif" />
+    <Content Include="images\ie6\ZoomIn.gif" />
+    <Content Include="images\ie6\ZoomOut.gif" />
+    <Content Include="images\InfoBox.png" />
+    <Content Include="images\InfoBoxShadow.png" />
+    <Content Include="images\ItemHeaderPanel.png" />
+    <Content Include="images\ItemHeaderPanelAlt.png" />
+    <Content Include="images\ItemPanel.png" />
+    <Content Include="images\ItemPanelAlt.png" />
+    <Content Include="images\LatestForumPostsBackground.png" />
+    <Content Include="images\LinkContosoCup.png" />
+    <Content Include="images\LinkGadgetWhiteBox.png" />
+    <Content Include="images\LinkShares.png" />
+    <Content Include="images\LinkTips.png" />
+    <Content Include="images\MapDashBoardHeaderBack.png" />
+    <Content Include="images\MapFrame.png" />
+    <Content Include="images\MapFramePopup.png" />
+    <Content Include="images\MapSearch.png" />
+    <Content Include="images\MenuOver.png" />
+    <Content Include="images\MiniMapToggle.gif" />
+    <Content Include="images\PinSprite.png" />
+    <Content Include="images\pins\ATMPinLarge.png" />
+    <Content Include="images\pins\ATMPinMedium.png" />
+    <Content Include="images\pins\ATMPinSmall.png" />
+    <Content Include="images\pins\EventPin.png" />
+    <Content Include="images\pins\MemberPinLarge.png" />
+    <Content Include="images\pins\MemberPinMedium.png" />
+    <Content Include="images\pins\MemberPinSmall.png" />
+    <Content Include="images\RatingsFrame.png" />
+    <Content Include="images\RSS.png" />
+    <Content Include="images\SavedStar.png" />
+    <Content Include="images\SidePanelHeaderSprite.png" />
+    <Content Include="images\SidePanelRepeat.png" />
+    <Content Include="images\SidePanelRepeatSelected.png" />
+    <Content Include="images\SidePanelSprite.png" />
+    <Content Include="images\subjecttype_1.png" />
+    <Content Include="images\subjecttype_2.png" />
+    <Content Include="images\subjecttype_3.png" />
+    <Content Include="images\TagCloudDummy.png" />
+    <Content Include="images\ToggleOff.png" />
+    <Content Include="images\ToggleOn.png" />
+    <Content Include="images\ToolsWatermark.png" />
+    <Content Include="images\VideoFrame.png" />
+    <Content Include="images\ZoomBar.png" />
+    <Content Include="images\ZoomBarMarker.gif" />
+    <Content Include="images\ZoomIn.png" />
+    <Content Include="images\ZoomOut.png" />
+    <Content Include="JavaScript\AdapterUtils.js" />
+    <Content Include="JavaScript\MenuAdapter.js" />
+    <Content Include="JavaScript\TreeViewAdapter.js" />
+    <Content Include="js\AppointmentsControl.ascx.js" />
+    <Content Include="js\Default.aspx.js" />
+    <Content Include="js\EventsListControl.ascx.js" />
+    <Content Include="js\GlobalCallQueue.js" />
+    <Content Include="js\Utility.js" />
+    <Content Include="js\VEJS\VeJavaScriptIntellisenseHelper.js" />
+    <Content Include="js\WLQuickApps.ContosoBank.DashBoard.js" />
+    <Content Include="js\WLQuickApps.ContosoBank.Map.js" />
+    <Content Include="LatestForumRSS.ashx" />
+    <Content Include="PopularForumRSS.ashx" />
+    <Content Include="ProfilePage.aspx" />
+    <Content Include="SearchResults.aspx" />
+    <Content Include="Services\ContosoBankService.asmx" />
+    <None Include="calculators\Loan Calculator.xlsx" />
+    <None Include="ContosoBank.dbml">
+      <SubType>Designer</SubType>
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>ContosoBank.designer.cs</LastGenOutput>
+    </None>
+    <None Include="ContosoBank.dbml.layout">
+      <DependentUpon>ContosoBank.dbml</DependentUpon>
+    </None>
+    <None Include="DBScripts\1_ContosoDBCreate.sql" />
+    <None Include="DBScripts\2_ASPNetObjects\0. SQL - Drop all ASPNet objects.sql" />
+    <None Include="DBScripts\2_ASPNetObjects\1. SQL - Drop the Live ID Provider Objects.sql" />
+    <None Include="DBScripts\2_ASPNetObjects\2. SQL - Create the ASP.NET objects.sql" />
+    <None Include="DBScripts\2_ASPNetObjects\3. SQL - Create the Live ID Provider Objects.sql" />
+    <None Include="DBScripts\3_ContosoBankTables.sql" />
+    <None Include="DBScripts\4_ContosoBankData\0010_dbo_aspnet_Applications.SQL" />
+    <None Include="DBScripts\4_ContosoBankData\0050_dbo_aspnet_Roles.SQL" />
+    <None Include="DBScripts\4_ContosoBankData\0060_dbo_aspnet_SchemaVersions.SQL" />
+    <None Include="DBScripts\4_ContosoBankData\0080_dbo_Branch.SQL" />
+    <None Include="DBScripts\4_ContosoBankData\0090_dbo_UserProfile.SQL" />
+    <None Include="DBScripts\4_ContosoBankData\0100_dbo_ForumSubject.SQL" />
+    <None Include="DBScripts\4_ContosoBankData\0101_dbo_ForumReply.SQL" />
+    <None Include="DBScripts\4_ContosoBankData\0120_dbo_Videos.SQL" />
+    <None Include="DBScripts\ContosoDBCreate.sql" />
+    <None Include="Gadgets\ContosoCup\ContosoCupGadget.zip" />
+    <None Include="Gadgets\VistaGadget\ContosoBnk.gadget" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\LiveSearchAPI\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\LiveSearchAPI\SearchResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\LiveSearchAPI\webservices.wsdl" />
+    <None Include="Web References\MapPointWebService\Address.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointWebService\CountryRegionInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointWebService\DataSource.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointWebService\EntityType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointWebService\FindResults.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointWebService\LatLong.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointWebService\LineDriveMapImage.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointWebService\Location.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointWebService\MapImage.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointWebService\mappoint.wsdl" />
+    <None Include="Web References\MapPointWebService\MapViewRepresentations.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointWebService\PixelCoord.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointWebService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MapPointWebService\Route.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MapPointWebService\VersionInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <Content Include="thumbnails\interview 01_Thumb.jpg" />
+    <Content Include="thumbnails\interview 02_Thumb.jpg" />
+    <Content Include="thumbnails\interview 03_Thumb.jpg" />
+    <Content Include="thumbnails\interview 04_Thumb.jpg" />
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://soap.search.msn.com/webservices.asmx%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\LiveSearchAPI\</RelPath>
+      <UpdateFromURL>http://soap.search.msn.com/webservices.asmx%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WLQuickApps_ContosoBank_LiveSearchAPI_MSNSearchService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://staging.mappoint.net/standard-30/mappoint.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MapPointWebService\</RelPath>
+      <UpdateFromURL>http://staging.mappoint.net/standard-30/mappoint.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WLQuickApps_ContosoBank_MapPointWebService_CommonService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContosoBank.Master.resx">
+      <DependentUpon>ContosoBank.Master.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>80</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

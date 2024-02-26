@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="WLQuickApps.FieldManager.WebSite" elementFormDefault="qualified" targetNamespace="WLQuickApps.FieldManager.WebSite" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://fieldmanager.local.com/SiteService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WLQuickApps.FieldManager.WebSite" />
+  <xs:import schemaLocation="http://fieldmanager.local.com/SiteService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WLQuickApps.FieldManager.Business" />
+  <xs:element name="CreateLeague">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateLeagueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WLQuickApps.FieldManager.WebSite" minOccurs="0" name="CreateLeagueResult" nillable="true" type="q1:LeagueItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateField">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="address" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="latitude" type="xs:double" />
+        <xs:element minOccurs="0" name="longitude" type="xs:double" />
+        <xs:element minOccurs="0" name="numberOfFields" type="xs:int" />
+        <xs:element minOccurs="0" name="parkingLot" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="phoneNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateFieldResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WLQuickApps.FieldManager.WebSite" minOccurs="0" name="CreateFieldResult" nillable="true" type="q2:FieldItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLeague">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="leagueID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLeagueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WLQuickApps.FieldManager.WebSite" minOccurs="0" name="GetLeagueResult" nillable="true" type="q3:LeagueItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllLeagues">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllLeaguesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WLQuickApps.FieldManager.WebSite" minOccurs="0" name="GetAllLeaguesResult" nillable="true" type="q4:ArrayOfLeagueItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLeagues">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLeaguesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WLQuickApps.FieldManager.WebSite" minOccurs="0" name="GetLeaguesResult" nillable="true" type="q5:ArrayOfLeagueItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetField">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fieldID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFieldResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WLQuickApps.FieldManager.WebSite" minOccurs="0" name="GetFieldResult" nillable="true" type="q6:FieldItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWeather">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="latitude" type="xs:double" />
+        <xs:element minOccurs="0" name="longitude" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWeatherResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WLQuickApps.FieldManager.Business" minOccurs="0" name="GetWeatherResult" nillable="true" type="q7:ArrayOfWeather" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangeFieldStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fieldID" type="xs:int" />
+        <xs:element minOccurs="0" name="isOpen" type="xs:boolean" />
+        <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangeFieldStatusResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMyFields">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMyFieldsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WLQuickApps.FieldManager.WebSite" minOccurs="0" name="GetMyFieldsResult" nillable="true" type="q8:ArrayOfFieldItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFieldsForUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="startRowIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="maximumRows" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFieldsForUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WLQuickApps.FieldManager.WebSite" minOccurs="0" name="GetFieldsForUserResult" nillable="true" type="q9:ArrayOfFieldItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFieldsForUserCount">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFieldsForUserCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFieldsForUserCountResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFieldsInRange">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nLatitude" type="xs:double" />
+        <xs:element minOccurs="0" name="sLatitude" type="xs:double" />
+        <xs:element minOccurs="0" name="eLongitude" type="xs:double" />
+        <xs:element minOccurs="0" name="wLongitude" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFieldsInRangeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/WLQuickApps.FieldManager.WebSite" minOccurs="0" name="GetFieldsInRangeResult" nillable="true" type="q10:ArrayOfFieldItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFieldsForLeague">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="leagueID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFieldsForLeagueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/WLQuickApps.FieldManager.WebSite" minOccurs="0" name="GetFieldsForLeagueResult" nillable="true" type="q11:ArrayOfFieldItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersForLeague">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="leagueID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersForLeagueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/WLQuickApps.FieldManager.WebSite" minOccurs="0" name="GetUsersForLeagueResult" nillable="true" type="q12:ArrayOfUserItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserNameByEmail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserNameByEmailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetUserNameByEmailResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDisplayName">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDisplayNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDisplayNameResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddToMyFields">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fieldID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddToMyFieldsResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddToMyLeagues">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="leagueID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddToMyLeaguesResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddFieldAdmin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fieldID" type="xs:int" />
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddFieldAdminResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddFieldToLeague">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fieldID" type="xs:int" />
+        <xs:element minOccurs="0" name="leagueID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddFieldToLeagueResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateLeague">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="leagueID" type="xs:int" />
+        <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateLeagueResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateField">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fieldID" type="xs:int" />
+        <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="address" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="latitude" type="xs:double" />
+        <xs:element minOccurs="0" name="longitude" type="xs:double" />
+        <xs:element minOccurs="0" name="numberOfFields" type="xs:int" />
+        <xs:element minOccurs="0" name="parkingLot" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="phoneNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isOpen" type="xs:boolean" />
+        <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateFieldResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMessengerID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="messengerPresenceID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMessengerIDResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteLeague">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="leagueID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteLeagueResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteField">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fieldID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteFieldResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveLeague">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="leagueID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveLeagueResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveField">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fieldID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveFieldResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

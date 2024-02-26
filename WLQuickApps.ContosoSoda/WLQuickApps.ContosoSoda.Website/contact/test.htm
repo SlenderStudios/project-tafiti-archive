@@ -1,0 +1,53 @@
+﻿<html xmlns:devlive="http://dev.live.com">
+<head>
+<script type="text/javascript" 
+    src="http://controls.services.live.com/scripts/base/v0.3/live.js"> 
+</script>
+<script type="text/javascript" 
+    src="http://controls.services.live.com/scripts/base/v0.3/controls.js"> 
+</script>
+<script type="text/javascript">
+function onSignin() {
+
+}
+
+function onSignout() {
+		// user is not signed in 
+}
+
+function onError() {
+		// there was a data transfer error
+}
+
+function onData(p_contacts) {
+		// here comes the data!
+		var s = "Done! " + p_contacts.length + " records received. <br>";
+		for (var i = 0; i < p_contacts.length; i++) {
+			s += "<p>";
+			s += "Email: " + p_contacts[i].email;
+			s += "</p>";
+		}
+		alert(s);
+}
+</script>
+</head>
+<body>
+<noscript>This control requires a web browser that supports JavaScript</noscript>
+		<devlive:contactscontrol style="float: right;  width: 250px; height: 350px;"
+		devlive:privacyStatementURL= "http://www.dq.hk:8080/contact/privacyPolicy.html" 
+		devlive:channelEndpointURL="http://www.dq.hk:8080/contact/channel.htm" 
+		devlive:dataDesired="name,email,nickname" 
+		devlive:market="en" 
+		devlive:message="We can change the email subject"
+		devlive:view="list"
+		devlive:innerBackgroundColor= "black" 
+		devlive:outerBackgroundColor="#aa0000"
+		devlive:linkColor="white"
+		devlive:innerTextColor="white"
+		devlive:onSignin="onSignin" 
+		devlive:onSignout="onSignout" 
+		devlive:onError="onError" 
+		devlive:onData="onData" />
+
+</body>
+</html>

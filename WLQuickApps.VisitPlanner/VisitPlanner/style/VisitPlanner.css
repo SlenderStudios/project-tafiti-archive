@@ -1,0 +1,217 @@
+﻿body
+{
+	margin: 0;
+	background-color: #FFFFFF;
+}
+/* for ie mac*/
+
+html, body
+{
+	height: 100%;
+	padding: 0;
+}
+* html, * html body
+{
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+.main
+{
+	width: 1024px;
+	height: 100%;
+	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+}
+.content
+{
+	position: absolute;
+	width: 1024px;
+	height: 100%;
+	z-index: 2;
+}
+
+.top-bar
+{
+	position: absolute;
+	width: 1024px;
+	z-index: 5;
+	float: right;
+	text-align: right;
+	overflow: hidden;
+}
+
+.vplogo
+{
+	float: left;
+	position: absolute;
+	z-index: 5;
+}
+
+.Clear
+{
+	clear: both;
+}
+
+.SearchBar
+{
+	width: 700px;
+	position: absolute;
+	top: 54px;
+	left: 255px;
+	color: #667e5b;
+	font-family: tahoma, verdana, arial, sans-serif;
+	font-size: 10pt;
+	overflow: hidden;
+	z-index: 999;
+}
+
+.PrintHeader1
+{
+	font-family: tahoma, verdana, arial, sans-serif;
+	font-size: 18pt;
+	color: #a1a48f;
+}
+.PrintHeader2
+{
+	font-family: tahoma, verdana, arial, sans-serif;
+	font-size: 12pt;
+	color: #a1a48f;
+}
+
+.AddCustomPinHeader
+{
+	font-family: verdana, arial, sans-serif;
+	font-size: 10pt;
+	color: #EBE7B7;
+}
+
+.AddRemoveConciergeLinks
+{
+	font-family: arial, sans-serif;
+	font-size: 10pt;
+	color: #EBE7B7;
+	text-decoration: none;
+}
+
+.AddRemoveConciergeLinks:hover
+{
+	text-decoration: underline;
+}
+
+.addCustomPinPopup
+{
+	position: absolute;
+	display: none;
+	background-color: #07375D;
+	top: -500px;
+	z-index: 1000;
+	width: 350px;
+	height: 280px;
+	filter: alpha(opacity=90);
+	opacity: 0.9;
+}
+
+.addConciergePopup
+{
+	position: absolute;
+	display: none;
+	background-color: #07375D;
+	top: -500px;
+	z-index: 1000;
+	width: 340px;
+	height: 400px;
+	filter: alpha(opacity=90);
+	opacity: 0.9;
+}
+
+.registerPopup
+{
+	position: absolute;
+	display: none;
+	background-color: #07375D;
+	top: -500px;
+	z-index: 1000;
+	width: 324px;
+	height: 175px;
+	border: solid 2px black;
+	filter: alpha(opacity=90);
+	opacity: 0.9;
+}
+
+.conciergeAddRemovePopup
+{
+	position: absolute;
+	display: none;
+	top: -500px;
+	z-index: 1000;
+	filter: alpha(opacity=90);
+	opacity: 0.9;
+}
+
+
+.innerDiv
+{
+	background-color: #07375D;
+	border: solid 2px black;
+}
+
+.textarea
+{
+	font-family: arial, sans-serif;
+	font-size: 14px;
+	width: 95%;
+}
+
+.textbox
+{
+	font-family: arial, sans-serif;
+	font-size: 14px;
+}
+
+.spacer10
+{
+	height: 10px;
+}
+
+.spacer5
+{
+	height: 5px;
+}
+
+.closelink
+{
+	font-family: Times New Roman;
+	font-size: 10pt;
+	color: #a1a48f;
+	float: right;
+	text-decoration: none;
+}
+
+.closelink:hover
+{
+	text-decoration: underline;
+}
+
+.footer
+{
+	position: absolute;
+	width: 1024px;
+	z-index: 999;
+	color: #93958a;
+	font-size: 10pt;
+	margin-top: 30px;
+	bottom: -20px;
+}
+.spacer
+{
+	height: 88px;
+}
+/* same height as footer/header to preserve space*/
+p
+{
+	margin-top: 0;
+}
+

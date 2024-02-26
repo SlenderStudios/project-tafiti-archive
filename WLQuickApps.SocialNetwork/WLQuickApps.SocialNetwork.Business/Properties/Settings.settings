@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WLQuickApps.SocialNetwork.Business.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WLQuickApps_SocialNetwork_Business_LiveAlertsMessageService_MessageWebServicesService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://services.alerts.live-ppe.com/axis/services/Message</Value>
+    </Setting>
+    <Setting Name="WLQuickApps_SocialNetwork_Business_LiveAlertsSubscriptionService_AlertsWebServicesService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://services.alerts.live-ppe.com/axis/services/Subscription</Value>
+    </Setting>
+    <Setting Name="WLQuickApps_SocialNetwork_Business_MapPointService_CommonService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://findv3.staging.mappoint.net/Find-30/Common.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

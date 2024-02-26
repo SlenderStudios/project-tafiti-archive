@@ -1,0 +1,275 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{18261AB5-776B-49C2-9E57-E93762F48D75}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contoso</RootNamespace>
+    <AssemblyName>Contoso</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.11119.25533, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\songhaitao\Desktop\WindowsLiveApp\CommonDLL\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AntiXssLibrary, Version=1.5.0.0, Culture=neutral, PublicKeyToken=5906d2bb3d8a12c4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\songhaitao\Desktop\WindowsLiveApp\CommonDLL\AntiXssLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Preview, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\songhaitao\Desktop\新建文件夹\Microsoft.Web.Preview.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86" />
+    <Reference Include="PresentationFramework, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="RssToolkit, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\songhaitao\Desktop\新建文件夹\RssToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlertSignup.aspx.cs">
+      <DependentUpon>AlertSignup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlertSignup.aspx.designer.cs">
+      <DependentUpon>AlertSignup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_BIG.aspx.cs">
+      <DependentUpon>Default_BIG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_BIG.aspx.designer.cs">
+      <DependentUpon>Default_BIG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="services\ContosoService.asmx.cs">
+      <DependentUpon>ContosoService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AlertSignup.aspx" />
+    <Content Include="css\Style_big.css" />
+    <Content Include="Default_BIG.aspx" />
+    <Content Include="css\home_banner_001.png" />
+    <Content Include="css\home_bg_tile_001.jpg" />
+    <Content Include="css\zh-cn\home_chat_tab_001.png" />
+    <Content Include="css\zh-cn\home_chat_tab_roll_001.png" />
+    <Content Include="css\zh-cn\home_contacts_tab_001.png" />
+    <Content Include="css\zh-cn\home_contacts_tab_roll_001.png" />
+    <Content Include="css\home_favorites_001.png" />
+    <Content Include="css\home_favorites_003_%28text_divider%29.png" />
+    <Content Include="css\home_favorites_004.png" />
+    <Content Include="css\zh-cn\home_favorites_005.png" />
+    <Content Include="css\home_logo_001.png" />
+    <Content Include="css\home_messenger_bottom_001.png" />
+    <Content Include="css\home_messenger_left_001.png" />
+    <Content Include="css\home_messenger_left_filler_001.png" />
+    <Content Include="css\home_messenger_right_001.png" />
+    <Content Include="css\home_messenger_right_filler_001.png" />
+    <Content Include="css\home_messenger_top_001.png" />
+    <Content Include="css\home_nav_001_%28allinone_4_placement%29.png" />
+    <Content Include="css\home_news_bottom_001.png" />
+    <Content Include="css\home_news_left_001.png" />
+    <Content Include="css\home_news_left_filler_001.png" />
+    <Content Include="css\home_news_right_001.png" />
+    <Content Include="css\home_news_right_filler_001.png" />
+    <Content Include="css\home_news_thumb_001.png" />
+    <Content Include="css\home_news_top_001.png" />
+    <Content Include="css\home_video_001.png" />
+    <Content Include="css\nav_table_background.png" />
+    <Content Include="css\news_thumb_001.png" />
+    <Content Include="css\news_thumb_003.png" />
+    <Content Include="css\news_thumb_004.png" />
+    <Content Include="css\new_thumbs_002.png" />
+    <Content Include="css\ribbon.png" />
+    <Content Include="css\Style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="scripts\AjaxControlToolkit.Compat.Timer.Timer.js" />
+    <Content Include="scripts\Contoso.DragSourceBehavior.js" />
+    <Content Include="scripts\Contoso.DropZoneBehavior.js" />
+    <Content Include="scripts\Contoso.LiveContacts.js" />
+    <Content Include="scripts\Default_big.aspx.js" />
+    <Content Include="channel.htm" />
+    <Content Include="scripts\Default.aspx.js" />
+    <Content Include="scripts\SilverlightContent.js" />
+    <Content Include="scripts\VideoGoRound.js" />
+    <Content Include="services\ContosoService.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="XAML\videogoround_big_RTW.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Contoso.Alerts\Contoso.Alerts.csproj">
+      <Project>{FE3DFA9B-2DE1-4763-8E7E-B8D80F6A3C71}</Project>
+      <Name>Contoso.Alerts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contoso.Common\Contoso.Common.csproj">
+      <Project>{A81F58E1-A9AD-49D0-85E6-35FAF6710167}</Project>
+      <Name>Contoso.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Default.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\AlertSignup.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Default_BIG.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Default.aspx.zh-cn.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Default_BIG.aspx.zh-cn.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\AlertSignup.aspx.zh-cn.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="css\en-us\home_chat_tab_001.png" />
+    <Content Include="css\en-us\home_chat_tab_roll_001.png" />
+    <Content Include="css\en-us\home_contacts_tab_001.png" />
+    <Content Include="css\en-us\home_contacts_tab_roll_001.png" />
+    <Content Include="css\en-us\home_drag_to_favs_001.png" />
+    <Content Include="css\en-us\home_favorites_005.png" />
+    <Content Include="css\en-us\home_favorites_006.png" />
+    <Content Include="css\en-us\home_news_title_001.png" />
+    <Content Include="css\en-us\nav_table_002.png" />
+    <Content Include="css\en-us\nav_table_002_roll.png" />
+    <Content Include="css\en-us\nav_table_003.png" />
+    <Content Include="css\en-us\nav_table_003_roll.png" />
+    <Content Include="css\en-us\nav_table_004.png" />
+    <Content Include="css\en-us\nav_table_004_roll.png" />
+    <Content Include="css\en-us\nav_table_005.png" />
+    <Content Include="css\en-us\nav_table_005_roll.png" />
+    <Content Include="css\en-us\nav_table_006.png" />
+    <Content Include="css\en-us\nav_table_006_roll.png" />
+    <Content Include="css\en-us\nav_table_007.png" />
+    <Content Include="css\en-us\nav_table_007_roll.png" />
+    <Content Include="css\en-us\new_chat_header.png" />
+    <Content Include="css\ribbon2.png" />
+    <Content Include="css\zh-cn\home_drag_to_favs_001.png" />
+    <Content Include="css\zh-cn\home_favorites_006.png" />
+    <Content Include="css\zh-cn\home_news_title_001.png" />
+    <Content Include="css\zh-cn\nav_table_002.png" />
+    <Content Include="css\zh-cn\nav_table_002_roll.png" />
+    <Content Include="css\zh-cn\nav_table_003.png" />
+    <Content Include="css\zh-cn\nav_table_003_roll.png" />
+    <Content Include="css\zh-cn\nav_table_004.png" />
+    <Content Include="css\zh-cn\nav_table_004_roll.png" />
+    <Content Include="css\zh-cn\nav_table_005.png" />
+    <Content Include="css\zh-cn\nav_table_005_roll.png" />
+    <Content Include="css\zh-cn\nav_table_006.png" />
+    <Content Include="css\zh-cn\nav_table_006_roll.png" />
+    <Content Include="css\zh-cn\nav_table_007.png" />
+    <Content Include="css\zh-cn\nav_table_007_roll.png" />
+    <Content Include="css\zh-cn\new_chat_header.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" Condition="" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>40984</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

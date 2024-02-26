@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="VESilverlight.Primary.MapPanel" 
+	xmlns="http://schemas.microsoft.com/client/2007"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:Silverlight_Samples_Controls="clr-namespace:VESilverlight;assembly=VESilverlight"
+	xmlns:Primary="clr-namespace:VESilverlight.Primary;assembly=VESilverlight"
+	Width="633" Height="519">
+    <Canvas x:Name="LayoutRoot">
+        <Canvas Width="670" Height="722" x:Name="ParentCanvas" Canvas.Top="49">
+	
+		<Canvas x:Name="mapCanvas" Width="613" Height="633">
+			<Rectangle Width="617.445" Height="448.123" Canvas.ZIndex="1" x:Name="MapRect">
+				
+				<Rectangle.Fill>
+					<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+						<GradientStop Color="#FFa8a9ad" Offset="0"/>
+						<GradientStop Color="#FF413f40" Offset="1"/>
+					</LinearGradientBrush>
+				</Rectangle.Fill>
+				
+			</Rectangle>
+			<Rectangle Width="615.418" Height="444.513" Canvas.Left="6.09" Canvas.Top="6.873" Canvas.ZIndex="0" x:Name="MapRectShadow">
+				<Rectangle.Fill>
+					<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+						<GradientStop Offset="0" Color="#2F000000"/>
+						<GradientStop Offset="1" Color="#2F000000"/>
+					</LinearGradientBrush>
+				</Rectangle.Fill>
+			</Rectangle>
+			<Rectangle Width="404" Height="431.77" Fill="#33000000" Canvas.ZIndex="1" x:Name="MapContainerShadow" Canvas.Left="10.5" Canvas.Top="10"/>
+			<Canvas Width="402.5" Height="431.777" Canvas.Left="8" Canvas.Top="8" x:Name="MapContainer"/>
+	
+	
+	
+			<Image Width="58" Height="47" Canvas.Left="565.943" Canvas.Top="407.924" Canvas.ZIndex="1" x:Name="panelCorner"/>
+	
+	
+	
+		</Canvas>
+	
+		<Canvas Width="253.603" Height="511.783" Canvas.ZIndex="-1" x:Name="backPanel" Canvas.Left="416.397" Canvas.Top="-42">
+	
+			<Rectangle Width="211.569" Height="501.717" Fill="#FFE5E3B3" />
+			<Rectangle Width="211.569" Height="501.717" Fill="#2F000000" Canvas.ZIndex="-1" Canvas.Left="5.034" Canvas.Top="6.067" />
+		
+	
+		</Canvas>
+		
+	
+	</Canvas>
+	
+	
+	
+	<Primary:SideMenu Canvas.Left="421" Canvas.Top="14" x:Name="sideMenu" Width="204" Height="475"/>
+</Canvas>		
+	
+</UserControl>

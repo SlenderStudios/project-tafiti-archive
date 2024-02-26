@@ -1,0 +1,139 @@
+﻿<UserControl x:Class="VESilverlight.Primary.TourShareControl"
+	xmlns="http://schemas.microsoft.com/client/2007"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:VESilverlight="clr-namespace:VESilverlight;assembly=VESilverlight"	
+	Width="210" Height="31.833">
+    <Canvas x:Name="LayoutRoot">
+	<Canvas.Triggers>
+		<EventTrigger RoutedEvent="Canvas.Loaded">
+			<BeginStoryboard>
+				<Storyboard x:Name="TourToolTipShow">
+					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="TourToolTip" Storyboard.TargetProperty="(UIElement.Opacity)">
+						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+						<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+						<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+					</DoubleAnimationUsingKeyFrames>
+				</Storyboard>
+			</BeginStoryboard>
+			<BeginStoryboard>
+				<Storyboard x:Name="ShareToolTipShow">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ShareToolTip" Storyboard.TargetProperty="(UIElement.Opacity)">
+						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+						<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+						<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+					</DoubleAnimationUsingKeyFrames>
+				</Storyboard>
+			</BeginStoryboard>
+		</EventTrigger>
+	</Canvas.Triggers>
+	<Canvas Width="65" Height="31.833" x:Name="TourCanvas" Canvas.Left="7.5" Cursor="Hand">
+		<TextBlock Width="71" Height="23.833" Canvas.Top="8" Text="Guided Tour" TextWrapping="Wrap" Foreground="#FFE6E5B9" FontFamily="Verdana" FontSize="10" x:Name="TourText"/>
+	</Canvas>
+	<Canvas Width="95" Height="31.833" Canvas.Left="86" x:Name="ShareCanvas" Cursor="Arrow">
+		<Rectangle Width="95" Height="31.833" Fill="#00FFFFFF" Canvas.Left="0" Canvas.Top="0"/>
+		<TextBlock Width="36" Height="15.833" Canvas.Top="8" Text="Share:" TextWrapping="Wrap" Foreground="#FFE6E5B9" FontFamily="Verdana" FontSize="10"/>
+		<Canvas Width="22" Height="26.083" Canvas.Left="74" x:Name="IMButton" Visibility="Collapsed" Cursor="Hand">
+			<TextBlock Width="17" Height="15.833" Canvas.Left="4.75" TextWrapping="Wrap" Text="IM" Foreground="#8faabc" FontFamily="Verdana" FontSize="10" Canvas.Top="8"/>
+			<Rectangle Width="33" Height="31.833" Fill="#00FFFFFF" Canvas.Left="0" Canvas.Top="0"/>
+		</Canvas>
+		<Canvas Width="34" Height="26.083" Canvas.Left="36" x:Name="EmailButton" Cursor="Hand">
+			<TextBlock Width="47" Height="31.833" TextWrapping="Wrap" Text="E-mail" Foreground="#8faabc" FontFamily="Verdana" FontSize="10" Canvas.Top="8"/>
+			<Rectangle Width="33" Height="31.833" Fill="#00FFFFFF" Canvas.Left="0" Canvas.Top="0"/>
+		</Canvas>
+	</Canvas>
+	<Image Width="189" Height="2" Canvas.Left="0" Canvas.Top="0" Source="/images/separator.png" Visibility="Visible" />
+	<Image Width="189" Height="2" Canvas.Left="0" Canvas.Top="27" Source="/images/separator.png" />
+	<Canvas Visibility="Collapsed" x:Name="TourToolTip" Width="30.579" Height="121.359" Canvas.Top="-71" Canvas.ZIndex="0" RenderTransformOrigin="0.5,0.5" Canvas.Left="42.25">
+		<Canvas.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform ScaleX="1" ScaleY="1"/>
+				<SkewTransform AngleX="0" AngleY="0"/>
+				<RotateTransform Angle="90"/>
+				<TranslateTransform X="0" Y="0"/>
+			</TransformGroup>
+		</Canvas.RenderTransform>
+		<Rectangle RenderTransformOrigin="0.5,0.5" x:Name="TourToolTipShadow" Width="119.75" Height="28.5" Fill="#4C000000" Stroke="#4C000000" StrokeThickness="0.5" RadiusX="2" RadiusY="2" Canvas.Left="-43.89" Canvas.Top="45.719">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="90"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle x:Name="ToolTipRect" Width="28.657" Height="119.64" Stroke="#FF767676" RadiusX="2" RadiusY="2" RenderTransformOrigin="0.5,0.5" StrokeThickness="0.5" Canvas.Top="1.719">
+			<Rectangle.Fill>
+				<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+					<GradientStop Color="#FFFFFFFF" Offset="0"/>
+					<GradientStop Color="#FFE4E5F0" Offset="1"/>
+				</LinearGradientBrush>
+			</Rectangle.Fill>
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<TextBlock x:Name="ToolTipText" Width="110.751" Height="25.127" Canvas.Left="-41.346" Canvas.Top="49.182" FontFamily="Arial" FontSize="11" Foreground="#FF767676" Text="Choose your view and take the virtual tour" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5">
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="-90"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+		</TextBlock>
+	</Canvas>
+	<Canvas Visibility="Collapsed" x:Name="ShareToolTip" Width="32.079" Height="121.609" Canvas.Top="-70.375" Canvas.ZIndex="0" RenderTransformOrigin="0.5,0.5" Canvas.Left="146.125">
+		<Canvas.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform ScaleX="1" ScaleY="1"/>
+				<SkewTransform AngleX="0" AngleY="0"/>
+				<RotateTransform Angle="90"/>
+				<TranslateTransform X="0" Y="0"/>
+			</TransformGroup>
+		</Canvas.RenderTransform>
+		<Rectangle RenderTransformOrigin="0.5,0.5" x:Name="TourToolTipShadow1" Width="119.25" Height="30.25" Fill="#4C000000" Stroke="#4C000000" StrokeThickness="0.5" RadiusX="2" RadiusY="2" Canvas.Left="-42.765" Canvas.Top="45.094">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="90"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle x:Name="ToolTipRect2" Width="29.907" Height="118.89" Stroke="#FF767676" RadiusX="2" RadiusY="2" RenderTransformOrigin="0.5,0.5" StrokeThickness="0.5" Canvas.Top="2.469">
+			<Rectangle.Fill>
+				<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+					<GradientStop Color="#FFFFFFFF" Offset="0"/>
+					<GradientStop Color="#FFE4E5F0" Offset="1"/>
+				</LinearGradientBrush>
+			</Rectangle.Fill>
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<TextBlock x:Name="ToolTipText2" Width="110.751" Height="25.877" Canvas.Left="-40.174" Canvas.Top="48.258" FontFamily="Arial" FontSize="11" Foreground="#FF767676" Text="Share the experience with friends and family" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5">
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="-90"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+		</TextBlock>
+	</Canvas>
+</Canvas>
+</UserControl>

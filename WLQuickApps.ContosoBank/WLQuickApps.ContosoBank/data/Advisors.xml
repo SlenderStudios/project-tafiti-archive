@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advisors>
+  <Advisor>
+    <ID>1</ID>
+    <AdvisorName>Wealth Advisor</AdvisorName>
+    <CID>5cb0b41c15fa0196</CID>
+    <AvailableAppointment>True</AvailableAppointment>
+    <IsActive>True</IsActive>
+  </Advisor>
+  <Advisor>
+    <ID>2</ID>
+    <AdvisorName>Loan Advisor</AdvisorName>
+    <CID>71d8db1fb673c4ef</CID>
+    <AvailableAppointment>True</AvailableAppointment>
+    <IsActive>True</IsActive>
+  </Advisor>
+  <Advisor>
+    <ID>3</ID>
+    <AdvisorName>Insurance Advisor</AdvisorName>
+    <CID>4016d3682c711308</CID>
+    <AvailableAppointment>True</AvailableAppointment>
+    <IsActive>True</IsActive>
+  </Advisor>
+  <Advisor>
+    <ID>4</ID>
+    <AdvisorName>Automated Agent</AdvisorName>
+    <CID>42880ac7a5958db2</CID>
+    <AvailableAppointment>False</AvailableAppointment>
+    <IsActive>True</IsActive>
+  </Advisor>
+</Advisors>

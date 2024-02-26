@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="UserDataSet" targetNamespace="http://tempuri.org/UserDataSet.xsd" xmlns:mstns="http://tempuri.org/UserDataSet.xsd" xmlns="http://tempuri.org/UserDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SocialNetworkConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SocialNetworkConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WLQuickApps.SocialNetwork.Data.Properties.Settings.GlobalReference.Default.SocialNetworkConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="UserTableAdapter" GeneratorDataComponentClassName="UserTableAdapter" Name="User" UserDataComponentName="UserTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SocialNetworkConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT     Profile.UserID, Profile.FirstName, Profile.LastName, Profile.Gender, Profile.DOB, Profile.WindowsLiveUUID, Profile.RSSFeedURL, Profile.BaseItemID, 
+                      aspnet_Membership.Email, aspnet_Membership.LastLoginDate, aspnet_Membership.CreateDate, aspnet_Users.UserName, Profile.MessengerPresenceID, 
+                      Profile.DomainToken, Profile.OwnerHandle
+FROM         Profile INNER JOIN
+                      BaseItem ON Profile.BaseItemID = BaseItem.BaseItemID INNER JOIN
+                      aspnet_Membership ON Profile.UserID = aspnet_Membership.UserId INNER JOIN
+                      aspnet_Users ON Profile.UserID = aspnet_Users.UserId AND aspnet_Membership.UserId = aspnet_Users.UserId</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="UserID" DataSetColumn="UserID" />
+              <Mapping SourceColumn="FirstName" DataSetColumn="FirstName" />
+              <Mapping SourceColumn="LastName" DataSetColumn="LastName" />
+              <Mapping SourceColumn="Gender" DataSetColumn="Gender" />
+              <Mapping SourceColumn="WindowsLiveUUID" DataSetColumn="WindowsLiveUUID" />
+              <Mapping SourceColumn="RSSFeedURL" DataSetColumn="RSSFeedURL" />
+              <Mapping SourceColumn="Email" DataSetColumn="Email" />
+              <Mapping SourceColumn="LastLoginDate" DataSetColumn="LastLoginDate" />
+              <Mapping SourceColumn="CreateDate" DataSetColumn="CreateDate" />
+              <Mapping SourceColumn="UserName" DataSetColumn="UserName" />
+              <Mapping SourceColumn="DOB" DataSetColumn="DOB" />
+              <Mapping SourceColumn="BaseItemID" DataSetColumn="BaseItemID" />
+              <Mapping SourceColumn="MessengerPresenceID" DataSetColumn="MessengerPresenceID" />
+              <Mapping SourceColumn="DomainToken" DataSetColumn="DomainToken" />
+              <Mapping SourceColumn="OwnerHandle" DataSetColumn="OwnerHandle" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="SocialNetworkConnectionString (Settings)" DbObjectName="SocialNetwork.dbo.Profile" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="CreateProfile" Modifier="Public" Name="CreateProfile" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="CreateProfile">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO Profile
+                         (UserID, FirstName, LastName, Gender, DOB, WindowsLiveUUID, RSSFeedURL, BaseItemID, MessengerPresenceID)
+VALUES        (@userID, @firstName, @lastName, @gender, @dateOfBirth, @windowsLiveUUID, @rssFeedUrl, @baseItemID, @MessengerPresenceID);</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="userID" ColumnName="UserID" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="uniqueidentifier" DbType="Guid" Direction="Input" ParameterName="@userID" Precision="0" ProviderType="UniqueIdentifier" Scale="0" Size="16" SourceColumn="UserID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="firstName" ColumnName="FirstName" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@firstName" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="FirstName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="lastName" ColumnName="LastName" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@lastName" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="LastName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="gender" ColumnName="Gender" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@gender" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Gender" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dateOfBirth" ColumnName="DOB" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dateOfBirth" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="DOB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="windowsLiveUUID" ColumnName="WindowsLiveUUID" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@windowsLiveUUID" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="WindowsLiveUUID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="rssFeedUrl" ColumnName="RSSFeedURL" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@rssFeedUrl" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="RSSFeedURL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="baseItemID" ColumnName="BaseItemID" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@baseItemID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="BaseItemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="MessengerPresenceID" ColumnName="MessengerPresenceID" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@MessengerPresenceID" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="MessengerPresenceID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO Profile
+                      (UserID, FirstName, LastName, Gender, DOB, WindowsLiveUUID, RSSFeedURL, BaseItemID, MessengerPresenceID, DomainToken, OwnerHandle)
+VALUES     (@userID,@firstName,@lastName,@gender,@dateOfBirth,@windowsLiveUUID,@rssFeedUrl,@baseItemID,@MessengerPresenceID,@DomainToken,@OwnerHandle)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="userID" ColumnName="UserID" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="uniqueidentifier" DbType="Guid" Direction="Input" ParameterName="@userID" Precision="0" ProviderType="UniqueIdentifier" Scale="0" Size="16" SourceColumn="UserID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="firstName" ColumnName="FirstName" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@firstName" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="FirstName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="lastName" ColumnName="LastName" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@lastName" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="LastName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="gender" ColumnName="Gender" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@gender" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Gender" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dateOfBirth" ColumnName="DOB" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dateOfBirth" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="DOB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="windowsLiveUUID" ColumnName="WindowsLiveUUID" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@windowsLiveUUID" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="WindowsLiveUUID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="rssFeedUrl" ColumnName="RSSFeedURL" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@rssFeedUrl" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="RSSFeedURL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="baseItemID" ColumnName="BaseItemID" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@baseItemID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="BaseItemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="MessengerPresenceID" ColumnName="MessengerPresenceID" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@MessengerPresenceID" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="MessengerPresenceID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="DomainToken" ColumnName="DomainToken" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(500)" DbType="AnsiString" Direction="Input" ParameterName="@DomainToken" Precision="0" ProviderType="VarChar" Scale="0" Size="500" SourceColumn="DomainToken" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="OwnerHandle" ColumnName="OwnerHandle" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@OwnerHandle" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="OwnerHandle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="SocialNetworkConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteProfile" Modifier="Public" Name="DeleteProfile" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="DeleteProfile">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM Profile WHERE UserID = @userID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="userID" ColumnName="UserID" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="uniqueidentifier" DbType="Guid" Direction="Input" ParameterName="@userID" Precision="0" ProviderType="UniqueIdentifier" Scale="0" Size="16" SourceColumn="UserID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="SocialNetworkConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetAllUsersForGroup" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetAllUsersForGroup" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetAllUsersForGroup" UserSourceName="GetAllUsersForGroup">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>WITH PageTable AS (SELECT     Profile.UserID, Profile.FirstName, Profile.LastName, Profile.Gender, Profile.DOB, Profile.WindowsLiveUUID, Profile.RSSFeedURL, 
+                                                                    Profile.BaseItemID, Profile.MessengerPresenceID, Profile.DomainToken, Profile.OwnerHandle, aspnet_Membership.Email, aspnet_Membership.LastLoginDate, 
+                                                                    aspnet_Membership.CreateDate, aspnet_Users.UserName, ROW_NUMBER() OVER (ORDER BY aspnet_Membership.CreateDate DESC) 
+AS RowID
+FROM         Profile INNER JOIN
+                      aspnet_Membership ON Profile.UserID = aspnet_Membership.UserId INNER JOIN
+                      aspnet_Users ON Profile.UserID = aspnet_Users.UserId AND aspnet_Membership.UserId = aspnet_Users.UserId INNER JOIN
+                      UserGroup ON Profile.UserID = UserGroup.UserID
+WHERE     UserGroup.BaseItemID = @baseItemID AND IsInviteAccepted = @isInviteAccepted AND IsApprovedByOwner = @isApprovedByOwner)
+    SELECT     *
+     FROM         PageTable
+     WHERE     RowID BETWEEN (@startRowIndex + 1) AND (@startRowIndex + @maximumRows)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="baseItemID" ColumnName="BaseItemID" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@baseItemID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="BaseItemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="isInviteAccepted" ColumnName="IsInviteAccepted" DataSourceName="" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@isInviteAccepted" Precision="0" ProviderType="Bit" Scale="0" Size="1" SourceColumn="IsInviteAccepted" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="isApprovedByOwner" ColumnName="IsApprovedByOwner" DataSourceName="" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@isApprovedByOwner" Precision="0" ProviderType="Bit" Scale="0" Size="1" SourceColumn="IsApprovedByOwner" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@startRowIndex" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@maximumRows" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="SocialNetworkConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="GetAllUsersForGroupCount" Modifier="Public" Name="GetAllUsersForGroupCount" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="GetAllUsersForGroupCount">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     COUNT(*) 
+FROM         Profile INNER JOIN
+                      aspnet_Membership ON Profile.UserID = aspnet_Membership.UserId INNER JOIN
+                      aspnet_Users ON Profile.UserID = aspnet_Users.UserId AND aspnet_Membership.UserId = aspnet_Users.UserId INNER JOIN
+                      UserGroup ON Profile.UserID = UserGroup.UserID
+WHERE     (UserGroup.BaseItemID = @baseItemID) AND (UserGroup.IsInviteAccepted = @isInviteAccepted) AND (UserGroup.IsApprovedByOwner = @isApprovedByOwner)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="baseItemID" ColumnName="BaseItemID" DataSourceName="SocialNetwork.dbo.UserGroup" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@baseItemID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="BaseItemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="isInviteAccepted" ColumnName="IsInviteAccepted" DataSourceName="SocialNetwork.dbo.UserGroup" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@isInviteAccepted" Precision="0" ProviderType="Bit" Scale="0" Size="1" SourceColumn="IsInviteAccepted" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="isApprovedByOwner" ColumnName="IsApprovedByOwner" DataSourceName="SocialNetwork.dbo.UserGroup" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="@isApprovedByOwner" Precision="0" ProviderType="Bit" Scale="0" Size="1" SourceColumn="IsApprovedByOwner" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="SocialNetworkConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetRecentlyCreatedUsers" GetMethodModifier="Public" GetMethodName="GetRecentlyCreatedUsers" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetRecentlyCreatedUsers" UserSourceName="GetRecentlyCreatedUsers">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>WITH PageTable AS (SELECT     Profile.UserID, Profile.FirstName, Profile.LastName, Profile.Gender, Profile.DOB, Profile.WindowsLiveUUID, Profile.RSSFeedURL, 
+                                                                    Profile.BaseItemID, Profile.MessengerPresenceID, Profile.DomainToken, Profile.OwnerHandle, aspnet_Membership.Email, 
+                                                                    aspnet_Membership.LastLoginDate, aspnet_Membership.CreateDate, aspnet_Users.UserName, ROW_NUMBER() OVER (ORDER BY aspnet_Membership.CreateDate
+                                                                     DESC) AS RowID
+FROM         Profile INNER JOIN
+                      aspnet_Membership ON Profile.UserID = aspnet_Membership.UserId INNER JOIN
+                      aspnet_Users ON Profile.UserID = aspnet_Users.UserId AND aspnet_Membership.UserId = aspnet_Users.UserId)
+    SELECT     *
+     FROM         PageTable
+     WHERE     RowID BETWEEN (@startRowIndex + 1) AND (@startRowIndex + @maximumRows)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@startRowIndex" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@maximumRows" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="SocialNetworkConnectionString (Settings)" DbObjectType="Unknown" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetUserByBaseItemID" GetMethodModifier="Public" GetMethodName="GetUserByBaseItemID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetUserByBaseItemID" UserSourceName="GetUserByBaseItemID">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     Profile.UserID, Profile.FirstName, Profile.LastName, Profile.Gender, Profile.DOB, Profile.WindowsLiveUUID, Profile.RSSFeedURL, Profile.BaseItemID, 
+                      Profile.MessengerPresenceID, aspnet_Membership.Email, aspnet_Membership.LastLoginDate, aspnet_Membership.CreateDate, aspnet_Users.UserName, 
+                      Profile.DomainToken, Profile.OwnerHandle
+FROM         Profile INNER JOIN
+                      aspnet_Membership ON Profile.UserID = aspnet_Membership.UserId INNER JOIN
+                      aspnet_Users ON Profile.UserID = aspnet_Users.UserId AND aspnet_Membership.UserId = aspnet_Users.UserId
+WHERE     (Profile.BaseItemID = @baseItemID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="baseItemID" ColumnName="BaseItemID" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@baseItemID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="BaseItemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="SocialNetworkConnectionString (Settings)" DbObjectType="Unknown" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetUserByEmail" GeneratorSourceName="FillByEmail" GetMethodModifier="Public" GetMethodName="GetUserByEmail" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetUserByEmail" UserSourceName="GetUserByEmail">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     Profile.UserID, Profile.FirstName, Profile.LastName, Profile.Gender, Profile.DOB, Profile.WindowsLiveUUID, Profile.RSSFeedURL, Profile.BaseItemID, 
+                      Profile.MessengerPresenceID, aspnet_Membership.Email, aspnet_Membership.LastLoginDate, aspnet_Membership.CreateDate, aspnet_Users.UserName, 
+                      Profile.DomainToken, Profile.OwnerHandle
+FROM         Profile INNER JOIN
+                      aspnet_Membership ON Profile.UserID = aspnet_Membership.UserId INNER JOIN
+                      aspnet_Users ON Profile.UserID = aspnet_Users.UserId AND aspnet_Membership.UserId = aspnet_Users.UserId
+WHERE     (aspnet_Membership.Email = @email)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="email" ColumnName="Email" DataSourceName="SocialNetwork.dbo.aspnet_Membership" DataTypeServer="nvarchar(256)" DbType="String" Direction="Input" ParameterName="@email" Precision="0" ProviderType="NVarChar" Scale="0" Size="256" SourceColumn="Email" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="SocialNetworkConnectionString (Settings)" DbObjectType="Unknown" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetUserByUserID" GeneratorSourceName="FillByUserID" GetMethodModifier="Public" GetMethodName="GetUserByUserID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetUserByUserID" UserSourceName="GetUserByUserID">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     Profile.UserID, Profile.FirstName, Profile.LastName, Profile.Gender, Profile.DOB, Profile.WindowsLiveUUID, Profile.RSSFeedURL, Profile.BaseItemID, 
+                      Profile.MessengerPresenceID, aspnet_Membership.Email, aspnet_Membership.LastLoginDate, aspnet_Membership.CreateDate, aspnet_Users.UserName, 
+                      Profile.DomainToken, Profile.OwnerHandle
+FROM         Profile INNER JOIN
+                      aspnet_Membership ON Profile.UserID = aspnet_Membership.UserId INNER JOIN
+                      aspnet_Users ON Profile.UserID = aspnet_Users.UserId AND aspnet_Membership.UserId = aspnet_Users.UserId
+WHERE     (Profile.UserID = @userID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="userID" ColumnName="UserID" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="uniqueidentifier" DbType="Guid" Direction="Input" ParameterName="@userID" Precision="0" ProviderType="UniqueIdentifier" Scale="0" Size="16" SourceColumn="UserID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="SocialNetworkConnectionString (Settings)" DbObjectType="Unknown" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetUserByUserName" GeneratorSourceName="FillByUserName" GetMethodModifier="Public" GetMethodName="GetUserByUserName" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetUserByUserName" UserSourceName="GetUserByUserName">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     Profile.UserID, Profile.FirstName, Profile.LastName, Profile.Gender, Profile.DOB, Profile.WindowsLiveUUID, Profile.RSSFeedURL, Profile.BaseItemID, 
+                      Profile.MessengerPresenceID, aspnet_Membership.Email, aspnet_Membership.LastLoginDate, aspnet_Membership.CreateDate, aspnet_Users.UserName, 
+                      Profile.DomainToken, Profile.OwnerHandle
+FROM         Profile INNER JOIN
+                      aspnet_Membership ON Profile.UserID = aspnet_Membership.UserId INNER JOIN
+                      aspnet_Users ON Profile.UserID = aspnet_Users.UserId AND aspnet_Membership.UserId = aspnet_Users.UserId
+WHERE     (aspnet_Users.UserName = @userName)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="userName" ColumnName="UserName" DataSourceName="SocialNetwork.dbo.aspnet_Users" DataTypeServer="nvarchar(256)" DbType="String" Direction="Input" ParameterName="@userName" Precision="0" ProviderType="NVarChar" Scale="0" Size="256" SourceColumn="UserName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="SocialNetworkConnectionString (Settings)" DbObjectType="Unknown" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetUserByWindowsLiveUUID" GeneratorSourceName="FillByWindowsLiveUUID" GetMethodModifier="Public" GetMethodName="GetUserByWindowsLiveUUID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetUserByWindowsLiveUUID" UserSourceName="GetUserByWindowsLiveUUID">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     Profile.UserID, Profile.FirstName, Profile.LastName, Profile.Gender, Profile.DOB, Profile.WindowsLiveUUID, Profile.RSSFeedURL, Profile.BaseItemID, 
+                      Profile.MessengerPresenceID, aspnet_Membership.Email, aspnet_Membership.LastLoginDate, aspnet_Membership.CreateDate, aspnet_Users.UserName, 
+                      Profile.DomainToken, Profile.OwnerHandle
+FROM         Profile INNER JOIN
+                      aspnet_Membership ON Profile.UserID = aspnet_Membership.UserId INNER JOIN
+                      aspnet_Users ON Profile.UserID = aspnet_Users.UserId AND aspnet_Membership.UserId = aspnet_Users.UserId
+WHERE     (Profile.WindowsLiveUUID = @windowsLiveUUID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="windowsLiveUUID" ColumnName="WindowsLiveUUID" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@windowsLiveUUID" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="WindowsLiveUUID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="SocialNetworkConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="GetUserCount" Modifier="Public" Name="GetUserCount" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="GetUserCount">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        count(*) from Profile</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="SocialNetworkConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetUsersByFullName" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetUsersByFullName" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetUsersByFullName" UserSourceName="GetUsersByFullName">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>WITH PageTable AS (SELECT     Profile.UserID, Profile.FirstName, Profile.LastName, Profile.Gender, Profile.DOB, Profile.WindowsLiveUUID, Profile.RSSFeedURL, 
+                                                                    Profile.BaseItemID, Profile.MessengerPresenceID, Profile.DomainToken, Profile.OwnerHandle, aspnet_Membership.Email, 
+                                                                    aspnet_Membership.LastLoginDate, aspnet_Membership.CreateDate, aspnet_Users.UserName, ROW_NUMBER() OVER (ORDER BY aspnet_Membership.CreateDate
+                                                                     DESC) AS RowID
+FROM         Profile INNER JOIN
+                      aspnet_Membership ON Profile.UserID = aspnet_Membership.UserId INNER JOIN
+                      aspnet_Users ON Profile.UserID = aspnet_Users.UserId AND aspnet_Membership.UserId = aspnet_Users.UserId
+WHERE     Profile.FirstName = @firstName AND Profile.LastName = @lastName)
+    SELECT     *
+     FROM         PageTable
+     WHERE     RowID BETWEEN (@startRowIndex + 1) AND (@startRowIndex + @maximumRows)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="firstName" ColumnName="FirstName" DataSourceName="" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@firstName" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="FirstName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="lastName" ColumnName="LastName" DataSourceName="" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@lastName" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="LastName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@startRowIndex" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@maximumRows" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="SocialNetworkConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="GetUsersByFullNameCount" Modifier="Public" Name="GetUsersByFullNameCount" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="GetUsersByFullNameCount">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select count (*)
+FROM            Profile INNER JOIN
+                         aspnet_Membership ON Profile.UserID = aspnet_Membership.UserId INNER JOIN
+                         aspnet_Users ON Profile.UserID = aspnet_Users.UserId AND aspnet_Membership.UserId = aspnet_Users.UserId
+WHERE Profile.FirstName = @firstName AND Profile.LastName = @lastName
+</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="firstName" ColumnName="FirstName" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@firstName" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="FirstName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="lastName" ColumnName="LastName" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@lastName" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="LastName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="SocialNetworkConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetUserSetByBaseItemID" GeneratorSourceName="FillBy1" GetMethodModifier="Public" GetMethodName="GetUserSetByBaseItemID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetUserSetByBaseItemID" UserSourceName="GetUserSetByBaseItemID">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>WITH PageTable AS (SELECT     Profile.UserID, Profile.FirstName, Profile.LastName, Profile.Gender, Profile.DOB, Profile.WindowsLiveUUID, Profile.RSSFeedURL, 
+                                                                    Profile.BaseItemID, Profile.MessengerPresenceID, Profile.DomainToken, Profile.OwnerHandle,  aspnet_Membership.Email, aspnet_Membership.LastLoginDate, 
+                                                                    aspnet_Membership.CreateDate, aspnet_Users.UserName, ROW_NUMBER() OVER (ORDER BY aspnet_Membership.CreateDate DESC) 
+AS RowID
+FROM         Profile INNER JOIN
+                      aspnet_Membership ON Profile.UserID = aspnet_Membership.UserId INNER JOIN
+                      aspnet_Users ON Profile.UserID = aspnet_Users.UserId AND aspnet_Membership.UserId = aspnet_Users.UserId INNER JOIN
+                      UserGroup ON aspnet_Users.UserId = UserGroup.UserID
+WHERE     UserGroup.BaseItemID = @baseItemID AND UserGroup.IsInviteAccepted = 'True' AND UserGroup.IsApprovedByOwner = 'True')
+    SELECT     *
+     FROM         PageTable
+     WHERE     RowID BETWEEN (@startRowIndex + 1) AND (@startRowIndex + @maximumRows)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="baseItemID" ColumnName="BaseItemID" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@baseItemID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="BaseItemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@startRowIndex" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@maximumRows" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="SocialNetworkConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="GetUserSetByBaseItemIDCount" Modifier="Public" Name="GetUserSetByBaseItemIDCount" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="GetUserSetByBaseItemIDCount">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        count(*)
+FROM            Profile INNER JOIN
+                         aspnet_Membership ON Profile.UserID = aspnet_Membership.UserId INNER JOIN
+                         aspnet_Users ON Profile.UserID = aspnet_Users.UserId AND aspnet_Membership.UserId = aspnet_Users.UserId INNER JOIN
+                         UserGroup ON aspnet_Users.UserId = UserGroup.UserID
+where UserGroup.BaseItemID = @baseItemID and UserGroup.IsInviteAccepted = 'True' and UserGroup.IsApprovedByOwner = 'True'
+</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="baseItemID" ColumnName="BaseItemID" DataSourceName="SocialNetwork.dbo.UserGroup" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@baseItemID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="BaseItemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="SocialNetworkConnectionString (Settings)" DbObjectName="SocialNetwork.dbo.Profile" DbObjectType="Table" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy2" GeneratorSourceName="UpdateProfile" Modifier="Public" Name="UpdateProfile" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy6" UserSourceName="UpdateProfile">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE    Profile
+SET              FirstName = @firstName, LastName = @lastName, Gender = @gender, DOB = @dateOfBirth, WindowsLiveUUID = @windowsLiveUUID, RSSFeedURL = @rssFeedUrl, 
+                      MessengerPresenceID = @MessengerPresenceID, DomainToken = @DomainToken, OwnerHandle = @OwnerHandle
+WHERE     (UserID = @userID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="firstName" ColumnName="FirstName" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@firstName" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="FirstName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="lastName" ColumnName="LastName" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@lastName" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="LastName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="gender" ColumnName="Gender" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@gender" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Gender" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dateOfBirth" ColumnName="DOB" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dateOfBirth" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="DOB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="windowsLiveUUID" ColumnName="WindowsLiveUUID" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@windowsLiveUUID" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="WindowsLiveUUID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="rssFeedUrl" ColumnName="RSSFeedURL" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@rssFeedUrl" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="RSSFeedURL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="MessengerPresenceID" ColumnName="MessengerPresenceID" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@MessengerPresenceID" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="MessengerPresenceID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="DomainToken" ColumnName="DomainToken" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(500)" DbType="AnsiString" Direction="Input" ParameterName="@DomainToken" Precision="0" ProviderType="VarChar" Scale="0" Size="500" SourceColumn="DomainToken" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="OwnerHandle" ColumnName="OwnerHandle" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@OwnerHandle" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="OwnerHandle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="userID" ColumnName="UserID" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="uniqueidentifier" DbType="Guid" Direction="Input" ParameterName="@userID" Precision="0" ProviderType="UniqueIdentifier" Scale="0" Size="16" SourceColumn="UserID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE Profile
+SET FirstName = @firstName, LastName = @lastName, Gender = @gender, DOB = @dateOfBirth, WindowsLiveUUID = @windowsLiveUUID, RSSFeedURL = @rssFeedUrl, MessengerPresenceID = @MessengerPresenceID
+WHERE UserID = @userID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="firstName" ColumnName="FirstName" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@firstName" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="FirstName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="lastName" ColumnName="LastName" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@lastName" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="LastName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="gender" ColumnName="Gender" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@gender" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Gender" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="dateOfBirth" ColumnName="DOB" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@dateOfBirth" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="DOB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="windowsLiveUUID" ColumnName="WindowsLiveUUID" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@windowsLiveUUID" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="WindowsLiveUUID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="rssFeedUrl" ColumnName="RSSFeedURL" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@rssFeedUrl" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="RSSFeedURL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="MessengerPresenceID" ColumnName="MessengerPresenceID" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="varchar(255)" DbType="AnsiString" Direction="Input" ParameterName="@MessengerPresenceID" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="MessengerPresenceID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="userID" ColumnName="UserID" DataSourceName="SocialNetwork.dbo.Profile" DataTypeServer="uniqueidentifier" DbType="Guid" Direction="Input" ParameterName="@userID" Precision="0" ProviderType="UniqueIdentifier" Scale="0" Size="16" SourceColumn="UserID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="UserDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="UserDataSet" msprop:Generator_DataSetName="UserDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="User" msprop:Generator_UserTableName="User" msprop:Generator_RowDeletedName="UserRowDeleted" msprop:Generator_RowChangedName="UserRowChanged" msprop:Generator_RowClassName="UserRow" msprop:Generator_RowChangingName="UserRowChanging" msprop:Generator_RowEvArgName="UserRowChangeEvent" msprop:Generator_RowEvHandlerName="UserRowChangeEventHandler" msprop:Generator_TableClassName="UserDataTable" msprop:Generator_TableVarName="tableUser" msprop:Generator_RowDeletingName="UserRowDeleting" msprop:Generator_TablePropName="User">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UserID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="UserID" msprop:Generator_ColumnPropNameInRow="UserID" msprop:Generator_ColumnVarNameInTable="columnUserID" msprop:Generator_ColumnPropNameInTable="UserIDColumn" type="xs:string" />
+              <xs:element name="FirstName" msprop:Generator_UserColumnName="FirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastName" msprop:Generator_UserColumnName="LastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Gender" msprop:Generator_UserColumnName="Gender" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnVarNameInTable="columnGender" msprop:Generator_ColumnPropNameInTable="GenderColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="WindowsLiveUUID" msprop:Generator_UserColumnName="WindowsLiveUUID" msprop:Generator_ColumnPropNameInRow="WindowsLiveUUID" msprop:Generator_ColumnVarNameInTable="columnWindowsLiveUUID" msprop:Generator_ColumnPropNameInTable="WindowsLiveUUIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RSSFeedURL" msprop:Generator_UserColumnName="RSSFeedURL" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnRSSFeedURL" msprop:Generator_ColumnPropNameInTable="RSSFeedURLColumn" msprop:Generator_ColumnPropNameInRow="RSSFeedURL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Email" msprop:Generator_UserColumnName="Email" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInTable="EmailColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastLoginDate" msprop:Generator_UserColumnName="LastLoginDate" msprop:Generator_ColumnPropNameInRow="LastLoginDate" msprop:Generator_ColumnVarNameInTable="columnLastLoginDate" msprop:Generator_ColumnPropNameInTable="LastLoginDateColumn" type="xs:dateTime" />
+              <xs:element name="CreateDate" msprop:Generator_UserColumnName="CreateDate" msprop:Generator_ColumnPropNameInRow="CreateDate" msprop:Generator_ColumnVarNameInTable="columnCreateDate" msprop:Generator_ColumnPropNameInTable="CreateDateColumn" type="xs:dateTime" />
+              <xs:element name="UserName" msprop:Generator_UserColumnName="UserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DOB" msprop:Generator_UserColumnName="DOB" msprop:Generator_ColumnPropNameInRow="DOB" msprop:Generator_ColumnVarNameInTable="columnDOB" msprop:Generator_ColumnPropNameInTable="DOBColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BaseItemID" msprop:Generator_UserColumnName="BaseItemID" msprop:Generator_ColumnVarNameInTable="columnBaseItemID" msprop:Generator_ColumnPropNameInRow="BaseItemID" msprop:Generator_ColumnPropNameInTable="BaseItemIDColumn" type="xs:int" />
+              <xs:element name="MessengerPresenceID" msprop:Generator_UserColumnName="MessengerPresenceID" msprop:Generator_ColumnVarNameInTable="columnMessengerPresenceID" msprop:Generator_ColumnPropNameInRow="MessengerPresenceID" msprop:Generator_ColumnPropNameInTable="MessengerPresenceIDColumn" type="xs:string" />
+              <xs:element name="DomainToken" msprop:Generator_UserColumnName="DomainToken" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DomainToken" msprop:Generator_ColumnPropNameInTable="DomainTokenColumn" msprop:Generator_ColumnVarNameInTable="columnDomainToken" type="xs:string" default="&quot;&quot;" minOccurs="0" />
+              <xs:element name="OwnerHandle" msprop:Generator_UserColumnName="OwnerHandle" msprop:Generator_ColumnPropNameInRow="OwnerHandle" msprop:Generator_ColumnVarNameInTable="columnOwnerHandle" msprop:Generator_ColumnPropNameInTable="OwnerHandleColumn" type="xs:string" default="&quot;&quot;" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:User" />
+      <xs:field xpath="mstns:UserID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
