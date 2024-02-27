@@ -69,4 +69,4 @@ The original overview of the folder structure in the package can be found here: 
 The original downloads for the project can be obtained here: [https://web.archive.org/web/20160216155643/http://wlquickapps.codeplex.com/releases/view/13891](https://web.archive.org/web/20160216155643/http://wlquickapps.codeplex.com/releases/view/13891)
 
 ---
-Thank you for taking an interest in the ***Project Tafiti Archive***!
+Thank you for taking an interest in ***Project Tafiti Archive***!
