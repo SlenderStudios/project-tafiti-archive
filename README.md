@@ -1,4 +1,4 @@
-![Project Tafiti Archive Logo]()
+![Project Tafiti Archive Logo](https://cdnslenderstudios.web.app/img/pout/icon&wrd.fw.png)
 
 ---
 
@@ -55,7 +55,7 @@ Windows Live Quick Applications provide customizable out-of-the box solutions fo
 
 ### 10. Contoso University (Education) demo
 
-- Sample college website.
+- Sample college website.  
 
 ### 11. Visit Planner demo
 
